@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd \"D:\\\\personal\\\\scrapper\" && python -c \"\nimport requests\nfrom bs4 import BeautifulSoup\nfrom scraper import BROWSER_HEADERS, _extract_ld_json_price\n\nsession = requests.Session\\(\\)\nr = session.get\\('https://www.dentalsky.com/solo-supra-needles-30g-short-100.html', headers=BROWSER_HEADERS, timeout=15\\)\nprint\\('Status:', r.status_code, 'Final:', r.url\\)\nsoup = BeautifulSoup\\(r.content, 'lxml'\\)\np, c = _extract_ld_json_price\\(soup\\)\nprint\\('Price:', p, c\\)\n\" 2>&1)",
+      "Bash(cd \"D:\\\\personal\\\\scrapper\" && python scraper.py --limit 15 --sites dmi_ie dmi_uk dentalsky dontalia --no-skip-existing 2>&1)",
+      "Bash(cd \"D:\\\\personal\\\\scrapper\" && python -c \"\nimport csv\nwith open\\('output_prices.csv', newline='', encoding='utf-8-sig'\\) as f:\n    reader = csv.DictReader\\(f\\)\n    for row in reader:\n        code = row.get\\('Code',''\\)\n        name = row.get\\('Name',''\\)[:50]\n        dmi_ie = row.get\\('DMI Sales Price \\(€\\)','N/A'\\)\n        dmi_uk = row.get\\('DMI Sales Price \\(£\\)','N/A'\\)\n        ds = row.get\\('DentalSky Sales Price \\(£\\)','N/A'\\)\n        dont = row.get\\('Dontalia Sales Price \\(€\\)','N/A'\\)\n        print\\(f'{code:10} | dmi.ie:{dmi_ie:10} | dmi.uk:{dmi_uk:10} | dentalsky:{ds:10} | dontalia:{dont:10} | {name}'\\)\n\" 2>&1)",
+      "Bash(cd \"D:\\\\personal\\\\scrapper\" && python scraper.py --limit 50 --output output_50rows.csv 2>&1)"
+    ]
+  }
+}
