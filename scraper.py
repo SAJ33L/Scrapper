@@ -80,15 +80,16 @@ class ScrapedPrice:
     price: Optional[str] = None
     url: Optional[str] = None
     found: bool = False
+    product_name: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------
 # Shared helpers
 # ---------------------------------------------------------------------------
-def _extract_ld_json_price(soup: BeautifulSoup) -> tuple[Optional[str], Optional[str]]:
+def _extract_ld_json_price(soup: BeautifulSoup) -> tuple[Optional[str], Optional[str], Optional[str]]:
     """
-    Extract price and currency from schema.org Product LD+JSON.
-    Returns (price_str, currency_code) e.g. ("27.39", "EUR")
+    Extract price, currency, and product name from schema.org Product LD+JSON.
+    Returns (price_str, currency_code, product_name) e.g. ("27.39", "EUR", "Septoject XL Box100")
     """
     for sc in soup.find_all("script", type="application/ld+json"):
         try:
@@ -102,11 +103,12 @@ def _extract_ld_json_price(soup: BeautifulSoup) -> tuple[Optional[str], Optional
                         offers = offers[0]
                     price = str(offers.get("price", "")).strip()
                     currency = str(offers.get("priceCurrency", "")).strip()
+                    product_name = str(item.get("name", "")).strip() or None
                     if price and re.match(r"^\d+\.?\d*$", price):
-                        return price, currency
+                        return price, currency, product_name
         except Exception:
             pass
-    return None, None
+    return None, None, None
 
 
 def _format_price(price_str: str, currency_code: str) -> str:
@@ -207,15 +209,16 @@ class BaseScraper:
             return BeautifulSoup(resp.content, "lxml")
         return None
 
-    def scrape_price_from_url(self, url: str) -> Optional[str]:
-        """Scrape price from a known product URL using LD+JSON."""
+    def scrape_price_from_url(self, url: str) -> tuple[Optional[str], Optional[str]]:
+        """Scrape price and product name from a known product URL using LD+JSON.
+        Returns (price_str, product_name)."""
         soup = self._soup(url)
         if not soup:
-            return None
-        price_val, currency = _extract_ld_json_price(soup)
+            return None, None
+        price_val, currency, product_name = _extract_ld_json_price(soup)
         if price_val:
-            return _format_price(price_val, currency or self.CURRENCY)
-        return None
+            return _format_price(price_val, currency or self.CURRENCY), product_name
+        return None, None
 
     def search(self, part_number: str, product_name: str, manufacturer: str) -> ScrapedPrice:
         raise NotImplementedError
@@ -224,10 +227,10 @@ class BaseScraper:
         """Try direct URL first, then fall back to search."""
         existing_url = _clean_url(self._get_existing_url(row))
         if existing_url:
-            price = self.scrape_price_from_url(existing_url)
+            price, product_name = self.scrape_price_from_url(existing_url)
             if price:
                 logger.info(f"  [{self.SITE_NAME}] Direct URL ✓ {price}")
-                return ScrapedPrice(price=price, url=existing_url, found=True)
+                return ScrapedPrice(price=price, url=existing_url, found=True, product_name=product_name)
             logger.info(f"  [{self.SITE_NAME}] Direct URL gave no price, trying search")
 
         result = self.search(
@@ -267,10 +270,10 @@ class DMIScraper(BaseScraper):
         for a in soup.select("a[href*='/products/']"):
             href = a.get("href", "")
             product_url = urljoin(self.BASE_URL, href.split("?")[0])
-            price = self.scrape_price_from_url(product_url)
+            price, product_name = self.scrape_price_from_url(product_url)
             if price:
                 logger.info(f"  [{self.SITE_NAME}] Search '{query}' ✓ {price}")
-                return ScrapedPrice(price=price, url=product_url, found=True)
+                return ScrapedPrice(price=price, url=product_url, found=True, product_name=product_name)
         return ScrapedPrice()
 
 
@@ -303,15 +306,16 @@ class DentalSkyScraper(BaseScraper):
     def _get_existing_url(self, row: dict) -> Optional[str]:
         return row.get("DentalSky URL", "")
 
-    def scrape_price_from_url(self, url: str) -> Optional[str]:
-        """DentalSky: try LD+JSON then HTML price selectors."""
+    def scrape_price_from_url(self, url: str) -> tuple[Optional[str], Optional[str]]:
+        """DentalSky: try LD+JSON then HTML price selectors.
+        Returns (price_str, product_name)."""
         soup = self._soup(url)
         if not soup:
-            return None
+            return None, None
         # 1. LD+JSON (most reliable)
-        price_val, currency = _extract_ld_json_price(soup)
+        price_val, currency, product_name = _extract_ld_json_price(soup)
         if price_val:
-            return _format_price(price_val, currency or self.CURRENCY)
+            return _format_price(price_val, currency or self.CURRENCY), product_name
         # 2. Magento HTML price selectors
         for sel in [
             "[data-price-type='finalPrice'] .price",
@@ -328,8 +332,8 @@ class DentalSkyScraper(BaseScraper):
                 m = re.search(r"(\d[\d,]*\.\d{2})", content)
                 if m:
                     val = m.group(1).replace(",", "")
-                    return f"£{float(val):.2f}"
-        return None
+                    return f"£{float(val):.2f}", None
+        return None, None
 
     def search(self, part_number: str, product_name: str, manufacturer: str) -> ScrapedPrice:
         # DentalSky Magento search requires JavaScript — handled by PlaywrightScraper
@@ -347,11 +351,11 @@ class DentalSkyScraper(BaseScraper):
             if candidate_slug in tried:
                 continue
             tried.add(candidate_slug)
-            price = self.scrape_price_from_url(f"{self.BASE_URL}/{candidate_slug}.html")
+            price, comp_name = self.scrape_price_from_url(f"{self.BASE_URL}/{candidate_slug}.html")
             if price:
                 url = f"{self.BASE_URL}/{candidate_slug}.html"
                 logger.info(f"  [{self.SITE_NAME}] Slug match '{candidate_slug}' ✓ {price}")
-                return ScrapedPrice(price=price, url=url, found=True)
+                return ScrapedPrice(price=price, url=url, found=True, product_name=comp_name)
         return ScrapedPrice()
 
 
@@ -382,11 +386,11 @@ class DontaliaScraper(BaseScraper):
             resp = self._get(url)
             if resp and resp.status_code == 200:
                 soup = BeautifulSoup(resp.content, "lxml")
-                price_val, currency = _extract_ld_json_price(soup)
+                price_val, currency, product_name = _extract_ld_json_price(soup)
                 if price_val:
                     price = _format_price(price_val, currency or self.CURRENCY)
                     logger.info(f"  [{self.SITE_NAME}] Slug match '{candidate_slug}' ✓ {price}")
-                    return ScrapedPrice(price=price, url=url, found=True)
+                    return ScrapedPrice(price=price, url=url, found=True, product_name=product_name)
         return ScrapedPrice()
 
 
@@ -491,11 +495,11 @@ class PlaywrightScraper:
             product_html = self.get_page_html(href)
             if product_html:
                 product_soup = BeautifulSoup(product_html, "lxml")
-                price_val, currency = _extract_ld_json_price(product_soup)
+                price_val, currency, product_name = _extract_ld_json_price(product_soup)
                 if price_val:
                     price = _format_price(price_val, currency or "GBP")
                     logger.info(f"  [dentalsky.com] Playwright ✓ {price}")
-                    return ScrapedPrice(price=price, url=href, found=True)
+                    return ScrapedPrice(price=price, url=href, found=True, product_name=product_name)
         return ScrapedPrice()
 
     def search_dontalia(self, query: str) -> ScrapedPrice:
@@ -524,10 +528,10 @@ class PlaywrightScraper:
             return ScrapedPrice()
         soup = BeautifulSoup(html, "lxml")
         # Try LD+JSON first
-        price_val, currency = _extract_ld_json_price(soup)
+        price_val, currency, product_name = _extract_ld_json_price(soup)
         if price_val:
             price = _format_price(price_val, currency or "EUR")
-            return ScrapedPrice(price=price, url=url, found=True)
+            return ScrapedPrice(price=price, url=url, found=True, product_name=product_name)
         # Try to find product link then scrape it
         for link in soup.select("[class*='product'] a[href]")[:3]:
             href = link.get("href", "")
@@ -537,11 +541,11 @@ class PlaywrightScraper:
             product_html = self.get_page_html(product_url, wait_selector="[class*='price']", timeout=20000)
             if product_html:
                 product_soup = BeautifulSoup(product_html, "lxml")
-                pv, curr = _extract_ld_json_price(product_soup)
+                pv, curr, product_name = _extract_ld_json_price(product_soup)
                 if pv:
                     price = _format_price(pv, curr or "EUR")
                     logger.info(f"  [henryschein.ie] Playwright ✓ {price}")
-                    return ScrapedPrice(price=price, url=product_url, found=True)
+                    return ScrapedPrice(price=price, url=product_url, found=True, product_name=product_name)
                 # Fallback: look for price in text
                 for sel in ["[class*='price']", "[itemprop='price']"]:
                     el = product_soup.select_one(sel)
@@ -566,7 +570,7 @@ class PlaywrightScraper:
         if not html:
             return None
         soup = BeautifulSoup(html, "lxml")
-        price_val, currency = _extract_ld_json_price(soup)
+        price_val, currency, _ = _extract_ld_json_price(soup)
         if price_val:
             return _format_price(price_val, currency or "EUR")
         return None
@@ -631,6 +635,24 @@ def build_output_headers(existing_headers: list[str]) -> list[str]:
         "DentalSky Notes",
         "Dontalia Notes",
         "Henry Schein Notes",
+        # Competitor product name columns — for pack size verification
+        "DMI IE Product",
+        "DMI UK Product",
+        "DentalSky Product",
+        "Dontalia Product",
+        "Henry Schein Product",
+        # Pack size flag columns
+        "DMI IE Pack Flag",
+        "DMI UK Pack Flag",
+        "DentalSky Pack Flag",
+        "Dontalia Pack Flag",
+        "Henry Schein Pack Flag",
+        # Adjusted per-unit variance columns (only meaningful when pack sizes differ)
+        "DMI IE Adjusted Variance",
+        "DMI UK Adjusted Variance",
+        "DentalSky Adjusted Variance",
+        "Dontalia Adjusted Variance",
+        "Henry Schein Adjusted Variance",
     ]
     for col in new_cols:
         if col not in headers:
@@ -665,6 +687,66 @@ def _calc_variance(own_price_str: str, competitor_price_str: str) -> str:
     return "N/A"
 
 
+def _extract_pack_size(name: str) -> Optional[int]:
+    """
+    Extract pack/box quantity from a product name string.
+    e.g. "Needles 27g - Box100" → 100
+         "TePe Brushes - Pack36" → 36
+         "Syringe 4x3ml" → 4
+         "Each" → 1
+    Returns None if quantity cannot be determined.
+    """
+    if not name:
+        return None
+    name_lower = name.lower()
+    # "Each" or "single" = 1
+    if re.search(r'\beach\b|\bsingle\b', name_lower):
+        return 1
+    # "Box100", "Pack 500", "Pk25", "Bx50"
+    m = re.search(r'(?:box|pack|pk|bx)\s*(\d+)', name_lower)
+    if m:
+        return int(m.group(1))
+    # "100 pack", "50 box"
+    m = re.search(r'(\d+)\s*(?:pack|box|pk|bx)\b', name_lower)
+    if m:
+        return int(m.group(1))
+    # "4x3ml", "12x5ml" — multiplier pattern (e.g. Boutique kits)
+    m = re.search(r'(\d+)\s*x\s*\d', name_lower)
+    if m:
+        return int(m.group(1))
+    # Trailing "- 500" or "- 80" at end of name (some products use bare numbers)
+    m = re.search(r'-\s*(\d{2,4})\s*$', name.strip())
+    if m:
+        return int(m.group(1))
+    return None
+
+
+def _pack_size_flag(our_name: str, comp_name: str) -> tuple[str, Optional[int], Optional[int]]:
+    """
+    Compare pack sizes from our product name and competitor product name.
+    Returns (flag, our_qty, comp_qty) where flag is MATCH / MISMATCH / UNKNOWN.
+    """
+    our_qty = _extract_pack_size(our_name)
+    comp_qty = _extract_pack_size(comp_name)
+    if our_qty is None or comp_qty is None:
+        return "UNKNOWN", our_qty, comp_qty
+    if our_qty == comp_qty:
+        return "MATCH", our_qty, comp_qty
+    return f"MISMATCH (ours:{our_qty} theirs:{comp_qty})", our_qty, comp_qty
+
+
+def _calc_adjusted_variance(own_price_str: str, comp_price_str: str, own_qty: int, comp_qty: int) -> str:
+    """Per-unit variance after adjusting for pack size difference."""
+    own = _parse_price_value(own_price_str)
+    comp = _parse_price_value(comp_price_str)
+    if own and comp and comp > 0 and own_qty > 0 and comp_qty > 0:
+        own_unit = own / own_qty
+        comp_unit = comp / comp_qty
+        variance = ((own_unit - comp_unit) / comp_unit) * 100
+        return f"{variance:.1f}%"
+    return "N/A"
+
+
 # ---------------------------------------------------------------------------
 # Site configuration
 # ---------------------------------------------------------------------------
@@ -676,6 +758,9 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "DMI URL (IE)",
         "notes_col": "DMI IE Notes",
         "own_price_col": "Sales Price (€)",
+        "product_name_col": "DMI IE Product",
+        "pack_flag_col": "DMI IE Pack Flag",
+        "adj_variance_col": "DMI IE Adjusted Variance",
     },
     "dmi_uk": {
         "scraper_class": DMIUKScraper,
@@ -684,6 +769,9 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "DMI URL (UK)",
         "notes_col": "DMI UK Notes",
         "own_price_col": "Sales Price (£)",
+        "product_name_col": "DMI UK Product",
+        "pack_flag_col": "DMI UK Pack Flag",
+        "adj_variance_col": "DMI UK Adjusted Variance",
     },
     "dentalsky": {
         "scraper_class": DentalSkyScraper,
@@ -692,6 +780,9 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "DentalSky URL",
         "notes_col": "DentalSky Notes",
         "own_price_col": "Sales Price (£)",
+        "product_name_col": "DentalSky Product",
+        "pack_flag_col": "DentalSky Pack Flag",
+        "adj_variance_col": "DentalSky Adjusted Variance",
     },
     "dontalia": {
         "scraper_class": DontaliaScraper,
@@ -700,6 +791,9 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "Dontalia URL",
         "notes_col": "Dontalia Notes",
         "own_price_col": "Sales Price (€)",
+        "product_name_col": "Dontalia Product",
+        "pack_flag_col": "Dontalia Pack Flag",
+        "adj_variance_col": "Dontalia Adjusted Variance",
     },
     "henryschein": {
         "scraper_class": HenryScheinScraper,
@@ -708,6 +802,9 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "Henry Schein URL",
         "notes_col": "Henry Schein Notes",
         "own_price_col": "Sales Price (€)",
+        "product_name_col": "Henry Schein Product",
+        "pack_flag_col": "Henry Schein Pack Flag",
+        "adj_variance_col": "Henry Schein Adjusted Variance",
     },
 }
 
@@ -762,6 +859,9 @@ def run(
                 variance_col = cfg["variance_col"]
                 notes_col = cfg["notes_col"]
                 own_price_col = cfg["own_price_col"]
+                product_name_col = cfg["product_name_col"]
+                pack_flag_col = cfg["pack_flag_col"]
+                adj_variance_col = cfg["adj_variance_col"]
 
                 existing_price = (row.get(price_col) or "").strip()
                 if skip_existing and existing_price and existing_price.lower() not in ("n/a", ""):
@@ -813,6 +913,15 @@ def run(
                         row[url_col] = result.url
                     row[variance_col] = _calc_variance(row.get(own_price_col, ""), result.price)
                     row[notes_col] = ""
+                    if result.product_name:
+                        row[product_name_col] = result.product_name
+                        flag, our_qty, comp_qty = _pack_size_flag(row.get("Name", ""), result.product_name)
+                        row[pack_flag_col] = flag
+                        if our_qty and comp_qty and our_qty != comp_qty:
+                            row[adj_variance_col] = _calc_adjusted_variance(
+                                row.get(own_price_col, ""), result.price, our_qty, comp_qty
+                            )
+                            logger.info(f"  [{site_key}] Pack size mismatch: ours={our_qty} theirs={comp_qty} → adjusted variance: {row[adj_variance_col]}")
                     logger.info(f"  [{site_key}] ✓ {result.price}  (variance: {row[variance_col]})")
                 else:
                     if not existing_price or existing_price.lower() == "n/a":
