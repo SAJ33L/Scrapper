@@ -28,6 +28,7 @@ import argparse
 import csv
 import json
 import logging
+import os
 import random
 import re
 import sys
@@ -130,21 +131,41 @@ def _clean_url(url: Optional[str]) -> Optional[str]:
     return url if url.startswith("http") else None
 
 
-def _build_queries(part_number: str, product_name: str, manufacturer: str) -> list[str]:
+def _clean_product_name(name: str) -> str:
+    """Strip internal naming conventions to get a clean product name for searching."""
+    name = (name or "").strip()
+    # Strip leading # markers used internally (e.g. '#Colgate Duraphat...')
+    name = name.lstrip("#").strip()
+    # Strip trailing unit suffixes like ' - Each', ' - Pack6', ' - Box100'
+    name = re.sub(r"\s*-\s*(Each|Pack\s*\d*|Box\s*\d*|Tube|Roll|Bag|Kit|Set|Pair)\s*$", "", name, flags=re.IGNORECASE).strip()
+    # Strip trailing bare ' -' or '- '
+    name = re.sub(r"\s*-\s*$", "", name).strip()
+    return name
+
+
+def _build_queries(part_number: str, product_name: str, manufacturer: str, competitor_code: str = "") -> list[str]:
     queries = []
     pn = (part_number or "").strip()
-    name = (product_name or "").strip()
+    name = _clean_product_name(product_name)
     mfr = (manufacturer or "").strip()
+    cc = (competitor_code or "").strip()
 
+    # Competitor's own product code is most precise — try it first
+    if cc:
+        queries.append(cc)
+        # Also try without trailing letter variant suffix (e.g. 'COLG-850248A' → 'COLG-850248')
+        stripped = re.sub(r"[A-Z]$", "", cc).strip()
+        if stripped and stripped != cc:
+            queries.append(stripped)
     if pn:
         queries.append(pn)
     if mfr and pn:
         queries.append(f"{mfr} {pn}")
     if name:
-        short = name[:60].rsplit(" ", 1)[0]
+        short = name[:60].rsplit(" ", 1)[0].rstrip(" -")
         queries.append(short)
     if mfr and name:
-        short = name[:40].rsplit(" ", 1)[0]
+        short = name[:40].rsplit(" ", 1)[0].rstrip(" -")
         queries.append(f"{mfr} {short}")
 
     seen: set[str] = set()
@@ -154,6 +175,35 @@ def _build_queries(part_number: str, product_name: str, manufacturer: str) -> li
             seen.add(q)
             result.append(q)
     return result
+
+
+# Generic words that appear in many dental product names and should NOT be used
+# as the sole discriminating keyword for relevance checks.
+_RELEVANCE_STOPWORDS = {
+    "each", "pack", "tube", "varnish", "paste", "toothpaste", "fluoride",
+    "dental", "product", "with", "from", "size", "type", "mini", "single",
+    "standard", "units", "unit", "assorted", "mixed", "prophy",
+}
+
+
+def _relevance_keywords(query: str) -> list[str]:
+    """Extract significant (non-generic, >= 4 char, non-numeric) keywords from a search query."""
+    words = re.split(r"[\s\-_/()+]+", query.lower())
+    return [
+        w for w in words
+        if len(w) >= 4
+        and w not in _RELEVANCE_STOPWORDS
+        and not re.fullmatch(r"[\d]+[a-z]*", w)   # skip numbers/quantities like '5000', '10ml', '75g'
+    ]
+
+
+def _href_matches_query(href: str, query: str) -> bool:
+    """Return True if at least one significant keyword from query appears in the href slug."""
+    keywords = _relevance_keywords(query)
+    if not keywords:
+        return True  # no filtering possible — allow it
+    href_lower = href.lower()
+    return any(kw in href_lower for kw in keywords)
 
 
 # ---------------------------------------------------------------------------
@@ -251,24 +301,63 @@ class DMIScraper(BaseScraper):
     """
     dmi.ie / dmi.co.uk — custom commerce platform.
     Search: /categories.html?type=simple&name=QUERY
-    Product pages: have LD+JSON with schema.org/Product
+    Product pages: price is in span[class*=price] (LD+JSON lacks price for some products).
     """
 
-    def search(self, part_number: str, product_name: str, manufacturer: str) -> ScrapedPrice:
-        for query in _build_queries(part_number, product_name, manufacturer):
+    def scrape_price_from_url(self, url: str) -> tuple[Optional[str], Optional[str]]:
+        """DMI: try LD+JSON first, then HTML span[class*=price] fallback."""
+        soup = self._soup(url)
+        if not soup:
+            return None, None
+        price_val, currency, product_name = _extract_ld_json_price(soup)
+        if price_val:
+            return _format_price(price_val, currency or self.CURRENCY), product_name
+        # Fallback: DMI shows price in spans with 'price' in their class
+        for el in soup.select("span[class*=price]"):
+            text = el.get_text(strip=True)
+            m = re.search(r"(\d[\d,]*\.\d{2})", text)
+            if m:
+                val = float(m.group(1).replace(",", ""))
+                if val > 0:
+                    symbol = "£" if self.CURRENCY == "GBP" else "€"
+                    product_name_el = soup.select_one("h1")
+                    pname = product_name_el.get_text(strip=True) if product_name_el else None
+                    return f"{symbol}{val:.2f}", pname
+        return None, None
+
+    def search(self, part_number: str, product_name: str, manufacturer: str, competitor_code: str = "") -> ScrapedPrice:
+        for query in _build_queries(part_number, product_name, manufacturer, competitor_code):
             result = self._html_search(query)
             if result.found:
                 return result
         return ScrapedPrice()
+
+    def scrape_product(self, row: dict) -> ScrapedPrice:
+        existing_url = _clean_url(self._get_existing_url(row))
+        if existing_url:
+            price, product_name = self.scrape_price_from_url(existing_url)
+            if price:
+                logger.info(f"  [{self.SITE_NAME}] Direct URL ✓ {price}")
+                return ScrapedPrice(price=price, url=existing_url, found=True, product_name=product_name)
+            logger.info(f"  [{self.SITE_NAME}] Direct URL gave no price, trying search")
+        return self.search(
+            part_number=row.get("Part Number", ""),
+            product_name=row.get("Name", ""),
+            manufacturer=row.get("Manufacturer", ""),
+            competitor_code=row.get("DMI Code", ""),
+        )
 
     def _html_search(self, query: str) -> ScrapedPrice:
         url = urljoin(self.BASE_URL, "/categories.html")
         soup = self._soup(url, params={"type": "simple", "name": query})
         if not soup:
             return ScrapedPrice()
-        # Find product links on search results page
+        # Find product links on search results page, applying relevance check
         for a in soup.select("a[href*='/products/']"):
             href = a.get("href", "")
+            if not _href_matches_query(href, query):
+                logger.info(f"  [{self.SITE_NAME}] Skipping irrelevant result: {href[:60]}")
+                continue
             product_url = urljoin(self.BASE_URL, href.split("?")[0])
             price, product_name = self.scrape_price_from_url(product_url)
             if price:
@@ -622,6 +711,37 @@ def read_csv(path: str) -> tuple[list[dict], list[str]]:
     return rows, headers
 
 
+def read_excel(path: str) -> tuple[list[dict], list[str]]:
+    """
+    Read an Excel (.xlsx/.xls) file as input.
+    Maps common column name variants to what the scraper expects.
+    Returns (rows_as_dicts, fieldnames).
+    """
+    import pandas as pd
+
+    df = pd.read_excel(path, dtype=str)
+    df = df.fillna("")
+
+    # Column name mapping: Excel name → scraper name
+    col_map = {
+        "Product Group Description": "Product Group",
+        "Stock Unit Name": "Stock Unit",
+    }
+    df.rename(columns=col_map, inplace=True)
+
+    headers = list(df.columns)
+    rows = df.to_dict(orient="records")
+    return rows, headers
+
+
+def read_input(path: str) -> tuple[list[dict], list[str]]:
+    """Dispatch to read_csv or read_excel based on file extension."""
+    ext = os.path.splitext(path)[1].lower()
+    if ext in (".xlsx", ".xls"):
+        return read_excel(path)
+    return read_csv(path)
+
+
 def build_output_headers(existing_headers: list[str]) -> list[str]:
     """Add Henry Schein columns and per-site Notes columns if missing."""
     headers = list(existing_headers)
@@ -821,7 +941,7 @@ def run(
     use_playwright: bool = False,
 ):
     logger.info(f"Reading input: {input_path}")
-    rows, headers = read_csv(input_path)
+    rows, headers = read_input(input_path)
     output_headers = build_output_headers(headers)
 
     if limit:
@@ -882,6 +1002,7 @@ def run(
                                 row.get("Part Number", ""),
                                 row.get("Name", ""),
                                 row.get("Manufacturer", ""),
+                                row.get("Schein Code", ""),
                             ):
                                 result = pw_ctx.scrape_henryschein(q, row.get("Part Number", ""))
                                 if result.found:

@@ -4066,3 +4066,338 @@
 2026-03-17 11:46:55,833 [INFO]   dentalsky: 14/50 prices found
 2026-03-17 11:46:55,833 [INFO]   dontalia: 6/50 prices found
 2026-03-17 11:46:55,833 [INFO]   henryschein: 0/50 prices found
+2026-03-18 08:18:22,520 [INFO] Reading input: Competitor Product Code Comparisons.xlsx
+2026-03-18 08:18:24,843 [INFO] Limited to first 100 rows
+2026-03-18 08:18:24,843 [INFO] Registered scraper: dmi_ie
+2026-03-18 08:18:24,844 [INFO] Registered scraper: dmi_uk
+2026-03-18 08:18:24,844 [INFO] Registered scraper: dentalsky
+2026-03-18 08:18:24,844 [INFO] Registered scraper: dontalia
+2026-03-18 08:18:24,844 [INFO] Registered scraper: henryschein
+2026-03-18 08:18:24,844 [INFO] [1/100] MED030 — #Colgate Duraphat 2800 ppm Fluoride Toothpaste 6x75ml -Pack6
+2026-03-18 08:18:25,271 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Max retries exceeded with url: /categories.html?type=simple&name=CG211218 (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.ie', port=443): Failed to resolve 'www.dmi.ie' ([Errno -2] Name or service not known)"))
+2026-03-18 08:18:30,593 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 2): HTTPSConnectionPool(host='www.dmi.ie', port=443): Max retries exceeded with url: /categories.html?type=simple&name=CG211218 (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.ie', port=443): Failed to resolve 'www.dmi.ie' ([Errno -2] Name or service not known)"))
+2026-03-18 08:18:43,863 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:18:47,344 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:19:20,593 [INFO] Reading input: Competitor Product Code Comparisons.xlsx
+2026-03-18 08:19:22,116 [INFO] Limited to first 20 rows
+2026-03-18 08:19:22,116 [INFO] Registered scraper: dmi_ie
+2026-03-18 08:19:22,116 [INFO] Registered scraper: dmi_uk
+2026-03-18 08:19:22,117 [INFO] Registered scraper: dentalsky
+2026-03-18 08:19:22,117 [INFO] Registered scraper: dontalia
+2026-03-18 08:19:22,117 [INFO] Registered scraper: henryschein
+2026-03-18 08:19:22,117 [INFO] [1/20] MED030 — #Colgate Duraphat 2800 ppm Fluoride Toothpaste 6x75ml -Pack6
+2026-03-18 08:19:26,152 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:19:29,437 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:19:35,846 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:19:45,269 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:19:45,269 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:19:45,269 [INFO] [2/20] MED041 — #Colgate Duraphat 5000 ppm Fluoride Toothpaste - Each
+2026-03-18 08:19:52,272 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:19:55,952 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:20:02,853 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:20:09,626 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:20:09,626 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:20:09,626 [INFO] [3/20] MED023 — #Colgate Duraphat Varnish 10ml (FDE74600) - Each
+2026-03-18 08:20:21,943 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:20:27,394 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:20:32,812 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:20:40,660 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:20:40,661 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:20:40,661 [INFO] [4/20] AAA345 — #Dentsply Anestadent 4% 1:100,000 Solution 2.2ml (546) -Bx50
+2026-03-18 08:20:44,062 [INFO]   [dmi.ie] Search '546' ✓ €31.73
+2026-03-18 08:20:44,063 [INFO]   [dmi_ie] Pack size mismatch: ours=50 theirs=12 → adjusted variance: N/A
+2026-03-18 08:20:44,063 [INFO]   [dmi_ie] ✓ €31.73  (variance: N/A)
+2026-03-18 08:20:47,343 [INFO]   [dmi.co.uk] Search '546' ✓ £27.73
+2026-03-18 08:20:47,343 [INFO]   [dmi_uk] Pack size mismatch: ours=50 theirs=12 → adjusted variance: N/A
+2026-03-18 08:20:47,343 [INFO]   [dmi_uk] ✓ £27.73  (variance: N/A)
+2026-03-18 08:20:53,776 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:20:59,459 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:20:59,459 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:20:59,459 [INFO] [5/20] MED059 — #Dentsply Citanest 3% Standard 2.2ml - Box50
+2026-03-18 08:21:03,221 [INFO]   [dmi.ie] Search '585' ✓ €10.15
+2026-03-18 08:21:03,221 [INFO]   [dmi_ie] Pack size mismatch: ours=50 theirs=200 → adjusted variance: N/A
+2026-03-18 08:21:03,221 [INFO]   [dmi_ie] ✓ €10.15  (variance: N/A)
+2026-03-18 08:21:06,612 [INFO]   [dmi.co.uk] Search '585' ✓ £8.52
+2026-03-18 08:21:06,612 [INFO]   [dmi_uk] Pack size mismatch: ours=50 theirs=200 → adjusted variance: N/A
+2026-03-18 08:21:06,613 [INFO]   [dmi_uk] ✓ £8.52  (variance: N/A)
+2026-03-18 08:21:13,180 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:21:20,565 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:21:20,565 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:21:20,572 [INFO] [6/20] MED050 — #Dentsply Oraqix Gel (66312020UK) - Box20
+2026-03-18 08:21:26,481 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:21:33,952 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:21:37,502 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:21:43,540 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:21:43,540 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:21:43,540 [INFO] [7/20] MED060 — #Dentsply Xylocaine 2% Standard 2.2ml - Box50
+2026-03-18 08:21:46,792 [INFO]   [dmi.ie] Search '502' ✓ €211.26
+2026-03-18 08:21:46,792 [INFO]   [dmi_ie] ✓ €211.26  (variance: N/A)
+2026-03-18 08:21:50,913 [INFO]   [dmi.co.uk] Search '502' ✓ £175.00
+2026-03-18 08:21:50,913 [INFO]   [dmi_uk] ✓ £175.00  (variance: N/A)
+2026-03-18 08:21:58,209 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:22:05,469 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:22:05,470 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:22:05,470 [INFO] [8/20] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-18 08:22:08,372 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:22:12,765 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:22:19,790 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:22:25,657 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:22:25,658 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:22:25,658 [INFO] [9/20] EMED004 — #Eire Septodont Scandonest 3% Plain 2.2ml - Box50
+2026-03-18 08:22:28,126 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:22:31,161 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:22:36,285 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:22:40,760 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:22:40,761 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:22:40,761 [INFO] [10/20] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-18 08:22:45,190 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:22:47,689 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:22:55,869 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:23:01,335 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:23:01,335 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:23:01,336 [INFO] [11/20] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-18 08:23:04,464 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:23:08,634 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:23:13,247 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:23:21,267 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:23:21,268 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:23:21,268 [INFO] [12/20] MED034 — #GSK Corsodyl Gel 10x50g (60000000013832) - Pack10
+2026-03-18 08:23:24,264 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:23:27,512 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:23:31,439 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:23:37,604 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:23:37,604 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:23:37,604 [INFO] [13/20] MED035 — #GSK Corsodyl Mouthwash Mint 6x300ml (60000000108780) - Box6
+2026-03-18 08:23:50,632 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:23:57,946 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:24:04,853 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:24:11,127 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:24:11,127 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:24:11,128 [INFO] [14/20] MED031 — #GSK Corsodyl Mouthwash Original 6x300ml Alcohol Free
+2026-03-18 08:24:15,547 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:24:18,528 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:24:26,233 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:24:33,870 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:24:33,871 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:24:33,871 [INFO] [15/20] AGS118 — #Hospira Bacteriostatic 0.9% Sodium Chloride Vial 30ml
+2026-03-18 08:24:40,918 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:24:50,022 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:24:58,813 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:25:06,547 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:25:06,548 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:25:06,548 [INFO] [16/20] MED061 — #Hospira Bacteriostatic 0.9% Sodium Chloride Vial 30ml
+2026-03-18 08:25:10,715 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:25:13,642 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:25:22,179 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:25:28,098 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:25:28,099 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:25:28,106 [INFO] [17/20] MED045 — #Ledermix Dental Paste No.2 5g - Each
+2026-03-18 08:25:36,583 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:25:39,870 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:25:45,832 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:25:51,912 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:25:51,912 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:25:51,912 [INFO] [18/20] MED048D — #Ledermix Liquid Drpper
+2026-03-18 08:25:59,107 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:26:06,417 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:26:07,803 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:26:15,146 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:26:15,146 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:26:15,146 [INFO] [19/20] MED005 — #Septodont Lignospan 2% Special 1.8ml - Box50
+2026-03-18 08:26:18,941 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:26:23,753 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:26:32,564 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:26:39,775 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:26:39,776 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:26:39,776 [INFO] [20/20] MED008 — #Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-18 08:26:43,749 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:26:51,298 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:26:59,600 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:27:05,537 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:27:05,537 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:27:05,547 [INFO] Output written to: output_competitor_codes.csv
+2026-03-18 08:27:05,547 [INFO]   dmi_ie: 3/20 prices found
+2026-03-18 08:27:05,548 [INFO]   dmi_uk: 3/20 prices found
+2026-03-18 08:27:05,548 [INFO]   dentalsky: 0/20 prices found
+2026-03-18 08:27:05,549 [INFO]   dontalia: 0/20 prices found
+2026-03-18 08:27:05,549 [INFO]   henryschein: 0/20 prices found
+2026-03-18 08:35:09,593 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Max retries exceeded with url: /categories.html?type=simple&name=COLG-850248A (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.ie', port=443): Failed to resolve 'www.dmi.ie' ([Errno -2] Name or service not known)"))
+2026-03-18 08:38:26,111 [INFO]   [dmi.ie] Search 'COLG-850248' ✓ €139.00
+2026-03-18 08:41:51,270 [INFO]   [dmi.ie] Search 'Colgate Duraphat Varnish 10ml' ✓ €44.05
+2026-03-18 08:45:15,772 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Max retries exceeded with url: /categories.html?type=simple&name=COLG-850248A (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.ie', port=443): Failed to resolve 'www.dmi.ie' ([Errno -2] Name or service not known)"))
+2026-03-18 08:45:26,611 [INFO]   [dmi.ie] Search 'COLG-850248' ✓ €139.00
+2026-03-18 08:45:42,013 [INFO]   [dmi.ie] Search 'Colgate Duraphat Varnish 10ml' ✓ €44.05
+2026-03-18 08:46:28,531 [INFO]   [dmi.ie] Search 'COLG-850248' ✓ €139.00
+2026-03-18 08:46:40,710 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-mint-vo
+2026-03-18 08:46:40,710 [INFO]   [dmi.ie] Skipping irrelevant result: sites/admin/plugins/elfinder/files/dmi/products/downloads/DM
+2026-03-18 08:46:40,710 [INFO]   [dmi.ie] Skipping irrelevant result: sites/admin/plugins/elfinder/files/dmi/products/downloads/DM
+2026-03-18 08:46:40,710 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-melon-v
+2026-03-18 08:46:40,711 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-caramel
+2026-03-18 08:46:40,711 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-cherry-
+2026-03-18 08:46:40,711 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-mint-vo
+2026-03-18 08:46:40,711 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-varnish-4-x-10ml-tube-mixed-voco-2
+2026-03-18 08:47:39,054 [INFO] Reading input: Competitor Product Code Comparisons.xlsx
+2026-03-18 08:47:40,638 [INFO] Limited to first 20 rows
+2026-03-18 08:47:40,638 [INFO] Registered scraper: dmi_ie
+2026-03-18 08:47:40,638 [INFO] Registered scraper: dmi_uk
+2026-03-18 08:47:40,638 [INFO] Registered scraper: dentalsky
+2026-03-18 08:47:40,638 [INFO] Registered scraper: dontalia
+2026-03-18 08:47:40,639 [INFO] Registered scraper: henryschein
+2026-03-18 08:47:40,639 [INFO] [1/20] MED030 — #Colgate Duraphat 2800 ppm Fluoride Toothpaste 6x75ml -Pack6
+2026-03-18 08:47:44,469 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:47:47,359 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:47:55,516 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:48:00,637 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:48:00,637 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:48:00,638 [INFO] [2/20] MED041 — #Colgate Duraphat 5000 ppm Fluoride Toothpaste - Each
+2026-03-18 08:48:05,423 [INFO]   [dmi.ie] Search 'COLG-850248' ✓ €139.00
+2026-03-18 08:48:05,424 [INFO]   [dmi_ie] Pack size mismatch: ours=1 theirs=12 → adjusted variance: N/A
+2026-03-18 08:48:05,424 [INFO]   [dmi_ie] ✓ €139.00  (variance: N/A)
+2026-03-18 08:48:12,730 [INFO]   [dmi.co.uk] Search 'COLG-850248' ✓ £119.00
+2026-03-18 08:48:12,730 [INFO]   [dmi_uk] Pack size mismatch: ours=1 theirs=12 → adjusted variance: N/A
+2026-03-18 08:48:12,730 [INFO]   [dmi_uk] ✓ £119.00  (variance: N/A)
+2026-03-18 08:48:18,247 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:48:24,763 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:48:24,763 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:48:24,764 [INFO] [3/20] MED023 — #Colgate Duraphat Varnish 10ml (FDE74600) - Each
+2026-03-18 08:48:30,049 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-mint-vo
+2026-03-18 08:48:30,049 [INFO]   [dmi.ie] Skipping irrelevant result: sites/admin/plugins/elfinder/files/dmi/products/downloads/DM
+2026-03-18 08:48:30,049 [INFO]   [dmi.ie] Skipping irrelevant result: sites/admin/plugins/elfinder/files/dmi/products/downloads/DM
+2026-03-18 08:48:30,050 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-melon-v
+2026-03-18 08:48:30,050 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-caramel
+2026-03-18 08:48:30,050 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-cherry-
+2026-03-18 08:48:30,050 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-mint-vo
+2026-03-18 08:48:30,050 [INFO]   [dmi.ie] Skipping irrelevant result: /products/voco-profluorid-varnish-4-x-10ml-tube-mixed-voco-2
+2026-03-18 08:48:30,050 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:48:34,595 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-mint-vo
+2026-03-18 08:48:34,595 [INFO]   [dmi.co.uk] Skipping irrelevant result: sites/admin/plugins/elfinder/files/dmi/products/downloads/DM
+2026-03-18 08:48:34,595 [INFO]   [dmi.co.uk] Skipping irrelevant result: sites/admin/plugins/elfinder/files/dmi/products/downloads/DM
+2026-03-18 08:48:34,595 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-melon-v
+2026-03-18 08:48:34,595 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-caramel
+2026-03-18 08:48:34,595 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-cherry-
+2026-03-18 08:48:34,596 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/voco-profluorid-desensitising-varnish-10ml-mint-vo
+2026-03-18 08:48:34,596 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/voco-profluorid-varnish-4-x-10ml-tube-mixed-voco-2
+2026-03-18 08:48:34,596 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:48:38,588 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:48:44,431 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:48:44,432 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:48:44,432 [INFO] [4/20] AAA345 — #Dentsply Anestadent 4% 1:100,000 Solution 2.2ml (546) -Bx50
+2026-03-18 08:48:48,708 [INFO]   [dmi.ie] Search '546' ✓ €31.73
+2026-03-18 08:48:48,709 [INFO]   [dmi_ie] Pack size mismatch: ours=50 theirs=12 → adjusted variance: N/A
+2026-03-18 08:48:48,709 [INFO]   [dmi_ie] ✓ €31.73  (variance: N/A)
+2026-03-18 08:48:53,207 [INFO]   [dmi.co.uk] Search '546' ✓ £27.73
+2026-03-18 08:48:53,208 [INFO]   [dmi_uk] Pack size mismatch: ours=50 theirs=12 → adjusted variance: N/A
+2026-03-18 08:48:53,208 [INFO]   [dmi_uk] ✓ £27.73  (variance: N/A)
+2026-03-18 08:49:00,230 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:49:07,830 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:49:07,830 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:49:07,830 [INFO] [5/20] MED059 — #Dentsply Citanest 3% Standard 2.2ml - Box50
+2026-03-18 08:49:12,028 [INFO]   [dmi.ie] Search '585' ✓ €10.15
+2026-03-18 08:49:12,029 [INFO]   [dmi_ie] Pack size mismatch: ours=50 theirs=200 → adjusted variance: N/A
+2026-03-18 08:49:12,029 [INFO]   [dmi_ie] ✓ €10.15  (variance: N/A)
+2026-03-18 08:49:16,226 [INFO]   [dmi.co.uk] Search '585' ✓ £8.52
+2026-03-18 08:49:16,227 [INFO]   [dmi_uk] Pack size mismatch: ours=50 theirs=200 → adjusted variance: N/A
+2026-03-18 08:49:16,227 [INFO]   [dmi_uk] ✓ £8.52  (variance: N/A)
+2026-03-18 08:49:21,745 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:49:28,824 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:49:28,825 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:49:28,825 [INFO] [6/20] MED050 — #Dentsply Oraqix Gel (66312020UK) - Box20
+2026-03-18 08:49:50,665 [INFO]   [dmi.ie] Skipping irrelevant result: sites/admin/plugins/elfinder/files/dmi/products/downloads/DE
+2026-03-18 08:49:50,665 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:50:07,868 [INFO]   [dmi.co.uk] Skipping irrelevant result: sites/admin/plugins/elfinder/files/dmi/products/downloads/DE
+2026-03-18 08:50:07,868 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:50:11,731 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:50:17,590 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:50:17,590 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:50:17,591 [INFO] [7/20] MED060 — #Dentsply Xylocaine 2% Standard 2.2ml - Box50
+2026-03-18 08:50:25,346 [INFO]   [dmi.ie] Search '502' ✓ €211.26
+2026-03-18 08:50:25,346 [INFO]   [dmi_ie] ✓ €211.26  (variance: N/A)
+2026-03-18 08:50:34,082 [INFO]   [dmi.co.uk] Search '502' ✓ £175.00
+2026-03-18 08:50:34,082 [INFO]   [dmi_uk] ✓ £175.00  (variance: N/A)
+2026-03-18 08:50:41,924 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:50:47,981 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:50:47,981 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:50:47,982 [INFO] [8/20] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-18 08:51:02,502 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:51:17,997 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:51:25,744 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:51:31,603 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:51:31,604 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:51:31,604 [INFO] [9/20] EMED004 — #Eire Septodont Scandonest 3% Plain 2.2ml - Box50
+2026-03-18 08:51:38,171 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:51:47,372 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:51:53,292 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:51:58,644 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:51:58,645 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:51:58,645 [INFO] [10/20] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-18 08:52:09,691 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:52:18,498 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:52:23,665 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:52:29,411 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:52:29,412 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:52:29,412 [INFO] [11/20] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-18 08:52:38,671 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:52:47,496 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:52:51,970 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:52:59,228 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:52:59,228 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:52:59,229 [INFO] [12/20] MED034 — #GSK Corsodyl Gel 10x50g (60000000013832) - Pack10
+2026-03-18 08:53:03,963 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:53:06,546 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:53:10,474 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:53:16,892 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:53:16,893 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:53:16,893 [INFO] [13/20] MED035 — #GSK Corsodyl Mouthwash Mint 6x300ml (60000000108780) - Box6
+2026-03-18 08:53:21,578 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:53:23,907 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:53:30,161 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:53:35,065 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:53:35,065 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:53:35,065 [INFO] [14/20] MED031 — #GSK Corsodyl Mouthwash Original 6x300ml Alcohol Free
+2026-03-18 08:53:39,312 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:53:42,747 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:53:50,929 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:53:58,078 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:53:58,078 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:53:58,078 [INFO] [15/20] AGS118 — #Hospira Bacteriostatic 0.9% Sodium Chloride Vial 30ml
+2026-03-18 08:54:01,740 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:54:04,791 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:54:11,849 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:54:17,305 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:54:17,305 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:54:17,305 [INFO] [16/20] MED061 — #Hospira Bacteriostatic 0.9% Sodium Chloride Vial 30ml
+2026-03-18 08:54:20,180 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:54:23,105 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:54:30,082 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:54:34,408 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:54:34,408 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:54:34,408 [INFO] [17/20] MED045 — #Ledermix Dental Paste No.2 5g - Each
+2026-03-18 08:54:45,010 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:54:54,280 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:55:02,751 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:55:07,694 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:55:07,694 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:55:07,695 [INFO] [18/20] MED048D — #Ledermix Liquid Drpper
+2026-03-18 08:55:13,773 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:55:18,215 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:55:19,923 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:55:26,303 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:55:26,303 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:55:26,304 [INFO] [19/20] MED005 — #Septodont Lignospan 2% Special 1.8ml - Box50
+2026-03-18 08:55:31,816 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:55:39,802 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:55:48,828 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:55:56,452 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:55:56,452 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:55:56,452 [INFO] [20/20] MED008 — #Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-18 08:56:11,621 [INFO]   [dmi_ie] ✗ Not found
+2026-03-18 08:56:29,021 [INFO]   [dmi_uk] ✗ Not found
+2026-03-18 08:56:36,987 [INFO]   [dentalsky] ✗ Not found
+2026-03-18 08:56:44,856 [INFO]   [dontalia] ✗ Not found
+2026-03-18 08:56:44,856 [INFO]   [henryschein] ✗ Not found
+2026-03-18 08:56:44,858 [INFO] Output written to: output_competitor_codes_two.csv
+2026-03-18 08:56:44,859 [INFO]   dmi_ie: 4/20 prices found
+2026-03-18 08:56:44,859 [INFO]   dmi_uk: 4/20 prices found
+2026-03-18 08:56:44,859 [INFO]   dentalsky: 0/20 prices found
+2026-03-18 08:56:44,860 [INFO]   dontalia: 0/20 prices found
+2026-03-18 08:56:44,860 [INFO]   henryschein: 0/20 prices found
