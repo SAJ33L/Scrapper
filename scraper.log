@@ -3687,3 +3687,382 @@
 2026-03-17 11:06:13,827 [INFO] Output written to: test_output.csv
 2026-03-17 11:06:13,827 [INFO]   dmi_ie: 10/20 prices found
 2026-03-17 11:06:13,827 [INFO]   dentalsky: 8/20 prices found
+2026-03-17 11:16:48,357 [INFO] Reading input: Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv
+2026-03-17 11:16:48,363 [INFO] Limited to first 50 rows
+2026-03-17 11:16:48,363 [INFO] Registered scraper: dmi_ie
+2026-03-17 11:16:48,363 [INFO] Registered scraper: dmi_uk
+2026-03-17 11:16:48,364 [INFO] Registered scraper: dentalsky
+2026-03-17 11:16:48,364 [INFO] Registered scraper: dontalia
+2026-03-17 11:16:48,364 [INFO] Registered scraper: henryschein
+2026-03-17 11:16:48,364 [INFO] [1/50] 400060 — Six Month Smiles Lucid-Lok Lo Universal 1/2 Bracket - Each
+2026-03-17 11:16:56,093 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:17:05,110 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:17:16,809 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:17:21,511 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:17:21,511 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:17:21,511 [INFO] [2/50] 400063 — Six Month Smiles Lucid-Lok Universal 4/5 Bracket w/Hook
+2026-03-17 11:17:32,157 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:17:42,922 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:17:50,990 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:17:57,265 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:17:57,266 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:17:57,266 [INFO] [3/50] 670231 — Clinisept+ Skin 490ml - Each
+2026-03-17 11:18:06,711 [INFO]   [dmi.ie] Search 'Clinisept+ Skin 490ml -' ✓ €15.03
+2026-03-17 11:18:06,713 [INFO]   [dmi_ie] ✓ €15.03  (variance: -20.8%)
+2026-03-17 11:18:15,685 [INFO]   [dmi.co.uk] Search 'Clinisept+ Skin 490ml -' ✓ £12.32
+2026-03-17 11:18:15,686 [INFO]   [dmi_uk] ✓ £12.32  (variance: -16.6%)
+2026-03-17 11:18:17,695 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:18:22,359 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:18:22,359 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:18:22,360 [INFO] [4/50] AA009 — Septodont Septoject XL Needles 27g Long 0.4x35mm - Box100
+2026-03-17 11:18:24,095 [INFO]   [dmi.ie] Direct URL ✓ €27.39
+2026-03-17 11:18:24,095 [INFO]   [dmi_ie] ✓ €27.39  (variance: -31.2%)
+2026-03-17 11:18:25,704 [INFO]   [dmi.co.uk] Direct URL ✓ £22.18
+2026-03-17 11:18:25,705 [INFO]   [dmi_uk] ✓ £22.18  (variance: -26.8%)
+2026-03-17 11:18:33,230 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:18:34,424 [INFO]   [dontalia.com] Direct URL ✓ €17.00
+2026-03-17 11:18:34,424 [INFO]   [dontalia] ✓ €17.00  (variance: 10.8%)
+2026-03-17 11:18:34,424 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:18:34,424 [INFO] [5/50] AA011 — Septodont Septoject XL Needles 30g Short 0.3x25mm - Box100
+2026-03-17 11:18:43,513 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:18:45,066 [INFO]   [dmi.co.uk] Direct URL ✓ £22.18
+2026-03-17 11:18:45,066 [INFO]   [dmi_uk] ✓ £22.18  (variance: -26.8%)
+2026-03-17 11:18:53,104 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:18:54,257 [INFO]   [dontalia.com] Direct URL ✓ €17.00
+2026-03-17 11:18:54,257 [INFO]   [dontalia] ✓ €17.00  (variance: 10.8%)
+2026-03-17 11:18:54,257 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:18:54,257 [INFO] [6/50] AA021 — J&S Davis Solo Dental Needle 30g Short 0.3x23mm - Box100
+2026-03-17 11:18:55,678 [INFO]   [dmi.ie] Direct URL ✓ €25.58
+2026-03-17 11:18:55,678 [INFO]   [dmi_ie] ✓ €25.58  (variance: -38.8%)
+2026-03-17 11:18:57,172 [INFO]   [dmi.co.uk] Direct URL ✓ £21.72
+2026-03-17 11:18:57,172 [INFO]   [dmi_uk] ✓ £21.72  (variance: -37.8%)
+2026-03-17 11:19:00,282 [INFO]   [dentalsky.com] Direct URL ✓ £16.74
+2026-03-17 11:19:00,282 [INFO]   [dentalsky] ✓ £16.74  (variance: -19.4%)
+2026-03-17 11:19:07,384 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:19:07,385 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:19:07,385 [INFO] [7/50] AA032 — Septodont Septoject Needles 27g Long - Box100
+2026-03-17 11:19:16,995 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:19:18,643 [INFO]   [dmi.co.uk] Direct URL ✓ £16.97
+2026-03-17 11:19:18,643 [INFO]   [dmi_uk] Pack size mismatch: ours=100 theirs=40 → adjusted variance: -67.7%
+2026-03-17 11:19:18,643 [INFO]   [dmi_uk] ✓ £16.97  (variance: -19.2%)
+2026-03-17 11:19:25,861 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:19:27,433 [INFO]   [dontalia.com] Direct URL ✓ €8.41
+2026-03-17 11:19:27,433 [INFO]   [dontalia] ✓ €8.41  (variance: 89.3%)
+2026-03-17 11:19:27,433 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:19:27,433 [INFO] [8/50] AA034 — Septodont Septoject Needles 30g Short - Box100
+2026-03-17 11:19:37,696 [INFO]   [dmi.ie] Search 'Septodont Septoject Needles 30g Short -' ✓ €27.39
+2026-03-17 11:19:37,696 [INFO]   [dmi_ie] ✓ €27.39  (variance: -48.4%)
+2026-03-17 11:19:45,066 [INFO]   [dmi.co.uk] Search 'Septodont Septoject Needles 30g Short -' ✓ £22.18
+2026-03-17 11:19:45,067 [INFO]   [dmi_uk] ✓ £22.18  (variance: -45.0%)
+2026-03-17 11:19:50,230 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:19:51,421 [INFO]   [dontalia.com] Direct URL ✓ €8.41
+2026-03-17 11:19:51,421 [INFO]   [dontalia] ✓ €8.41  (variance: 68.1%)
+2026-03-17 11:19:51,421 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:19:51,421 [INFO] [9/50] AA097 — UnoDent Sterile Dental Needle 30GS 0.3 x 21mm (ANU030)
+2026-03-17 11:20:02,864 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:20:12,053 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:20:20,933 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:20:27,062 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:20:27,062 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:20:27,062 [INFO] [10/50] AA105 — BD Venflon Peripheral IV Catheter w/ Port Blue 22Gx25mm-Each
+2026-03-17 11:20:28,617 [INFO]   [dmi.ie] Direct URL ✓ €117.26
+2026-03-17 11:20:28,618 [INFO]   [dmi_ie] Pack size mismatch: ours=1 theirs=50 → adjusted variance: -0.6%
+2026-03-17 11:20:28,618 [INFO]   [dmi_ie] ✓ €117.26  (variance: -98.0%)
+2026-03-17 11:20:36,568 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:20:38,624 [INFO]   [dentalsky.com] Direct URL gave no price, trying search
+2026-03-17 11:20:48,500 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:20:54,687 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:20:54,687 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:20:54,687 [INFO] [11/50] AA120 — BD Micro-Fine + Insulin Syringe 0.3ml Needle 30Gx8mm -Box100
+2026-03-17 11:21:03,886 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:21:12,604 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:21:19,426 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:21:25,562 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:21:25,563 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:21:25,563 [INFO] [12/50] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-17 11:21:32,363 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:21:42,090 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:21:49,271 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:21:56,141 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:21:56,142 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:21:56,142 [INFO] [13/50] AA132 — 4T Medical FMS 32G Fine Micro Syringe 0.5ml - Box100
+2026-03-17 11:22:00,727 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:22:04,328 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:22:09,861 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:22:17,607 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:22:17,607 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:22:17,608 [INFO] [14/50] AAA345 — #Dentsply Anestadent 4% 1:100,000 Solution 2.2ml (546) -Bx50
+2026-03-17 11:22:20,622 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-17 11:22:23,191 [INFO]   [dmi.ie] Search '546' ✓ €31.73
+2026-03-17 11:22:23,191 [INFO]   [dmi_ie] Pack size mismatch: ours=50 theirs=12 → adjusted variance: -79.7%
+2026-03-17 11:22:23,191 [INFO]   [dmi_ie] ✓ €31.73  (variance: -15.4%)
+2026-03-17 11:22:26,071 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-03-17 11:22:29,974 [INFO]   [dmi.co.uk] Search '546' ✓ £27.73
+2026-03-17 11:22:29,975 [INFO]   [dmi_uk] Pack size mismatch: ours=50 theirs=12 → adjusted variance: -80.0%
+2026-03-17 11:22:29,975 [INFO]   [dmi_uk] ✓ £27.73  (variance: -16.5%)
+2026-03-17 11:22:31,952 [INFO]   [dentalsky.com] Direct URL gave no price, trying search
+2026-03-17 11:22:40,553 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:22:48,229 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:22:48,229 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:22:48,230 [INFO] [15/50] ABG008A — Perfection Plus Bib Roll Paper-Plastic Blue PP002/0020 - 80
+2026-03-17 11:22:50,260 [INFO]   [dmi.ie] Direct URL ✓ €16.41
+2026-03-17 11:22:50,260 [INFO]   [dmi_ie] ✓ €16.41  (variance: -29.3%)
+2026-03-17 11:22:52,022 [INFO]   [dmi.co.uk] Direct URL ✓ £14.40
+2026-03-17 11:22:52,022 [INFO]   [dmi_uk] ✓ £14.40  (variance: -30.6%)
+2026-03-17 11:23:01,353 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:23:07,984 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:23:07,985 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:23:07,985 [INFO] [16/50] ABG012A — HPC Healthline Gloves Powder Free Small GN31 - Box100
+2026-03-17 11:23:16,706 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:23:23,890 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:23:50,096 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/hpc-healthline-gloves-powder-free-small-gn31-box100.html (attempt 1)
+2026-03-17 11:23:55,548 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/hpc-healthline-gloves-powder-free-small-gn31-box100.html (attempt 2)
+2026-03-17 11:24:06,096 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/hpc-healthline-gloves-powder-free-small-gn31-box100.html (attempt 3)
+2026-03-17 11:24:08,812 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/hpc-healthline-gloves-powder-free-small.html (attempt 1)
+2026-03-17 11:24:14,179 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/hpc-healthline-gloves-powder-free-small.html (attempt 2)
+2026-03-17 11:24:28,274 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:24:33,861 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:24:33,861 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:24:33,862 [INFO] [17/50] ABG013A — HPC Healthline Gloves Powder Free Medium GN31 - Box100
+2026-03-17 11:24:44,367 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:24:50,831 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:24:58,984 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:25:05,198 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:25:05,199 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:25:05,199 [INFO] [18/50] ABG014A — HPC Healthline Gloves Powder Free Large GN31 - Box100
+2026-03-17 11:25:14,677 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:25:24,186 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:25:31,534 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:25:37,353 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:25:37,353 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:25:37,354 [INFO] [19/50] ABG020 — Pegasus Velcro Dental Bib Blue - Each
+2026-03-17 11:25:40,608 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-17 11:25:51,347 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:25:54,217 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-03-17 11:26:03,034 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:26:05,282 [INFO]   [dentalsky.com] Direct URL gave no price, trying search
+2026-03-17 11:26:10,469 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:26:18,058 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:26:18,058 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:26:18,058 [INFO] [20/50] ABG031B — HPC HandSafe White Nitrile Gloves Small (GN92) - Box200
+2026-03-17 11:26:28,164 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:26:37,829 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:26:46,305 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:26:52,722 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:26:52,722 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:26:52,723 [INFO] [21/50] ABG033A — HPC HandSafe White Nitrile Gloves Medium (GN92) - Box200
+2026-03-17 11:26:59,163 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:27:07,212 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:27:12,845 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:27:18,303 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:27:18,303 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:27:18,303 [INFO] [22/50] ABG163A — HPC HandSafe Blue Nitrile Gloves P/Free Small GN90 - Box200
+2026-03-17 11:27:26,878 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:27:36,463 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:27:44,904 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:27:50,816 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:27:50,817 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:27:50,818 [INFO] [23/50] ABG164A — HPC HandSafe Blue Nitrile Gloves P/Free Medium GN90 - Box200
+2026-03-17 11:27:58,109 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:28:06,505 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:28:15,100 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:28:20,416 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:28:20,416 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:28:20,416 [INFO] [24/50] ABG165A — HPC HandSafe Blue Nitrile Gloves P/Free Large GN90 - Box200
+2026-03-17 11:28:29,137 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:28:40,523 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:28:48,685 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:28:55,828 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:28:55,829 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:28:55,829 [INFO] [25/50] ABG205 — Perfection Plus Serviette Bibs Lilac (PP002/0075) - Pack 500
+2026-03-17 11:28:57,417 [INFO]   [dmi.ie] Direct URL ✓ €31.22
+2026-03-17 11:28:57,417 [INFO]   [dmi_ie] ✓ €31.22  (variance: -36.8%)
+2026-03-17 11:28:58,985 [INFO]   [dmi.co.uk] Direct URL ✓ £26.50
+2026-03-17 11:28:58,985 [INFO]   [dmi_uk] ✓ £26.50  (variance: -35.8%)
+2026-03-17 11:29:07,027 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:29:15,109 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:29:15,109 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:29:15,109 [INFO] [26/50] ABG214 — Perfection Plus Serviette Bibs Dark Blue (PP002/0076) - 500
+2026-03-17 11:29:16,907 [INFO]   [dmi.ie] Direct URL ✓ €29.74
+2026-03-17 11:29:16,907 [INFO]   [dmi_ie] ✓ €29.74  (variance: -33.7%)
+2026-03-17 11:29:18,764 [INFO]   [dmi.co.uk] Direct URL ✓ £26.12
+2026-03-17 11:29:18,765 [INFO]   [dmi_uk] ✓ £26.12  (variance: -34.9%)
+2026-03-17 11:29:21,407 [INFO]   [dentalsky.com] Direct URL ✓ £29.58
+2026-03-17 11:29:21,407 [INFO]   [dentalsky] ✓ £29.58  (variance: -42.5%)
+2026-03-17 11:29:26,928 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:29:26,928 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:29:26,929 [INFO] [27/50] ABG246 — UnoDent Surgical Gown Kit (COP410) - Each
+2026-03-17 11:29:34,535 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:29:44,098 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:29:49,409 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:29:57,224 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:29:57,225 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:29:57,225 [INFO] [28/50] ABG290 — Perfection Plus Serviette Bibs Blue (PP002/0060) - Pack500
+2026-03-17 11:29:59,696 [INFO]   [dmi.ie] Direct URL ✓ €29.74
+2026-03-17 11:29:59,696 [INFO]   [dmi_ie] ✓ €29.74  (variance: -33.7%)
+2026-03-17 11:30:00,672 [INFO]   [dmi.co.uk] Direct URL ✓ €29.74
+2026-03-17 11:30:00,672 [INFO]   [dmi_uk] ✓ €29.74  (variance: -42.8%)
+2026-03-17 11:30:03,426 [INFO]   [dentalsky.com] Direct URL ✓ £29.58
+2026-03-17 11:30:03,426 [INFO]   [dentalsky] ✓ £29.58  (variance: -42.5%)
+2026-03-17 11:30:08,667 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:30:08,667 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:30:08,667 [INFO] [29/50] ABG313 — Cumberland Surgical Universal Sterile Drape Kit - Each
+2026-03-17 11:30:18,799 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:30:27,729 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:30:35,261 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:30:40,970 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:30:40,971 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:30:40,971 [INFO] [30/50] ABG353 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Large
+2026-03-17 11:30:50,551 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:30:59,946 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:31:07,619 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:31:14,861 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:31:14,862 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:31:14,862 [INFO] [31/50] ABG355 — Meditrade Nitril Sensory Blue Nitrile Glove X-Small - Box200
+2026-03-17 11:31:22,715 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:31:28,845 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:31:36,587 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:31:43,944 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:31:43,944 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:31:43,945 [INFO] [32/50] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-03-17 11:31:54,144 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:32:02,309 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:32:09,216 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:32:13,675 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:32:13,675 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:32:13,676 [INFO] [33/50] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-03-17 11:32:22,313 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:32:33,670 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:32:41,043 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:32:47,085 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:32:47,085 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:32:47,085 [INFO] [34/50] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-03-17 11:32:56,005 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:33:03,575 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:33:13,156 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:33:19,559 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:33:19,559 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:33:19,560 [INFO] [35/50] ANP030 — Perfection Plus EasiJect Sterile Needles 30Gx21mm (013/0208)
+2026-03-17 11:33:20,909 [INFO]   [dmi.ie] Direct URL ✓ €8.81
+2026-03-17 11:33:20,909 [INFO]   [dmi_ie] ✓ €8.81  (variance: -21.1%)
+2026-03-17 11:33:22,479 [INFO]   [dmi.co.uk] Direct URL ✓ £7.36
+2026-03-17 11:33:22,480 [INFO]   [dmi_uk] ✓ £7.36  (variance: -18.6%)
+2026-03-17 11:33:25,087 [INFO]   [dentalsky.com] Direct URL ✓ £8.82
+2026-03-17 11:33:25,087 [INFO]   [dentalsky] ✓ £8.82  (variance: -32.1%)
+2026-03-17 11:33:30,612 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:33:30,613 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:33:30,614 [INFO] [36/50] ASD262 — Septodont Ultra Safety Plus Twist Needles 27g Long - Box100
+2026-03-17 11:33:44,253 [INFO]   [dmi.ie] Search 'Septodont Septodont Ultra Safety Plus Twist' ✓ €62.04
+2026-03-17 11:33:44,253 [INFO]   [dmi_ie] ✓ €62.04  (variance: -38.0%)
+2026-03-17 11:33:45,995 [INFO]   [dmi.co.uk] Direct URL ✓ £49.90
+2026-03-17 11:33:45,995 [INFO]   [dmi_uk] ✓ £49.90  (variance: -33.5%)
+2026-03-17 11:33:54,382 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:33:55,507 [INFO]   [dontalia.com] Direct URL ✓ €49.94
+2026-03-17 11:33:55,507 [INFO]   [dontalia] ✓ €49.94  (variance: -22.9%)
+2026-03-17 11:33:55,507 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:33:55,507 [INFO] [37/50] ASD264 — Septodont Ultra Safety Plus Twist Needles 30g Short - Box100
+2026-03-17 11:34:03,957 [INFO]   [dmi.ie] Search 'Septodont Ultra Safety Plus Twist Needles 30g Short -' ✓ €62.04
+2026-03-17 11:34:03,958 [INFO]   [dmi_ie] ✓ €62.04  (variance: -38.0%)
+2026-03-17 11:34:05,525 [INFO]   [dmi.co.uk] Direct URL ✓ £49.90
+2026-03-17 11:34:05,525 [INFO]   [dmi_uk] ✓ £49.90  (variance: -33.5%)
+2026-03-17 11:34:14,206 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:34:15,346 [INFO]   [dontalia.com] Direct URL ✓ €49.94
+2026-03-17 11:34:15,346 [INFO]   [dontalia] ✓ €49.94  (variance: -22.9%)
+2026-03-17 11:34:15,346 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:34:15,346 [INFO] [38/50] BJM006 — UnoDent Gold Diamond Bur Football FG Fine 257/020 - Each
+2026-03-17 11:34:24,874 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:34:34,480 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:34:40,392 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:34:45,964 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:34:45,964 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:34:45,964 [INFO] [39/50] BJM440 — UnoDent Gold Diamond Bur Flame FG Extra Fine 249/012 - Each
+2026-03-17 11:34:55,960 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:35:04,466 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:35:10,318 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:35:18,358 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:35:18,358 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:35:18,359 [INFO] [40/50] BLRG26 — Perfection Plus Steel Bur Round RA No.6 (001/9106)-Pack25
+2026-03-17 11:35:25,521 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:35:37,586 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:35:39,756 [INFO]   [dentalsky.com] Direct URL ✓ £16.74
+2026-03-17 11:35:39,757 [INFO]   [dentalsky] ✓ £16.74  (variance: -28.6%)
+2026-03-17 11:35:44,510 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:35:44,511 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:35:44,511 [INFO] [41/50] BOU001 — Boutique Whitening Kit By Day 6% HP 4x3ml
+2026-03-17 11:35:46,120 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-17 11:36:26,733 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:36:28,450 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-03-17 11:37:06,178 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:37:15,699 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:37:22,378 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:37:22,378 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:37:22,379 [INFO] [42/50] BOU002 — Boutique Whitening Kit By Night 10% CP 4x3ml
+2026-03-17 11:37:24,111 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-17 11:38:04,692 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:38:06,641 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-03-17 11:38:45,497 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:38:55,150 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:39:03,455 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:39:03,455 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:39:03,455 [INFO] [43/50] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-03-17 11:39:05,173 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-17 11:39:16,626 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:39:18,335 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-03-17 11:39:31,371 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:39:41,105 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:39:48,408 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:39:48,408 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:39:48,409 [INFO] [44/50] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-03-17 11:39:50,154 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-17 11:40:21,656 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:40:23,711 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-03-17 11:40:56,468 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:41:05,041 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:41:10,045 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:41:10,046 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:41:10,046 [INFO] [45/50] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-03-17 11:41:11,933 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-17 11:42:11,078 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:42:12,683 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-03-17 11:43:03,781 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:43:11,657 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:43:17,909 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:43:17,909 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:43:17,910 [INFO] [46/50] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-03-17 11:43:19,623 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-17 11:43:57,927 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:44:00,047 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-03-17 11:44:37,768 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:44:44,832 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:44:50,085 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:44:50,086 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:44:50,087 [INFO] [47/50] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-03-17 11:44:58,466 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:45:07,236 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:45:16,770 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:45:21,006 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:45:21,006 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:45:21,007 [INFO] [48/50] BOU011 — Boutique Whitening Top Up Case By Night 10% CP 2x3ml
+2026-03-17 11:45:30,324 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:45:38,570 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:45:46,559 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:45:54,473 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:45:54,473 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:45:54,474 [INFO] [49/50] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-17 11:46:03,582 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:46:13,506 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:46:22,877 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:46:28,349 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:46:28,349 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:46:28,356 [INFO] [50/50] BOU019 — Boutique Whitening Top Up Case By Day 6% HP 3x3ml
+2026-03-17 11:46:34,656 [INFO]   [dmi_ie] ✗ Not found
+2026-03-17 11:46:43,090 [INFO]   [dmi_uk] ✗ Not found
+2026-03-17 11:46:50,099 [INFO]   [dentalsky] ✗ Not found
+2026-03-17 11:46:55,818 [INFO]   [dontalia] ✗ Not found
+2026-03-17 11:46:55,819 [INFO]   [henryschein] ✗ Not found
+2026-03-17 11:46:55,831 [INFO] Output written to: output_prices.csv
+2026-03-17 11:46:55,832 [INFO]   dmi_ie: 22/50 prices found
+2026-03-17 11:46:55,832 [INFO]   dmi_uk: 21/50 prices found
+2026-03-17 11:46:55,833 [INFO]   dentalsky: 14/50 prices found
+2026-03-17 11:46:55,833 [INFO]   dontalia: 6/50 prices found
+2026-03-17 11:46:55,833 [INFO]   henryschein: 0/50 prices found

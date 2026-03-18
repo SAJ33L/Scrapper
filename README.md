@@ -10,7 +10,8 @@ Reads your input CSV of ~300 dental products and for each product:
 1. Uses existing competitor URLs in the CSV to scrape prices directly
 2. Falls back to site search when no URL is available
 3. Calculates variance (your price vs competitor price)
-4. Outputs a new CSV with all prices filled in
+4. Detects pack size mismatches and calculates adjusted per-unit variance
+5. Outputs a new CSV with all prices, flags, and competitor product names filled in
 
 ---
 
@@ -28,7 +29,7 @@ Reads your input CSV of ~300 dental products and for each product:
 
 ## Output Columns
 
-The output CSV contains all original columns plus Henry Schein, which is newly added:
+The output CSV contains all original columns plus the following per site:
 
 | Column | Description |
 |--------|-------------|
@@ -42,24 +43,18 @@ The output CSV contains all original columns plus Henry Schein, which is newly a
 | Sales Price (£) | Your GBP selling price |
 | Sales Price (€) | Your EUR selling price |
 | Margin | Your margin % |
-| DMI Sales Price (€) | dmi.ie price |
+| DMI Sales Price (€) | dmi.ie scraped price |
 | Variance (DMI IE) | % difference vs your EUR price |
 | DMI URL (IE) | dmi.ie product URL |
-| DentalSky Sales Price (£) | dentalsky.com price |
-| Variance (DentalSky) | % difference vs your GBP price |
-| DentalSky URL | dentalsky.com product URL |
-| Dontalia Sales Price (€) | dontalia.com price |
-| Variance (Dontalia) | % difference vs your EUR price |
-| Dontalia URL | dontalia.com product URL |
-| DMI Sales Price (£) | dmi.co.uk price |
-| Variance (DMI UK) | % difference vs your GBP price |
-| DMI URL (UK) | dmi.co.uk product URL |
-| Henry Schein Sales Price (€) | henryschein.ie price *(new)* |
-| Variance (Henry Schein) | % difference vs your EUR price *(new)* |
-| Henry Schein URL | henryschein.ie product URL *(new)* |
+| DMI IE Product | Competitor product title (for pack size verification) |
+| DMI IE Pack Flag | `MATCH` / `MISMATCH (ours:100 theirs:50)` / `UNKNOWN` |
+| DMI IE Adjusted Variance | Per-unit variance when pack sizes differ |
+| *(same columns repeated for DMI UK, DentalSky, Dontalia, Henry Schein)* | |
 
 > **Variance formula:** `(your price − competitor price) / competitor price × 100`
 > Positive = competitor is cheaper than you. Negative = you are cheaper than competitor.
+
+> **Adjusted Variance** is only filled when a pack size mismatch is detected — it recalculates variance on a per-unit basis so you're comparing like for like.
 
 ---
 
@@ -71,47 +66,73 @@ The output CSV contains all original columns plus Henry Schein, which is newly a
 
 ### Install
 
-**Option A — run the setup script (Windows):**
-```bat
-setup.bat
-```
-
-**Option B — manual:**
+**Linux/Mac:**
 ```bash
+python -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 playwright install chromium   # only needed for --playwright mode
+```
+
+**Windows:**
+```bat
+setup.bat
 ```
 
 ---
 
 ## Usage
 
-### Basic run (all products, all sites except Henry Schein)
+### 1. Activate the virtual environment first
+```bash
+source .venv/bin/activate       # Linux/Mac
+.venv\Scripts\activate          # Windows
+```
+
+---
+
+### 2. Basic run (all products, all sites except Henry Schein)
 ```bash
 python scraper.py
 ```
-Reads `Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv` and writes `output_prices.csv`.
+- Reads the default input CSV
+- Skips products that already have prices (faster re-runs)
+- Writes results to `output_prices.csv`
 
 ---
 
-### Full run including Henry Schein
+### 3. Full run including Henry Schein
 ```bash
 python scraper.py --playwright
 ```
-Launches a headless Chromium browser to handle JavaScript-rendered pages (Henry Schein, and search on DentalSky/Dontalia).
+Launches a headless Chromium browser to handle JavaScript-rendered pages (Henry Schein, and proper search on DentalSky/Dontalia).
 
 ---
 
-### Test on a small batch first
+### 4. Test on a small batch first (recommended)
 ```bash
 python scraper.py --limit 10
 ```
-Only processes the first 10 rows — useful for testing before a full run.
+Only processes the first 10 rows. Always do this before a full run to check everything is working.
 
 ---
 
-### Specific sites only
+### 5. Re-scrape everything including existing prices
+By default the scraper skips rows that already have a price. Use this to force a full fresh scrape:
 ```bash
+python scraper.py --no-skip-existing
+```
+
+Combined with a limit (recommended for testing):
+```bash
+python scraper.py --no-skip-existing --limit 50
+```
+
+---
+
+### 6. Specific sites only
+```bash
+python scraper.py --sites dmi_ie
 python scraper.py --sites dmi_ie dmi_uk
 python scraper.py --sites dentalsky dontalia
 python scraper.py --sites henryschein --playwright
@@ -121,32 +142,83 @@ Available site keys: `dmi_ie`, `dmi_uk`, `dentalsky`, `dontalia`, `henryschein`
 
 ---
 
-### Custom input/output files
+### 7. Custom input/output files
 ```bash
 python scraper.py --input "my_products.csv" --output "results.csv"
 ```
 
 ---
 
-### Re-scrape products that already have prices
-By default the scraper skips any product that already has a price filled in (to save time on re-runs). To force a full re-scrape:
+### 8. Combining multiple flags
+Flags can be combined freely. Examples:
+
 ```bash
-python scraper.py --no-skip-existing
+# Re-scrape first 100 rows on DMI sites only
+python scraper.py --sites dmi_ie dmi_uk --no-skip-existing --limit 100
+
+# Full re-scrape of all 5 sites including Henry Schein
+python scraper.py --playwright --no-skip-existing
+
+# Test Henry Schein on 5 rows before committing to a full run
+python scraper.py --sites henryschein --playwright --limit 5
+
+# Save output to a separate file without overwriting main results
+python scraper.py --sites dentalsky --output dentalsky_results.csv --limit 50
 ```
 
 ---
 
-### All options
-```
-python scraper.py --help
+### 9. Run sites in parallel (saves time)
+Open 4 terminal windows and run each simultaneously:
 
-  --input FILE        Input CSV file (default: the Price Benchmarking CSV)
-  --output FILE       Output CSV file (default: output_prices.csv)
-  --sites SITE [...]  Which sites to scrape (default: all 5)
-  --limit N           Only process first N rows (for testing)
-  --playwright        Enable Playwright for JS-heavy sites
-  --no-skip-existing  Re-scrape even where prices already exist
+```bash
+# Terminal 1
+python scraper.py --sites dmi_ie dmi_uk --output out_dmi.csv
+
+# Terminal 2
+python scraper.py --sites dentalsky --output out_dentalsky.csv
+
+# Terminal 3
+python scraper.py --sites dontalia --playwright --output out_dontalia.csv
+
+# Terminal 4
+python scraper.py --sites henryschein --playwright --output out_henryschein.csv
 ```
+
+Then merge the 4 output CSVs in Excel or Google Sheets.
+
+---
+
+### All flags reference
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--input FILE` | Price Benchmarking CSV | Input CSV file to read products from |
+| `--output FILE` | `output_prices.csv` | Output CSV file to write results to |
+| `--sites SITE [...]` | all 5 sites | Which sites to scrape |
+| `--limit N` | all rows | Only process first N rows |
+| `--playwright` | off | Enable headless browser (required for Henry Schein; improves DentalSky/Dontalia search) |
+| `--no-skip-existing` | off | Re-scrape even where prices already exist |
+
+---
+
+## Understanding the Output
+
+### Variance column
+- **Negative** (e.g. `-20%`) = you are cheaper than the competitor
+- **Positive** (e.g. `+30%`) = competitor is cheaper than you
+
+### Pack Flag column
+| Value | Meaning |
+|-------|---------|
+| `MATCH` | Both products are the same pack size — variance is a true price difference |
+| `MISMATCH (ours:1 theirs:50)` | Different pack sizes — check Adjusted Variance instead |
+| `UNKNOWN` | Pack size could not be read from one or both product names — verify manually |
+
+### Adjusted Variance column
+Only filled when a `MISMATCH` is detected. Recalculates variance on a per-unit basis.
+
+> **Example:** AA105 BD Venflon Catheter shows `-98%` raw variance (looks like we're massively cheaper), but the competitor is selling a Pack of 50. The Adjusted Variance shows `-0.6%` — prices are almost identical per unit.
 
 ---
 
@@ -158,6 +230,7 @@ All five sites embed **schema.org Product structured data** (JSON-LD) in their H
 <script type="application/ld+json">
 {
   "@type": "Product",
+  "name": "Septoject XL Needles Box100",
   "offers": {
     "price": "27.39",
     "priceCurrency": "EUR"
@@ -166,12 +239,12 @@ All five sites embed **schema.org Product structured data** (JSON-LD) in their H
 </script>
 ```
 
-When a product URL is already in the input CSV, the scraper fetches that page and reads the price from this JSON block directly — no fragile CSS selector parsing.
+The scraper reads both the `price` and the `name` from this block — the name is used to detect pack size mismatches.
 
 When no URL exists, the scraper falls back to searching each site:
 
-- **dmi.ie / dmi.co.uk** — uses `/categories.html?type=simple&name=QUERY`, takes the first result, then scrapes the product page
-- **dentalsky.com / dontalia.com** — search requires JavaScript; without `--playwright` the scraper tries to guess the product URL from the product name slug (e.g. `pegasus-blue-velcro-bib.html`)
+- **dmi.ie / dmi.co.uk** — uses `/categories.html?type=simple&name=QUERY`, takes the first result
+- **dentalsky.com / dontalia.com** — search requires JavaScript; without `--playwright` the scraper tries to guess the URL from the product name slug
 - **henryschein.ie** — fully JavaScript-rendered, requires `--playwright` for all operations
 
 ---
@@ -183,25 +256,9 @@ The scraper waits 1.5–4 seconds between requests per site to avoid getting blo
 | Scope | Estimated Time |
 |-------|---------------|
 | 10 products, 4 sites | ~5–10 minutes |
+| 100 products, 4 sites | ~45–90 minutes |
 | 300 products, 4 sites | ~3–6 hours |
 | 300 products, all 5 sites (with Playwright) | ~6–10 hours |
-
-**Tip:** Run each site separately in parallel terminal windows to save time:
-```bash
-# Terminal 1
-python scraper.py --sites dmi_ie dmi_uk --output out_dmi.csv
-
-# Terminal 2
-python scraper.py --sites dentalsky --output out_dentalsky.csv
-
-# Terminal 3
-python scraper.py --sites dontalia --output out_dontalia.csv
-
-# Terminal 4
-python scraper.py --sites henryschein --playwright --output out_henryschein.csv
-```
-
-Then merge the output CSVs in Excel or Google Sheets.
 
 ---
 
@@ -216,6 +273,7 @@ Example log output:
   [dmi.co.uk] Direct URL ✓ £22.18  (variance: -26.8%)
   [dentalsky] ✗ Not found
   [dontalia] Direct URL ✓ €17.00  (variance: 10.8%)
+  [dmi_ie] Pack size mismatch: ours=100 theirs=50 → adjusted variance: -5.1%
 ```
 
 ---
@@ -223,7 +281,7 @@ Example log output:
 ## Known Limitations
 
 - **Prices change.** Competitor prices are scraped live at time of running. Re-run regularly to keep data fresh.
-- **Wrong variant matches.** If a product URL in the CSV points to a pack (e.g. Box 50) but your product is "Each", the competitor price will look very high. Review rows with variance above ±50% manually.
+- **UNKNOWN pack flags.** If neither product name contains a clear pack size indicator, the flag will show `UNKNOWN` — these need a manual check.
 - **Products not on competitor sites.** Niche or own-brand products may simply not exist on competitor sites — these will show `N/A`.
 - **Site changes.** If a competitor redesigns their website, the scraper may need updating. The JSON-LD approach is more robust than CSS selectors, but it can still break.
 - **Anti-bot blocking.** Sites occasionally block automated requests. If you see many failures for a previously-working site, try again after a few hours or increase `MIN_DELAY` at the top of `scraper.py`.
