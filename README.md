@@ -8,10 +8,12 @@ A Python scraper that collects competitor prices for ~300 dental products across
 
 Reads your input CSV of ~300 dental products and for each product:
 1. Uses existing competitor URLs in the CSV to scrape prices directly
-2. Falls back to site search when no URL is available
+2. Falls back to site search when no URL is available — using part number, product name, and competitor product codes (`DMI Code`, `Schein Code`) as search queries
 3. Calculates variance (your price vs competitor price)
 4. Detects pack size mismatches and calculates adjusted per-unit variance
 5. Outputs a new CSV with all prices, flags, and competitor product names filled in
+
+A companion **`Competitor Product Code Comparisons.xlsx`** spreadsheet is included in the repository, mapping your products to each competitor's own product codes for reference.
 
 ---
 
@@ -27,29 +29,42 @@ Reads your input CSV of ~300 dental products and for each product:
 
 ---
 
+## Competitor Product Code Comparisons
+
+The repository includes a **`Competitor Product Code Comparisons.xlsx`** spreadsheet that maps your internal product codes to the equivalent codes used by each competitor site. These codes are embedded in the input CSV and used by the scraper as additional search terms to improve match accuracy:
+
+| Column | Used By |
+|--------|---------|
+| `DD Code` | Your internal reference code (Dontalia/DentalSky) |
+| `DMI Code` | DMI's own product code — passed as a search query on dmi.ie / dmi.co.uk |
+| `Schein Code` | Henry Schein's product code — used when searching henryschein.ie |
+
+When the scraper cannot find a product via part number or product name, it falls back to trying the competitor's own code as a search query — significantly reducing "Not found" results.
+
+---
+
 ## Output Columns
 
-The output CSV contains all original columns plus the following per site:
+The output CSV preserves all input columns and adds the following per site:
 
 | Column | Description |
 |--------|-------------|
 | Code | Your internal product code |
 | Name | Product name |
-| Manufacturer | Brand/manufacturer |
+| Product Group | Category |
+| Stock Unit | Unit of sale (Each, Box 100, etc.) |
 | Part Number | Manufacturer part number |
-| Product Group Description | Category |
-| Stock Unit Name | Unit of sale (Each, Box 100, etc.) |
-| Cost Price | Your cost price |
-| Sales Price (£) | Your GBP selling price |
-| Sales Price (€) | Your EUR selling price |
-| Margin | Your margin % |
-| DMI Sales Price (€) | dmi.ie scraped price |
-| Variance (DMI IE) | % difference vs your EUR price |
-| DMI URL (IE) | dmi.ie product URL |
-| DMI IE Product | Competitor product title (for pack size verification) |
-| DMI IE Pack Flag | `MATCH` / `MISMATCH (ours:100 theirs:50)` / `UNKNOWN` |
-| DMI IE Adjusted Variance | Per-unit variance when pack sizes differ |
-| *(same columns repeated for DMI UK, DentalSky, Dontalia, Henry Schein)* | |
+| DD Code | Dontalia/DentalSky reference code (from input) |
+| DMI Code | DMI's product code (from input) |
+| Schein Code | Henry Schein's product code (from input) |
+| *Site* Sales Price (€/£) | Scraped competitor price |
+| Variance (*Site*) | % difference vs your price |
+| *Site* URL | Competitor product URL |
+| *Site* Product | Competitor product title (for pack size verification) |
+| *Site* Pack Flag | `MATCH` / `MISMATCH (ours:100 theirs:50)` / `UNKNOWN` |
+| *Site* Adjusted Variance | Per-unit variance when pack sizes differ |
+| *Site* Notes | `Not listed on competitor` when product not found |
+| *(above repeated for each site: DMI IE, DMI UK, DentalSky, Dontalia, Henry Schein)* | |
 
 > **Variance formula:** `(your price − competitor price) / competitor price × 100`
 > Positive = competitor is cheaper than you. Negative = you are cheaper than competitor.
