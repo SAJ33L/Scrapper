@@ -82,6 +82,7 @@ class ScrapedPrice:
     url: Optional[str] = None
     found: bool = False
     product_name: Optional[str] = None
+    match_score: float = 0.0
 
 
 # ---------------------------------------------------------------------------
@@ -204,6 +205,26 @@ def _href_matches_query(href: str, query: str) -> bool:
         return True  # no filtering possible — allow it
     href_lower = href.lower()
     return any(kw in href_lower for kw in keywords)
+
+
+def _name_similarity_score(our_name: str, found_name: str) -> float:
+    """
+    Return a 0.0–1.0 similarity score between our product name and a found product name.
+    Uses token overlap: fraction of our meaningful keywords that appear in the found name.
+    """
+    our_tokens = set(_relevance_keywords(our_name))
+    found_tokens = set(_relevance_keywords(found_name))
+    if not our_tokens:
+        return 1.0  # can't measure — assume match
+    overlap = our_tokens & found_tokens
+    score = len(overlap) / len(our_tokens)
+    logger.debug(f"  Name similarity: {score:.2f} (overlap={overlap}, ours={our_tokens}, theirs={found_tokens})")
+    return score
+
+
+def _names_similar(our_name: str, found_name: str, threshold: float = 0.6) -> bool:
+    """Return True if found product name is similar enough to ours (score >= threshold)."""
+    return _name_similarity_score(our_name, found_name) >= threshold
 
 
 # ---------------------------------------------------------------------------
@@ -930,6 +951,41 @@ SITE_CONFIG: dict[str, dict] = {
 
 
 # ---------------------------------------------------------------------------
+# Product code mappings — persisted between runs, manually editable
+# ---------------------------------------------------------------------------
+MAPPINGS_HEADERS = [
+    "Our Code", "Our Name", "Site",
+    "Competitor URL", "Competitor Product Name",
+    "Match Score", "Manual Override",
+]
+
+
+def load_mappings(path: str) -> dict:
+    """
+    Load product_mappings.csv into a dict keyed by (our_code, site).
+    If the file doesn't exist, returns an empty dict.
+    """
+    mappings: dict[tuple, dict] = {}
+    if not os.path.exists(path):
+        return mappings
+    with open(path, newline="", encoding="utf-8-sig") as f:
+        for row in csv.DictReader(f):
+            key = (row["Our Code"].strip(), row["Site"].strip())
+            mappings[key] = row
+    logger.info(f"Loaded {len(mappings)} product mappings from {path}")
+    return mappings
+
+
+def save_mappings(path: str, mappings: dict) -> None:
+    """Write all mappings back to product_mappings.csv."""
+    with open(path, "w", newline="", encoding="utf-8-sig") as f:
+        writer = csv.DictWriter(f, fieldnames=MAPPINGS_HEADERS, extrasaction="ignore")
+        writer.writeheader()
+        writer.writerows(sorted(mappings.values(), key=lambda r: (r["Our Code"], r["Site"])))
+    logger.info(f"Saved {len(mappings)} product mappings to {path}")
+
+
+# ---------------------------------------------------------------------------
 # Main orchestration
 # ---------------------------------------------------------------------------
 def run(
@@ -939,6 +995,7 @@ def run(
     limit: Optional[int] = None,
     skip_existing: bool = True,
     use_playwright: bool = False,
+    mappings_path: str = "product_mappings.csv",
 ):
     logger.info(f"Reading input: {input_path}")
     rows, headers = read_input(input_path)
@@ -947,6 +1004,9 @@ def run(
     if limit:
         rows = rows[:limit]
         logger.info(f"Limited to first {limit} rows")
+
+    # Load product code mappings (persisted from previous runs / manually edited)
+    mappings = load_mappings(mappings_path)
 
     session = requests.Session()
     session.headers.update(BROWSER_HEADERS)
@@ -989,45 +1049,84 @@ def run(
                     continue
 
                 result = ScrapedPrice()
+                mapping_key = (str(code), site_key)
+                mapping = mappings.get(mapping_key)
+
                 try:
-                    # --- Henry Schein needs Playwright ---
-                    if site_key == "henryschein" and pw_ctx:
-                        existing_url = _clean_url(row.get(url_col, ""))
-                        if existing_url:
-                            price = pw_ctx.scrape_henryschein_url(existing_url)
+                    # --- Step 1: Check product mappings first ---
+                    # Manual override (client-specified URL) takes top priority
+                    mapped_url = None
+                    if mapping:
+                        override = (mapping.get("Manual Override") or "").strip()
+                        auto_url = (mapping.get("Competitor URL") or "").strip()
+                        if override and override.startswith("http"):
+                            mapped_url = override
+                            logger.info(f"  [{site_key}] Using manual override URL from mappings")
+                        elif auto_url and auto_url.startswith("http"):
+                            mapped_url = auto_url
+                            logger.info(f"  [{site_key}] Using auto-discovered URL from mappings")
+
+                    if mapped_url:
+                        # Scrape directly from mapped URL — no search needed
+                        if site_key == "henryschein" and pw_ctx:
+                            price = pw_ctx.scrape_henryschein_url(mapped_url)
                             if price:
-                                result = ScrapedPrice(price=price, url=existing_url, found=True)
-                        if not result.found:
-                            for q in _build_queries(
-                                row.get("Part Number", ""),
-                                row.get("Name", ""),
-                                row.get("Manufacturer", ""),
-                                row.get("Schein Code", ""),
-                            ):
-                                result = pw_ctx.scrape_henryschein(q, row.get("Part Number", ""))
-                                if result.found:
-                                    break
+                                result = ScrapedPrice(price=price, url=mapped_url, found=True, match_score=1.0)
+                        else:
+                            price, comp_name = scraper.scrape_price_from_url(mapped_url)
+                            if price:
+                                result = ScrapedPrice(price=price, url=mapped_url, found=True, product_name=comp_name, match_score=1.0)
 
-                    # --- DentalSky Playwright search for missing URLs ---
-                    elif site_key == "dentalsky" and pw_ctx and not _clean_url(row.get(url_col, "")):
-                        result = scraper.scrape_product(row)  # try slug first
-                        if not result.found:
-                            for q in _build_queries(
-                                row.get("Part Number", ""),
-                                row.get("Name", ""),
-                                row.get("Manufacturer", ""),
-                            ):
-                                result = pw_ctx.search_dentalsky(q)
-                                if result.found:
-                                    break
+                    # --- Step 2: Fall back to search if no mapping ---
+                    if not result.found:
+                        if site_key == "henryschein" and pw_ctx:
+                            existing_url = _clean_url(row.get(url_col, ""))
+                            if existing_url:
+                                price = pw_ctx.scrape_henryschein_url(existing_url)
+                                if price:
+                                    result = ScrapedPrice(price=price, url=existing_url, found=True, match_score=1.0)
+                            if not result.found:
+                                for q in _build_queries(
+                                    row.get("Part Number", ""),
+                                    row.get("Name", ""),
+                                    row.get("Manufacturer", ""),
+                                    row.get("Schein Code", ""),
+                                ):
+                                    result = pw_ctx.scrape_henryschein(q, row.get("Part Number", ""))
+                                    if result.found:
+                                        break
 
-                    # --- All other sites ---
-                    else:
-                        result = scraper.scrape_product(row)
+                        elif site_key == "dentalsky" and pw_ctx and not _clean_url(row.get(url_col, "")):
+                            result = scraper.scrape_product(row)
+                            if not result.found:
+                                for q in _build_queries(
+                                    row.get("Part Number", ""),
+                                    row.get("Name", ""),
+                                    row.get("Manufacturer", ""),
+                                ):
+                                    result = pw_ctx.search_dentalsky(q)
+                                    if result.found:
+                                        break
+
+                        else:
+                            result = scraper.scrape_product(row)
 
                 except Exception as e:
                     logger.error(f"  [{site_key}] Unhandled error: {e}", exc_info=True)
 
+                # --- Step 3: Similarity check (skip if came from a mapping) ---
+                if result.found and result.price and not mapped_url:
+                    if result.product_name:
+                        score = _name_similarity_score(row.get("Name", ""), result.product_name)
+                        result.match_score = score
+                        if score < 0.6:
+                            logger.info(
+                                f"  [{site_key}] ✗ Rejected (score={score:.2f}) — "
+                                f"found: '{result.product_name}'"
+                            )
+                            result = ScrapedPrice()
+
+                # --- Step 4: Accept result and update mappings ---
                 if result.found and result.price:
                     row[price_col] = result.price
                     if result.url:
@@ -1043,7 +1142,19 @@ def run(
                                 row.get(own_price_col, ""), result.price, our_qty, comp_qty
                             )
                             logger.info(f"  [{site_key}] Pack size mismatch: ours={our_qty} theirs={comp_qty} → adjusted variance: {row[adj_variance_col]}")
-                    logger.info(f"  [{site_key}] ✓ {result.price}  (variance: {row[variance_col]})")
+                    logger.info(f"  [{site_key}] ✓ {result.price}  (score={result.match_score:.2f}, variance: {row[variance_col]})")
+
+                    # Persist this mapping (don't overwrite a manual override)
+                    existing_override = (mapping.get("Manual Override") or "").strip() if mapping else ""
+                    mappings[mapping_key] = {
+                        "Our Code": str(code),
+                        "Our Name": name,
+                        "Site": site_key,
+                        "Competitor URL": result.url or "",
+                        "Competitor Product Name": result.product_name or "",
+                        "Match Score": f"{result.match_score:.2f}",
+                        "Manual Override": existing_override,
+                    }
                 else:
                     if not existing_price or existing_price.lower() == "n/a":
                         row[price_col] = "N/A"
@@ -1060,6 +1171,9 @@ def run(
         writer.writerows(rows)
 
     logger.info(f"Output written to: {output_path}")
+
+    # Save updated mappings
+    save_mappings(mappings_path, mappings)
 
     # Print summary
     total_products = len(rows)
@@ -1106,6 +1220,11 @@ def main():
         action="store_true",
         help="Re-scrape even when price already exists in input CSV",
     )
+    parser.add_argument(
+        "--mappings",
+        default="product_mappings.csv",
+        help="Path to product code mappings CSV (auto-created, manually editable)",
+    )
     args = parser.parse_args()
 
     run(
@@ -1115,6 +1234,7 @@ def main():
         limit=args.limit,
         skip_existing=not args.no_skip_existing,
         use_playwright=args.playwright,
+        mappings_path=args.mappings,
     )
 
 
