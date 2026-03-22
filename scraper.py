@@ -988,7 +988,7 @@ def load_mappings(output_path: str) -> dict:
 
 
 def write_output(output_path: str, rows: list, output_headers: list, mappings: dict) -> None:
-    """Write prices sheet + product mappings sheet into a single .xlsx file."""
+    """Write prices + product mappings to .xlsx (two sheets) or .csv (two files)."""
     import pandas as pd
 
     prices_df = pd.DataFrame(rows, columns=output_headers)
@@ -1000,11 +1000,16 @@ def write_output(output_path: str, rows: list, output_headers: list, mappings: d
     mapping_rows = sorted(mappings.values(), key=lambda r: (r.get("Our Code", ""), r.get("Site", "")))
     mappings_df = pd.DataFrame(mapping_rows, columns=MAPPINGS_HEADERS) if mapping_rows else pd.DataFrame(columns=MAPPINGS_HEADERS)
 
-    with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
-        prices_df.to_excel(writer, sheet_name="Prices", index=False)
-        mappings_df.to_excel(writer, sheet_name="Product Mappings", index=False)
-
-    logger.info(f"Output written to '{output_path}' (sheets: Prices, Product Mappings)")
+    if output_path.lower().endswith(".csv"):
+        mappings_path = output_path[:-4] + "_mappings.csv"
+        prices_df.to_csv(output_path, index=False)
+        mappings_df.to_csv(mappings_path, index=False)
+        logger.info(f"Output written to '{output_path}' and '{mappings_path}'")
+    else:
+        with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
+            prices_df.to_excel(writer, sheet_name="Prices", index=False)
+            mappings_df.to_excel(writer, sheet_name="Product Mappings", index=False)
+        logger.info(f"Output written to '{output_path}' (sheets: Prices, Product Mappings)")
 
 
 # ---------------------------------------------------------------------------
