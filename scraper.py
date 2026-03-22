@@ -960,29 +960,51 @@ MAPPINGS_HEADERS = [
 ]
 
 
-def load_mappings(path: str) -> dict:
+def load_mappings(output_path: str) -> dict:
     """
-    Load product_mappings.csv into a dict keyed by (our_code, site).
-    If the file doesn't exist, returns an empty dict.
+    Load the 'Product Mappings' sheet from a previous output .xlsx file.
+    Returns a dict keyed by (our_code, site). Returns empty dict if file doesn't exist
+    or has no mappings sheet.
     """
+    import pandas as pd
+
     mappings: dict[tuple, dict] = {}
-    if not os.path.exists(path):
+    if not os.path.exists(output_path):
         return mappings
-    with open(path, newline="", encoding="utf-8-sig") as f:
-        for row in csv.DictReader(f):
-            key = (row["Our Code"].strip(), row["Site"].strip())
-            mappings[key] = row
-    logger.info(f"Loaded {len(mappings)} product mappings from {path}")
+    if not output_path.endswith((".xlsx", ".xls")):
+        return mappings
+    try:
+        xl = pd.ExcelFile(output_path)
+        if "Product Mappings" not in xl.sheet_names:
+            return mappings
+        df = pd.read_excel(output_path, sheet_name="Product Mappings", dtype=str).fillna("")
+        for _, row in df.iterrows():
+            key = (str(row.get("Our Code", "")).strip(), str(row.get("Site", "")).strip())
+            mappings[key] = row.to_dict()
+        logger.info(f"Loaded {len(mappings)} product mappings from '{output_path}'")
+    except Exception as e:
+        logger.warning(f"Could not load mappings from '{output_path}': {e}")
     return mappings
 
 
-def save_mappings(path: str, mappings: dict) -> None:
-    """Write all mappings back to product_mappings.csv."""
-    with open(path, "w", newline="", encoding="utf-8-sig") as f:
-        writer = csv.DictWriter(f, fieldnames=MAPPINGS_HEADERS, extrasaction="ignore")
-        writer.writeheader()
-        writer.writerows(sorted(mappings.values(), key=lambda r: (r["Our Code"], r["Site"])))
-    logger.info(f"Saved {len(mappings)} product mappings to {path}")
+def write_output(output_path: str, rows: list, output_headers: list, mappings: dict) -> None:
+    """Write prices sheet + product mappings sheet into a single .xlsx file."""
+    import pandas as pd
+
+    prices_df = pd.DataFrame(rows, columns=output_headers)
+    # Fill missing columns with empty string
+    for col in output_headers:
+        if col not in prices_df.columns:
+            prices_df[col] = ""
+
+    mapping_rows = sorted(mappings.values(), key=lambda r: (r.get("Our Code", ""), r.get("Site", "")))
+    mappings_df = pd.DataFrame(mapping_rows, columns=MAPPINGS_HEADERS) if mapping_rows else pd.DataFrame(columns=MAPPINGS_HEADERS)
+
+    with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
+        prices_df.to_excel(writer, sheet_name="Prices", index=False)
+        mappings_df.to_excel(writer, sheet_name="Product Mappings", index=False)
+
+    logger.info(f"Output written to '{output_path}' (sheets: Prices, Product Mappings)")
 
 
 # ---------------------------------------------------------------------------
@@ -995,7 +1017,6 @@ def run(
     limit: Optional[int] = None,
     skip_existing: bool = True,
     use_playwright: bool = False,
-    mappings_path: str = "product_mappings.csv",
 ):
     logger.info(f"Reading input: {input_path}")
     rows, headers = read_input(input_path)
@@ -1005,8 +1026,8 @@ def run(
         rows = rows[:limit]
         logger.info(f"Limited to first {limit} rows")
 
-    # Load product code mappings (persisted from previous runs / manually edited)
-    mappings = load_mappings(mappings_path)
+    # Load product code mappings from previous output file (if it exists)
+    mappings = load_mappings(output_path)
 
     session = requests.Session()
     session.headers.update(BROWSER_HEADERS)
@@ -1164,16 +1185,7 @@ def run(
         if pw_ctx and pw_scraper:
             pw_scraper.__exit__(None, None, None)
 
-    # Write output CSV
-    with open(output_path, "w", newline="", encoding="utf-8-sig") as f:
-        writer = csv.DictWriter(f, fieldnames=output_headers, extrasaction="ignore")
-        writer.writeheader()
-        writer.writerows(rows)
-
-    logger.info(f"Output written to: {output_path}")
-
-    # Save updated mappings
-    save_mappings(mappings_path, mappings)
+    write_output(output_path, rows, output_headers, mappings)
 
     # Print summary
     total_products = len(rows)
@@ -1200,7 +1212,7 @@ def main():
         "--input",
         default="Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv",
     )
-    parser.add_argument("--output", default="output_prices.csv")
+    parser.add_argument("--output", default="output_prices.xlsx")
     parser.add_argument(
         "--sites",
         nargs="+",
@@ -1220,11 +1232,6 @@ def main():
         action="store_true",
         help="Re-scrape even when price already exists in input CSV",
     )
-    parser.add_argument(
-        "--mappings",
-        default="product_mappings.csv",
-        help="Path to product code mappings CSV (auto-created, manually editable)",
-    )
     args = parser.parse_args()
 
     run(
@@ -1234,7 +1241,6 @@ def main():
         limit=args.limit,
         skip_existing=not args.no_skip_existing,
         use_playwright=args.playwright,
-        mappings_path=args.mappings,
     )
 
 
