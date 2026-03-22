@@ -348,7 +348,7 @@ class DMIScraper(BaseScraper):
 
     def search(self, part_number: str, product_name: str, manufacturer: str, competitor_code: str = "") -> ScrapedPrice:
         for query in _build_queries(part_number, product_name, manufacturer, competitor_code):
-            result = self._html_search(query)
+            result = self._html_search(query, our_name=product_name)
             if result.found:
                 return result
         return ScrapedPrice()
@@ -368,7 +368,7 @@ class DMIScraper(BaseScraper):
             competitor_code=row.get("DMI Code", ""),
         )
 
-    def _html_search(self, query: str) -> ScrapedPrice:
+    def _html_search(self, query: str, our_name: str = "") -> ScrapedPrice:
         url = urljoin(self.BASE_URL, "/categories.html")
         soup = self._soup(url, params={"type": "simple", "name": query})
         if not soup:
@@ -382,6 +382,11 @@ class DMIScraper(BaseScraper):
             product_url = urljoin(self.BASE_URL, href.split("?")[0])
             price, product_name = self.scrape_price_from_url(product_url)
             if price:
+                if our_name and product_name:
+                    score = _name_similarity_score(our_name, product_name)
+                    if score < 0.6:
+                        logger.info(f"  [{self.SITE_NAME}] ✗ Rejected (score={score:.2f}) — found: '{product_name}', trying next query")
+                        return ScrapedPrice()
                 logger.info(f"  [{self.SITE_NAME}] Search '{query}' ✓ {price}")
                 return ScrapedPrice(price=price, url=product_url, found=True, product_name=product_name)
         return ScrapedPrice()
