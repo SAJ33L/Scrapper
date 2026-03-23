@@ -20,3 +20,5 @@ Here is a basic example of how the scraping and Google Sheets integration might 
 ```pythonimport requests
 from bs4 import BeautifulSoup
 import gspread
+
+python scraper.py --input "Top 300 (2).xlsx" --output "test.csv"  --sites dmi_ie --no-skip-existing --limit 100
