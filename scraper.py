@@ -151,10 +151,16 @@ def _build_queries(part_number: str, product_name: str, manufacturer: str, compe
     mfr = (manufacturer or "").strip()
     cc = (competitor_code or "").strip()
 
-    # Competitor's own product code is most precise — try it first
+    # Product name is tried first — most descriptive and avoids false code matches
+    if name:
+        short = name[:60].rsplit(" ", 1)[0].rstrip(" -")
+        queries.append(short)
+    if mfr and name:
+        short = name[:40].rsplit(" ", 1)[0].rstrip(" -")
+        queries.append(f"{mfr} {short}")
+    # Competitor code and part number as fallback
     if cc:
         queries.append(cc)
-        # Also try without trailing letter variant suffix (e.g. 'COLG-850248A' → 'COLG-850248')
         stripped = re.sub(r"[A-Z]$", "", cc).strip()
         if stripped and stripped != cc:
             queries.append(stripped)
@@ -162,12 +168,6 @@ def _build_queries(part_number: str, product_name: str, manufacturer: str, compe
         queries.append(pn)
     if mfr and pn:
         queries.append(f"{mfr} {pn}")
-    if name:
-        short = name[:60].rsplit(" ", 1)[0].rstrip(" -")
-        queries.append(short)
-    if mfr and name:
-        short = name[:40].rsplit(" ", 1)[0].rstrip(" -")
-        queries.append(f"{mfr} {short}")
 
     seen: set[str] = set()
     result = []
@@ -207,18 +207,57 @@ def _href_matches_query(href: str, query: str) -> bool:
     return any(kw in href_lower for kw in keywords)
 
 
+def _extract_numeric_tokens(name: str) -> set[str]:
+    """
+    Extract specific numeric identifiers from a product name using regex.
+    These are high-value discriminators: gauges, concentrations, sizes, pack counts.
+    e.g. "Needles 27g Long Box100 0.4x35mm" → {'27g', 'box100', '0.4x35mm'}
+    """
+    tokens = set()
+    n = name.lower()
+    # Percentages: 16%, 1:100,000
+    for m in re.finditer(r'\d+\.?\d*%', n):
+        tokens.add(m.group())
+    for m in re.finditer(r'1:\d[\d,]+', n):
+        tokens.add(m.group().replace(",", ""))
+    # Dimensions / measurements: 0.4x35mm, 27g, 2.2ml, 490ml, 30Gx8mm
+    for m in re.finditer(r'\d+\.?\d*\s*x\s*\d+\.?\d*\s*(?:mm|cm)?|\d+\.?\d*\s*(?:g|ml|mm|cm|mg)\b', n):
+        tokens.add(re.sub(r'\s+', '', m.group()))
+    # Pack/box size: Box100, Pack500, 200pk
+    for m in re.finditer(r'(?:box|pack|pk|bx)\s*\d+|\d+\s*(?:pack|box|pk)', n):
+        tokens.add(re.sub(r'\s+', '', m.group()))
+    return tokens
+
+
 def _name_similarity_score(our_name: str, found_name: str) -> float:
     """
     Return a 0.0–1.0 similarity score between our product name and a found product name.
-    Uses token overlap: fraction of our meaningful keywords that appear in the found name.
+    Combines keyword overlap (70%) with numeric/spec token matching (30%).
+    Numeric tokens (gauges, sizes, concentrations, pack counts) are extracted by regex
+    and compared separately — a mismatch here strongly reduces the score.
     """
     our_tokens = set(_relevance_keywords(our_name))
     found_tokens = set(_relevance_keywords(found_name))
     if not our_tokens:
         return 1.0  # can't measure — assume match
     overlap = our_tokens & found_tokens
-    score = len(overlap) / len(our_tokens)
-    logger.debug(f"  Name similarity: {score:.2f} (overlap={overlap}, ours={our_tokens}, theirs={found_tokens})")
+    keyword_score = len(overlap) / len(our_tokens)
+
+    # Numeric token scoring (concentrations, sizes, gauges, pack counts)
+    our_numeric = _extract_numeric_tokens(our_name)
+    found_numeric = _extract_numeric_tokens(found_name)
+    if our_numeric:
+        numeric_overlap = our_numeric & found_numeric
+        numeric_score = len(numeric_overlap) / len(our_numeric)
+        score = 0.7 * keyword_score + 0.3 * numeric_score
+    else:
+        score = keyword_score
+
+    logger.debug(
+        f"  Name similarity: {score:.2f} "
+        f"(keywords={keyword_score:.2f} overlap={overlap}, "
+        f"numeric={our_numeric & found_numeric if our_numeric else 'n/a'})"
+    )
     return score
 
 
@@ -373,22 +412,46 @@ class DMIScraper(BaseScraper):
         soup = self._soup(url, params={"type": "simple", "name": query})
         if not soup:
             return ScrapedPrice()
-        # Find product links on search results page, applying relevance check
+
+        # Collect all candidates, scoring each by anchor text similarity
+        candidates = []
         for a in soup.select("a[href*='/products/']"):
             href = a.get("href", "")
-            if not _href_matches_query(href, query):
-                logger.info(f"  [{self.SITE_NAME}] Skipping irrelevant result: {href[:60]}")
+            anchor_text = a.get_text(strip=True)
+            if not href:
                 continue
+            # Pre-filter: skip if neither href slug nor anchor text shares any keyword with query
+            if not _href_matches_query(href, query) and not _href_matches_query(anchor_text, query):
+                logger.debug(f"  [{self.SITE_NAME}] Pre-filter skipped: {href[:60]}")
+                continue
+            # Score using anchor text — avoids loading every product page just to get a name
+            score = _name_similarity_score(our_name, anchor_text) if our_name else 0.5
+            candidates.append((score, href, anchor_text))
+
+        if not candidates:
+            return ScrapedPrice()
+
+        # Sort by relevance score, best first
+        candidates.sort(key=lambda x: x[0], reverse=True)
+        logger.debug(f"  [{self.SITE_NAME}] {len(candidates)} candidates for '{query}', best: '{candidates[0][2]}' (score={candidates[0][0]:.2f})")
+
+        # Try candidates in order until we get a price from a sufficiently similar product
+        for score, href, anchor_text in candidates:
+            if score < 0.5:
+                break  # remaining candidates are too dissimilar
             product_url = urljoin(self.BASE_URL, href.split("?")[0])
             price, product_name = self.scrape_price_from_url(product_url)
-            if price:
-                if our_name and product_name:
-                    score = _name_similarity_score(our_name, product_name)
-                    if score < 0.6:
-                        logger.info(f"  [{self.SITE_NAME}] ✗ Rejected (score={score:.2f}) — found: '{product_name}', trying next query")
-                        return ScrapedPrice()
-                logger.info(f"  [{self.SITE_NAME}] Search '{query}' ✓ {price}")
-                return ScrapedPrice(price=price, url=product_url, found=True, product_name=product_name)
+            if not price:
+                continue
+            # Re-score using the actual product page name (more accurate than anchor text)
+            final_name = product_name or anchor_text
+            final_score = _name_similarity_score(our_name, final_name) if our_name else score
+            if final_score < 0.6:
+                logger.info(f"  [{self.SITE_NAME}] ✗ Rejected (score={final_score:.2f}) — '{final_name}'")
+                continue
+            logger.info(f"  [{self.SITE_NAME}] Search '{query}' ✓ {price} (score={final_score:.2f})")
+            return ScrapedPrice(price=price, url=product_url, found=True, product_name=final_name, match_score=final_score)
+
         return ScrapedPrice()
 
 
@@ -769,9 +832,22 @@ def read_input(path: str) -> tuple[list[dict], list[str]]:
 
 
 def build_output_headers(existing_headers: list[str]) -> list[str]:
-    """Add Henry Schein columns and per-site Notes columns if missing."""
+    """Add all site price/URL/variance columns and per-site Notes columns if missing."""
     headers = list(existing_headers)
     new_cols = [
+        # Price, variance, and URL columns for all sites
+        "DMI Sales Price (€)",
+        "Variance (DMI IE)",
+        "DMI URL (IE)",
+        "DMI Sales Price (£)",
+        "Variance (DMI UK)",
+        "DMI URL (UK)",
+        "DentalSky Sales Price (£)",
+        "Variance (DentalSky)",
+        "DentalSky URL",
+        "Dontalia Sales Price (€)",
+        "Variance (Dontalia)",
+        "Dontalia URL",
         "Henry Schein Sales Price (€)",
         "Variance (Henry Schein)",
         "Henry Schein URL",
@@ -1007,7 +1083,7 @@ def write_output(output_path: str, rows: list, output_headers: list, mappings: d
 
     if output_path.lower().endswith(".csv"):
         mappings_path = output_path[:-4] + "_mappings.csv"
-        prices_df.to_csv(output_path, index=False)
+        prices_df.to_csv(output_path, index=False, encoding="utf-8-sig")
         mappings_df.to_csv(mappings_path, index=False)
         logger.info(f"Output written to '{output_path}' and '{mappings_path}'")
     else:

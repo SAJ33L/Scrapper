@@ -21036,3 +21036,1655 @@
 2026-03-22 09:29:22,644 [INFO]   [dontalia] ✗ Not found
 2026-03-22 09:29:22,644 [INFO]   [henryschein] ✗ Not found
 2026-03-22 09:29:22,645 [INFO] [130/300] CDB020A — Coltene Diatech Gold Diamond Burs G835-314-012-4-ML - Pack5
+2026-03-22 16:28:25,743 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-22 16:28:51,192 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-22 16:28:53,997 [INFO] Limited to first 1 rows
+2026-03-22 16:28:53,997 [INFO] Registered scraper: dmi_ie
+2026-03-22 16:28:53,997 [INFO] Registered scraper: dmi_uk
+2026-03-22 16:28:53,997 [INFO] Registered scraper: dentalsky
+2026-03-22 16:28:53,997 [INFO] Registered scraper: dontalia
+2026-03-22 16:28:53,998 [INFO] Registered scraper: henryschein
+2026-03-22 16:28:53,998 [INFO] [1/1] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-22 16:28:57,742 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:29:01,153 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:29:16,623 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:29:30,035 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:29:30,035 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:29:30,043 [INFO] Output written to 'test.csv' and 'test_mappings.csv'
+2026-03-22 16:29:30,043 [INFO]   dmi_ie: 0/1 prices found
+2026-03-22 16:29:30,043 [INFO]   dmi_uk: 0/1 prices found
+2026-03-22 16:29:30,044 [INFO]   dentalsky: 0/1 prices found
+2026-03-22 16:29:30,044 [INFO]   dontalia: 0/1 prices found
+2026-03-22 16:29:30,044 [INFO]   henryschein: 0/1 prices found
+2026-03-22 16:30:22,701 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-22 16:30:25,390 [INFO] Limited to first 30 rows
+2026-03-22 16:30:25,390 [INFO] Registered scraper: dmi_ie
+2026-03-22 16:30:25,390 [INFO] Registered scraper: dmi_uk
+2026-03-22 16:30:25,391 [INFO] Registered scraper: dentalsky
+2026-03-22 16:30:25,391 [INFO] Registered scraper: dontalia
+2026-03-22 16:30:25,391 [INFO] Registered scraper: henryschein
+2026-03-22 16:30:25,391 [INFO] [1/30] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-22 16:30:29,289 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:30:33,178 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:30:54,272 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/boutique-whitening-top-up-case-by-night-16-cp-2x3ml.html (attempt 1)
+2026-03-22 16:30:59,465 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/boutique-whitening-top-up-case-by-night-16-cp-2x3ml.html (attempt 2)
+2026-03-22 16:31:09,701 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/boutique-whitening-top-up-case-by-night-16-cp-2x3ml.html (attempt 3)
+2026-03-22 16:31:11,219 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/boutique-whitening-top-up-case-by.html (attempt 1)
+2026-03-22 16:31:16,407 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/boutique-whitening-top-up-case-by.html (attempt 2)
+2026-03-22 16:31:32,586 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:31:39,646 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:31:39,646 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:31:39,646 [INFO] [2/30] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-03-22 16:31:44,956 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:31:48,798 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:31:56,454 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:32:04,508 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:32:04,509 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:32:04,509 [INFO] [3/30] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-03-22 16:32:23,176 [INFO]   [dmi.ie] Skipping irrelevant result: /products/dentsply-sirona-assure-plus-autoclave-pouches-89x2
+2026-03-22 16:32:23,177 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-90x230mm-200pk-pplu
+2026-03-22 16:32:24,145 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — found: 'Perfection Plus Eco+ Medium Pouches 90 X 254mm  Pack  500', trying next query
+2026-03-22 16:32:29,422 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:32:43,233 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/dentsply-sirona-assure-plus-autoclave-pouches-89x2
+2026-03-22 16:32:43,233 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-90x230mm-200pk-pplu
+2026-03-22 16:32:43,761 [INFO]   [dmi.co.uk] ✗ Rejected (score=0.50) — found: 'Perfection Plus Eco+ Medium Pouches 90 X 254mm  Pack  500', trying next query
+2026-03-22 16:32:50,498 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:32:58,380 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:33:06,853 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:33:06,854 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:33:06,854 [INFO] [4/30] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-22 16:33:15,239 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:33:23,904 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:33:30,474 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:33:40,591 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:33:40,591 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:33:40,591 [INFO] [5/30] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-03-22 16:33:45,136 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:45,136 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:45,137 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:45,137 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:48,764 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:48,765 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:48,765 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:48,766 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:49,455 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:33:51,110 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:51,110 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:51,110 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:51,110 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:52,240 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:52,241 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:52,242 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:52,242 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:33:53,264 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:34:00,684 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:34:08,573 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:34:08,574 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:34:08,575 [INFO] [6/30] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-03-22 16:34:11,837 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:34:15,073 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:34:25,372 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:34:34,250 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:34:34,250 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:34:34,250 [INFO] [7/30] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-03-22 16:34:41,750 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:34:45,191 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:34:53,384 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:35:03,048 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:35:03,049 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:35:03,049 [INFO] [8/30] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-22 16:35:19,135 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:35:34,242 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:35:44,265 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:35:54,154 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:35:54,155 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:35:54,155 [INFO] [9/30] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-03-22 16:36:00,831 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:36:03,967 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:36:11,914 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:36:21,297 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:36:21,298 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:36:21,298 [INFO] [10/30] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-22 16:36:30,955 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:36:39,639 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:36:46,654 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:36:54,501 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:36:54,502 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:36:54,502 [INFO] [11/30] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-03-22 16:36:58,985 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:37:05,830 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:37:17,900 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:37:25,119 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:37:25,120 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:37:25,120 [INFO] [12/30] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-03-22 16:37:26,704 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:26,704 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:26,705 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:27,805 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:27,805 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:27,806 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:29,046 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:37:30,464 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:30,465 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:30,465 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:32,463 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:32,463 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:32,463 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:37:35,313 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:37:43,696 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:37:50,404 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:37:50,404 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:37:50,404 [INFO] [13/30] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-03-22 16:37:55,205 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:38:02,355 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:38:09,543 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:38:16,322 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:38:16,322 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:38:16,322 [INFO] [14/30] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-03-22 16:38:25,220 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:38:36,057 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:38:40,777 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:38:46,517 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:38:46,517 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:38:46,518 [INFO] [15/30] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-03-22 16:38:50,660 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:38:58,704 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:39:07,702 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:39:17,677 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:39:17,678 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:39:17,678 [INFO] [16/30] PHI147 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) NEW
+2026-03-22 16:39:22,559 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:39:25,965 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:39:32,847 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:39:41,043 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:39:41,043 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:39:41,044 [INFO] [17/30] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-03-22 16:39:44,277 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:39:47,866 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:39:55,212 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:40:02,697 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:40:02,697 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:40:02,698 [INFO] [18/30] PHI150 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) NEW
+2026-03-22 16:40:07,611 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:40:10,557 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:40:17,717 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:40:25,253 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:40:25,254 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:40:25,254 [INFO] [19/30] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-22 16:40:29,316 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:40:33,208 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:40:40,734 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:40:46,407 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:40:46,408 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:40:46,408 [INFO] [20/30] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-03-22 16:40:54,245 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:40:59,912 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:41:06,451 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:41:12,969 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:41:12,970 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:41:12,970 [INFO] [21/30] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-03-22 16:41:17,418 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:41:19,352 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:41:30,910 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:41:38,451 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:41:38,452 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:41:38,452 [INFO] [22/30] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-03-22 16:41:40,865 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:41:44,892 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:41:52,475 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:41:59,610 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:41:59,611 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:41:59,611 [INFO] [23/30] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-03-22 16:42:05,732 [INFO]   [dmi.ie] Search '1.204.018' ✓ €5.35
+2026-03-22 16:42:05,733 [INFO]   [dmi_ie] ✓ €5.35  (score=0.60, variance: N/A)
+2026-03-22 16:42:12,629 [INFO]   [dmi.co.uk] Search '1.204.018' ✓ £4.49
+2026-03-22 16:42:12,629 [INFO]   [dmi_uk] ✓ £4.49  (score=0.60, variance: N/A)
+2026-03-22 16:42:19,744 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:42:26,795 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:42:26,795 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:42:26,795 [INFO] [24/30] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-03-22 16:42:28,499 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:28,500 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:28,500 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:28,500 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:28,500 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:28,501 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:30,028 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:30,029 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:30,029 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:30,029 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:30,029 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:30,030 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:32,701 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:42:35,141 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:35,142 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:35,142 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:35,142 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:35,143 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:35,143 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:37,838 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:37,839 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:37,839 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:37,839 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:37,839 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:37,840 [INFO]   [dmi.co.uk] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 16:42:38,833 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:42:48,289 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:42:56,520 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:42:56,520 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:42:56,521 [INFO] [25/30] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-03-22 16:42:58,847 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:43:01,886 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:43:10,606 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:43:15,884 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:43:15,886 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:43:15,887 [INFO] [26/30] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-03-22 16:43:20,509 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:43:24,516 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:43:30,913 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:43:38,534 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:43:38,535 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:43:38,535 [INFO] [27/30] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-03-22 16:43:48,842 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 16:43:48,842 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 16:43:48,843 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-hygenic-non-latex-rubber-dam-green-15pk-6-
+2026-03-22 16:43:48,843 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-purple-flexidam-non-latex-20pk-6-x-6-152-x
+2026-03-22 16:43:48,843 [INFO]   [dmi.ie] Skipping irrelevant result: /products/flexi-dam-non-latex-teal-green-x30-6-x-6-colt-h099
+2026-03-22 16:43:49,474 [INFO]   [dmi.ie] Search 'PERF-0040046' ✓ €25.12
+2026-03-22 16:43:49,475 [INFO]   [dmi_ie] ✓ €25.12  (score=0.71, variance: N/A)
+2026-03-22 16:43:57,092 [INFO]   [dmi.co.uk] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 16:43:57,092 [INFO]   [dmi.co.uk] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 16:43:57,093 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/coltene-hygenic-non-latex-rubber-dam-green-15pk-6-
+2026-03-22 16:43:57,093 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/coltene-purple-flexidam-non-latex-20pk-6-x-6-152-x
+2026-03-22 16:43:57,093 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/flexi-dam-non-latex-teal-green-x30-6-x-6-colt-h099
+2026-03-22 16:43:57,887 [INFO]   [dmi.co.uk] Search 'PERF-0040046' ✓ £21.07
+2026-03-22 16:43:57,887 [INFO]   [dmi_uk] ✓ £21.07  (score=0.71, variance: N/A)
+2026-03-22 16:44:06,012 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:44:13,749 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:44:13,749 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:44:13,749 [INFO] [28/30] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-03-22 16:44:20,517 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:44:24,337 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:44:32,215 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:44:39,582 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:44:39,582 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:44:39,582 [INFO] [29/30] PHI148 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) NEW
+2026-03-22 16:44:44,668 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:44:49,193 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:44:59,976 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:45:07,351 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:45:07,352 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:45:07,352 [INFO] [30/30] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-03-22 16:45:18,650 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-55x130mm-200pk-pplu
+2026-03-22 16:45:22,051 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 16:45:28,098 [INFO]   [dmi.co.uk] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-55x130mm-200pk-pplu
+2026-03-22 16:45:32,171 [INFO]   [dmi_uk] ✗ Not found
+2026-03-22 16:46:12,053 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/perfection-plus-sterilisation-pouches.html (attempt 1)
+2026-03-22 16:46:17,274 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/perfection-plus-sterilisation-pouches.html (attempt 2)
+2026-03-22 16:46:27,489 [WARNING] [dentalsky.com] HTTP 503 for https://www.dentalsky.com/perfection-plus-sterilisation-pouches.html (attempt 3)
+2026-03-22 16:46:27,491 [INFO]   [dentalsky] ✗ Not found
+2026-03-22 16:46:33,590 [INFO]   [dontalia] ✗ Not found
+2026-03-22 16:46:33,591 [INFO]   [henryschein] ✗ Not found
+2026-03-22 16:46:33,606 [INFO] Output written to 'test.csv' and 'test_mappings.csv'
+2026-03-22 16:46:33,606 [INFO]   dmi_ie: 2/30 prices found
+2026-03-22 16:46:33,607 [INFO]   dmi_uk: 2/30 prices found
+2026-03-22 16:46:33,607 [INFO]   dentalsky: 0/30 prices found
+2026-03-22 16:46:33,607 [INFO]   dontalia: 0/30 prices found
+2026-03-22 16:46:33,607 [INFO]   henryschein: 0/30 prices found
+2026-03-22 17:10:44,174 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-22 17:10:47,000 [INFO] Limited to first 30 rows
+2026-03-22 17:10:47,000 [INFO] Registered scraper: dmi_ie
+2026-03-22 17:10:47,000 [INFO] [1/30] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-22 17:10:48,885 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:10:48,886 [INFO] [2/30] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-03-22 17:10:54,602 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:10:54,602 [INFO] [3/30] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-03-22 17:11:02,548 [INFO]   [dmi.ie] Skipping irrelevant result: /products/dentsply-sirona-assure-plus-autoclave-pouches-89x2
+2026-03-22 17:11:02,549 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-90x230mm-200pk-pplu
+2026-03-22 17:11:03,343 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — found: 'Perfection Plus Eco+ Medium Pouches 90 X 254mm  Pack  500', trying next query
+2026-03-22 17:11:07,675 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:11:07,676 [INFO] [4/30] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-22 17:11:18,161 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:11:18,162 [INFO] [5/30] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-03-22 17:11:19,952 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:11:19,953 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:11:19,953 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:11:19,953 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:11:22,341 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:11:22,342 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:11:22,342 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:11:22,342 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:11:25,077 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:11:25,077 [INFO] [6/30] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-03-22 17:11:31,157 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:11:31,157 [INFO] [7/30] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-03-22 17:11:37,062 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:11:37,062 [INFO] [8/30] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-22 17:11:54,684 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:11:54,684 [INFO] [9/30] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-03-22 17:11:59,391 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:11:59,391 [INFO] [10/30] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-22 17:12:09,986 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:12:09,987 [INFO] [11/30] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-03-22 17:12:16,052 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:12:16,052 [INFO] [12/30] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-03-22 17:12:18,324 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:12:18,324 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:12:18,324 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:12:22,180 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:12:22,180 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:12:22,180 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:12:24,118 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:12:24,118 [INFO] [13/30] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-03-22 17:12:32,420 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:12:32,420 [INFO] [14/30] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-03-22 17:12:43,382 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:12:43,382 [INFO] [15/30] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-03-22 17:12:50,698 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:12:50,698 [INFO] [16/30] PHI147 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) NEW
+2026-03-22 17:12:57,782 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:12:57,782 [INFO] [17/30] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-03-22 17:13:01,652 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:13:01,652 [INFO] [18/30] PHI150 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) NEW
+2026-03-22 17:13:08,672 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:13:08,673 [INFO] [19/30] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-22 17:13:15,265 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:13:15,266 [INFO] [20/30] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-03-22 17:13:23,918 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:13:23,919 [INFO] [21/30] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-03-22 17:13:28,689 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:13:28,690 [INFO] [22/30] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-03-22 17:13:33,968 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:13:33,969 [INFO] [23/30] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-03-22 17:13:42,889 [INFO]   [dmi.ie] Search '1.204.018' ✓ €5.35
+2026-03-22 17:13:42,891 [INFO]   [dmi_ie] ✓ €5.35  (score=0.60, variance: N/A)
+2026-03-22 17:13:42,891 [INFO] [24/30] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-03-22 17:13:45,609 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:45,609 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:45,609 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:45,610 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:45,610 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:45,610 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:47,283 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:47,283 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:47,283 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:47,284 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:47,284 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:47,284 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:13:49,364 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:13:49,364 [INFO] [25/30] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-03-22 17:13:54,215 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:13:54,215 [INFO] [26/30] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-03-22 17:13:59,635 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:13:59,635 [INFO] [27/30] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-03-22 17:14:08,285 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 17:14:08,286 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 17:14:08,286 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-hygenic-non-latex-rubber-dam-green-15pk-6-
+2026-03-22 17:14:08,286 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-purple-flexidam-non-latex-20pk-6-x-6-152-x
+2026-03-22 17:14:08,287 [INFO]   [dmi.ie] Skipping irrelevant result: /products/flexi-dam-non-latex-teal-green-x30-6-x-6-colt-h099
+2026-03-22 17:14:08,894 [INFO]   [dmi.ie] Search 'PERF-0040046' ✓ €25.12
+2026-03-22 17:14:08,894 [INFO]   [dmi_ie] ✓ €25.12  (score=0.71, variance: N/A)
+2026-03-22 17:14:08,895 [INFO] [28/30] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-03-22 17:14:14,707 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:14:14,707 [INFO] [29/30] PHI148 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) NEW
+2026-03-22 17:14:20,712 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:14:20,712 [INFO] [30/30] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-03-22 17:14:35,184 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-55x130mm-200pk-pplu
+2026-03-22 17:14:38,548 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:14:38,555 [INFO] Output written to 'test.csv' and 'test_mappings.csv'
+2026-03-22 17:14:38,555 [INFO]   dmi_ie: 2/30 prices found
+2026-03-22 17:25:43,377 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-22 17:25:43,984 [INFO] Limited to first 30 rows
+2026-03-22 17:25:43,984 [INFO] Registered scraper: dmi_ie
+2026-03-22 17:25:43,985 [INFO] [1/30] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-22 17:25:46,098 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:25:46,099 [INFO] [2/30] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-03-22 17:25:53,554 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:25:53,555 [INFO] [3/30] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-03-22 17:26:01,966 [INFO]   [dmi.ie] Skipping irrelevant result: /products/dentsply-sirona-assure-plus-autoclave-pouches-89x2
+2026-03-22 17:26:01,966 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-90x230mm-200pk-pplu
+2026-03-22 17:26:04,187 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — found: 'Perfection Plus Eco+ Medium Pouches 90 X 254mm  Pack  500', trying next query
+2026-03-22 17:26:09,700 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:26:09,701 [INFO] [4/30] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-22 17:26:20,620 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:26:20,621 [INFO] [5/30] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-03-22 17:26:22,858 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:26:22,859 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:26:22,859 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:26:22,860 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:26:24,987 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:26:24,988 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:26:24,988 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:26:24,989 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:26:27,334 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:26:27,334 [INFO] [6/30] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-03-22 17:26:33,069 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:26:33,071 [INFO] [7/30] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-03-22 17:26:39,718 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:26:39,719 [INFO] [8/30] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-22 17:26:56,859 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:26:56,861 [INFO] [9/30] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-03-22 17:27:02,603 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:27:02,603 [INFO] [10/30] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-22 17:27:13,667 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:27:13,668 [INFO] [11/30] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-03-22 17:27:19,420 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:27:19,421 [INFO] [12/30] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-03-22 17:27:21,843 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:27:21,843 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:27:21,843 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:27:24,162 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:27:24,163 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:27:24,163 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:27:26,218 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:27:26,219 [INFO] [13/30] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-03-22 17:27:34,494 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:27:34,495 [INFO] [14/30] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-03-22 17:27:46,032 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:27:46,033 [INFO] [15/30] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-03-22 17:27:54,352 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:27:54,353 [INFO] [16/30] PHI147 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) NEW
+2026-03-22 17:27:59,167 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:27:59,167 [INFO] [17/30] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-03-22 17:28:04,879 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:28:04,880 [INFO] [18/30] PHI150 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) NEW
+2026-03-22 17:28:11,592 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:28:11,593 [INFO] [19/30] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-22 17:28:18,799 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:28:18,800 [INFO] [20/30] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-03-22 17:28:27,843 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:28:27,844 [INFO] [21/30] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-03-22 17:28:33,948 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:28:33,949 [INFO] [22/30] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-03-22 17:28:41,219 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:28:41,219 [INFO] [23/30] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-03-22 17:28:49,910 [INFO]   [dmi.ie] Search '1.204.018' ✓ €5.35
+2026-03-22 17:28:49,910 [INFO]   [dmi_ie] ✓ €5.35  (score=0.60, variance: N/A)
+2026-03-22 17:28:49,911 [INFO] [24/30] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-03-22 17:28:53,489 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:53,489 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:53,490 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:53,490 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:53,490 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:53,491 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:56,877 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:56,878 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:56,878 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:56,879 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:56,880 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:56,880 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:28:59,062 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:28:59,064 [INFO] [25/30] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-03-22 17:29:05,786 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:29:05,786 [INFO] [26/30] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-03-22 17:29:11,245 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:29:11,246 [INFO] [27/30] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-03-22 17:29:21,565 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 17:29:21,565 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 17:29:21,565 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-hygenic-non-latex-rubber-dam-green-15pk-6-
+2026-03-22 17:29:21,565 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-purple-flexidam-non-latex-20pk-6-x-6-152-x
+2026-03-22 17:29:21,565 [INFO]   [dmi.ie] Skipping irrelevant result: /products/flexi-dam-non-latex-teal-green-x30-6-x-6-colt-h099
+2026-03-22 17:29:23,162 [INFO]   [dmi.ie] Search 'PERF-0040046' ✓ €25.12
+2026-03-22 17:29:23,162 [INFO]   [dmi_ie] ✓ €25.12  (score=0.71, variance: N/A)
+2026-03-22 17:29:23,162 [INFO] [28/30] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-03-22 17:29:28,263 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:29:28,264 [INFO] [29/30] PHI148 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) NEW
+2026-03-22 17:29:31,477 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:29:31,478 [INFO] [30/30] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-03-22 17:29:38,258 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-55x130mm-200pk-pplu
+2026-03-22 17:29:44,520 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:31:30,128 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-22 17:31:30,773 [INFO] Limited to first 30 rows
+2026-03-22 17:31:30,773 [INFO] Registered scraper: dmi_ie
+2026-03-22 17:31:30,773 [INFO] [1/30] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-22 17:31:33,873 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:31:33,873 [INFO] [2/30] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-03-22 17:31:38,656 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:31:38,656 [INFO] [3/30] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-03-22 17:31:45,954 [INFO]   [dmi.ie] Skipping irrelevant result: /products/dentsply-sirona-assure-plus-autoclave-pouches-89x2
+2026-03-22 17:31:45,954 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-90x230mm-200pk-pplu
+2026-03-22 17:31:46,851 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — found: 'Perfection Plus Eco+ Medium Pouches 90 X 254mm  Pack  500', trying next query
+2026-03-22 17:31:52,427 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:31:52,427 [INFO] [4/30] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-22 17:32:02,676 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:32:02,677 [INFO] [5/30] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-03-22 17:32:07,085 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:32:07,086 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:32:07,086 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:32:07,087 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:32:09,605 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:32:09,605 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:32:09,606 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:32:09,606 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:32:11,165 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:32:11,165 [INFO] [6/30] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-03-22 17:32:16,968 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:32:16,969 [INFO] [7/30] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-03-22 17:32:21,508 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:32:21,508 [INFO] [8/30] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-22 17:32:39,785 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:32:39,786 [INFO] [9/30] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-03-22 17:32:44,775 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:32:44,776 [INFO] [10/30] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-22 17:32:54,570 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:32:54,571 [INFO] [11/30] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-03-22 17:33:01,891 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:33:01,892 [INFO] [12/30] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-03-22 17:33:06,185 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:33:06,186 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:33:06,187 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:33:09,809 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:33:09,810 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:33:09,810 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:33:12,174 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:33:12,175 [INFO] [13/30] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-03-22 17:33:21,349 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:33:21,350 [INFO] [14/30] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-03-22 17:33:32,210 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:33:32,211 [INFO] [15/30] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-03-22 17:33:40,288 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:33:40,289 [INFO] [16/30] PHI147 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) NEW
+2026-03-22 17:33:45,866 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:33:45,866 [INFO] [17/30] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-03-22 17:33:51,794 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:33:51,795 [INFO] [18/30] PHI150 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) NEW
+2026-03-22 17:33:59,023 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:33:59,024 [INFO] [19/30] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-22 17:34:03,617 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:34:03,618 [INFO] [20/30] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-03-22 17:34:13,821 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:34:13,821 [INFO] [21/30] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-03-22 17:34:16,756 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-22 17:34:24,570 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:34:24,570 [INFO] [22/30] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-03-22 17:34:29,858 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:34:29,858 [INFO] [23/30] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-03-22 17:34:37,326 [INFO]   [dmi.ie] Search '1.204.018' ✓ €5.35
+2026-03-22 17:34:37,327 [INFO]   [dmi_ie] ✓ €5.35  (score=0.60, variance: N/A)
+2026-03-22 17:34:37,327 [INFO] [24/30] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-03-22 17:34:40,536 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:40,537 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:40,538 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:40,538 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:40,538 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:40,538 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:44,032 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:44,033 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:44,033 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:44,034 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:44,034 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:44,034 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:34:45,742 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:34:45,743 [INFO] [25/30] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-03-22 17:34:52,297 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:34:52,297 [INFO] [26/30] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-03-22 17:34:57,054 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:34:57,054 [INFO] [27/30] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-03-22 17:35:15,190 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 17:35:15,191 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 17:35:15,191 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-hygenic-non-latex-rubber-dam-green-15pk-6-
+2026-03-22 17:35:15,191 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-purple-flexidam-non-latex-20pk-6-x-6-152-x
+2026-03-22 17:35:15,191 [INFO]   [dmi.ie] Skipping irrelevant result: /products/flexi-dam-non-latex-teal-green-x30-6-x-6-colt-h099
+2026-03-22 17:35:15,745 [INFO]   [dmi.ie] Search 'PERF-0040046' ✓ €25.12
+2026-03-22 17:35:15,746 [INFO]   [dmi_ie] ✓ €25.12  (score=0.71, variance: N/A)
+2026-03-22 17:35:15,746 [INFO] [28/30] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-03-22 17:35:21,565 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:35:21,566 [INFO] [29/30] PHI148 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) NEW
+2026-03-22 17:35:26,574 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:35:26,575 [INFO] [30/30] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-03-22 17:35:33,249 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-55x130mm-200pk-pplu
+2026-03-22 17:35:37,288 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:35:37,294 [INFO] Output written to 'test.csv' and 'test_mappings.csv'
+2026-03-22 17:35:37,295 [INFO]   dmi_ie: 2/30 prices found
+2026-03-22 17:52:08,756 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-22 17:52:09,568 [INFO] Limited to first 30 rows
+2026-03-22 17:52:09,569 [INFO] Registered scraper: dmi_ie
+2026-03-22 17:52:09,569 [INFO] [1/30] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-22 17:52:13,213 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:52:13,213 [INFO] [2/30] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-03-22 17:52:17,101 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:52:17,101 [INFO] [3/30] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-03-22 17:52:24,995 [INFO]   [dmi.ie] Skipping irrelevant result: /products/dentsply-sirona-assure-plus-autoclave-pouches-89x2
+2026-03-22 17:52:24,995 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-90x230mm-200pk-pplu
+2026-03-22 17:52:25,506 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — found: 'Perfection Plus Eco+ Medium Pouches 90 X 254mm  Pack  500', trying next query
+2026-03-22 17:52:32,472 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:52:32,472 [INFO] [4/30] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-22 17:52:42,216 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:52:42,217 [INFO] [5/30] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-03-22 17:52:46,055 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:52:46,055 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:52:46,055 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:52:46,056 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:52:49,265 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:52:49,265 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:52:49,266 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:52:49,266 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:52:51,414 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:52:51,415 [INFO] [6/30] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-03-22 17:52:55,657 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:52:55,657 [INFO] [7/30] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-03-22 17:53:01,049 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:53:01,049 [INFO] [8/30] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-22 17:53:15,310 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:53:15,310 [INFO] [9/30] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-03-22 17:53:20,472 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:53:20,473 [INFO] [10/30] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-22 17:53:33,828 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:53:33,828 [INFO] [11/30] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-03-22 17:53:39,670 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:53:39,670 [INFO] [12/30] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-03-22 17:53:42,100 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:53:42,100 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:53:42,100 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:53:45,405 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:53:45,405 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:53:45,406 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:53:48,943 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:53:48,943 [INFO] [13/30] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-03-22 17:53:54,979 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:53:54,980 [INFO] [14/30] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-03-22 17:54:06,022 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:54:06,023 [INFO] [15/30] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-03-22 17:54:14,287 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:54:14,288 [INFO] [16/30] PHI147 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) NEW
+2026-03-22 17:54:20,501 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:54:20,501 [INFO] [17/30] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-03-22 17:54:26,324 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:54:26,325 [INFO] [18/30] PHI150 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) NEW
+2026-03-22 17:54:32,791 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:54:32,792 [INFO] [19/30] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-22 17:54:41,512 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:54:41,512 [INFO] [20/30] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-03-22 17:54:47,743 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:54:47,744 [INFO] [21/30] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-03-22 17:54:54,805 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:54:54,806 [INFO] [22/30] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-03-22 17:55:00,137 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:55:00,138 [INFO] [23/30] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-03-22 17:55:10,474 [INFO]   [dmi.ie] Search '1.204.018' ✓ €5.35
+2026-03-22 17:55:10,475 [INFO]   [dmi_ie] ✓ €5.35  (score=0.60, variance: N/A)
+2026-03-22 17:55:10,476 [INFO] [24/30] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-03-22 17:55:14,380 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:14,381 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:14,381 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:14,381 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:14,381 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:14,382 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:22,359 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:22,360 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:22,360 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:22,360 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:22,362 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:22,362 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-22 17:55:23,094 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:55:23,094 [INFO] [25/30] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-03-22 17:55:29,127 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:55:29,127 [INFO] [26/30] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-03-22 17:55:36,174 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:55:36,175 [INFO] [27/30] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-03-22 17:55:49,844 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 17:55:49,844 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-22 17:55:49,845 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-hygenic-non-latex-rubber-dam-green-15pk-6-
+2026-03-22 17:55:49,846 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-purple-flexidam-non-latex-20pk-6-x-6-152-x
+2026-03-22 17:55:49,846 [INFO]   [dmi.ie] Skipping irrelevant result: /products/flexi-dam-non-latex-teal-green-x30-6-x-6-colt-h099
+2026-03-22 17:55:50,751 [INFO]   [dmi.ie] Search 'PERF-0040046' ✓ €25.12
+2026-03-22 17:55:50,753 [INFO]   [dmi_ie] ✓ €25.12  (score=0.71, variance: N/A)
+2026-03-22 17:55:50,753 [INFO] [28/30] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-03-22 17:55:59,025 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:55:59,026 [INFO] [29/30] PHI148 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) NEW
+2026-03-22 17:56:05,063 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:56:05,064 [INFO] [30/30] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-03-22 17:56:14,293 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-55x130mm-200pk-pplu
+2026-03-22 17:56:17,627 [INFO]   [dmi_ie] ✗ Not found
+2026-03-22 17:56:17,659 [INFO] Output written to 'test.csv' and 'test_mappings.csv'
+2026-03-22 17:56:17,661 [INFO]   dmi_ie: 2/30 prices found
+2026-03-23 01:36:24,985 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-23 01:36:31,120 [INFO] Limited to first 30 rows
+2026-03-23 01:36:31,121 [INFO] Registered scraper: dmi_ie
+2026-03-23 01:36:31,121 [INFO] [1/30] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-23 01:36:34,683 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:36:34,684 [INFO] [2/30] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-03-23 01:36:42,826 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:36:42,827 [INFO] [3/30] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-03-23 01:38:31,010 [INFO]   [dmi.ie] Skipping irrelevant result: /products/dentsply-sirona-assure-plus-autoclave-pouches-89x2
+2026-03-23 01:38:31,011 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-90x230mm-200pk-pplu
+2026-03-23 01:38:46,337 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — found: 'Perfection Plus Eco+ Medium Pouches 90 X 254mm  Pack  500', trying next query
+2026-03-23 01:38:49,403 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:38:49,404 [INFO] [4/30] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-23 01:39:01,106 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:39:01,106 [INFO] [5/30] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-03-23 01:39:04,851 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:39:04,852 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:39:04,852 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:39:04,853 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:39:06,464 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:39:06,470 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:39:06,471 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:39:06,472 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:39:08,590 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:39:08,590 [INFO] [6/30] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-03-23 01:39:21,110 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:39:21,110 [INFO] [7/30] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-03-23 01:39:24,359 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:39:24,359 [INFO] [8/30] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-23 01:39:45,289 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:39:45,289 [INFO] [9/30] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-03-23 01:39:51,086 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:39:51,086 [INFO] [10/30] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-23 01:40:12,396 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:40:12,397 [INFO] [11/30] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-03-23 01:40:15,047 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:40:15,047 [INFO] [12/30] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-03-23 01:40:18,529 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:40:18,529 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:40:18,530 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:40:20,994 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:40:20,994 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:40:20,995 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:40:24,202 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:40:24,202 [INFO] [13/30] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-03-23 01:40:32,864 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:40:32,865 [INFO] [14/30] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-03-23 01:40:46,486 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:40:46,487 [INFO] [15/30] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-03-23 01:40:58,036 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:40:58,037 [INFO] [16/30] PHI147 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) NEW
+2026-03-23 01:41:02,254 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:41:02,254 [INFO] [17/30] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-03-23 01:41:07,159 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:41:07,160 [INFO] [18/30] PHI150 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) NEW
+2026-03-23 01:41:13,671 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:41:13,672 [INFO] [19/30] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-23 01:41:22,297 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:41:22,299 [INFO] [20/30] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-03-23 01:41:31,261 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:41:31,261 [INFO] [21/30] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-03-23 01:41:44,891 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:41:44,892 [INFO] [22/30] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-03-23 01:41:52,948 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:41:52,949 [INFO] [23/30] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-03-23 01:42:03,455 [INFO]   [dmi.ie] Search '1.204.018' ✓ €5.35
+2026-03-23 01:42:03,456 [INFO]   [dmi_ie] ✓ €5.35  (score=0.60, variance: N/A)
+2026-03-23 01:42:03,457 [INFO] [24/30] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-03-23 01:42:07,210 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:07,210 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:07,210 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:07,211 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:07,211 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:07,211 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:09,949 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:09,950 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:09,950 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:09,950 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:09,951 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:09,951 [INFO]   [dmi.ie] Skipping irrelevant result: /sites/admin/plugins/elfinder/files/dmi/products/Herasus/Bou
+2026-03-23 01:42:40,474 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out. (read timeout=30)
+2026-03-23 01:42:51,716 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:42:51,717 [INFO] [25/30] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-03-23 01:42:57,213 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-23 01:43:27,550 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:43:27,551 [INFO] [26/30] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-03-23 01:43:34,960 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:43:34,961 [INFO] [27/30] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-03-23 01:45:51,497 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-23 01:45:51,497 [INFO]   [dmi.ie] Skipping irrelevant result: https://dmi.aws.aphix.software/sites/admin/plugins/elfinder/
+2026-03-23 01:45:51,498 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-hygenic-non-latex-rubber-dam-green-15pk-6-
+2026-03-23 01:45:51,499 [INFO]   [dmi.ie] Skipping irrelevant result: /products/coltene-purple-flexidam-non-latex-20pk-6-x-6-152-x
+2026-03-23 01:45:51,500 [INFO]   [dmi.ie] Skipping irrelevant result: /products/flexi-dam-non-latex-teal-green-x30-6-x-6-colt-h099
+2026-03-23 01:45:53,047 [INFO]   [dmi.ie] Search 'PERF-0040046' ✓ €25.12
+2026-03-23 01:45:53,049 [INFO]   [dmi_ie] ✓ €25.12  (score=0.71, variance: N/A)
+2026-03-23 01:45:53,049 [INFO] [28/30] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-03-23 01:45:58,181 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:45:58,181 [INFO] [29/30] PHI148 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) NEW
+2026-03-23 01:46:05,121 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:46:05,122 [INFO] [30/30] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-03-23 01:47:38,305 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/sites/admin/plugins/elfinder/files/dmi/products/Perfection%20Plus%20product%20Information/PP%20DENTAL%20DAM.pdf (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 01:50:04,369 [INFO]   [dmi.ie] Skipping irrelevant result: /products/premium-plus-autoclave-pouches-55x130mm-200pk-pplu
+2026-03-23 01:50:41,088 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 01:51:04,335 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:51:04,373 [INFO] Output written to 'test.csv' and 'test_mappings.csv'
+2026-03-23 01:51:04,373 [INFO]   dmi_ie: 2/30 prices found
+2026-03-23 01:54:19,219 [INFO] Reading input: Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv
+2026-03-23 01:54:19,224 [INFO] Limited to first 30 rows
+2026-03-23 01:54:19,831 [INFO] Registered scraper: dmi_ie
+2026-03-23 01:54:19,832 [INFO] [1/30] 400060 — Six Month Smiles Lucid-Lok Lo Universal 1/2 Bracket - Each
+2026-03-23 01:54:39,806 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:54:39,807 [INFO] [2/30] 400063 — Six Month Smiles Lucid-Lok Universal 4/5 Bracket w/Hook
+2026-03-23 01:54:49,150 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:54:49,151 [INFO] [3/30] 670231 — Clinisept+ Skin 490ml - Each
+2026-03-23 01:55:02,923 [INFO]   [dmi.ie] Search 'Clinisept+ Skin' ✓ €15.03
+2026-03-23 01:55:02,930 [INFO]   [dmi_ie] ✓ €15.03  (score=1.00, variance: -20.8%)
+2026-03-23 01:55:02,930 [INFO] [4/30] AA009 — Septodont Septoject XL Needles 27g Long 0.4x35mm - Box100
+2026-03-23 01:55:04,833 [INFO]   [dmi.ie] Direct URL ✓ €27.39
+2026-03-23 01:55:04,834 [INFO]   [dmi_ie] ✗ Rejected (score=0.33) — found: 'Septoject XL Needle 27g long Truncal 35mm Yellow 100pk'
+2026-03-23 01:55:04,835 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:55:04,835 [INFO] [5/30] AA011 — Septodont Septoject XL Needles 30g Short 0.3x25mm - Box100
+2026-03-23 01:55:16,853 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:55:16,854 [INFO] [6/30] AA021 — J&S Davis Solo Dental Needle 30g Short 0.3x23mm - Box100
+2026-03-23 01:55:20,451 [INFO]   [dmi.ie] Direct URL ✓ €25.58
+2026-03-23 01:55:20,452 [INFO]   [dmi_ie] ✗ Rejected (score=0.50) — found: 'J&amp;S Davis Needles Solo Supra 30G Short 0.30 X 23mm Box 100'
+2026-03-23 01:55:20,452 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:55:20,453 [INFO] [7/30] AA032 — Septodont Septoject Needles 27g Long - Box100
+2026-03-23 01:55:35,090 [INFO]   [dmi.ie] Search 'Septodont Septoject Needles 27g' ✓ €20.93
+2026-03-23 01:55:35,092 [INFO]   [dmi_ie] Pack size mismatch: ours=100 theirs=40 → adjusted variance: -69.6%
+2026-03-23 01:55:35,093 [INFO]   [dmi_ie] ✓ €20.93  (score=0.60, variance: -23.9%)
+2026-03-23 01:55:35,093 [INFO] [8/30] AA034 — Septodont Septoject Needles 30g Short - Box100
+2026-03-23 01:55:45,391 [INFO]   [dmi.ie] ✗ Rejected (score=0.40) — found: 'Septoject XL Needle 30g Short Para-Apical 25mm Blue 100pk', trying next query
+2026-03-23 01:55:50,533 [INFO]   [dmi.ie] ✗ Rejected (score=0.40) — found: 'Septoject XL Needle 30g Short Para-Apical 25mm Blue 100pk', trying next query
+2026-03-23 01:55:50,534 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:55:50,534 [INFO] [9/30] AA097 — UnoDent Sterile Dental Needle 30GS 0.3 x 21mm (ANU030)
+2026-03-23 01:56:04,909 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:56:04,910 [INFO] [10/30] AA105 — BD Venflon Peripheral IV Catheter w/ Port Blue 22Gx25mm-Each
+2026-03-23 01:56:07,348 [INFO]   [dmi.ie] Direct URL ✓ €117.26
+2026-03-23 01:56:07,349 [INFO]   [dmi_ie] ✗ Rejected (score=0.50) — found: 'Bd Venflon Perpheral Cannula 22G 25mm Blue x 50 IV Catheter Ported Winged  Pack 50'
+2026-03-23 01:56:07,349 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:56:07,349 [INFO] [11/30] AA120 — BD Micro-Fine + Insulin Syringe 0.3ml Needle 30Gx8mm -Box100
+2026-03-23 01:56:17,466 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:56:17,466 [INFO] [12/30] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-23 01:56:30,136 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:56:30,136 [INFO] [13/30] AA132 — 4T Medical FMS 32G Fine Micro Syringe 0.5ml - Box100
+2026-03-23 01:56:36,165 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:56:36,165 [INFO] [14/30] AAA345 — #Dentsply Anestadent 4% 1:100,000 Solution 2.2ml (546) -Bx50
+2026-03-23 01:56:40,600 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-23 01:56:44,913 [INFO]   [dmi.ie] ✗ Rejected (score=0.00) — found: 'Colgate Max White Toothbrush 12 Pack', trying next query
+2026-03-23 01:56:50,922 [INFO]   [dmi.ie] ✗ Rejected (score=0.00) — found: 'Dentsply Sirona Waveone Gold Paper Points Medium  Pack 180', trying next query
+2026-03-23 01:56:56,915 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:56:56,916 [INFO] [15/30] ABG008A — Perfection Plus Bib Roll Paper-Plastic Blue PP002/0020 - 80
+2026-03-23 01:57:04,404 [INFO]   [dmi.ie] Direct URL ✓ €16.41
+2026-03-23 01:57:04,405 [INFO]   [dmi_ie] ✓ €16.41  (score=0.86, variance: -29.3%)
+2026-03-23 01:57:04,405 [INFO] [16/30] ABG012A — HPC Healthline Gloves Powder Free Small GN31 - Box100
+2026-03-23 01:57:21,639 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:57:21,639 [INFO] [17/30] ABG013A — HPC Healthline Gloves Powder Free Medium GN31 - Box100
+2026-03-23 01:57:35,012 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:57:35,012 [INFO] [18/30] ABG014A — HPC Healthline Gloves Powder Free Large GN31 - Box100
+2026-03-23 01:57:47,088 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:57:47,089 [INFO] [19/30] ABG020 — Pegasus Velcro Dental Bib Blue - Each
+2026-03-23 01:57:51,158 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-03-23 01:58:02,249 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:58:02,250 [INFO] [20/30] ABG031B — HPC HandSafe White Nitrile Gloves Small (GN92) - Box200
+2026-03-23 01:58:15,148 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:58:15,149 [INFO] [21/30] ABG033A — HPC HandSafe White Nitrile Gloves Medium (GN92) - Box200
+2026-03-23 01:58:27,597 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:58:27,597 [INFO] [22/30] ABG163A — HPC HandSafe Blue Nitrile Gloves P/Free Small GN90 - Box200
+2026-03-23 01:58:38,080 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:58:38,080 [INFO] [23/30] ABG164A — HPC HandSafe Blue Nitrile Gloves P/Free Medium GN90 - Box200
+2026-03-23 01:58:53,343 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:58:53,343 [INFO] [24/30] ABG165A — HPC HandSafe Blue Nitrile Gloves P/Free Large GN90 - Box200
+2026-03-23 01:59:03,682 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:59:03,683 [INFO] [25/30] ABG205 — Perfection Plus Serviette Bibs Lilac (PP002/0075) - Pack 500
+2026-03-23 01:59:05,934 [INFO]   [dmi.ie] Direct URL ✓ €31.22
+2026-03-23 01:59:05,935 [INFO]   [dmi_ie] ✓ €31.22  (score=0.83, variance: -36.8%)
+2026-03-23 01:59:05,935 [INFO] [26/30] ABG214 — Perfection Plus Serviette Bibs Dark Blue (PP002/0076) - 500
+2026-03-23 01:59:09,103 [INFO]   [dmi.ie] Direct URL ✓ €29.74
+2026-03-23 01:59:09,104 [INFO]   [dmi_ie] ✓ €29.74  (score=0.86, variance: -33.7%)
+2026-03-23 01:59:09,104 [INFO] [27/30] ABG246 — UnoDent Surgical Gown Kit (COP410) - Each
+2026-03-23 01:59:17,761 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:59:17,761 [INFO] [28/30] ABG290 — Perfection Plus Serviette Bibs Blue (PP002/0060) - Pack500
+2026-03-23 01:59:19,929 [INFO]   [dmi.ie] Direct URL ✓ €29.74
+2026-03-23 01:59:19,930 [INFO]   [dmi_ie] ✓ €29.74  (score=0.71, variance: -33.7%)
+2026-03-23 01:59:19,930 [INFO] [29/30] ABG313 — Cumberland Surgical Universal Sterile Drape Kit - Each
+2026-03-23 01:59:30,717 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:59:30,717 [INFO] [30/30] ABG353 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Large
+2026-03-23 01:59:40,133 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 01:59:40,147 [INFO] Output written to 'test.csv' and 'test_mappings.csv'
+2026-03-23 01:59:40,148 [INFO]   dmi_ie: 11/30 prices found
+2026-03-23 02:30:41,434 [INFO] Reading input: Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv
+2026-03-23 02:30:41,440 [INFO] Limited to first 30 rows
+2026-03-23 02:30:42,095 [INFO] Registered scraper: dmi_ie
+2026-03-23 02:30:42,095 [INFO] [1/30] 400060 — Six Month Smiles Lucid-Lok Lo Universal 1/2 Bracket - Each
+2026-03-23 02:31:14,810 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out. (read timeout=30)
+2026-03-23 02:31:35,318 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-23 02:31:36,503 [INFO] Limited to first 30 rows
+2026-03-23 02:31:36,503 [INFO] Registered scraper: dmi_ie
+2026-03-23 02:31:36,503 [INFO] [1/30] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-23 02:31:40,398 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:31:40,399 [INFO] [2/30] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-03-23 02:31:45,136 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:31:45,137 [INFO] [3/30] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-03-23 02:31:52,615 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:31:52,616 [INFO] [4/30] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-23 02:32:02,252 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:32:02,253 [INFO] [5/30] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-03-23 02:32:12,273 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:32:12,274 [INFO] [6/30] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-03-23 02:32:17,782 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:32:17,783 [INFO] [7/30] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-03-23 02:32:23,432 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:32:23,432 [INFO] [8/30] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-23 02:32:50,363 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:32:50,363 [INFO] [9/30] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-03-23 02:32:55,894 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:32:55,894 [INFO] [10/30] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-23 02:33:14,120 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:33:14,121 [INFO] [11/30] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-03-23 02:33:22,719 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:33:22,719 [INFO] [12/30] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-03-23 02:33:29,060 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:33:29,061 [INFO] [13/30] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-03-23 02:33:35,583 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:33:35,584 [INFO] [14/30] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-03-23 02:33:45,609 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:33:45,609 [INFO] [15/30] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-03-23 02:33:52,637 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:33:52,637 [INFO] [16/30] PHI147 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) NEW
+2026-03-23 02:33:58,062 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:33:58,063 [INFO] [17/30] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-03-23 02:34:02,325 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:34:02,325 [INFO] [18/30] PHI150 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) NEW
+2026-03-23 02:34:07,278 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:34:07,278 [INFO] [19/30] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-23 02:34:16,397 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:34:16,397 [INFO] [20/30] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-03-23 02:34:24,285 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:34:24,286 [INFO] [21/30] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-03-23 02:34:30,424 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:34:30,424 [INFO] [22/30] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-03-23 02:34:36,552 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:34:36,552 [INFO] [23/30] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-03-23 02:34:48,433 [INFO]   [dmi.ie] Search '1.204.018' ✓ €5.35 (score=0.72)
+2026-03-23 02:34:48,434 [INFO]   [dmi_ie] ✓ €5.35  (score=0.72, variance: N/A)
+2026-03-23 02:34:48,435 [INFO] [24/30] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-03-23 02:34:57,220 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:34:57,220 [INFO] [25/30] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-03-23 02:35:02,791 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:35:02,792 [INFO] [26/30] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-03-23 02:35:09,234 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:35:09,235 [INFO] [27/30] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-03-23 02:35:17,152 [INFO]   [dmi.ie] Search 'PERF-0040046' ✓ €25.12 (score=0.71)
+2026-03-23 02:35:17,153 [INFO]   [dmi_ie] ✓ €25.12  (score=0.71, variance: N/A)
+2026-03-23 02:35:17,153 [INFO] [28/30] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-03-23 02:35:23,093 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:35:23,094 [INFO] [29/30] PHI148 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) NEW
+2026-03-23 02:35:31,639 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:35:31,640 [INFO] [30/30] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-03-23 02:35:38,934 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 02:35:38,951 [INFO] Output written to 'test.csv' and 'test_mappings.csv'
+2026-03-23 02:35:38,951 [INFO]   dmi_ie: 2/30 prices found
+2026-03-23 14:51:43,504 [INFO] Reading input: Top 300 (2).xlsx
+2026-03-23 14:51:45,098 [INFO] Registered scraper: dmi_ie
+2026-03-23 14:51:45,099 [INFO] [1/300] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-03-23 14:51:49,451 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:51:49,452 [INFO] [2/300] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-03-23 14:51:56,207 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:51:56,208 [INFO] [3/300] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-03-23 14:52:08,191 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:52:08,192 [INFO] [4/300] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-23 14:52:22,118 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:52:22,119 [INFO] [5/300] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-03-23 14:52:31,288 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:52:31,288 [INFO] [6/300] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-03-23 14:52:34,341 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:52:34,341 [INFO] [7/300] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-03-23 14:52:39,838 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:52:39,839 [INFO] [8/300] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-23 14:52:58,424 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:52:58,425 [INFO] [9/300] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-03-23 14:53:03,025 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:53:03,026 [INFO] [10/300] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-03-23 14:53:20,071 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:53:20,072 [INFO] [11/300] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-03-23 14:53:24,172 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:53:24,173 [INFO] [12/300] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-03-23 14:53:39,382 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:53:39,383 [INFO] [13/300] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-03-23 14:54:06,305 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:54:06,305 [INFO] [14/300] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-03-23 14:54:47,826 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:54:47,828 [INFO] [15/300] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-03-23 14:54:56,018 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:54:56,018 [INFO] [16/300] PHI147 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) NEW
+2026-03-23 14:55:02,778 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:55:02,778 [INFO] [17/300] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-03-23 14:55:13,785 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:55:13,786 [INFO] [18/300] PHI150 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) NEW
+2026-03-23 14:55:18,160 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:55:18,160 [INFO] [19/300] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-03-23 14:55:23,739 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:55:23,739 [INFO] [20/300] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-03-23 14:55:31,672 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-23 14:55:45,243 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:55:45,244 [INFO] [21/300] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-03-23 14:55:51,118 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:55:51,119 [INFO] [22/300] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-03-23 14:55:55,429 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:55:55,430 [INFO] [23/300] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-03-23 14:56:06,963 [INFO]   [dmi.ie] Search '1.204.018' ✓ €5.35 (score=0.72)
+2026-03-23 14:56:06,968 [INFO]   [dmi_ie] ✓ €5.35  (score=0.72, variance: N/A)
+2026-03-23 14:56:06,969 [INFO] [24/300] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-03-23 14:56:14,940 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:56:14,941 [INFO] [25/300] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-03-23 14:56:18,364 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:56:18,365 [INFO] [26/300] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-03-23 14:56:24,765 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:56:24,766 [INFO] [27/300] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-03-23 14:56:30,554 [INFO]   [dmi.ie] Search 'PERF-0040046' ✓ €25.12 (score=0.71)
+2026-03-23 14:56:30,556 [INFO]   [dmi_ie] ✓ €25.12  (score=0.71, variance: N/A)
+2026-03-23 14:56:30,557 [INFO] [28/300] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-03-23 14:56:37,052 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:56:37,052 [INFO] [29/300] PHI148 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) NEW
+2026-03-23 14:56:41,893 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:56:41,894 [INFO] [30/300] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-03-23 14:56:51,517 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:56:51,518 [INFO] [31/300] PHI145 — Philips Zoom! DayWhite ACP Take Home Mini Kit 6% (HP) NEW
+2026-03-23 14:56:55,207 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:56:55,207 [INFO] [32/300] MIS039 — Perfection Plus Sterilisation Pouches 85x165mm (PP002/5001)
+2026-03-23 14:57:05,264 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:57:05,265 [INFO] [33/300] ABG012A — HPC Healthline Gloves Powder Free Small GN31 - Box100
+2026-03-23 14:57:13,852 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:57:13,853 [INFO] [34/300] MIS041 — Perfection Plus Sterilisation Pouches 135x278mm PP002/5003
+2026-03-23 14:57:22,408 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:57:22,408 [INFO] [35/300] CCA200 — Cottontails Soft Cotton Buds (1115) - Pack200
+2026-03-23 14:57:28,979 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:57:28,980 [INFO] [36/300] CSP244 — Zhermack Zeta 7 Trigger Spray 750ml (C810050) - Each
+2026-03-23 14:57:38,063 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:57:38,063 [INFO] [37/300] BOU001 — Boutique Whitening Kit By Day 6% HP 4x3ml
+2026-03-23 14:58:22,740 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 14:58:29,391 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:58:29,392 [INFO] [38/300] PHI153 — Philips Zoom! Bulk Take Home Box NiteWhite 16%(CP)-Box25 NEW
+2026-03-23 14:58:37,308 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:58:37,308 [INFO] [39/300] CSP219 — Clinell Universal Sanitising Wipe (CW200) - Pack200
+2026-03-23 14:58:41,099 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:58:41,099 [INFO] [40/300] PHI149 — Philips Zoom! NiteWhite ACP Take Home Standard 10% (CP) NEW
+2026-03-23 14:58:45,496 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:58:45,496 [INFO] [41/300] OH294 — TePe EasyPick XS/S (242310) - Pack36
+2026-03-23 14:58:53,488 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:58:53,489 [INFO] [42/300] PCO036 — Oral-B Superfloss - Each
+2026-03-23 14:58:57,503 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Oral B Satin Tape Waxed Mint Pack 12 X 25m'
+2026-03-23 14:59:00,523 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Oral-B Pro-Expert 35 12 Pack'
+2026-03-23 14:59:02,354 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Oral-B Glide Floss Picks 30 Pack'
+2026-03-23 14:59:06,915 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:59:06,916 [INFO] [43/300] OH308 — TePe Select Toothbrush Soft (322120) - Each
+2026-03-23 14:59:15,281 [INFO]   [dmi.ie] Search 'TePe Select Toothbrush Soft' ✓ €1.65 (score=1.00)
+2026-03-23 14:59:15,281 [INFO]   [dmi_ie] ✓ €1.65  (score=1.00, variance: N/A)
+2026-03-23 14:59:15,281 [INFO] [44/300] ESB022 — Edenta Steel Burs Round 23/023 Size 8 (1.204.023) - Pack 5
+2026-03-23 14:59:23,773 [INFO]   [dmi.ie] Search '1.204.023' ✓ €5.35 (score=0.72)
+2026-03-23 14:59:23,773 [INFO]   [dmi_ie] ✓ €5.35  (score=0.72, variance: N/A)
+2026-03-23 14:59:23,773 [INFO] [45/300] CAW384 — Schulke Mikrozid Jumbo Wipes Refill (70002981) - Pack220
+2026-03-23 14:59:38,555 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:59:38,556 [INFO] [46/300] EMED004 — #Eire Septodont Scandonest 3% Plain 2.2ml - Box50
+2026-03-23 14:59:52,228 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 14:59:52,228 [INFO] [47/300] OH164 — Essix Retainer Brite Cleansing Tabs - Box36 (YOM255)
+2026-03-23 15:00:00,964 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:00:00,965 [INFO] [48/300] PHI146 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 10% (CP) NEW
+2026-03-23 15:00:07,326 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:00:07,327 [INFO] [49/300] ABG164A — HPC HandSafe Blue Nitrile Gloves P/Free Medium GN90 - Box200
+2026-03-23 15:00:13,817 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:00:13,818 [INFO] [50/300] EIM012 — Perfection Plus Tray Lining Paper White (002/0012) - Pack250
+2026-03-23 15:00:19,899 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:00:19,899 [INFO] [51/300] COP495 — Medibase Saliva Ejectors with Removable Tips Blue - Box100
+2026-03-23 15:00:25,027 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:00:25,027 [INFO] [52/300] SE011 — Perfection Plus Saliva Ejectors Clear (PP011/4250) - Pack100
+2026-03-23 15:00:32,705 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:00:32,705 [INFO] [53/300] ESB018 — Edenta Steel Burs Round 23/014 Size 4 (1.204.014) - Pack 5
+2026-03-23 15:00:45,594 [INFO]   [dmi.ie] Search '1.204.014' ✓ €5.35 (score=0.72)
+2026-03-23 15:00:45,595 [INFO]   [dmi_ie] ✓ €5.35  (score=0.72, variance: N/A)
+2026-03-23 15:00:45,596 [INFO] [54/300] AA132 — 4T Medical FMS 32G Fine Micro Syringe 0.5ml - Box100
+2026-03-23 15:00:46,507 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:00:46,509 [INFO] [55/300] IAP005 — Perfection Plus ImpressPLUS Alginate 450g Bag
+2026-03-23 15:00:51,731 [INFO]   [dmi.ie] Search 'Perfection Plus ImpressPLUS Alginate 450g' ✓ €9.66 (score=1.00)
+2026-03-23 15:00:51,733 [INFO]   [dmi_ie] ✓ €9.66  (score=1.00, variance: N/A)
+2026-03-23 15:00:51,733 [INFO] [56/300] PCG108 — Oral-B Glide Floss Picks - Pack30
+2026-03-23 15:01:04,539 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:01:04,540 [INFO] [57/300] OH271A — TePe EasyPick M/L (242350) - Pack36
+2026-03-23 15:01:14,067 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:01:14,068 [INFO] [58/300] FPM085 — Perfection Plus Tofflemire Bands No.1 Thin (085/0055)
+2026-03-23 15:01:21,582 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:01:21,583 [INFO] [59/300] BOU019 — Boutique Whitening Top Up Case By Day 6% HP 3x3ml
+2026-03-23 15:01:40,008 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:01:40,009 [INFO] [60/300] ESB019 — Edenta Steel Burs Round 23/016 Size 5 (1.204.016) -Pack 5
+2026-03-23 15:02:18,814 [INFO]   [dmi.ie] Search '1.204.016' ✓ €5.35 (score=0.72)
+2026-03-23 15:02:18,815 [INFO]   [dmi_ie] ✓ €5.35  (score=0.72, variance: N/A)
+2026-03-23 15:02:18,815 [INFO] [61/300] PBC065 — Curaprox Perio Plus+ Support Toothpaste 0.09% 75ml - Each
+2026-03-23 15:02:26,024 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:02:26,024 [INFO] [62/300] SE076 — Perfection Plus Protect+ Disposable 3 in 1 Tips White
+2026-03-23 15:02:42,745 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:02:42,745 [INFO] [63/300] ABG355 — Meditrade Nitril Sensory Blue Nitrile Glove X-Small - Box200
+2026-03-23 15:02:42,828 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-03-23 15:02:54,840 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:02:54,841 [INFO] [64/300] PHI019 — Philips Zoom! EVA Tray Material - Pack12
+2026-03-23 15:03:00,983 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:03:00,984 [INFO] [65/300] PHI151 — Philips Zoom! Bulk Take Home Box DayWhite 6% (HP) -Box25 NEW
+2026-03-23 15:03:04,772 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:03:04,773 [INFO] [66/300] FAC294 — Bossklein Etchant Gel Jumbo Etching Kit 50ml (BOS9904) -Each
+2026-03-23 15:03:09,122 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:03:09,122 [INFO] [67/300] ABG353 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Large
+2026-03-23 15:03:15,712 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:03:15,712 [INFO] [68/300] MED008 — #Septodont Lignospan 2% Special 2.2ml - Box50
+2026-03-23 15:03:30,942 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:03:30,942 [INFO] [69/300] PDP101 — Curaprox Perio Plus+ Regenerate Mouthwash 0.09% 200ml - Each
+2026-03-23 15:03:39,528 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:03:39,529 [INFO] [70/300] FPM118 — Perfection Plus Prophy Paste Mint Coarse 250g (PP010/0046)
+2026-03-23 15:03:42,128 [INFO]   [dmi.ie] Search 'Perfection Plus Prophy Paste Mint Coarse 250g' ✓ €10.07 (score=0.86)
+2026-03-23 15:03:42,129 [INFO]   [dmi_ie] ✓ €10.07  (score=0.86, variance: N/A)
+2026-03-23 15:03:42,129 [INFO] [71/300] SE015 — Orsing Hygovac Aspirator Tubes - Pack100
+2026-03-23 15:03:48,084 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:03:48,084 [INFO] [72/300] PPI134 — Perfection Plus Eco+ Hand K Files 25mm 10 (004/5010) - Pack6
+2026-03-23 15:03:57,075 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:03:57,076 [INFO] [73/300] PAT074 — TePe Select Toothbrush Soft Blister (322688) - Each
+2026-03-23 15:04:03,253 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:04:03,254 [INFO] [74/300] EQS150C — BF Mulholland Detergent - UltraClean 11/111 - 5Ltr (1080)
+2026-03-23 15:04:09,559 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:04:09,560 [INFO] [75/300] CPP099 — Perfection Plus Cotton Wool Rolls No.2 (002/0014) - Pack1000
+2026-03-23 15:04:18,098 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:04:18,099 [INFO] [76/300] AA105 — BD Venflon Peripheral IV Catheter w/ Port Blue 22Gx25mm-Each
+2026-03-23 15:04:25,962 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:04:25,963 [INFO] [77/300] ABG290 — Perfection Plus Serviette Bibs Blue (PP002/0060) - Pack500
+2026-03-23 15:04:30,725 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Perfection Plus Serviette Bibs 3 Ply Blue x 500'
+2026-03-23 15:04:34,342 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Perfection Plus Serviette Bibs 2 Ply Dark Blue x 500'
+2026-03-23 15:04:38,280 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Perfection Plus Serviette Bibs 2 Ply Dark Blue x 500'
+2026-03-23 15:04:44,853 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:04:44,853 [INFO] [78/300] CAW751 — Kerr CaviWipes Canister (4731160) - Tub160
+2026-03-23 15:04:53,215 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:04:53,215 [INFO] [79/300] CSP191 — Bossklein ULTRAbio Ultrasonic Cleaner 5 Litre (BOS9794) Each
+2026-03-23 15:04:57,614 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:04:57,615 [INFO] [80/300] MED010 — #Septodont Septanest 1:100,000 2.2ml - Box50
+2026-03-23 15:05:11,036 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:05:11,036 [INFO] [81/300] EIM038 — Perfection Plus Tray Lining Paper Blue (PP002/0012B)
+2026-03-23 15:05:19,891 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  Green'
+2026-03-23 15:05:21,808 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  Lilac'
+2026-03-23 15:05:24,967 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper X 250 Pink'
+2026-03-23 15:05:31,303 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  Green'
+2026-03-23 15:05:38,283 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  Lilac'
+2026-03-23 15:05:40,899 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper X 250 Pink'
+2026-03-23 15:05:44,892 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  White'
+2026-03-23 15:05:47,721 [INFO]   [dmi.ie] Search 'PERF-0020012' ✓ €9.74 (score=0.71)
+2026-03-23 15:05:47,721 [INFO]   [dmi_ie] ✓ €9.74  (score=0.71, variance: N/A)
+2026-03-23 15:05:47,722 [INFO] [82/300] EVS107 — Polifarma Saline Water Pouch for Irrigation 500ml
+2026-03-23 15:05:51,992 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:05:51,992 [INFO] [83/300] ABG163A — HPC HandSafe Blue Nitrile Gloves P/Free Small GN90 - Box200
+2026-03-23 15:05:57,314 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:05:57,314 [INFO] [84/300] EHO018 — Bossklein Universal Handpiece Oil Spray 500ml (BOS9777) Each
+2026-03-23 15:06:38,245 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 15:06:45,685 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:06:45,686 [INFO] [85/300] ABG165A — HPC HandSafe Blue Nitrile Gloves P/Free Large GN90 - Box200
+2026-03-23 15:07:07,269 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:07:07,270 [INFO] [86/300] BOU020 — Boutique Whitening Top Up Case By Night 10% CP 3x3ml
+2026-03-23 15:07:12,769 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:07:12,770 [INFO] [87/300] ESB021 — Edenta Steel Burs Round 23/021 Size 7 (1.204.021) - Pack 5
+2026-03-23 15:07:22,961 [INFO]   [dmi.ie] Search '1.204.021' ✓ €5.35 (score=0.72)
+2026-03-23 15:07:22,962 [INFO]   [dmi_ie] ✓ €5.35  (score=0.72, variance: N/A)
+2026-03-23 15:07:22,962 [INFO] [88/300] FLS646 — SDI Aura Bulk Fill Complets 20x0.25g (8565012) - Pack20
+2026-03-23 15:07:29,240 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:07:29,241 [INFO] [89/300] KIN005 — Kin Gingival Mouthwash 250ml (340960) - Each
+2026-03-23 15:07:32,816 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:07:32,817 [INFO] [90/300] CPP053 — Johnson & Johnson Topper 8 Swabs 10X10cm (M50410) - Pack100
+2026-03-23 15:07:44,115 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:07:44,115 [INFO] [91/300] OH320 — Stoddard OPTIM Interdental Brush Red XXFine - Pack8
+2026-03-23 15:07:49,083 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:07:49,084 [INFO] [92/300] ENG040 — Perfection Plus Protect+ Barrier Envelopes Size 2 - Pack300
+2026-03-23 15:07:54,621 [WARNING] [dmi.ie] HTTP 500 for https://www.dmi.ie/products/protect-barrier-envelopes-size-2-side-opening-pk-300-perf-0020184.html (attempt 1)
+2026-03-23 15:08:02,032 [INFO]   [dmi.ie] Search 'Perfection Plus Protect+ Barrier Envelopes Size' ✓ €54.00 (score=0.88)
+2026-03-23 15:08:02,033 [INFO]   [dmi_ie] ✓ €54.00  (score=0.88, variance: N/A)
+2026-03-23 15:08:02,034 [INFO] [93/300] EVS140 — Omnia Saline 0.9% Solution 500ml (32.E0001.00)
+2026-03-23 15:08:06,492 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:08:06,493 [INFO] [94/300] USB008 — UnoDent Steel Burs Round RA No.7 - ISO.021 (BLR7) - Pack 6
+2026-03-23 15:08:12,786 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:08:12,786 [INFO] [95/300] BOU030 — Boutique By Night Gift Bag
+2026-03-23 15:08:34,499 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:08:34,499 [INFO] [96/300] MIS234 — Perfection Plus Latex Free Polishing Cups RA Pink Soft - 50
+2026-03-23 15:08:49,035 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:08:49,035 [INFO] [97/300] SCB014 — Koolpak Instant Ice Pack 24x12cm - Each
+2026-03-23 15:08:56,309 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:08:56,309 [INFO] [98/300] FAC198 — Perfection Plus Needle Etch Tips (PP011/0080) - Pack25
+2026-03-23 15:09:05,929 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:09:05,929 [INFO] [99/300] MED041 — #Colgate Duraphat 5000 ppm Fluoride Toothpaste - Each
+2026-03-23 15:09:15,504 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Duraphat 5000 Toothpaste Pack 12 X 51G'
+2026-03-23 15:09:18,487 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Duraphat 5000 Toothpaste 51g'
+2026-03-23 15:09:22,187 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:09:22,188 [INFO] [100/300] FAC401 — Perfection Plus Rubber Dam Non Latex Blue Heavy 6"x6" - 20
+2026-03-23 15:09:31,974 [INFO]   [dmi.ie] Search 'PERF-0040047' ✓ €23.28 (score=0.71)
+2026-03-23 15:09:31,974 [INFO]   [dmi_ie] ✓ €23.28  (score=0.71, variance: N/A)
+2026-03-23 15:09:31,975 [INFO] [101/300] BOU011 — Boutique Whitening Top Up Case By Night 10% CP 2x3ml
+2026-03-23 15:09:34,916 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:09:34,916 [INFO] [102/300] AA011 — Septodont Septoject XL Needles 30g Short 0.3x25mm - Box100
+2026-03-23 15:09:42,291 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:09:42,292 [INFO] [103/300] ABG313 — Cumberland Surgical Universal Sterile Drape Kit - Each
+2026-03-23 15:09:46,082 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:09:46,083 [INFO] [104/300] ANP030 — Perfection Plus EasiJect Sterile Needles 30Gx21mm (013/0208)
+2026-03-23 15:09:53,040 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:09:53,041 [INFO] [105/300] PAT064 — TePe Select Toothbrushes Extra Soft - Each
+2026-03-23 15:10:01,014 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:10:01,015 [INFO] [106/300] SE050 — Orsing Aspirator Tube Vented/Non-Vented - Pack100
+2026-03-23 15:10:05,946 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'J.H. Orsing Aspirator Tubes Scantube - 100 Pack  Vented Tube'
+2026-03-23 15:10:08,325 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'J.H. Orsing Aspirator Tubes Scantube - 100 Pack  Non-Vented Tubes'
+2026-03-23 15:10:11,322 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'J.H. Orsing Hygovac Aspirator Tubes Side Vented 100 Pack'
+2026-03-23 15:10:19,089 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:10:19,089 [INFO] [107/300] AAA345 — #Dentsply Anestadent 4% 1:100,000 Solution 2.2ml (546) -Bx50
+2026-03-23 15:10:24,453 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:10:24,455 [INFO] [108/300] FAC302 — Perfection Plus AppliPlus Superfine Microbrush (011/1110)
+2026-03-23 15:10:30,308 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:10:30,308 [INFO] [109/300] IM119 — Zhermack Hydrogum 5 Refill 453g Extra Fast  (C302070) - Each
+2026-03-23 15:10:40,003 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:10:40,003 [INFO] [110/300] AA034 — Septodont Septoject Needles 30g Short - Box100
+2026-03-23 15:10:46,865 [INFO]   [dmi.ie] Search 'Septodont Septoject Needles 30g' ✓ €27.39 (score=0.71)
+2026-03-23 15:10:46,866 [INFO]   [dmi_ie] ✓ €27.39  (score=0.71, variance: N/A)
+2026-03-23 15:10:46,866 [INFO] [111/300] OH318 — Stoddard OPTIM Interdental Brush Pink XXXXFine - Pack8
+2026-03-23 15:10:53,253 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:10:53,254 [INFO] [112/300] 670231 — Clinisept+ Skin 490ml - Each
+2026-03-23 15:11:00,531 [INFO]   [dmi.ie] Search 'Clinisept+ Skin' ✓ €15.03 (score=1.00)
+2026-03-23 15:11:00,531 [INFO]   [dmi_ie] ✓ €15.03  (score=1.00, variance: N/A)
+2026-03-23 15:11:00,532 [INFO] [113/300] ABG246 — UnoDent Surgical Gown Kit (COP410) - Each
+2026-03-23 15:11:07,229 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:11:07,229 [INFO] [114/300] EQS196 — TST Control Indicators Strips (2340AB) - Box100
+2026-03-23 15:11:11,677 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:11:11,677 [INFO] [115/300] MIS225 — Perfection Plus Junior Nylon Brushes RA (005/0004) - Pack100
+2026-03-23 15:11:18,939 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:11:18,940 [INFO] [116/300] OH317 — Stoddard OPTIM Interdental Brush White Super Fine - 8
+2026-03-23 15:11:26,198 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:11:26,199 [INFO] [117/300] CSP043 — Durr Orotol Plus 2.5Litre - Each (CDS110P6150)
+2026-03-23 15:11:33,721 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:11:33,723 [INFO] [118/300] EIM027 — Perfection Plus Mini Monotrays 18x14cm (PP011/4011) - Pack50
+2026-03-23 15:11:40,829 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:11:40,829 [INFO] [119/300] CSP005 — Milton Sterilising Fluid 500ml - Each
+2026-03-23 15:11:46,660 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:11:46,661 [INFO] [120/300] ESB017 — Edenta Steel Burs Round 23/012 Size 3 (1.204.012) - Pack 5
+2026-03-23 15:12:14,004 [INFO]   [dmi.ie] Search '1.204.012' ✓ €5.35 (score=0.72)
+2026-03-23 15:12:14,005 [INFO]   [dmi_ie] ✓ €5.35  (score=0.72, variance: N/A)
+2026-03-23 15:12:14,006 [INFO] [121/300] FAC375 — Perfection Plus AppliPlus Regular Microbrush (011/1112)
+2026-03-23 15:12:34,890 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:12:34,890 [INFO] [122/300] PCO040 — Oral-B Essential Floss 50m (4103330317131) - Each
+2026-03-23 15:12:42,744 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:12:42,745 [INFO] [123/300] OH042 — TePe Interdental Brushes Red 0.5mm 10x8pk (138230) - Box10
+2026-03-23 15:12:47,178 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:12:47,179 [INFO] [124/300] BJM277 — UnoDent Gold Diamond Burs Flat End Taper FG Coarse 173/016
+2026-03-23 15:12:53,926 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:12:53,926 [INFO] [125/300] MIS226 — Perfection Plus Junior Nylon Brushes RA (005/0006) - Pack144
+2026-03-23 15:13:00,127 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:13:00,128 [INFO] [126/300] MPP010 — PD Tofflemire Matrix Bands No. 1 (41521) - Pack 12
+2026-03-23 15:13:04,960 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:13:04,961 [INFO] [127/300] OH172 — TePe Compact Tuft Brush (432100) - Each
+2026-03-23 15:13:13,074 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:13:13,074 [INFO] [128/300] ABG013A — HPC Healthline Gloves Powder Free Medium GN31 - Box100
+2026-03-23 15:13:17,604 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:13:17,604 [INFO] [129/300] BJD547 — Coltene Diatech Gold Diamond Burs G881-314-010-8-ML - Pack5
+2026-03-23 15:13:57,916 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 15:14:10,105 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:14:10,106 [INFO] [130/300] CDB020A — Coltene Diatech Gold Diamond Burs G835-314-012-4-ML - Pack5
+2026-03-23 15:14:16,542 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:14:16,543 [INFO] [131/300] DWG005 — Dentsply WaveOne Gold Primary File 25mm (A0753225G0P03)
+2026-03-23 15:14:26,645 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:14:26,645 [INFO] [132/300] PHI139 — Philips Sonicare 5300 White Toothbrush (HX7108/01)
+2026-03-23 15:14:33,100 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:14:33,100 [INFO] [133/300] ABG033A — HPC HandSafe White Nitrile Gloves Medium (GN92) - Box200
+2026-03-23 15:14:38,097 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:14:38,097 [INFO] [134/300] BJD558 — Coltene Diatech Gold Diamond Burs G882-314-012-10-ML - Pack5
+2026-03-23 15:14:44,687 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:14:44,687 [INFO] [135/300] CJU002 — UnoDent Disposable Aspirator Tube Green 135x11mm - Pack100
+2026-03-23 15:14:51,467 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:14:51,468 [INFO] [136/300] CPP024 — Johnson & Johnson Topper 12 Swabs 5cmx5cm (M53605N) -Pack200
+2026-03-23 15:14:56,585 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:14:56,586 [INFO] [137/300] CSP144 — Unilever Vaseline Petroleum Jelly 100ml - Each
+2026-03-23 15:15:00,164 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:15:00,164 [INFO] [138/300] OH043 — TePe Interdental Brushes Yellow 0.7mm 10x8pk (118250) Box10
+2026-03-23 15:15:04,778 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:15:04,778 [INFO] [139/300] ABG008A — Perfection Plus Bib Roll Paper Blue PP002/0020 - 80
+2026-03-23 15:15:14,369 [INFO]   [dmi.ie] Search 'PERF-0020020' ✓ €16.41 (score=0.67)
+2026-03-23 15:15:14,369 [INFO]   [dmi_ie] ✓ €16.41  (score=0.67, variance: N/A)
+2026-03-23 15:15:14,370 [INFO] [140/300] BLRG24 — Perfection Plus Steel Bur Round RA No.4 (001/9104)-Pack25
+2026-03-23 15:15:20,936 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:15:20,937 [INFO] [141/300] SE016 — Orsing Hygovac Vent Aspirator Tubes - Pack100
+2026-03-23 15:15:29,423 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:15:29,424 [INFO] [142/300] OH012 — Perfection Plus Mouthwash Tablets Mint (PP010/0044)
+2026-03-23 15:15:40,913 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:15:40,914 [INFO] [143/300] OH341 — Stoddard OPTIM Interdental Brush Red XXFine - Pack25
+2026-03-23 15:15:45,342 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:15:45,343 [INFO] [144/300] SE055 — Bossklein Spectrum Tips (SPE0001) - Pack250
+2026-03-23 15:15:52,197 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:15:52,198 [INFO] [145/300] ABG031B — HPC HandSafe White Nitrile Gloves Small (GN92) - Box200
+2026-03-23 15:15:57,225 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:15:57,225 [INFO] [146/300] IMT083 — Pegasus Impression Trays No.3 Medium Upper - Pack25
+2026-03-23 15:16:05,503 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:16:05,503 [INFO] [147/300] CPP098 — Perfection Plus Cotton Wool Rolls No.1 (002/0013) - Pack1000
+2026-03-23 15:16:23,046 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Perfection Plus Eco+ Cotton Wool Rolls Size 1 Pack 1000'
+2026-03-23 15:16:24,172 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:16:24,173 [INFO] [148/300] CSP162 — Bossklein Hard Surface Economy Refill Lemon 5L BOS9779
+2026-03-23 15:16:30,979 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:16:30,980 [INFO] [149/300] IMA136 — Perfection Plus Mixing Pad Coated 7.5 x 7.5cm 100 Sheets
+2026-03-23 15:16:41,970 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:16:41,971 [INFO] [150/300] IMT084 — Pegasus Impression Trays No.4 Medium Lower - Pack25
+2026-03-23 15:16:57,764 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:16:57,765 [INFO] [151/300] MIS123 — Perfection Plus Junior Bristle Brushes Latch Grip - Pack100
+2026-03-23 15:17:09,705 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:17:09,705 [INFO] [152/300] FAC303 — Perfection Plus AppliPlus Fine Microbrush (011/1111)
+2026-03-23 15:17:18,354 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:17:18,355 [INFO] [153/300] PDP100 — Curaprox Perio Plus+ Balance Mouthwash 0.05% 200ml - Each
+2026-03-23 15:17:24,791 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:17:24,792 [INFO] [154/300] PHI152 — Philips Zoom! Bulk Take Home Box NiteWhite 10%(CP)-Box25 NEW
+2026-03-23 15:17:31,020 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:17:31,021 [INFO] [155/300] CDB052 — Coltene Diatech Gold Diamond Burs G379-314-023-5-F - Pack5
+2026-03-23 15:17:42,704 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:17:42,704 [INFO] [156/300] CJU011 — UnoDent Disposable Aspirator Tube Vented Blue - Pack100
+2026-03-23 15:17:48,513 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:17:48,513 [INFO] [157/300] FMA1061 — SDI Riva Self Cure Capsules Fast Set A2 (8605002) - Box50
+2026-03-23 15:18:23,933 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 15:19:04,527 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 2): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 15:19:45,105 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 3): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out. (read timeout=30)
+2026-03-23 15:20:25,795 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 15:20:40,207 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:20:40,207 [INFO] [158/300] FPM011 — 3M Sof-Lex Discs 1/2" Coarse (1982C) - Pack85
+2026-03-23 15:21:31,896 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 15:22:35,811 [INFO]   [dmi.ie] Search '3M Sof-Lex Discs 1/2" Coarse' ✓ €80.44 (score=0.77)
+2026-03-23 15:22:35,812 [INFO]   [dmi_ie] ✓ €80.44  (score=0.77, variance: N/A)
+2026-03-23 15:22:35,812 [INFO] [159/300] CDB056 — Coltene Diatech Gold Diamond Burs G801-314-023-F - Pack5
+2026-03-23 15:22:52,722 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:22:52,722 [INFO] [160/300] CDB137 — Coltene Diatech Gold Diamond Burs G881-314-014-8-MLX - Pack5
+2026-03-23 15:23:28,309 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:23:28,309 [INFO] [161/300] CJT062 — UnoDent Disposable Aspirator Tips - Child 16mm Yellow
+2026-03-23 15:23:32,948 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:23:32,949 [INFO] [162/300] IMT009 — J&S Davis Solo Impression Trays No.13 Upper Average - Box25
+2026-03-23 15:23:39,952 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:23:39,952 [INFO] [163/300] CPP092 — Robinson Healthcare Alcotip Pre-injection Swabs - Box100
+2026-03-23 15:23:46,580 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:23:46,580 [INFO] [164/300] CSP339 — Bossklein V-WIPE ZERO ECO-XL Wipes  Flowpack 100 (BOS8001)
+2026-03-23 15:23:51,325 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:23:51,326 [INFO] [165/300] PPI138 — Perfection Plus Eco+ Hand K Files 25mm 08 (004/5009A) -Pack6
+2026-03-23 15:24:05,322 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Eco+ K Files 25mm Size 08 Pack 6'
+2026-03-23 15:24:08,345 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Eco+ K Files 25mm Size 06 Pack 6'
+2026-03-23 15:24:09,867 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:24:09,867 [INFO] [166/300] BLRG26 — Perfection Plus Steel Bur Round RA No.6 (001/9106)-Pack25
+2026-03-23 15:24:16,753 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:24:16,755 [INFO] [167/300] BOU002 — Boutique Whitening Kit By Night 10% CP 4x3ml
+2026-03-23 15:24:25,817 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:24:25,818 [INFO] [168/300] CSP331 — Bossklein V-WIPE ZERO Refill Alcohol Free (BOS3001)
+2026-03-23 15:24:31,007 [INFO]   [dmi.ie] Search 'Bossklein V-WIPE ZERO Refill Alcohol Free' ✓ €12.16 (score=0.71)
+2026-03-23 15:24:31,008 [INFO]   [dmi_ie] ✓ €12.16  (score=0.71, variance: N/A)
+2026-03-23 15:24:31,008 [INFO] [169/300] FMA1084 — Kulzer Charisma ABC PLT A2 20x0.2g (66064791) - Pack20
+2026-03-23 15:24:40,086 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:24:40,086 [INFO] [170/300] FMA1085 — Kulzer Charisma ABC PLT A3 20x0.2g (66064792) - Pack20
+2026-03-23 15:24:50,172 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:24:50,172 [INFO] [171/300] AA021 — J&S Davis Solo Dental Needle 30g Short 0.3x23mm - Box100
+2026-03-23 15:24:58,436 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:24:58,436 [INFO] [172/300] AA120 — BD Micro-Fine + Insulin Syringe 0.3ml Needle 30Gx8mm -Box100
+2026-03-23 15:25:04,528 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:25:04,528 [INFO] [173/300] EIM040 — Perfection Plus Tray Lining Paper Lilac (PP002/0012L)
+2026-03-23 15:25:14,331 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  Blue'
+2026-03-23 15:25:21,297 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  Green'
+2026-03-23 15:25:22,852 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper X 250 Pink'
+2026-03-23 15:25:28,497 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  White'
+2026-03-23 15:25:33,284 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  Blue'
+2026-03-23 15:25:39,229 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Perfection Plus Tray Paper - 250 Pack  Green'
+2026-03-23 15:25:42,895 [INFO]   [dmi.ie] Search 'PERF-0020012' ✓ €9.74 (score=0.71)
+2026-03-23 15:25:42,896 [INFO]   [dmi_ie] ✓ €9.74  (score=0.71, variance: N/A)
+2026-03-23 15:25:42,896 [INFO] [174/300] OH192 — TePe Interspace Medium Brush (1 Handle + 12 Heads) - Each
+2026-03-23 15:25:49,991 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:25:49,992 [INFO] [175/300] PAD145 — Curaprox CPS Prime Chairside Handy Turquoise - Pack25
+2026-03-23 15:25:56,957 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:25:56,957 [INFO] [176/300] PPI159 — Perfection Plus Eco+ Hand K Files 25mm 15 (004/5011) - Pack6
+2026-03-23 15:26:08,249 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:26:08,249 [INFO] [177/300] MED023 — #Colgate Duraphat Varnish 10ml (FDE74600) - Each
+2026-03-23 15:26:13,016 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:26:13,016 [INFO] [178/300] ABG020 — Pegasus Velcro Dental Bib Blue - Each
+2026-03-23 15:26:23,447 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:26:23,447 [INFO] [179/300] CPP043 — Johnson & Johnson Topper 12 Swabs 7.5x7.5cm M50607 -Pack100
+2026-03-23 15:26:33,643 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:26:33,644 [INFO] [180/300] FAC023 — Septodont Hemocollagene Sponges - Pack24
+2026-03-23 15:26:39,281 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'Septodont Hemocollagene Sponges Box 24'
+2026-03-23 15:26:47,471 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:26:47,472 [INFO] [181/300] PRC315 — Perfection Plus Prophy+ Polishing Cups RA (005/0009) Pack144
+2026-03-23 15:27:06,265 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:27:06,265 [INFO] [182/300] CAW708 — Medipal Disinfectant Wipes (Q7W520110MPCE) Tub 240
+2026-03-23 15:27:10,814 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:27:10,814 [INFO] [183/300] MIS223 — Perfection Plus Sterilisation Pouches 190x330mm PP002/5004
+2026-03-23 15:27:19,331 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:27:19,331 [INFO] [184/300] ASD264 — Septodont Ultra Safety Plus Twist Needles 30g Short - Box100
+2026-03-23 15:27:24,475 [INFO]   [dmi.ie] Search 'Septodont Ultra Safety Plus Twist Needles 30g' ✓ €62.04 (score=0.76)
+2026-03-23 15:27:24,476 [INFO]   [dmi_ie] ✓ €62.04  (score=0.76, variance: N/A)
+2026-03-23 15:27:24,476 [INFO] [185/300] BJM180 — UnoDent Gold Diamond Burs Cylinder FG Medium 111/012
+2026-03-23 15:27:27,408 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:27:27,409 [INFO] [186/300] CSP189 — Bossklein Impression Cleaner & Disinfectant Tub 700g BOS9823
+2026-03-23 15:27:32,624 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:27:32,624 [INFO] [187/300] FPM007 — 3M Sof-Lex Discs 3/8" Coarse (1981C) - Pack85
+2026-03-23 15:27:50,816 [INFO]   [dmi.ie] Search '3M-1981C' ✓ €80.44 (score=0.77)
+2026-03-23 15:27:50,817 [INFO]   [dmi_ie] ✓ €80.44  (score=0.77, variance: N/A)
+2026-03-23 15:27:50,817 [INFO] [188/300] OH273A — Metrodent Denture Boxes Asstd Colours - Pack12
+2026-03-23 15:27:52,854 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:27:52,854 [INFO] [189/300] SE073 — Microbrush Dry Tips Large (291542) - Box50
+2026-03-23 15:27:56,418 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'Microbrush Dry Tips Large 50 per box'
+2026-03-23 15:27:58,846 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'Microbrush Reflective Dry Tips Large 50 per box'
+2026-03-23 15:28:06,046 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:28:06,046 [INFO] [190/300] FMP213 — 3M Filtek One Bulk Fill Capsules A2 (4867A2) - Pack20
+2026-03-23 15:28:12,520 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:28:12,521 [INFO] [191/300] IIU153 — Perfection Plus Plastic Handled Impression Tray Upper Medium
+2026-03-23 15:28:19,920 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:28:19,920 [INFO] [192/300] MED009 — #Septodont Scandonest 3% Plain 2.2ml - Box50
+2026-03-23 15:28:31,538 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:28:31,538 [INFO] [193/300] MIS190 — UnoDent Soft Lip and Cheek Retractor (DRO105) - Each
+2026-03-23 15:28:45,803 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:28:45,804 [INFO] [194/300] PAT047 — TePe Orthodontic Kit (962686) - Each
+2026-03-23 15:28:57,574 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:28:57,574 [INFO] [195/300] BJM054 — UnoDent Gold Diamond Burs Round FG Medium 001/016
+2026-03-23 15:29:03,024 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:29:03,024 [INFO] [196/300] CPP049 — Johnson & Johnson Topper 8 Swabs 5x5cm Sterile (TS8055) - 25
+2026-03-23 15:29:11,729 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:29:11,729 [INFO] [197/300] CSP167 — Bossklein Daily Aspirator Cleaner & Disinfectant 5L BOS2488
+2026-03-23 15:29:18,447 [WARNING] [dmi.ie] HTTP 500 for https://www.dmi.ie/categories.html (attempt 1)
+2026-03-23 15:29:24,601 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:29:24,601 [INFO] [198/300] OH113 — TePe Interdental Brushes Red 0.5mm (132430) - Pack25
+2026-03-23 15:29:29,860 [INFO]   [dmi.ie] Search 'TePe Interdental Brushes Red 0.5mm' ✓ €13.46 (score=0.72)
+2026-03-23 15:29:29,860 [INFO]   [dmi_ie] ✓ €13.46  (score=0.72, variance: N/A)
+2026-03-23 15:29:29,861 [INFO] [199/300] OH322 — Stoddard OPTIM Interdental Brush Yellow Fine - Pack8
+2026-03-23 15:29:41,813 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:29:41,814 [INFO] [200/300] OH342 — Stoddard OPTIM Interdental Brush Blue XFine - Pack25
+2026-03-23 15:29:44,626 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:29:44,626 [INFO] [201/300] PAP089 — Whisper LUXI White Facial Tissues 2 Ply - Case36
+2026-03-23 15:29:49,846 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:29:49,846 [INFO] [202/300] PPI178 — Perfection Plus Perio Probe CPITN-C Octagonal Handle - Each
+2026-03-23 15:29:56,356 [INFO]   [dmi.ie] Search 'Perfection Plus Perio Probe CPITN-C Octagonal' ✓ €21.22 (score=0.86)
+2026-03-23 15:29:56,356 [INFO]   [dmi_ie] ✓ €21.22  (score=0.86, variance: N/A)
+2026-03-23 15:29:56,356 [INFO] [203/300] BJD229 — Coltene Diatech Gold Diamond Burs G837R-314-014-8-ML - Pack5
+2026-03-23 15:30:06,646 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:30:06,646 [INFO] [204/300] CDB154 — Coltene Diatech Gold Diamond Burs G862-314-014-8-F - Pack5
+2026-03-23 15:30:13,852 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:30:13,852 [INFO] [205/300] CSP033 — Durr MD555 Suction Cleaner 2.5Litre - Each
+2026-03-23 15:30:20,247 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:30:20,248 [INFO] [206/300] FAC455 — Perfection Plus E-FLOW Tips 0.9mm (010/1055) - Pack100
+2026-03-23 15:30:29,915 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:30:29,915 [INFO] [207/300] MIS316 — Small Sample Empty Clear Containers with PinkLids 5g/5ml
+2026-03-23 15:30:31,407 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:30:31,407 [INFO] [208/300] OH319 — Stoddard OPTIM Interdental Brush Orange XXXFine - Pack8
+2026-03-23 15:30:38,600 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:30:38,601 [INFO] [209/300] ALS038 — Roeko Endo Frost Spray 200ml (240 000) - Each
+2026-03-23 15:30:46,470 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:30:46,471 [INFO] [210/300] CSP149A — Schulke Mikrozid Alcohol Free Wipes Refill (70003112) -Pk200
+2026-03-23 15:30:53,810 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:30:53,812 [INFO] [211/300] FAC013 — Roeko Gelatamp 14x7x7mm (274007) - Tub50
+2026-03-23 15:31:03,205 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:31:03,206 [INFO] [212/300] OH155 — TePe Select Compact Toothbrush Extra Soft (332110) - Each
+2026-03-23 15:31:07,291 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:31:07,291 [INFO] [213/300] OH340 — Stoddard OPTIM Interdental Brush Orange XXXFine -Pack25
+2026-03-23 15:31:11,092 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:31:11,093 [INFO] [214/300] PDB541M — Perfection Plus Diamond+ Bur FG Medium Grit 541 (001/0541)
+2026-03-23 15:31:20,652 [INFO]   [dmi.ie] Search 'PERF-0010541' ✓ €38.01 (score=0.60)
+2026-03-23 15:31:20,654 [INFO]   [dmi_ie] ✓ €38.01  (score=0.60, variance: N/A)
+2026-03-23 15:31:20,654 [INFO] [215/300] FAC413 — UnoDent UnoBond 5 Bottle 3ml (FBD800) - Each
+2026-03-23 15:31:27,277 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:31:27,278 [INFO] [216/300] MIS380 — Perfection Plus Prophy+ Brushes Nylon RA (005/3005) -Pack150
+2026-03-23 15:31:32,184 [INFO]   [dmi.ie] ✗ Rejected (score=0.56) — 'Perfection Plus Prophy+ Nylon Brushes RA Purple Medium Pack of 50'
+2026-03-23 15:31:34,687 [INFO]   [dmi.ie] ✗ Rejected (score=0.56) — 'Perfection Plus Prophy+ Nylon Brushes RA Blue Hard Pack of 50'
+2026-03-23 15:31:39,204 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:31:39,205 [INFO] [217/300] OH038 — TePe Interdental Brushes Pink 0.4mm 10x8pk (138210) - Box10
+2026-03-23 15:31:44,812 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:31:44,812 [INFO] [218/300] AA002 — Kulzer Sopira Carpule Needles 30g Short 0.3x21mm - Box100
+2026-03-23 15:31:53,449 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:31:53,450 [INFO] [219/300] CPP070 — Johnson & Johnson Topper 8 Swabs 5x5cm (JJM50405) - Pack100
+2026-03-23 15:31:58,987 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:31:58,988 [INFO] [220/300] KIN006 — Kin Gingival Toothpaste 75ml (340987) - Each
+2026-03-23 15:32:07,079 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:32:07,079 [INFO] [221/300] MED060 — #Dentsply Xylocaine 2% Standard 2.2ml - Box50
+2026-03-23 15:32:16,690 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:32:16,690 [INFO] [222/300] PHI003 — Philips Zoom! Chairside Kit - DayWhite 6% HP Take-Home Gel
+2026-03-23 15:32:23,680 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:32:23,681 [INFO] [223/300] SE004 — Roeko Surgitip 2.8mm (462025) - Box20
+2026-03-23 15:32:27,927 [INFO]   [dmi.ie] Search 'Roeko Surgitip 2.8mm' ✓ €67.53 (score=0.67)
+2026-03-23 15:32:27,928 [INFO]   [dmi_ie] ✓ €67.53  (score=0.67, variance: N/A)
+2026-03-23 15:32:27,928 [INFO] [224/300] AA032 — Septodont Septoject Needles 27g Long - Box100
+2026-03-23 15:32:34,847 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Septoject Original Needles 27g LONG 0.40 x 35mm. Pack of 100'
+2026-03-23 15:32:37,993 [INFO]   [dmi.ie] ✗ Rejected (score=0.57) — 'Septodont Needles Septoject XL 27g Short  0.40 x 25mm Para Apical (Orange)'
+2026-03-23 15:32:50,204 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:32:50,205 [INFO] [225/300] EGU368 — UnoDent SS H File (Hedstrom) 28mm Size 20 - Pack6
+2026-03-23 15:32:59,626 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:32:59,626 [INFO] [226/300] EHO014 — Kavo Universal Oil Spray 500ml (0.411.9640) - Each
+2026-03-23 15:33:11,752 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:33:11,753 [INFO] [227/300] FKF017 — Falcon K Files SS 25mm 40 Black - Pack6
+2026-03-23 15:33:16,791 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:33:16,791 [INFO] [228/300] FLG553 — GC G-aenial Universal Injectable Syringe A2 1.7g (10003706)
+2026-03-23 15:33:22,030 [INFO]   [dmi.ie] Search 'GC G-aenial Universal Injectable Syringe A2 1.7g' ✓ €41.76 (score=1.00)
+2026-03-23 15:33:22,030 [INFO]   [dmi_ie] ✓ €41.76  (score=1.00, variance: N/A)
+2026-03-23 15:33:22,030 [INFO] [229/300] IMA102 — UnoDent Stic Adhesive Spray 200ml (IJA120) - Each
+2026-03-23 15:33:28,490 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:33:28,491 [INFO] [230/300] MIS017 — Perfection Plus Junior Nylon Brushes RA (005/5435)
+2026-03-23 15:33:35,967 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:33:35,967 [INFO] [231/300] OH041 — TePe Interdental Brushes Blue 0.6mm 10x8pk (138240) - Box10
+2026-03-23 15:33:40,917 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:33:40,918 [INFO] [232/300] OH115 — TePe Interdental Brushes Yellow 0.7mm (112450) - Pack25
+2026-03-23 15:33:47,392 [INFO]   [dmi.ie] Search 'TePe Interdental Brushes Yellow 0.7mm' ✓ €13.46 (score=0.77)
+2026-03-23 15:33:47,393 [INFO]   [dmi_ie] ✓ €13.46  (score=0.77, variance: N/A)
+2026-03-23 15:33:47,393 [INFO] [233/300] PAP003A — Kimberly-Clark Scott Performance Hand Towels 6689 (4110)
+2026-03-23 15:33:54,287 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:33:54,287 [INFO] [234/300] PDM313 — Panadent Minamint Refresh 100ml (80.PR032MR) Each
+2026-03-23 15:34:02,640 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:34:02,640 [INFO] [235/300] AMI013 — AM Dental Mirror Handle - Each
+2026-03-23 15:34:09,554 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:34:09,554 [INFO] [236/300] BU542 — UnoDent Diamond Burs Cylinder FG No. 542 542 Medium 109-015M
+2026-03-23 15:34:16,613 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:34:16,614 [INFO] [237/300] CAW756 — Clinell Universal Wipes Tub Refill Pack (for Tub 225)
+2026-03-23 15:34:27,680 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:34:27,680 [INFO] [238/300] FPM388 — UnoDent Tofflemire Matrix Bands X-Thin No.1 (MPT120)
+2026-03-23 15:34:34,213 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:34:34,214 [INFO] [239/300] GMA030 — QWS Alpron Mint 1 Litre (3184) - Each
+2026-03-23 15:34:38,294 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:34:38,295 [INFO] [240/300] IM039 — Zhermack Hydrogum Refill 500g (C302025) - Each
+2026-03-23 15:34:44,251 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'Zhermack Hydrogum 5 Day Alginate Refill 453G'
+2026-03-23 15:34:50,505 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'Zhermack Hydrogum 5 Day Alginate Refill 453G'
+2026-03-23 15:34:53,747 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:34:53,747 [INFO] [241/300] OH006 — Oral-B Satin Floss Mint 25m (75040813) - Pack12
+2026-03-23 15:35:02,572 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:35:02,573 [INFO] [242/300] PAD149 — Curaprox CPS Prime Chairside Handy Lime Green - Pack25
+2026-03-23 15:35:09,726 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:35:09,726 [INFO] [243/300] PAD350 — i-Wave Interdental Brush 0.8mm Green (W-IDL) -Pack5
+2026-03-23 15:35:13,761 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:35:13,762 [INFO] [244/300] SYT105 — BD Insulin Syringe Microfine 0.5ml 30Gx8mm - Box200
+2026-03-23 15:35:17,814 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:35:17,814 [INFO] [245/300] ABG205 — Perfection Plus Serviette Bibs Lilac (PP002/0075) - Pack 500
+2026-03-23 15:35:23,821 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:35:23,822 [INFO] [246/300] ANP027 — Perfection Plus EasiJect Sterile Needles 27Gx35mm (013/0203)
+2026-03-23 15:35:30,964 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:35:30,965 [INFO] [247/300] BJM281 — UnoDent Gold Diamond Burs Flat End Taper FG Medium 173/016
+2026-03-23 15:35:37,491 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:35:37,491 [INFO] [248/300] CSP305 — Bossklein White Dry Wipes (DRY0002) - Pack50
+2026-03-23 15:35:42,276 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:35:42,276 [INFO] [249/300] OH344 — Stoddard OPTIM Interdental Brush Green Medium - Pack25
+2026-03-23 15:35:47,345 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:35:47,345 [INFO] [250/300] PAD155 — Curaprox CPS Prime Lime Green - Pack8
+2026-03-23 15:35:53,546 [INFO]   [dmi.ie] Search 'Curaprox CPS Prime Lime' ✓ €10.91 (score=0.86)
+2026-03-23 15:35:53,546 [INFO]   [dmi_ie] ✓ €10.91  (score=0.86, variance: N/A)
+2026-03-23 15:35:53,546 [INFO] [251/300] AA009 — Septodont Septoject XL Needles 27g Long 0.4x35mm - Box100
+2026-03-23 15:36:05,317 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:36:05,317 [INFO] [252/300] ALS040 — Perfection Plus EndoPLUS Cold Spray Mint 200ml (004/0210)
+2026-03-23 15:36:14,050 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:36:14,052 [INFO] [253/300] CVH160 — Pro-Tip Sleeve Air/Water syringe sleeve (116490) - Pack 250
+2026-03-23 15:36:18,764 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:36:18,765 [INFO] [254/300] EIM060 — UnoDent Dispo Tray Tray Liners (CUD010) - Pack50
+2026-03-23 15:36:24,212 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:36:24,213 [INFO] [255/300] FAC191A — Septodont Alveogyl Haemostatic Surgical Dressing Paste 10g
+2026-03-23 15:37:06,938 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out.
+2026-03-23 15:37:13,271 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:37:13,271 [INFO] [256/300] FHF014 — Falcon SS H Files 25mm 30 Blue - Pack6
+2026-03-23 15:37:20,267 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:37:20,268 [INFO] [257/300] IIU154 — Perfection Plus Plastic Handled Impression Tray Lower Medium
+2026-03-23 15:37:28,822 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:37:28,823 [INFO] [258/300] PAT065 — TePe Select Toothbrushes Kids Soft (332120) - Each
+2026-03-23 15:37:33,249 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:37:33,249 [INFO] [259/300] ABG291 — Perfection Plus Serviette Bibs Green (PP002/0061) - Pack500
+2026-03-23 15:37:38,703 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Perfection Plus Serviette Bibs 3 Ply Green  x 500'
+2026-03-23 15:37:45,372 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:37:45,373 [INFO] [260/300] CSP325 — Bossklein SDactiv ZERO Surface Disinfectant (BOS2004) 5L
+2026-03-23 15:37:51,644 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:37:51,645 [INFO] [261/300] FMA355 — SDI Wave Flowable Composite Syringe A2 1g (7510203) - Each
+2026-03-23 15:38:12,800 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:38:12,800 [INFO] [262/300] FMA549A — Kulzer Venus Pearl ART PLT A2 20x0.2g (66048141) - Box20
+2026-03-23 15:38:26,997 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:38:26,997 [INFO] [263/300] FMP214 — 3M Filtek One Bulk Fill Capsules A3 (4867A3) - Pack20
+2026-03-23 15:38:35,708 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:38:35,708 [INFO] [264/300] OH114 — TePe Interdental Brushes Blue 0.6mm (132440) - Pack25
+2026-03-23 15:38:39,031 [INFO]   [dmi.ie] Search 'TePe Interdental Brushes Blue 0.6mm' ✓ €13.46 (score=0.77)
+2026-03-23 15:38:39,031 [INFO]   [dmi_ie] ✓ €13.46  (score=0.77, variance: N/A)
+2026-03-23 15:38:39,031 [INFO] [265/300] PAD146 — Curaprox CPS Prime Chairside Handy Red - Pack25
+2026-03-23 15:38:45,878 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:38:45,879 [INFO] [266/300] PAP094 — Kruger 10inch 2Ply White Couch Roll 18 x 40m
+2026-03-23 15:38:51,042 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:38:51,043 [INFO] [267/300] PP037 — Perfection Plus Protect+ Visor Refill (PP011/0051) - Pack12
+2026-03-23 15:38:57,639 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:38:57,639 [INFO] [268/300] AA147 — Perfection Plus EasiJect Sterile Needles 30Gx12mm Imperial
+2026-03-23 15:39:04,285 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:39:04,285 [INFO] [269/300] ABG146 — HPC Healthline Gloves Powder Free E/Large GN31 - Box100
+2026-03-23 15:39:08,716 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:39:08,717 [INFO] [270/300] BLRG28 — Perfection Plus Steel Bur Round RA No.8 (001/9108) Pack25
+2026-03-23 15:39:16,839 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:39:16,839 [INFO] [271/300] CPP074 — UnoDent Throat Pack Roll 10m (CCT615) - Each
+2026-03-23 15:39:23,643 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:39:23,643 [INFO] [272/300] CSP340 — Bossklein IDactiv Instrument Disinfectant 2.5L (BOS9843)
+2026-03-23 15:39:30,682 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:39:30,683 [INFO] [273/300] EGU370 — UnoDent SS H File (Hedstrom) 28mm Size 30 - Pack6
+2026-03-23 15:39:36,650 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:39:36,650 [INFO] [274/300] FAC321 — Bossklein Pre-Bent Applicator Tips (BOS9905) - Pack50
+2026-03-23 15:39:44,228 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:39:44,229 [INFO] [275/300] FHF010 — Falcon SS H Files 25mm 10 Purple - Pack6
+2026-03-23 15:39:50,529 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:39:50,529 [INFO] [276/300] FMA833 — 3M Filtek Supreme XTE Body Capsules A2 (4911A2B) - Pack20
+2026-03-23 15:40:03,891 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:40:03,891 [INFO] [277/300] IMA030 — Covidien Monoject 3ml Endo Syringes & Needles 27Gx1.25" -100
+2026-03-23 15:40:12,866 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:40:12,866 [INFO] [278/300] OH213 — TePe Interdental Brushes Extra Soft Red 0.5mm (122435) - 25
+2026-03-23 15:40:18,165 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:40:18,166 [INFO] [279/300] OH339 — Stoddard OPTIM Interdental Brush Pink XXXXFine - Pack25
+2026-03-23 15:40:22,864 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:40:22,865 [INFO] [280/300] PPI090 — Perfection Plus Mirror Handle Round (015/0151) - Each
+2026-03-23 15:40:28,382 [INFO]   [dmi.ie] Search 'Perfection Plus Mirror Handle Round' ✓ €10.09 (score=1.00)
+2026-03-23 15:40:28,382 [INFO]   [dmi_ie] ✓ €10.09  (score=1.00, variance: N/A)
+2026-03-23 15:40:28,382 [INFO] [281/300] AA089 — BD Microlance 3 Hypodermic Needles 30Gx0.5" (304000) -Box100
+2026-03-23 15:40:36,909 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:40:36,909 [INFO] [282/300] CSP229 — UnoDent Purified Water 2 x 5L (EVS205) - Box2
+2026-03-23 15:40:40,275 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:40:40,275 [INFO] [283/300] EA045 — Perfection Plus EndoPLUS Alternate Files 25mm ISO 25 Red
+2026-03-23 15:40:48,540 [INFO]   [dmi.ie] Search 'Perfection Plus EndoPLUS Alternate Files 25mm ISO 25' ✓ €33.83 (score=1.00)
+2026-03-23 15:40:48,540 [INFO]   [dmi_ie] ✓ €33.83  (score=1.00, variance: N/A)
+2026-03-23 15:40:48,540 [INFO] [284/300] FMT133 — UnoDent UnoCal Non-Setting CaOH Paste (EVU005) - Each
+2026-03-23 15:40:51,032 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:40:51,032 [INFO] [285/300] FPM016 — 3M Sof-Lex Mandrels (1983RA) - Pack3
+2026-03-23 15:40:58,000 [INFO]   [dmi.ie] Search '3M Sof-Lex Mandrels' ✓ €40.13 (score=0.65)
+2026-03-23 15:40:58,001 [INFO]   [dmi_ie] ✓ €40.13  (score=0.65, variance: N/A)
+2026-03-23 15:40:58,001 [INFO] [286/300] FQT115 — Dentanurse First Aid Kits for Teeth Standard Kit (1.101)
+2026-03-23 15:41:01,846 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:41:01,846 [INFO] [287/300] IIK114 — Falcon Kiara Impression Trays Lower Medium 14 Blue - Pack 25
+2026-03-23 15:41:08,845 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:41:08,845 [INFO] [288/300] PAD352 — i-Wave Interdental Brush 0.6mm Blue (W-IDS) - Pack5
+2026-03-23 15:41:29,808 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:41:29,809 [INFO] [289/300] ABG293 — Perfection Plus Serviette Bibs Pink (PP002/0074) - Pack500
+2026-03-23 15:41:37,197 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:41:37,197 [INFO] [290/300] CAW759 — Clinell Universal Disinfectant Spray (CDS500) - 500ml
+2026-03-23 15:41:41,750 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:41:41,750 [INFO] [291/300] CCA205 — Cottontails Round Cotton Wool Cosmetic Remover Pads -Pack200
+2026-03-23 15:41:47,500 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:41:47,501 [INFO] [292/300] FAC048 — 3M Filtek Flowable Restorative Dispensing Tips (3700T)Pack20
+2026-03-23 15:42:02,125 [INFO]   [dmi.ie] Search '3700 T' ✓ €11.91 (score=0.77)
+2026-03-23 15:42:02,126 [INFO]   [dmi_ie] ✓ €11.91  (score=0.77, variance: N/A)
+2026-03-23 15:42:02,126 [INFO] [293/300] IMA092 — Perfection Plus Mixing Tips Blue&Orange 4:1/10:1 (010/1230)
+2026-03-23 15:42:09,052 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:42:09,052 [INFO] [294/300] FPM361 — Perfection Plus Prophy Paste Mint Medium 250g (PP010/0001)
+2026-03-23 15:42:15,847 [INFO]   [dmi.ie] Search 'Perfection Plus Prophy Paste Mint Medium 250g' ✓ €10.07 (score=0.86)
+2026-03-23 15:42:15,848 [INFO]   [dmi_ie] ✓ €10.07  (score=0.86, variance: N/A)
+2026-03-23 15:42:15,848 [INFO] [295/300] GGR004 — Perfection Plus Gates Glidden No.3 (PP004/4003) - Pack6
+2026-03-23 15:42:28,385 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:42:28,385 [INFO] [296/300] GHG070 — Medex Antibac Liquid Handwash 650ml - Each
+2026-03-23 15:42:34,539 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:42:34,539 [INFO] [297/300] JLB128 — McFarlane Plastic Minigrip Bags 5" x 7.5" (PA129) - Pack100
+2026-03-23 15:42:37,814 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:42:37,814 [INFO] [298/300] MED011 — #Septodont Septanest 1:200,000 2.2ml - Box50
+2026-03-23 15:42:44,327 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:42:44,327 [INFO] [299/300] OH066 — GSK Sensodyne Search 3.5 Toothbrushes - Pack12
+2026-03-23 15:42:50,754 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:42:50,754 [INFO] [300/300] PAD147 — Curaprox CPS Prime Chairside Handy Pink - Pack25
+2026-03-23 15:42:58,766 [INFO]   [dmi_ie] ✗ Not found
+2026-03-23 15:42:58,788 [INFO] Output written to 'test.csv' and 'test_mappings.csv'
+2026-03-23 15:42:58,788 [INFO]   dmi_ie: 34/300 prices found
