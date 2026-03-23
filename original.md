@@ -22,3 +22,21 @@ from bs4 import BeautifulSoup
 import gspread
 
 python scraper.py --input "Top 300 (2).xlsx" --output "test.csv"  --sites dmi_ie --no-skip-existing --limit 100
+
+Hi,
+
+Hope you're well. We're at the stage of integrating the scraper output directly into Google Sheets with colour-coded benchmarking, which is exactly what was originally scoped.
+
+To set this up, I need a few things from your side:
+
+Google account email — the Google account that owns or will own the Sheet, so I can share the service account with it
+Sheet name — what you'd like the spreadsheet to be called
+Existing sheet or new one — do you have an existing Google Sheet you'd like us to write into, or should we create a fresh one each run?
+Access to Google Cloud Console — I'll need you to either:
+Create a project at console.cloud.google.com, enable the Google Sheets & Drive APIs, create a Service Account, and send me the downloaded credentials JSON file, or
+Give me access to your Google Cloud Console and I can set it up directly
+Once I have the credentials JSON, I can wire everything up so the scraper writes results straight into the Sheet with green/red/orange colour coding on prices and variances.
+
+Let me know if you have any questions on the above.
+
+Thanks
