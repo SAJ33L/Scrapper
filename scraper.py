@@ -365,29 +365,45 @@ class DMIScraper(BaseScraper):
     """
 
     def scrape_price_from_url(self, url: str) -> tuple[Optional[str], Optional[str]]:
-        """DMI: try LD+JSON first, then HTML span[class*=price] fallback."""
+        """DMI: extract both LD+JSON and displayed HTML price, prefer the displayed one.
+        LD+JSON sometimes contains stale catalogue prices that differ from what's shown on screen."""
         soup = self._soup(url)
         if not soup:
             return None, None
-        price_val, currency, product_name = _extract_ld_json_price(soup)
-        if price_val:
-            return _format_price(price_val, currency or self.CURRENCY), product_name
-        # Fallback: DMI shows price in spans with 'price' in their class
+
+        product_name_el = soup.select_one("h1")
+        pname_html = product_name_el.get_text(strip=True) if product_name_el else None
+        symbol = "£" if self.CURRENCY == "GBP" else "€"
+
+        # Extract displayed HTML price from span[class*=price]
+        html_price: Optional[float] = None
         for el in soup.select("span[class*=price]"):
             text = el.get_text(strip=True)
             m = re.search(r"(\d[\d,]*\.\d{2})", text)
             if m:
                 val = float(m.group(1).replace(",", ""))
                 if val > 0:
-                    symbol = "£" if self.CURRENCY == "GBP" else "€"
-                    product_name_el = soup.select_one("h1")
-                    pname = product_name_el.get_text(strip=True) if product_name_el else None
-                    return f"{symbol}{val:.2f}", pname
+                    html_price = val
+                    break
+
+        # Extract LD+JSON price
+        ld_price_val, ld_currency, ld_product_name = _extract_ld_json_price(soup)
+        ld_price: Optional[float] = float(ld_price_val) if ld_price_val else None
+        product_name = ld_product_name or pname_html
+
+        # Prefer the displayed HTML price — it reflects what a customer actually sees
+        # Fall back to LD+JSON if no HTML price found
+        if html_price:
+            if ld_price and abs(html_price - ld_price) > 0.01:
+                logger.debug(f"  [{self.SITE_NAME}] Price mismatch — displayed: {symbol}{html_price:.2f}, LD+JSON: {symbol}{ld_price:.2f} — using displayed")
+            return f"{symbol}{html_price:.2f}", product_name
+        if ld_price:
+            return _format_price(ld_price_val, ld_currency or self.CURRENCY), product_name
         return None, None
 
     def search(self, part_number: str, product_name: str, manufacturer: str, competitor_code: str = "") -> ScrapedPrice:
         for query in _build_queries(part_number, product_name, manufacturer, competitor_code):
-            result = self._html_search(query, our_name=product_name)
+            result = self._html_search(query, our_name=product_name, competitor_code=competitor_code)
             if result.found:
                 return result
         return ScrapedPrice()
@@ -407,13 +423,14 @@ class DMIScraper(BaseScraper):
             competitor_code=row.get("DMI Code", ""),
         )
 
-    def _html_search(self, query: str, our_name: str = "") -> ScrapedPrice:
+    def _html_search(self, query: str, our_name: str = "", competitor_code: str = "") -> ScrapedPrice:
         url = urljoin(self.BASE_URL, "/categories.html")
         soup = self._soup(url, params={"type": "simple", "name": query})
         if not soup:
             return ScrapedPrice()
 
         # Collect all candidates, scoring each by anchor text similarity
+        cc_slug = competitor_code.lower().replace("_", "-") if competitor_code else ""
         candidates = []
         for a in soup.select("a[href*='/products/']"):
             href = a.get("href", "")
@@ -424,8 +441,13 @@ class DMIScraper(BaseScraper):
             if not _href_matches_query(href, query) and not _href_matches_query(anchor_text, query):
                 logger.debug(f"  [{self.SITE_NAME}] Pre-filter skipped: {href[:60]}")
                 continue
-            # Score using anchor text — avoids loading every product page just to get a name
+            # Base score from name similarity on anchor text
             score = _name_similarity_score(our_name, anchor_text) if our_name else 0.5
+            # Boost score when the competitor code appears exactly in the URL slug
+            # This prevents variant mix-ups (e.g. PERF-0040046 vs PERF-0040047)
+            if cc_slug and cc_slug in href.lower():
+                score = min(1.0, score + 0.3)
+                logger.debug(f"  [{self.SITE_NAME}] Code match boost for {href[:60]}")
             candidates.append((score, href, anchor_text))
 
         if not candidates:
@@ -1068,6 +1090,35 @@ def load_mappings(output_path: str) -> dict:
     return mappings
 
 
+CHECKPOINT_EVERY = 5  # write output after every N products processed
+
+
+def load_progress(output_path: str) -> dict:
+    """
+    Load previously scraped prices from an existing output file.
+    Returns a dict keyed by product Code so they can be merged back into
+    the input rows — allowing the run to resume where it left off.
+    """
+    import pandas as pd
+
+    progress: dict[str, dict] = {}
+    if not os.path.exists(output_path):
+        return progress
+    try:
+        if output_path.lower().endswith(".csv"):
+            df = pd.read_csv(output_path, dtype=str, encoding="utf-8-sig").fillna("")
+        else:
+            df = pd.read_excel(output_path, sheet_name="Prices", dtype=str).fillna("")
+        for _, row in df.iterrows():
+            code = str(row.get("Code", "")).strip()
+            if code:
+                progress[code] = row.to_dict()
+        logger.info(f"Resumed: loaded progress for {len(progress)} products from '{output_path}'")
+    except Exception as e:
+        logger.warning(f"Could not load progress from '{output_path}': {e}")
+    return progress
+
+
 def write_output(output_path: str, rows: list, output_headers: list, mappings: dict) -> None:
     """Write prices + product mappings to .xlsx (two sheets) or .csv (two files)."""
     import pandas as pd
@@ -1111,6 +1162,16 @@ def run(
     if limit:
         rows = rows[:limit]
         logger.info(f"Limited to first {limit} rows")
+
+    # Merge previously scraped prices back into rows so skip_existing works correctly
+    progress = load_progress(output_path)
+    if progress:
+        for row in rows:
+            code = str(row.get("Code", "")).strip()
+            if code in progress:
+                for col, val in progress[code].items():
+                    if val and val != "nan" and not row.get(col):
+                        row[col] = val
 
     # Load product code mappings from previous output file (if it exists)
     mappings = load_mappings(output_path)
@@ -1267,6 +1328,11 @@ def run(
                         row[price_col] = "N/A"
                         row[notes_col] = "Not listed on competitor"
                     logger.info(f"  [{site_key}] ✗ Not found")
+
+            # Checkpoint: write output every N products so progress is never lost
+            if idx % CHECKPOINT_EVERY == 0:
+                write_output(output_path, rows, output_headers, mappings)
+                logger.info(f"  [checkpoint] Saved after {idx}/{total} products")
     finally:
         if pw_ctx and pw_scraper:
             pw_scraper.__exit__(None, None, None)
