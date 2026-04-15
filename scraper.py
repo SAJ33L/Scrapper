@@ -854,55 +854,67 @@ def read_input(path: str) -> tuple[list[dict], list[str]]:
 
 
 def build_output_headers(existing_headers: list[str]) -> list[str]:
-    """Add all site price/URL/variance columns and per-site Notes columns if missing."""
-    headers = list(existing_headers)
-    new_cols = [
-        # Price, variance, and URL columns for all sites
-        "DMI Sales Price (€)",
-        "Variance (DMI IE)",
-        "DMI URL (IE)",
-        "DMI Sales Price (£)",
-        "Variance (DMI UK)",
-        "DMI URL (UK)",
-        "DentalSky Sales Price (£)",
-        "Variance (DentalSky)",
-        "DentalSky URL",
-        "Dontalia Sales Price (€)",
-        "Variance (Dontalia)",
-        "Dontalia URL",
-        "Henry Schein Sales Price (€)",
-        "Variance (Henry Schein)",
-        "Henry Schein URL",
-        # Notes columns — one per site
-        "DMI IE Notes",
-        "DMI UK Notes",
-        "DentalSky Notes",
-        "Dontalia Notes",
-        "Henry Schein Notes",
-        # Competitor product name columns — for pack size verification
-        "DMI IE Product",
-        "DMI UK Product",
-        "DentalSky Product",
-        "Dontalia Product",
-        "Henry Schein Product",
-        # Pack size flag columns
-        "DMI IE Pack Flag",
-        "DMI UK Pack Flag",
-        "DentalSky Pack Flag",
-        "Dontalia Pack Flag",
-        "Henry Schein Pack Flag",
-        # Adjusted per-unit variance columns (only meaningful when pack sizes differ)
-        "DMI IE Adjusted Variance",
-        "DMI UK Adjusted Variance",
-        "DentalSky Adjusted Variance",
-        "Dontalia Adjusted Variance",
-        "Henry Schein Adjusted Variance",
+    """Return stable output headers: base columns first, then each site's full block."""
+    site_blocks = [
+        [
+            "DMI Sales Price (€)",
+            "Variance (DMI IE)",
+            "DMI URL (IE)",
+            "DMI IE Notes",
+            "DMI IE Product",
+            "DMI IE Pack Flag",
+            "DMI IE Adjusted Variance",
+        ],
+        [
+            "DMI Sales Price (£)",
+            "Variance (DMI UK)",
+            "DMI URL (UK)",
+            "DMI UK Notes",
+            "DMI UK Product",
+            "DMI UK Pack Flag",
+            "DMI UK Adjusted Variance",
+        ],
+        [
+            "DentalSky Sales Price (£)",
+            "Variance (DentalSky)",
+            "DentalSky URL",
+            "DentalSky Notes",
+            "DentalSky Product",
+            "DentalSky Pack Flag",
+            "DentalSky Adjusted Variance",
+        ],
+        [
+            "Dontalia Sales Price (€)",
+            "Variance (Dontalia)",
+            "Dontalia URL",
+            "Dontalia Notes",
+            "Dontalia Product",
+            "Dontalia Pack Flag",
+            "Dontalia Adjusted Variance",
+        ],
+        [
+            "Henry Schein Sales Price (€)",
+            "Variance (Henry Schein)",
+            "Henry Schein URL",
+            "Henry Schein Notes",
+            "Henry Schein Product",
+            "Henry Schein Pack Flag",
+            "Henry Schein Adjusted Variance",
+        ],
     ]
-    for col in new_cols:
-        if col not in headers:
-            headers.append(col)
-    # Remove blank spacer columns from output
-    return [h for h in headers if not h.startswith("_blank_")]
+    site_cols = [col for block in site_blocks for col in block]
+    site_cols_set = set(site_cols)
+
+    # Keep all non-site input columns first, preserving first occurrence and order.
+    base_headers = []
+    seen: set[str] = set()
+    for h in existing_headers:
+        if h.startswith("_blank_") or h in site_cols_set or h in seen:
+            continue
+        seen.add(h)
+        base_headers.append(h)
+
+    return base_headers + site_cols
 
 
 # ---------------------------------------------------------------------------

@@ -45,7 +45,7 @@ When the scraper cannot find a product via part number or product name, it falls
 
 ## Output Columns
 
-The output CSV preserves all input columns and adds the following per site:
+The output CSV preserves all non-site input columns first, then appends site columns in this fixed order (site-by-site blocks):
 
 | Column | Description |
 |--------|-------------|
@@ -57,14 +57,11 @@ The output CSV preserves all input columns and adds the following per site:
 | DD Code | Dontalia/DentalSky reference code (from input) |
 | DMI Code | DMI's product code (from input) |
 | Schein Code | Henry Schein's product code (from input) |
-| *Site* Sales Price (€/£) | Scraped competitor price |
-| Variance (*Site*) | % difference vs your price |
-| *Site* URL | Competitor product URL |
-| *Site* Product | Competitor product title (for pack size verification) |
-| *Site* Pack Flag | `MATCH` / `MISMATCH (ours:100 theirs:50)` / `UNKNOWN` |
-| *Site* Adjusted Variance | Per-unit variance when pack sizes differ |
-| *Site* Notes | `Not listed on competitor` when product not found |
-| *(above repeated for each site: DMI IE, DMI UK, DentalSky, Dontalia, Henry Schein)* | |
+| DMI IE block | `DMI Sales Price (€)`, `Variance (DMI IE)`, `DMI URL (IE)`, `DMI IE Notes`, `DMI IE Product`, `DMI IE Pack Flag`, `DMI IE Adjusted Variance` |
+| DMI UK block | `DMI Sales Price (£)`, `Variance (DMI UK)`, `DMI URL (UK)`, `DMI UK Notes`, `DMI UK Product`, `DMI UK Pack Flag`, `DMI UK Adjusted Variance` |
+| DentalSky block | `DentalSky Sales Price (£)`, `Variance (DentalSky)`, `DentalSky URL`, `DentalSky Notes`, `DentalSky Product`, `DentalSky Pack Flag`, `DentalSky Adjusted Variance` |
+| Dontalia block | `Dontalia Sales Price (€)`, `Variance (Dontalia)`, `Dontalia URL`, `Dontalia Notes`, `Dontalia Product`, `Dontalia Pack Flag`, `Dontalia Adjusted Variance` |
+| Henry Schein block | `Henry Schein Sales Price (€)`, `Variance (Henry Schein)`, `Henry Schein URL`, `Henry Schein Notes`, `Henry Schein Product`, `Henry Schein Pack Flag`, `Henry Schein Adjusted Variance` |
 
 > **Variance formula:** `(your price − competitor price) / competitor price × 100`
 > Positive = competitor is cheaper than you. Negative = you are cheaper than competitor.
