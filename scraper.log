@@ -28711,3 +28711,1302 @@ Call log:
 waiting for locator(".product-item-link") to be visible
 
 2026-04-16 02:12:02,659 [INFO]   [dentalsky.com] Playwright search: Perfection Plus 002/1003
+2026-04-16 02:12:28,092 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+002%2F1003: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:12:28,131 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:12:34,101 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:12:34,102 [INFO] [138/200] FAC023 — Septodont Hemocollagene Sponges - Pack24
+2026-04-16 02:12:38,506 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'Septodont Hemocollagene Sponges Box 24'
+2026-04-16 02:12:44,507 [INFO]   [dmi.ie] ✗ Rejected (score=0.52) — 'Septodont Hemocollagene Sponges Box 24'
+2026-04-16 02:12:47,930 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:12:49,610 [INFO]   [dmi.co.uk] Direct URL ✓ £65.10
+2026-04-16 02:12:49,610 [INFO]   [dmi_uk] ✗ Rejected (score=0.52) — found: 'Septodont Hemocollagene Sponges Box 24'
+2026-04-16 02:12:49,617 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:12:51,033 [INFO]   [dentalsky.com] Playwright search: Septodont Hemocollagene
+2026-04-16 02:13:16,529 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Hemocollagene: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:13:16,550 [INFO]   [dentalsky.com] Playwright search: Septodont Septodont Hemocollagene
+2026-04-16 02:13:41,422 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septodont+Hemocollagene: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:13:41,460 [INFO]   [dentalsky.com] Playwright search: HEMOC01
+2026-04-16 02:14:06,542 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=HEMOC01: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:14:06,575 [INFO]   [dentalsky.com] Playwright search: Septodont HEMOC01
+2026-04-16 02:14:31,797 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+HEMOC01: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:14:31,837 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:14:37,332 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:14:37,333 [INFO] [139/200] FAC191A — Septodont Alveogyl Haemostatic Surgical Dressing Paste 10g
+2026-04-16 02:14:47,496 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:14:49,376 [INFO]   [dmi.co.uk] Direct URL ✓ £48.43
+2026-04-16 02:14:49,377 [INFO]   [dmi_uk] ✗ Rejected (score=0.58) — found: 'Septodont Alveogyl 10G'
+2026-04-16 02:14:49,377 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:14:57,848 [INFO]   [dentalsky.com] Playwright search: Septodont Alveogyl Haemostatic Surgical Dressing Paste
+2026-04-16 02:15:23,355 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Alveogyl+Haemostatic+Surgical+Dressing+Paste: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:15:23,387 [INFO]   [dentalsky.com] Playwright search: Septodont Septodont Alveogyl Haemostatic Surgical
+2026-04-16 02:15:48,935 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septodont+Alveogyl+Haemostatic+Surgical: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:15:48,963 [INFO]   [dentalsky.com] Playwright search: ALVEO02
+2026-04-16 02:16:14,410 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=ALVEO02: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:16:14,463 [INFO]   [dentalsky.com] Playwright search: Septodont ALVEO02
+2026-04-16 02:16:39,917 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+ALVEO02: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:16:39,951 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:16:41,558 [INFO]   [dontalia.com] Direct URL ✓ €36.93
+2026-04-16 02:16:41,559 [INFO]   [dontalia] ✗ Rejected (score=0.14) — found: 'Alveogyl'
+2026-04-16 02:16:41,559 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:16:41,559 [INFO] [140/200] FAC198 — Perfection Plus Needle Etch Tips (PP011/0080) - Pack25
+2026-04-16 02:16:43,480 [INFO]   [dmi.ie] Direct URL ✓ €5.61
+2026-04-16 02:16:43,480 [INFO]   [dmi_ie] ✗ Rejected (score=0.50) — found: 'Perfection Plus Needle Etch Tips 25 Pack  Blue'
+2026-04-16 02:16:43,486 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:16:44,960 [INFO]   [dmi.co.uk] Direct URL ✓ £4.83
+2026-04-16 02:16:44,960 [INFO]   [dmi_uk] ✗ Rejected (score=0.50) — found: 'Perfection Plus Needle Etch Tips 25 Pack  Blue'
+2026-04-16 02:16:44,961 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:16:46,760 [INFO]   [dentalsky.com] Direct URL ✓ £7.92
+2026-04-16 02:16:46,760 [INFO]   [dentalsky] ✗ Rejected (score=0.40) — found: 'Perfection Plus Etch Tips (25)'
+2026-04-16 02:16:46,761 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:16:53,097 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:16:53,151 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 02:16:53,152 [INFO]   [checkpoint] Saved after 140/200 products
+2026-04-16 02:16:53,153 [INFO] [141/200] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-04-16 02:16:55,155 [INFO]   [dmi.ie] Direct URL ✓ €18.93
+2026-04-16 02:16:55,155 [INFO]   [dmi_ie] ✓ €18.93  (score=0.86, variance: -17.9%)
+2026-04-16 02:16:56,739 [INFO]   [dmi.co.uk] Direct URL ✓ £16.21
+2026-04-16 02:16:56,740 [INFO]   [dmi_uk] ✓ £16.21  (score=0.86, variance: -17.3%)
+2026-04-16 02:17:02,484 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6"
+2026-04-16 02:17:27,738 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Rubber+Dam+Non+Latex+Blue+Medium+6%22x6%22: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:17:27,763 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Ltd Perfection Plus Rubber Dam Non Latex
+2026-04-16 02:17:52,615 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Ltd+Perfection+Plus+Rubber+Dam+Non+Latex: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:17:52,658 [INFO]   [dentalsky.com] Playwright search: 004/0046
+2026-04-16 02:18:17,711 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=004%2F0046: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:18:17,739 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Ltd 004/0046
+2026-04-16 02:18:42,692 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Ltd+004%2F0046: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:18:42,720 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:18:48,017 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:18:48,017 [INFO] [142/200] FAC293 — UnoDent Rubber Dam Non Latex Light Blue Medium 6"x6"(EWS025)
+2026-04-16 02:18:58,781 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:19:08,082 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:19:15,298 [INFO]   [dentalsky.com] Playwright search: UnoDent Rubber Dam Non Latex Light Blue Medium
+2026-04-16 02:19:39,987 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Rubber+Dam+Non+Latex+Light+Blue+Medium: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:19:40,014 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Rubber Dam Non Latex Light Blue
+2026-04-16 02:20:04,820 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Rubber+Dam+Non+Latex+Light+Blue: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:20:04,852 [INFO]   [dentalsky.com] Playwright search: EWS025
+2026-04-16 02:20:30,443 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=EWS025: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:20:30,481 [INFO]   [dentalsky.com] Playwright search: UnoDent EWS025
+2026-04-16 02:20:55,002 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+EWS025: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:20:55,024 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:21:01,529 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:21:01,531 [INFO] [143/200] FAC294 — Bossklein Etchant Gel Jumbo Etching Kit 50ml (BOS9904) -Each
+2026-04-16 02:21:08,956 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:21:18,859 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:21:25,866 [INFO]   [dentalsky.com] Playwright search: Bossklein Etchant Gel Jumbo Etching Kit 50ml
+2026-04-16 02:21:50,901 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+Etchant+Gel+Jumbo+Etching+Kit+50ml: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:21:50,937 [INFO]   [dentalsky.com] Playwright search: Bossklein Bossklein Etchant Gel Jumbo Etching Kit
+2026-04-16 02:22:16,559 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+Bossklein+Etchant+Gel+Jumbo+Etching+Kit: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:22:16,592 [INFO]   [dentalsky.com] Playwright search: BOS9904
+2026-04-16 02:22:42,015 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=BOS9904: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:22:42,053 [INFO]   [dentalsky.com] Playwright search: Bossklein BOS9904
+2026-04-16 02:23:06,300 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+BOS9904: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:23:06,325 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:23:11,290 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:23:11,291 [INFO] [144/200] FAC374 — UnoDent Rubber Dam Non Latex Light Blue Heavy 6"x6" (EWS045)
+2026-04-16 02:23:21,334 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:23:32,091 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:23:37,638 [INFO]   [dentalsky.com] Playwright search: UnoDent Rubber Dam Non Latex Light Blue Heavy 6"x6"
+2026-04-16 02:24:02,924 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Rubber+Dam+Non+Latex+Light+Blue+Heavy+6%22x6%22: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:24:02,961 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Rubber Dam Non Latex Light Blue
+2026-04-16 02:24:28,417 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Rubber+Dam+Non+Latex+Light+Blue: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:24:28,460 [INFO]   [dentalsky.com] Playwright search: EWS045
+2026-04-16 02:24:53,198 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=EWS045: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:24:53,222 [INFO]   [dentalsky.com] Playwright search: UnoDent EWS045
+2026-04-16 02:25:18,190 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+EWS045: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:25:18,233 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:25:24,847 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:25:24,848 [INFO] [145/200] FAC375 — Perfection Plus AppliPlus Regular Microbrush PP011/1112
+2026-04-16 02:25:26,932 [INFO]   [dmi.ie] Direct URL ✓ €11.85
+2026-04-16 02:25:26,932 [INFO]   [dmi_ie] ✓ €11.85  (score=0.67, variance: -7.8%)
+2026-04-16 02:25:28,615 [INFO]   [dmi.co.uk] Direct URL ✓ £10.66
+2026-04-16 02:25:28,615 [INFO]   [dmi_uk] ✓ £10.66  (score=0.67, variance: -11.6%)
+2026-04-16 02:25:30,548 [INFO]   [dentalsky.com] Direct URL ✓ £14.64
+2026-04-16 02:25:30,549 [INFO]   [dentalsky] ✗ Rejected (score=0.33) — found: 'AppliPLUS Micro Applicators: Regular (400)'
+2026-04-16 02:25:30,549 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:25:35,367 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:25:35,423 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 02:25:35,424 [INFO]   [checkpoint] Saved after 145/200 products
+2026-04-16 02:25:35,425 [INFO] [146/200] FAC401 — Perfection Plus Rubber Dam Non Latex Blue Heavy 6"x6" - 20
+2026-04-16 02:25:37,665 [INFO]   [dmi.ie] Direct URL ✓ €20.42
+2026-04-16 02:25:37,666 [INFO]   [dmi_ie] ✓ €20.42  (score=0.86, variance: -14.2%)
+2026-04-16 02:25:39,651 [INFO]   [dmi.co.uk] Direct URL ✓ £17.56
+2026-04-16 02:25:39,652 [INFO]   [dmi_uk] ✓ £17.56  (score=0.86, variance: -14.0%)
+2026-04-16 02:25:48,601 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Rubber Dam Non Latex Blue Heavy 6"x6"
+2026-04-16 02:26:16,080 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Rubber+Dam+Non+Latex+Blue+Heavy+6%22x6%22: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:26:16,103 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Perfection Plus Rubber Dam Non Latex
+2026-04-16 02:26:42,621 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Perfection+Plus+Rubber+Dam+Non+Latex: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:26:42,650 [INFO]   [dentalsky.com] Playwright search: 004/0047
+2026-04-16 02:27:08,158 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=004%2F0047: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:27:08,190 [INFO]   [dentalsky.com] Playwright search: Perfection Plus 004/0047
+2026-04-16 02:27:33,671 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+004%2F0047: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:27:33,708 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:27:38,759 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:27:38,759 [INFO] [147/200] FBX200 — UnoDent Micro Applicator Brush Super Fine White - Pack400
+2026-04-16 02:27:47,247 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:27:56,915 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:28:03,705 [INFO]   [dentalsky.com] Playwright search: UnoDent Micro Applicator Brush Super Fine
+2026-04-16 02:28:29,375 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Micro+Applicator+Brush+Super+Fine: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:28:29,406 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Micro Applicator Brush Super
+2026-04-16 02:28:54,863 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Micro+Applicator+Brush+Super: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:28:54,887 [INFO]   [dentalsky.com] Playwright search: FBX200
+2026-04-16 02:29:19,751 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=FBX200: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:29:19,786 [INFO]   [dentalsky.com] Playwright search: UnoDent FBX200
+2026-04-16 02:29:44,719 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+FBX200: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:29:44,747 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:29:52,061 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:29:52,061 [INFO] [148/200] FBX203 — UnoDent Micro Applicator Brush Regular Blue - Pack400
+2026-04-16 02:30:01,961 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:30:09,515 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:30:14,757 [INFO]   [dentalsky.com] Playwright search: UnoDent Micro Applicator Brush Regular
+2026-04-16 02:30:40,419 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Micro+Applicator+Brush+Regular: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:30:40,467 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Micro Applicator Brush Regular
+2026-04-16 02:31:06,028 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Micro+Applicator+Brush+Regular: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:31:06,051 [INFO]   [dentalsky.com] Playwright search: FBX203
+2026-04-16 02:31:30,588 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=FBX203: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:31:30,616 [INFO]   [dentalsky.com] Playwright search: UnoDent FBX203
+2026-04-16 02:31:56,092 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+FBX203: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:31:56,117 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:32:03,107 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:32:03,107 [INFO] [149/200] FMA1085 — Kulzer Charisma ABC PLT A3 20x0.2g (66064792) - Pack20
+2026-04-16 02:32:05,407 [INFO]   [dmi.ie] Direct URL ✓ €25.99
+2026-04-16 02:32:05,408 [INFO]   [dmi_ie] ✗ Rejected (score=0.35) — found: 'Kulzer Charisma ABC Plt Refill 20 X 0.20G A3'
+2026-04-16 02:32:05,408 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:32:07,288 [INFO]   [dmi.co.uk] Direct URL ✓ £21.58
+2026-04-16 02:32:07,288 [INFO]   [dmi_uk] ✗ Rejected (score=0.35) — found: 'Kulzer Charisma ABC Plt Refill 20 X 0.20G A3'
+2026-04-16 02:32:07,289 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:32:09,117 [INFO]   [dentalsky.com] Direct URL ✓ £31.74
+2026-04-16 02:32:09,118 [INFO]   [dentalsky] ✗ Rejected (score=0.32) — found: 'Charisma ABC: 20 x 0.2g PLTs - A3'
+2026-04-16 02:32:09,126 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:32:10,809 [INFO]   [dontalia.com] Direct URL ✓ €44.86
+2026-04-16 02:32:10,810 [INFO]   [dontalia] ✗ Rejected (score=0.00) — found: 'Charisma® abc compules refill'
+2026-04-16 02:32:10,810 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:32:10,810 [INFO] [150/200] FMA1377 — UnoDent Luminos UN Syringe A2 4g (FLU811) - Each
+2026-04-16 02:32:21,879 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:32:31,863 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:32:38,189 [INFO]   [dentalsky.com] Playwright search: UnoDent Luminos UN Syringe A2 4g
+2026-04-16 02:33:03,979 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Luminos+UN+Syringe+A2+4g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:33:04,002 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Luminos UN Syringe A2 4g
+2026-04-16 02:33:29,377 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Luminos+UN+Syringe+A2+4g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:33:29,409 [INFO]   [dentalsky.com] Playwright search: FLU811
+2026-04-16 02:33:54,430 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=FLU811: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:33:54,456 [INFO]   [dentalsky.com] Playwright search: UnoDent FLU811
+2026-04-16 02:34:20,061 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+FLU811: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:34:20,088 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:34:27,118 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:34:27,163 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 02:34:27,164 [INFO]   [checkpoint] Saved after 150/200 products
+2026-04-16 02:34:27,165 [INFO] [151/200] FMA1384 — UnoDent Luminos UN Syringe BW 4g (FLU818) - Each
+2026-04-16 02:34:34,006 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:34:43,381 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:34:49,267 [INFO]   [dentalsky.com] Playwright search: UnoDent Luminos UN Syringe BW 4g
+2026-04-16 02:35:14,045 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Luminos+UN+Syringe+BW+4g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:35:14,079 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Luminos UN Syringe BW 4g
+2026-04-16 02:35:39,242 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Luminos+UN+Syringe+BW+4g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:35:39,275 [INFO]   [dentalsky.com] Playwright search: FLU818
+2026-04-16 02:36:04,547 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=FLU818: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:36:04,571 [INFO]   [dentalsky.com] Playwright search: UnoDent FLU818
+2026-04-16 02:36:30,026 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+FLU818: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 02:36:30,050 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 02:36:34,886 [INFO]   [dontalia] ✗ Not found
+2026-04-16 02:36:34,887 [INFO] [152/200] FMA1389 — UnoDent Luminos UN Capsules A2 20x0.25g (FLU831) - Pack20
+2026-04-16 02:36:46,518 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 02:36:57,144 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 02:37:03,672 [INFO]   [dentalsky.com] Playwright search: UnoDent Luminos UN Capsules A2 20x0.25g
+2026-04-16 10:27:05,778 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Luminos+UN+Capsules+A2+20x0.25g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:27:05,820 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Luminos UN Capsules A2 20x0.25g
+2026-04-16 10:27:26,043 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Luminos+UN+Capsules+A2+20x0.25g: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Luminos+UN+Capsules+A2+20x0.25g", waiting until "networkidle"
+
+2026-04-16 10:27:26,054 [INFO]   [dentalsky.com] Playwright search: FLU831
+2026-04-16 10:27:50,599 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=FLU831: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:27:50,627 [INFO]   [dentalsky.com] Playwright search: UnoDent FLU831
+2026-04-16 10:28:15,701 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+FLU831: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:28:15,735 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:28:45,785 [WARNING] [dontalia.com] Request error for https://www.dontalia.com/unodent-luminos-un-capsules-a2.html (attempt 1): HTTPSConnectionPool(host='www.dontalia.com', port=443): Read timed out. (read timeout=30)
+2026-04-16 10:28:56,196 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:28:56,197 [INFO] [153/200] FMA1410 — UnoDent Luminos Flowable Syringe A2 2g (FLU861) - Each
+2026-04-16 10:29:04,487 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:29:13,124 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:29:43,156 [WARNING] [dentalsky.com] Request error for https://www.dentalsky.com/unodent-luminos-flowable-syringe-a2-2g-flu861-each.html (attempt 1): HTTPSConnectionPool(host='www.dentalsky.com', port=443): Read timed out. (read timeout=30)
+2026-04-16 10:29:54,486 [INFO]   [dentalsky.com] Playwright search: UnoDent Luminos Flowable Syringe A2 2g
+2026-04-16 10:30:19,063 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Luminos+Flowable+Syringe+A2+2g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:30:19,092 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Luminos Flowable Syringe A2 2g
+2026-04-16 10:30:44,493 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Luminos+Flowable+Syringe+A2+2g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:30:44,520 [INFO]   [dentalsky.com] Playwright search: FLU861
+2026-04-16 10:31:09,248 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=FLU861: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:31:09,283 [INFO]   [dentalsky.com] Playwright search: UnoDent FLU861
+2026-04-16 10:31:36,266 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+FLU861: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:31:36,293 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:31:43,896 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:31:43,897 [INFO] [154/200] FMA355 — SDI Wave Flowable Composite Syringe A2 1g (7510203) - Each
+2026-04-16 10:31:56,339 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:32:05,553 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:32:07,624 [INFO]   [dentalsky.com] Direct URL ✓ £13.86
+2026-04-16 10:32:07,624 [INFO]   [dentalsky] ✗ Rejected (score=0.47) — found: 'Wave: 1g Syringe - A2'
+2026-04-16 10:32:07,625 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:32:09,153 [INFO]   [dontalia.com] Direct URL ✓ €11.35
+2026-04-16 10:32:09,153 [INFO]   [dontalia] ✗ Rejected (score=0.35) — found: 'Wave flow 1 syringe'
+2026-04-16 10:32:09,154 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:32:09,154 [INFO] [155/200] FMA549A — Kulzer Venus Pearl ART PLT A2 20x0.2g (66048141) - Box20
+2026-04-16 10:32:10,692 [INFO]   [dmi.ie] Direct URL ✓ €87.87
+2026-04-16 10:32:10,692 [INFO]   [dmi_ie] ✗ Rejected (score=0.57) — found: 'Kulzer Venus Pearl ART Composite PLT Refills A2 (20 x 0.2g) (Formerly Venus Pearl)'
+2026-04-16 10:32:10,692 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:32:12,329 [INFO]   [dmi.co.uk] Direct URL ✓ £72.78
+2026-04-16 10:32:12,329 [INFO]   [dmi_uk] ✗ Rejected (score=0.57) — found: 'Kulzer Venus Pearl ART Composite PLT Refills A2 (20 x 0.2g) (Formerly Venus Pearl)'
+2026-04-16 10:32:12,329 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:32:19,014 [INFO]   [dentalsky.com] Playwright search: Kulzer Venus Pearl ART PLT A2 20x0.2g
+2026-04-16 10:32:43,421 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Kulzer+Venus+Pearl+ART+PLT+A2+20x0.2g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:32:43,431 [INFO]   [dentalsky.com] Playwright search: Kulzer Kulzer Venus Pearl ART PLT A2 20x0.2g
+2026-04-16 10:33:09,041 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Kulzer+Kulzer+Venus+Pearl+ART+PLT+A2+20x0.2g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:33:09,062 [INFO]   [dentalsky.com] Playwright search: 66048141
+2026-04-16 10:33:37,065 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=66048141: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:33:37,134 [INFO]   [dentalsky.com] Playwright search: Kulzer 66048141
+2026-04-16 10:34:03,382 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Kulzer+66048141: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:34:03,423 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:34:05,007 [INFO]   [dontalia.com] Direct URL ✓ €57.95
+2026-04-16 10:34:05,007 [INFO]   [dontalia] ✗ Rejected (score=0.28) — found: 'Venus pearl plt 20 pcs'
+2026-04-16 10:34:05,008 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:34:05,032 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 10:34:05,033 [INFO]   [checkpoint] Saved after 155/200 products
+2026-04-16 10:34:05,033 [INFO] [156/200] FMA954 — Kulzer Venus Pearl ART PLT A3 20x0.2g (66048143) - Box20
+2026-04-16 10:34:11,965 [INFO]   [dmi.ie] Direct URL ✓ €87.87
+2026-04-16 10:34:11,965 [INFO]   [dmi_ie] ✗ Rejected (score=0.57) — found: 'Kulzer Venus Pearl ART Composite PLT Refills A3 (20 x 0.2g) (Formerly Venus Pearl)'
+2026-04-16 10:34:11,971 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:34:14,377 [INFO]   [dmi.co.uk] Direct URL ✓ £72.78
+2026-04-16 10:34:14,378 [INFO]   [dmi_uk] ✗ Rejected (score=0.57) — found: 'Kulzer Venus Pearl ART Composite PLT Refills A3 (20 x 0.2g) (Formerly Venus Pearl)'
+2026-04-16 10:34:14,378 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:34:22,382 [INFO]   [dentalsky.com] Playwright search: Kulzer Venus Pearl ART PLT A3 20x0.2g
+2026-04-16 10:34:47,102 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Kulzer+Venus+Pearl+ART+PLT+A3+20x0.2g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:34:47,129 [INFO]   [dentalsky.com] Playwright search: Kulzer Kulzer Venus Pearl ART PLT A3 20x0.2g
+2026-04-16 10:35:11,131 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Kulzer+Kulzer+Venus+Pearl+ART+PLT+A3+20x0.2g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:35:11,171 [INFO]   [dentalsky.com] Playwright search: 66048143
+2026-04-16 10:35:35,300 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=66048143: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:35:35,311 [INFO]   [dentalsky.com] Playwright search: Kulzer 66048143
+2026-04-16 10:35:59,975 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Kulzer+66048143: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:36:00,021 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:36:02,060 [INFO]   [dontalia.com] Direct URL ✓ €57.95
+2026-04-16 10:36:02,063 [INFO]   [dontalia] ✗ Rejected (score=0.28) — found: 'Venus pearl plt 20 pcs'
+2026-04-16 10:36:02,064 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:36:02,065 [INFO] [157/200] FMP213 — 3M Filtek One Bulk Fill Capsules A2 (4867A2) - Pack20
+2026-04-16 10:36:04,079 [INFO]   [dmi.ie] Direct URL ✓ €83.68
+2026-04-16 10:36:04,079 [INFO]   [dmi_ie] ✗ Rejected (score=0.58) — found: '3M Filtek One Bulk Fill Restorative Refill Capsules Shade A2, 4867A2'
+2026-04-16 10:36:04,080 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:36:05,671 [INFO]   [dmi.co.uk] Direct URL ✓ £70.40
+2026-04-16 10:36:05,671 [INFO]   [dmi_uk] ✗ Rejected (score=0.58) — found: '3M Filtek One Bulk Fill Restorative Refill Capsules Shade A2, 4867A2'
+2026-04-16 10:36:05,671 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:36:07,524 [INFO]   [dentalsky.com] Direct URL ✓ £64.50
+2026-04-16 10:36:07,524 [INFO]   [dentalsky] ✗ Rejected (score=0.35) — found: '3M™ Filtek™ One Bulk Fill Restorative: 20 x 0.2g Capsules - A2'
+2026-04-16 10:36:07,525 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:36:08,993 [INFO]   [dontalia.com] Direct URL ✓ €48.05
+2026-04-16 10:36:08,994 [INFO]   [dontalia] ✗ Rejected (score=0.23) — found: 'Filtek one capsules'
+2026-04-16 10:36:08,994 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:36:08,994 [INFO] [158/200] FPM007 — 3M Sof-Lex Discs 3/8" Coarse (1981C) - Pack85
+2026-04-16 10:36:12,049 [INFO]   [dmi.ie] Direct URL ✓ €65.40
+2026-04-16 10:36:12,049 [INFO]   [dmi_ie] ✗ Rejected (score=0.47) — found: '3M Sof-Lex Pop-On Discs 3/8&#039;&#039;/9.5mm Coarse (Black)'
+2026-04-16 10:36:12,049 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:36:15,009 [INFO]   [dmi.co.uk] Direct URL ✓ £55.53
+2026-04-16 10:36:15,009 [INFO]   [dmi_uk] ✗ Rejected (score=0.47) — found: '3M Sof-Lex Pop-On Discs 3/8&#039;&#039;/9.5mm Coarse (Black)'
+2026-04-16 10:36:15,010 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:36:23,110 [INFO]   [dentalsky.com] Playwright search: 3M Sof-Lex Discs 3/8" Coarse
+2026-04-16 10:36:47,086 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=3M+Sof-Lex+Discs+3%2F8%22+Coarse: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:36:47,117 [INFO]   [dentalsky.com] Playwright search: 3M 3M Sof-Lex Discs 3/8" Coarse
+2026-04-16 10:37:12,177 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=3M+3M+Sof-Lex+Discs+3%2F8%22+Coarse: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:37:12,198 [INFO]   [dentalsky.com] Playwright search: 1981 C
+2026-04-16 10:37:36,675 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1981+C: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:37:36,687 [INFO]   [dentalsky.com] Playwright search: 3M 1981 C
+2026-04-16 10:38:01,502 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=3M+1981+C: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:38:01,536 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:38:07,971 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:38:07,971 [INFO] [159/200] FPM011 — 3M Sof-Lex Discs 1/2" Coarse (1982C) - Pack85
+2026-04-16 10:38:12,557 [INFO]   [dmi.ie] Direct URL ✓ €65.40
+2026-04-16 10:38:12,558 [INFO]   [dmi_ie] ✓ €65.40  (score=0.77, variance: -11.6%)
+2026-04-16 10:38:16,436 [INFO]   [dmi.co.uk] Direct URL ✓ £55.53
+2026-04-16 10:38:16,436 [INFO]   [dmi_uk] ✓ £55.53  (score=0.77, variance: -10.2%)
+2026-04-16 10:38:22,500 [INFO]   [dentalsky.com] Playwright search: 3M Sof-Lex Discs 1/2" Coarse
+2026-04-16 10:38:47,493 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=3M+Sof-Lex+Discs+1%2F2%22+Coarse: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:38:47,531 [INFO]   [dentalsky.com] Playwright search: 3M 3M Sof-Lex Discs 1/2" Coarse
+2026-04-16 10:39:11,694 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=3M+3M+Sof-Lex+Discs+1%2F2%22+Coarse: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:39:11,725 [INFO]   [dentalsky.com] Playwright search: 1982 C
+2026-04-16 10:39:35,842 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1982+C: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:39:35,878 [INFO]   [dentalsky.com] Playwright search: 3M 1982 C
+2026-04-16 10:40:00,424 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=3M+1982+C: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:40:00,435 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:40:01,992 [INFO]   [dontalia.com] Direct URL ✓ €39.95
+2026-04-16 10:40:01,993 [INFO]   [dontalia] ✗ Rejected (score=0.00) — found: 'Pop-on™ 1982'
+2026-04-16 10:40:01,993 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:40:01,993 [INFO] [160/200] FPM016 — 3M Sof-Lex Mandrels (1983RA) - Pack3
+2026-04-16 10:40:04,490 [INFO]   [dmi.ie] Direct URL ✓ €32.63
+2026-04-16 10:40:04,490 [INFO]   [dmi_ie] ✓ €32.63  (score=0.65, variance: 5.9%)
+2026-04-16 10:40:06,422 [INFO]   [dmi.co.uk] Direct URL ✓ £27.71
+2026-04-16 10:40:06,423 [INFO]   [dmi_uk] ✓ £27.71  (score=0.65, variance: 7.5%)
+2026-04-16 10:40:09,973 [INFO]   [dentalsky.com] Playwright search: 3M Sof-Lex Mandrels
+2026-04-16 10:40:34,346 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=3M+Sof-Lex+Mandrels: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:40:34,360 [INFO]   [dentalsky.com] Playwright search: 3M 3M Sof-Lex Mandrels
+2026-04-16 10:40:58,273 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=3M+3M+Sof-Lex+Mandrels: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:40:58,303 [INFO]   [dentalsky.com] Playwright search: 1983 RA
+2026-04-16 10:41:23,807 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1983+RA: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:41:23,824 [INFO]   [dentalsky.com] Playwright search: 3M 1983 RA
+2026-04-16 10:41:48,513 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=3M+1983+RA: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:41:48,533 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:41:54,785 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:41:54,831 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 10:41:54,831 [INFO]   [checkpoint] Saved after 160/200 products
+2026-04-16 10:41:54,831 [INFO] [161/200] FPM085 — Perfection Plus Tofflemire Bands No.1 Thin (085/0055)
+2026-04-16 10:42:02,453 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:42:12,906 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:42:21,444 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Tofflemire Bands No.1 Thin
+2026-04-16 10:42:45,963 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Tofflemire+Bands+No.1+Thin: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:42:45,984 [INFO]   [dentalsky.com] Playwright search: Surrey Dental Perfection Plus Tofflemire Bands No.1
+2026-04-16 10:43:10,723 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Surrey+Dental+Perfection+Plus+Tofflemire+Bands+No.1: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:43:10,750 [INFO]   [dentalsky.com] Playwright search: 085/0055
+2026-04-16 10:43:35,419 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=085%2F0055: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:43:35,445 [INFO]   [dentalsky.com] Playwright search: Surrey Dental 085/0055
+2026-04-16 10:44:00,418 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Surrey+Dental+085%2F0055: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:44:00,455 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:44:07,319 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:44:07,320 [INFO] [162/200] FPM118 — Perfection Plus Prophy Paste Mint Coarse 250g (PP010/0046)
+2026-04-16 10:44:15,192 [INFO]   [dmi.ie] Search 'Perfection Plus Prophy Paste Mint Coarse 250g' ✓ €8.19 (score=0.86)
+2026-04-16 10:44:15,192 [INFO]   [dmi_ie] ✓ €8.19  (score=0.86, variance: -6.8%)
+2026-04-16 10:44:19,441 [INFO]   [dmi.co.uk] Search 'Perfection Plus Prophy Paste Mint Coarse 250g' ✓ £7.37 (score=0.86)
+2026-04-16 10:44:19,442 [INFO]   [dmi_uk] ✓ £7.37  (score=0.86, variance: -10.7%)
+2026-04-16 10:44:21,016 [INFO]   [dentalsky.com] Direct URL ✓ £8.58
+2026-04-16 10:44:21,016 [INFO]   [dentalsky] ✓ £8.58  (score=0.86, variance: -23.3%)
+2026-04-16 10:44:26,035 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:44:26,035 [INFO] [163/200] FPM326 — Astek Pro-Matrix - Wide - Blue (19005) - Pack50
+2026-04-16 10:44:34,250 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:44:43,547 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:44:51,715 [INFO]   [dentalsky.com] Playwright search: Astek Pro-Matrix - Wide - Blue
+2026-04-16 10:45:16,570 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Astek+Pro-Matrix+-+Wide+-+Blue: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:45:16,607 [INFO]   [dentalsky.com] Playwright search: Astek Innovations Astek Pro-Matrix - Wide - Blue
+2026-04-16 10:45:41,601 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Astek+Innovations+Astek+Pro-Matrix+-+Wide+-+Blue: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:45:41,631 [INFO]   [dentalsky.com] Playwright search: 19005
+2026-04-16 10:46:06,162 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=19005: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:46:06,186 [INFO]   [dentalsky.com] Playwright search: Astek Innovations 19005
+2026-04-16 10:46:33,934 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Astek+Innovations+19005: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:46:33,964 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:46:40,940 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:46:40,940 [INFO] [164/200] FPM351 — UnoDent Alpha-Pro Prophy Paste Coarse Mint 300g (PPA020)
+2026-04-16 10:46:50,484 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:47:00,222 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:47:07,535 [INFO]   [dentalsky.com] Playwright search: UnoDent Alpha-Pro Prophy Paste Coarse Mint 300g
+2026-04-16 10:47:32,000 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Alpha-Pro+Prophy+Paste+Coarse+Mint+300g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:47:32,024 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Alpha-Pro Prophy Paste Coarse
+2026-04-16 10:47:55,933 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Alpha-Pro+Prophy+Paste+Coarse: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:47:55,953 [INFO]   [dentalsky.com] Playwright search: PPA020
+2026-04-16 10:48:19,826 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=PPA020: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:48:19,867 [INFO]   [dentalsky.com] Playwright search: UnoDent PPA020
+2026-04-16 10:48:44,363 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+PPA020: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:48:44,412 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:48:50,896 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:48:50,899 [INFO] [165/200] FPM361 — Perfection Plus Prophy Paste Mint Medium 250g (PP010/0001)
+2026-04-16 10:48:56,015 [INFO]   [dmi.ie] Search 'Perfection Plus Prophy Paste Mint Medium 250g' ✓ €8.19 (score=0.86)
+2026-04-16 10:48:56,016 [INFO]   [dmi_ie] ✓ €8.19  (score=0.86, variance: -13.3%)
+2026-04-16 10:48:59,694 [INFO]   [dmi.co.uk] Search 'Perfection Plus Prophy Paste Mint Medium 250g' ✓ £7.37 (score=0.86)
+2026-04-16 10:48:59,695 [INFO]   [dmi_uk] ✓ £7.37  (score=0.86, variance: -17.0%)
+2026-04-16 10:49:01,307 [INFO]   [dentalsky.com] Direct URL ✓ £8.58
+2026-04-16 10:49:01,307 [INFO]   [dentalsky] ✓ £8.58  (score=0.86, variance: -28.7%)
+2026-04-16 10:49:06,912 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:49:06,965 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 10:49:06,965 [INFO]   [checkpoint] Saved after 165/200 products
+2026-04-16 10:49:06,966 [INFO] [166/200] FPM505 — Bossklein Tofflemire Matrix Bands No.1 Universal (CPM050)
+2026-04-16 10:49:14,496 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:49:22,053 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:49:28,285 [INFO]   [dentalsky.com] Playwright search: Bossklein Tofflemire Matrix Bands No.1 Universal
+2026-04-16 10:49:56,776 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+Tofflemire+Matrix+Bands+No.1+Universal: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:49:56,797 [INFO]   [dentalsky.com] Playwright search: Bossklein Bossklein Tofflemire Matrix Bands No.1
+2026-04-16 10:50:21,032 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+Bossklein+Tofflemire+Matrix+Bands+No.1: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:50:21,057 [INFO]   [dentalsky.com] Playwright search: CPM050
+2026-04-16 10:50:45,202 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=CPM050: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:50:45,229 [INFO]   [dentalsky.com] Playwright search: Bossklein CPM050
+2026-04-16 10:51:09,943 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+CPM050: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:51:09,967 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:51:16,015 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:51:16,016 [INFO] [167/200] GSC305 — UnoDent Surface Disinfectant Spray Economy Refill 5L
+2026-04-16 10:51:17,532 [INFO]   [dmi.ie] Direct URL ✓ €35.99
+2026-04-16 10:51:17,532 [INFO]   [dmi_ie] ✓ €35.99  (score=1.00, variance: 9.6%)
+2026-04-16 10:51:18,768 [INFO]   [dmi.co.uk] Direct URL ✓ £30.95
+2026-04-16 10:51:18,769 [INFO]   [dmi_uk] ✓ £30.95  (score=1.00, variance: 9.8%)
+2026-04-16 10:51:26,613 [INFO]   [dentalsky.com] Playwright search: UnoDent Surface Disinfectant Spray Economy Refill
+2026-04-16 10:51:51,293 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Surface+Disinfectant+Spray+Economy+Refill: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:51:51,307 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Surface Disinfectant Spray
+2026-04-16 10:52:16,026 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Surface+Disinfectant+Spray: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:52:16,037 [INFO]   [dentalsky.com] Playwright search: GSC305
+2026-04-16 10:52:41,425 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=GSC305: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:52:41,446 [INFO]   [dentalsky.com] Playwright search: UnoDent GSC305
+2026-04-16 10:53:05,865 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+GSC305: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:53:05,883 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:53:14,040 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:53:14,040 [INFO] [168/200] GSI032 — Swann-Morton Surgical Blades Sterile No.15 (0205) - Box100
+2026-04-16 10:53:24,539 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:53:35,088 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:53:37,270 [INFO]   [dentalsky.com] Direct URL ✓ £17.22
+2026-04-16 10:53:37,271 [INFO]   [dentalsky] ✓ £17.22  (score=0.60, variance: -13.3%)
+2026-04-16 10:53:38,787 [INFO]   [dontalia.com] Direct URL ✓ €23.68
+2026-04-16 10:53:38,788 [INFO]   [dontalia] ✗ Rejected (score=0.20) — found: 'Carbon steel surgical blades'
+2026-04-16 10:53:38,788 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:53:38,788 [INFO] [169/200] IAO005 — Ortho-Care Alginate Berry Flavoured 500g (9001-IE002) - Each
+2026-04-16 10:53:49,687 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:53:57,846 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:54:04,736 [INFO]   [dentalsky.com] Playwright search: Ortho-Care Alginate Berry Flavoured 500g
+2026-04-16 10:54:28,831 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Ortho-Care+Alginate+Berry+Flavoured+500g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:54:28,845 [INFO]   [dentalsky.com] Playwright search: Ortho-Care Ortho-Care Alginate Berry Flavoured
+2026-04-16 10:54:52,422 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Ortho-Care+Ortho-Care+Alginate+Berry+Flavoured: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:54:52,440 [INFO]   [dentalsky.com] Playwright search: 9001-IE002
+2026-04-16 10:55:16,940 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=9001-IE002: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:55:16,955 [INFO]   [dentalsky.com] Playwright search: Ortho-Care 9001-IE002
+2026-04-16 10:55:40,531 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Ortho-Care+9001-IE002: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:55:40,543 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:55:47,994 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:55:47,995 [INFO] [170/200] ICU171 — UnoDent Imprep 2 AC Putty Soft Normal Set 2x300ml - Each
+2026-04-16 10:55:56,653 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 10:56:03,699 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:56:11,353 [INFO]   [dentalsky.com] Playwright search: UnoDent Imprep 2 AC Putty Soft Normal Set
+2026-04-16 10:56:36,087 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Imprep+2+AC+Putty+Soft+Normal+Set: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:56:36,103 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Imprep 2 AC Putty Soft Normal
+2026-04-16 10:57:00,811 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Imprep+2+AC+Putty+Soft+Normal: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:57:00,831 [INFO]   [dentalsky.com] Playwright search: ICU171
+2026-04-16 10:57:24,779 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=ICU171: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:57:24,791 [INFO]   [dentalsky.com] Playwright search: UnoDent ICU171
+2026-04-16 10:57:49,289 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+ICU171: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:57:49,306 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:57:55,873 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:57:55,915 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 10:57:55,915 [INFO]   [checkpoint] Saved after 170/200 products
+2026-04-16 10:57:55,916 [INFO] [171/200] IM039 — Zhermack Hydrogum Refill 500g (C302025) - Each
+2026-04-16 10:57:57,616 [INFO]   [dmi.ie] Direct URL ✓ €13.50
+2026-04-16 10:57:57,616 [INFO]   [dmi_ie] ✓ €13.50  (score=0.82, variance: -18.8%)
+2026-04-16 10:57:59,333 [INFO]   [dmi.co.uk] Direct URL ✓ £11.42
+2026-04-16 10:57:59,333 [INFO]   [dmi_uk] ✓ £11.42  (score=0.82, variance: -17.3%)
+2026-04-16 10:58:00,439 [INFO]   [dentalsky.com] Direct URL ✓ £11.16
+2026-04-16 10:58:00,440 [INFO]   [dentalsky] ✗ Rejected (score=0.47) — found: 'Hydrogum Alginate - 500g'
+2026-04-16 10:58:00,440 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:58:01,912 [INFO]   [dontalia.com] Direct URL ✓ €7.52
+2026-04-16 10:58:01,913 [INFO]   [dontalia] ✗ Rejected (score=0.47) — found: 'Hydrogum 500g bag'
+2026-04-16 10:58:01,919 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:58:01,919 [INFO] [172/200] IM119 — Zhermack Hydrogum 5 Refill 453g Extra Fast  (C302070) - Each
+2026-04-16 10:58:02,023 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/products/zhermack-hydrogum-5-day-453g-zher-c302070.html (attempt 1): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-16 10:58:08,637 [INFO]   [dmi.ie] Direct URL ✓ €15.50
+2026-04-16 10:58:08,638 [INFO]   [dmi_ie] ✓ €15.50  (score=0.65, variance: -3.1%)
+2026-04-16 10:58:10,016 [INFO]   [dmi.co.uk] Direct URL ✓ £13.33
+2026-04-16 10:58:10,016 [INFO]   [dmi_uk] ✓ £13.33  (score=0.65, variance: -2.9%)
+2026-04-16 10:58:11,663 [INFO]   [dentalsky.com] Direct URL ✓ £12.24
+2026-04-16 10:58:11,664 [INFO]   [dentalsky] ✗ Rejected (score=0.42) — found: 'Hydrogum 5 Alginate - 453g'
+2026-04-16 10:58:11,664 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 10:58:13,267 [INFO]   [dontalia.com] Direct URL ✓ €9.97
+2026-04-16 10:58:13,268 [INFO]   [dontalia] ✗ Rejected (score=0.12) — found: 'Hydrogum 5'
+2026-04-16 10:58:13,268 [INFO]   [dontalia] ✗ Not found
+2026-04-16 10:58:13,268 [INFO] [173/200] IM195 — UnoDent Alginate Fast Set Vanilla Refill 500g (IAA300) -Each
+2026-04-16 10:58:15,605 [INFO]   [dmi.ie] Direct URL ✓ €6.99
+2026-04-16 10:58:15,606 [INFO]   [dmi_ie] ✓ €6.99  (score=0.88, variance: -7.3%)
+2026-04-16 10:58:16,806 [INFO]   [dmi.co.uk] Direct URL ✓ £30.95
+2026-04-16 10:58:16,806 [INFO]   [dmi_uk] ✗ Rejected (score=0.23) — found: 'UnoDent Alcohol Surface Disinfectant Spray Economy Refill (5 Litres)'
+2026-04-16 10:58:16,806 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 10:58:22,857 [INFO]   [dentalsky.com] Playwright search: UnoDent Alginate Fast Set Vanilla Refill 500g
+2026-04-16 10:58:53,654 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Alginate+Fast+Set+Vanilla+Refill+500g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:58:53,671 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Alginate Fast Set Vanilla
+2026-04-16 10:59:18,539 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Alginate+Fast+Set+Vanilla: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:59:18,553 [INFO]   [dentalsky.com] Playwright search: IAA300
+2026-04-16 10:59:43,538 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=IAA300: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 10:59:43,553 [INFO]   [dentalsky.com] Playwright search: UnoDent IAA300
+2026-04-16 11:00:11,342 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+IAA300: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:00:11,356 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:00:19,447 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:00:19,447 [INFO] [174/200] IM246 — UnoDent Alginate Fast Set Mint Refill 500g (IAA310) - Each
+2026-04-16 11:00:22,021 [INFO]   [dmi.ie] Direct URL ✓ €5.75
+2026-04-16 11:00:22,021 [INFO]   [dmi_ie] ✓ €5.75  (score=0.88, variance: 29.6%)
+2026-04-16 11:00:23,590 [INFO]   [dmi.co.uk] Direct URL ✓ £5.15
+2026-04-16 11:00:23,591 [INFO]   [dmi_uk] ✓ £5.15  (score=0.88, variance: 24.7%)
+2026-04-16 11:00:31,931 [INFO]   [dentalsky.com] Playwright search: UnoDent Alginate Fast Set Mint Refill 500g
+2026-04-16 11:00:56,456 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Alginate+Fast+Set+Mint+Refill+500g: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:00:56,472 [INFO]   [dentalsky.com] Playwright search: UnoDent UnoDent Alginate Fast Set Mint Refill
+2026-04-16 11:01:21,123 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+UnoDent+Alginate+Fast+Set+Mint+Refill: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:01:21,139 [INFO]   [dentalsky.com] Playwright search: IAA310
+2026-04-16 11:01:45,282 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=IAA310: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:01:45,309 [INFO]   [dentalsky.com] Playwright search: UnoDent IAA310
+2026-04-16 11:02:10,179 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+IAA310: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:02:10,203 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:02:17,756 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:02:17,757 [INFO] [175/200] IMA030 — Covidien Monoject 3ml Endo Syringes & Needles 27Gx1.25" -100
+2026-04-16 11:02:25,672 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:02:36,322 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:02:43,831 [INFO]   [dentalsky.com] Playwright search: Covidien Monoject 3ml Endo Syringes & Needles 27Gx1.25"
+2026-04-16 11:03:08,324 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Covidien+Monoject+3ml+Endo+Syringes+%26+Needles+27Gx1.25%22: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:03:08,340 [INFO]   [dentalsky.com] Playwright search: Covidien Covidien Monoject 3ml Endo Syringes &
+2026-04-16 11:03:32,881 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Covidien+Covidien+Monoject+3ml+Endo+Syringes+%26: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:03:32,891 [INFO]   [dentalsky.com] Playwright search: 1180327114E
+2026-04-16 11:03:57,595 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1180327114E: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:03:57,619 [INFO]   [dentalsky.com] Playwright search: Covidien 1180327114E
+2026-04-16 11:04:22,537 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Covidien+1180327114E: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:04:22,566 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:04:28,438 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:04:28,509 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 11:04:28,509 [INFO]   [checkpoint] Saved after 175/200 products
+2026-04-16 11:04:28,510 [INFO] [176/200] IMA123 — UnoDent Mixing Pad 7.5x7.5cm Non Skid (CTP011) - Each
+2026-04-16 11:04:42,128 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:04:50,659 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:04:57,612 [INFO]   [dentalsky.com] Playwright search: UnoDent Mixing Pad 7.5x7.5cm Non Skid
+2026-04-16 11:05:22,899 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UnoDent+Mixing+Pad+7.5x7.5cm+Non+Skid: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:05:22,930 [INFO]   [dentalsky.com] Playwright search: Unodent UnoDent Mixing Pad 7.5x7.5cm Non Skid
+2026-04-16 11:05:49,223 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Unodent+UnoDent+Mixing+Pad+7.5x7.5cm+Non+Skid: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:05:49,277 [INFO]   [dentalsky.com] Playwright search: CTP011
+2026-04-16 11:06:14,104 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=CTP011: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:06:14,126 [INFO]   [dentalsky.com] Playwright search: Unodent CTP011
+2026-04-16 11:06:42,772 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Unodent+CTP011: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:06:42,799 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:06:48,700 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:06:48,701 [INFO] [177/200] IMT009 — J&S Davis Solo Impression Trays No.13 Upper Average - Box25
+2026-04-16 11:06:50,645 [INFO]   [dmi.ie] Direct URL ✓ €27.97
+2026-04-16 11:06:50,645 [INFO]   [dmi_ie] ✗ Rejected (score=0.44) — found: 'J&amp;S Davis Solo Trays Size 13 Upper Average Dentate (25 Pack )'
+2026-04-16 11:06:50,645 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:06:52,235 [INFO]   [dmi.co.uk] Direct URL ✓ £24.34
+2026-04-16 11:06:52,235 [INFO]   [dmi_uk] ✗ Rejected (score=0.44) — found: 'J&amp;S Davis Solo Trays Size 13 Upper Average Dentate (25 Pack )'
+2026-04-16 11:06:52,235 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:06:59,456 [INFO]   [dentalsky.com] Playwright search: J&S Davis Solo Impression Trays No.13 Upper
+2026-04-16 11:07:24,670 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=J%26S+Davis+Solo+Impression+Trays+No.13+Upper: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:07:24,710 [INFO]   [dentalsky.com] Playwright search: J&S Davis J&S Davis Solo Impression Trays No.13
+2026-04-16 11:07:49,831 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=J%26S+Davis+J%26S+Davis+Solo+Impression+Trays+No.13: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:07:49,856 [INFO]   [dentalsky.com] Playwright search: SOL1013
+2026-04-16 11:08:17,192 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=SOL1013: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:08:17,227 [INFO]   [dentalsky.com] Playwright search: J&S Davis SOL1013
+2026-04-16 11:08:42,289 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=J%26S+Davis+SOL1013: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:08:42,311 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:08:48,272 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:08:48,272 [INFO] [178/200] IMT081 — Pegasus Impression Trays No.1 Large Upper - Pack25
+2026-04-16 11:08:50,315 [INFO]   [dmi.ie] Direct URL ✓ €8.47
+2026-04-16 11:08:50,316 [INFO]   [dmi_ie] ✗ Rejected (score=0.40) — found: 'Pegasus Pegasus Impression Tray No. 1 Large Upper X25'
+2026-04-16 11:08:50,316 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:08:52,068 [INFO]   [dmi.co.uk] Direct URL ✓ £7.37
+2026-04-16 11:08:52,069 [INFO]   [dmi_uk] ✗ Rejected (score=0.40) — found: 'Pegasus Pegasus Impression Tray No. 1 Large Upper X25'
+2026-04-16 11:08:52,069 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:08:53,833 [INFO]   [dentalsky.com] Direct URL ✓ £9.30
+2026-04-16 11:08:53,834 [INFO]   [dentalsky] ✗ Rejected (score=0.40) — found: 'Pegasus Impression Trays: Large Upper (25)'
+2026-04-16 11:08:53,834 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:09:01,233 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:09:01,234 [INFO] [179/200] IMT082 — Pegasus Impression Trays No.2 Large Lower - Pack25
+2026-04-16 11:09:03,005 [INFO]   [dmi.ie] Direct URL ✓ €8.47
+2026-04-16 11:09:03,005 [INFO]   [dmi_ie] ✗ Rejected (score=0.50) — found: 'Pegasus Pegasus Impression Tray No.2 Large Lower X25'
+2026-04-16 11:09:03,012 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:09:04,933 [INFO]   [dmi.co.uk] Direct URL ✓ £7.36
+2026-04-16 11:09:04,934 [INFO]   [dmi_uk] ✗ Rejected (score=0.50) — found: 'Pegasus Pegasus Impression Tray No.2 Large Lower X25'
+2026-04-16 11:09:04,934 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:09:06,825 [INFO]   [dentalsky.com] Direct URL ✓ £9.30
+2026-04-16 11:09:06,826 [INFO]   [dentalsky] ✗ Rejected (score=0.40) — found: 'Pegasus Impression Trays: Large Lower (25)'
+2026-04-16 11:09:06,826 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:09:12,654 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:09:12,655 [INFO] [180/200] IMT083 — Pegasus Impression Trays No.3 Medium Upper - Pack25
+2026-04-16 11:09:14,431 [INFO]   [dmi.ie] Direct URL ✓ €8.47
+2026-04-16 11:09:14,432 [INFO]   [dmi_ie] ✗ Rejected (score=0.30) — found: 'Pegasus Pegasus Impression Tray No. 3 Med Upper X25'
+2026-04-16 11:09:14,432 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:09:16,069 [INFO]   [dmi.co.uk] Direct URL ✓ £6.95
+2026-04-16 11:09:16,069 [INFO]   [dmi_uk] ✗ Rejected (score=0.30) — found: 'Pegasus Pegasus Impression Tray No. 3 Med Upper X25'
+2026-04-16 11:09:16,069 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:09:17,910 [INFO]   [dentalsky.com] Direct URL ✓ £9.30
+2026-04-16 11:09:17,911 [INFO]   [dentalsky] ✗ Rejected (score=0.40) — found: 'Pegasus Impression Trays: Medium Upper (25)'
+2026-04-16 11:09:17,911 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:09:25,574 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:09:25,644 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 11:09:25,645 [INFO]   [checkpoint] Saved after 180/200 products
+2026-04-16 11:09:25,646 [INFO] [181/200] IMT084 — Pegasus Impression Trays No.4 Medium Lower - Pack25
+2026-04-16 11:09:27,373 [INFO]   [dmi.ie] Direct URL ✓ €8.47
+2026-04-16 11:09:27,373 [INFO]   [dmi_ie] ✗ Rejected (score=0.30) — found: 'Pegasus Pegasus Impression Tray No. 4 Med Lower X25'
+2026-04-16 11:09:27,374 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:09:28,908 [INFO]   [dmi.co.uk] Direct URL ✓ £7.37
+2026-04-16 11:09:28,908 [INFO]   [dmi_uk] ✗ Rejected (score=0.30) — found: 'Pegasus Pegasus Impression Tray No. 4 Med Lower X25'
+2026-04-16 11:09:28,909 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:09:31,146 [INFO]   [dentalsky.com] Direct URL ✓ £9.30
+2026-04-16 11:09:31,146 [INFO]   [dentalsky] ✗ Rejected (score=0.40) — found: 'Pegasus Impression Trays: Medium Lower (25)'
+2026-04-16 11:09:31,153 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:09:36,862 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:09:36,862 [INFO] [182/200] IMT085 — Pegasus Impression Trays No.5 Small Upper - Pack25
+2026-04-16 11:09:38,803 [INFO]   [dmi.ie] Direct URL ✓ €8.47
+2026-04-16 11:09:38,804 [INFO]   [dmi_ie] ✗ Rejected (score=0.40) — found: 'Pegasus Pegasus Impression Tray No. 5 Small Upper X25'
+2026-04-16 11:09:38,804 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:09:40,530 [INFO]   [dmi.co.uk] Direct URL ✓ £7.36
+2026-04-16 11:09:40,530 [INFO]   [dmi_uk] ✗ Rejected (score=0.40) — found: 'Pegasus Pegasus Impression Tray No. 5 Small Upper X25'
+2026-04-16 11:09:40,530 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:09:42,489 [INFO]   [dentalsky.com] Direct URL ✓ £9.30
+2026-04-16 11:09:42,489 [INFO]   [dentalsky] ✗ Rejected (score=0.40) — found: 'Pegasus Impression Trays: Small Upper (25)'
+2026-04-16 11:09:42,490 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:09:49,611 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:09:49,612 [INFO] [183/200] KIN005 — Kin Gingival Mouthwash 250ml (340960) - Each
+2026-04-16 11:10:01,084 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:10:09,955 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:10:16,929 [INFO]   [dentalsky.com] Playwright search: Kin Gingival Mouthwash 250ml
+2026-04-16 11:10:42,382 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Kin+Gingival+Mouthwash+250ml: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:10:42,405 [INFO]   [dentalsky.com] Playwright search: Kin Kin Gingival Mouthwash 250ml
+2026-04-16 11:11:07,561 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Kin+Kin+Gingival+Mouthwash+250ml: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:11:07,597 [INFO]   [dentalsky.com] Playwright search: 340960
+2026-04-16 11:11:32,642 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=340960: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:11:32,688 [INFO]   [dentalsky.com] Playwright search: Kin 340960
+2026-04-16 11:11:58,644 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Kin+340960: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:11:58,669 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:12:07,427 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:12:07,428 [INFO] [184/200] LAB026B — Orthodontic Box 9"x3"x3" - Each
+2026-04-16 11:12:16,978 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:12:25,080 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:12:29,113 [INFO]   [dentalsky.com] Playwright search: Orthodontic Box
+2026-04-16 11:12:58,607 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Orthodontic+Box: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:12:58,644 [INFO]   [dentalsky.com] Playwright search: Nubox Orthodontic Box
+2026-04-16 11:13:25,088 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Nubox+Orthodontic+Box: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:13:25,142 [INFO]   [dentalsky.com] Playwright search: YOM020
+2026-04-16 11:13:51,243 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=YOM020: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:13:51,264 [INFO]   [dentalsky.com] Playwright search: Nubox YOM020
+2026-04-16 11:14:19,003 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Nubox+YOM020: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:14:19,028 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:14:25,593 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:14:25,594 [INFO] [185/200] MEC396 — Medicept Extreme Putty (5010) 2x250ml
+2026-04-16 11:14:36,915 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:14:45,156 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:14:49,277 [INFO]   [dentalsky.com] Playwright search: Medicept Extreme Putty (5010)
+2026-04-16 11:15:17,106 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Medicept+Extreme+Putty+%285010%29: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:15:17,143 [INFO]   [dentalsky.com] Playwright search: Medicept Medicept Extreme Putty (5010)
+2026-04-16 11:15:42,544 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Medicept+Medicept+Extreme+Putty+%285010%29: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:15:42,583 [INFO]   [dentalsky.com] Playwright search: 5010
+2026-04-16 11:16:08,385 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=5010: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:16:08,423 [INFO]   [dentalsky.com] Playwright search: Medicept 5010
+2026-04-16 11:16:34,142 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Medicept+5010: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:16:34,182 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:16:40,717 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:16:40,818 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 11:16:40,819 [INFO]   [checkpoint] Saved after 185/200 products
+2026-04-16 11:16:40,819 [INFO] [186/200] MED005 — #Septodont Lignospan 2% Special 1.8ml - Box50
+2026-04-16 11:16:51,124 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:17:00,035 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:17:05,840 [INFO]   [dentalsky.com] Playwright search: Septodont Lignospan 2% Special
+2026-04-16 11:17:41,892 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Lignospan+2%25+Special: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:17:41,934 [INFO]   [dentalsky.com] Playwright search: Septodont Septodont Lignospan 2% Special
+2026-04-16 11:18:07,780 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septodont+Lignospan+2%25+Special: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:18:07,828 [INFO]   [dentalsky.com] Playwright search: LIGNO01A
+2026-04-16 11:18:33,131 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=LIGNO01A: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:18:33,185 [INFO]   [dentalsky.com] Playwright search: Septodont LIGNO01A
+2026-04-16 11:18:58,288 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+LIGNO01A: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:18:58,333 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:19:04,312 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:19:04,312 [INFO] [187/200] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-04-16 11:19:14,661 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:19:17,155 [INFO]   [dmi.co.uk] Direct URL ✓ £12.48
+2026-04-16 11:19:17,155 [INFO]   [dmi_uk] ✓ £12.48  (score=0.65, variance: -9.2%)
+2026-04-16 11:19:25,916 [INFO]   [dentalsky.com] Playwright search: Septodont Xylonor Gel
+2026-04-16 11:19:53,937 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Xylonor+Gel: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:19:53,984 [INFO]   [dentalsky.com] Playwright search: Septodont Septodont Xylonor Gel
+2026-04-16 11:20:19,536 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septodont+Xylonor+Gel: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:20:19,555 [INFO]   [dentalsky.com] Playwright search: XYLON01
+2026-04-16 11:20:47,585 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=XYLON01: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:20:47,619 [INFO]   [dentalsky.com] Playwright search: Septodont XYLON01
+2026-04-16 11:21:13,241 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+XYLON01: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:21:13,274 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:21:20,851 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:21:20,851 [INFO] [188/200] MED008 — #Septodont Lignospan 2% Special 2.2ml - Box50
+2026-04-16 11:21:29,911 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:21:31,764 [INFO]   [dmi.co.uk] Direct URL ✓ £35.66
+2026-04-16 11:21:31,765 [INFO]   [dmi_uk] ✓ £35.66  (score=0.62, variance: -19.0%)
+2026-04-16 11:21:37,153 [INFO]   [dentalsky.com] Playwright search: Septodont Lignospan 2% Special
+2026-04-16 11:22:03,466 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Lignospan+2%25+Special: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:22:03,513 [INFO]   [dentalsky.com] Playwright search: Septodont Septodont Lignospan 2% Special
+2026-04-16 11:22:30,387 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septodont+Lignospan+2%25+Special: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:22:30,415 [INFO]   [dentalsky.com] Playwright search: LIGNO02A
+2026-04-16 11:22:58,483 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=LIGNO02A: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:22:58,526 [INFO]   [dentalsky.com] Playwright search: Septodont LIGNO02A
+2026-04-16 11:23:25,927 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+LIGNO02A: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:23:25,967 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:23:34,005 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:23:34,006 [INFO] [189/200] MED009 — #Septodont Scandonest 3% Plain 2.2ml - Box50
+2026-04-16 11:23:42,944 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:23:46,651 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-04-16 11:23:54,780 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:24:01,628 [INFO]   [dentalsky.com] Playwright search: Septodont Scandonest 3% Plain
+2026-04-16 11:24:35,415 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Scandonest+3%25+Plain: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:24:35,436 [INFO]   [dentalsky.com] Playwright search: Septodont Septodont Scandonest 3% Plain
+2026-04-16 11:25:02,209 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septodont+Scandonest+3%25+Plain: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:25:02,237 [INFO]   [dentalsky.com] Playwright search: SCAND04
+2026-04-16 11:25:28,375 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=SCAND04: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:25:28,414 [INFO]   [dentalsky.com] Playwright search: Septodont SCAND04
+2026-04-16 11:25:48,599 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+SCAND04: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=Septodont+SCAND04", waiting until "networkidle"
+
+2026-04-16 11:25:48,633 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:25:53,647 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:25:53,647 [INFO] [190/200] MED010 — #Septodont Septanest 1:100,000 2.2ml - Box50
+2026-04-16 11:25:56,200 [INFO]   [dmi.ie] Direct URL ✓ €45.05
+2026-04-16 11:25:56,200 [INFO]   [dmi_ie] ✗ Rejected (score=0.48) — found: 'Septanest 4% Articaine 1:100000 2.2ml (ROI Only)'
+2026-04-16 11:25:56,200 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:26:02,958 [INFO]   [dmi.co.uk] Direct URL ✓ £38.29
+2026-04-16 11:26:02,958 [INFO]   [dmi_uk] ✗ Rejected (score=0.48) — found: 'Septanest 4% Articaine 1:100000 2.2ml (ROI Only)'
+2026-04-16 11:26:02,958 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:26:13,688 [INFO]   [dentalsky.com] Playwright search: Septodont Septanest 1:100,000
+2026-04-16 11:26:33,746 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septanest+1%3A100%2C000: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septanest+1%3A100%2C000", waiting until "networkidle"
+
+2026-04-16 11:26:33,773 [INFO]   [dentalsky.com] Playwright search: Septodont Septodont Septanest 1:100,000
+2026-04-16 11:26:53,995 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septodont+Septanest+1%3A100%2C000: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septodont+Septanest+1%3A100%2C000", waiting until "networkidle"
+
+2026-04-16 11:26:54,026 [INFO]   [dentalsky.com] Playwright search: SEPTA01
+2026-04-16 11:27:14,211 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=SEPTA01: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=SEPTA01", waiting until "networkidle"
+
+2026-04-16 11:27:14,233 [INFO]   [dentalsky.com] Playwright search: Septodont SEPTA01
+2026-04-16 11:27:34,444 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+SEPTA01: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=Septodont+SEPTA01", waiting until "networkidle"
+
+2026-04-16 11:27:34,481 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:27:40,455 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:27:40,520 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 11:27:40,520 [INFO]   [checkpoint] Saved after 190/200 products
+2026-04-16 11:27:40,521 [INFO] [191/200] MED011 — #Septodont Septanest 1:200,000 2.2ml - Box50
+2026-04-16 11:27:49,385 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:27:52,227 [INFO]   [dmi.co.uk] Direct URL gave no price, trying search
+2026-04-16 11:28:00,547 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:28:09,591 [INFO]   [dentalsky.com] Playwright search: Septodont Septanest 1:200,000
+2026-04-16 11:28:36,084 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septanest+1%3A200%2C000: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:28:36,152 [INFO]   [dentalsky.com] Playwright search: Septodont Septodont Septanest 1:200,000
+2026-04-16 11:29:01,696 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Septodont+Septanest+1%3A200%2C000: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:29:01,716 [INFO]   [dentalsky.com] Playwright search: SEPTA02
+2026-04-16 11:29:26,557 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=SEPTA02: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:29:26,586 [INFO]   [dentalsky.com] Playwright search: Septodont SEPTA02
+2026-04-16 11:29:52,074 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+SEPTA02: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 11:29:52,111 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:29:59,454 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:29:59,455 [INFO] [192/200] MED023 — #Colgate Duraphat Varnish 10ml (FDE74600) - Each
+2026-04-16 11:30:02,275 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-04-16 11:30:12,810 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:30:23,077 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:30:24,905 [INFO]   [dentalsky.com] Direct URL ✓ £0.00
+2026-04-16 11:30:24,906 [INFO]   [dentalsky] ✗ Rejected (score=0.53) — found: 'Duraphat Fluoride Varnish - 10ml'
+2026-04-16 11:30:24,911 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:30:32,267 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:30:32,269 [INFO] [193/200] MED030 — #Colgate Duraphat 2800 ppm Fluoride Toothpaste 6x75ml -Pack6
+2026-04-16 11:30:47,917 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Max retries exceeded with url: /categories.html?type=simple&name=Colgate+Duraphat+2800+ppm+Fluoride+Toothpaste (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.ie', port=443): Failed to resolve 'www.dmi.ie' ([Errno -3] Temporary failure in name resolution)"))
+2026-04-16 11:31:02,703 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:31:22,774 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:31:25,612 [INFO]   [dentalsky.com] Direct URL ✓ £0.00
+2026-04-16 11:31:25,612 [INFO]   [dentalsky] ✗ Rejected (score=0.17) — found: 'Duraphat 2800 ppm Fluoride Toothpaste'
+2026-04-16 11:31:25,613 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:31:32,116 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:31:32,117 [INFO] [194/200] MED035 — #GSK Corsodyl Mouthwash Mint 6x300ml (60000000108780) - Box6
+2026-04-16 11:31:42,731 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:31:51,392 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:31:53,553 [INFO]   [dentalsky.com] Direct URL ✓ £0.00
+2026-04-16 11:31:53,554 [INFO]   [dentalsky] ✗ Rejected (score=0.35) — found: 'Corsodyl Mint Mouthwash (300ml)'
+2026-04-16 11:31:53,554 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:31:59,223 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:31:59,224 [INFO] [195/200] MED041 — #Colgate Duraphat 5000 ppm Fluoride Toothpaste - Each
+2026-04-16 11:32:03,772 [INFO]   [dmi.ie] Direct URL ✓ €11.95
+2026-04-16 11:32:03,773 [INFO]   [dmi_ie] ✗ Rejected (score=0.50) — found: 'Duraphat 5000 Toothpaste 51g'
+2026-04-16 11:32:03,774 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:32:05,644 [INFO]   [dmi.co.uk] Direct URL ✓ £10.27
+2026-04-16 11:32:05,645 [INFO]   [dmi_uk] ✗ Rejected (score=0.50) — found: 'Duraphat 5000 Toothpaste 51g'
+2026-04-16 11:32:05,645 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:32:06,344 [INFO]   [dentalsky.com] Direct URL ✓ £0.00
+2026-04-16 11:32:06,348 [INFO]   [dentalsky] ✗ Rejected (score=0.50) — found: 'Duraphat 5000 ppm Fluoride Toothpaste'
+2026-04-16 11:32:06,348 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:32:13,005 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:32:13,025 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 11:32:13,025 [INFO]   [checkpoint] Saved after 195/200 products
+2026-04-16 11:32:13,025 [INFO] [196/200] MED060 — #Dentsply Xylocaine 2% Standard 2.2ml - Box50
+2026-04-16 11:32:23,267 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:32:32,895 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:32:34,599 [INFO]   [dentalsky.com] Direct URL gave no price, trying search
+2026-04-16 11:32:43,526 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:32:50,411 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:32:50,411 [INFO] [197/200] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-04-16 11:32:52,747 [INFO]   [dmi.ie] Direct URL ✓ €8.29
+2026-04-16 11:32:52,747 [INFO]   [dmi_ie] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches Extra Small 57 X 127mm  (2 1/4&#039;&#039; X 5&#039;&#039;)'
+2026-04-16 11:32:52,748 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:32:55,181 [INFO]   [dmi.co.uk] Direct URL ✓ £6.95
+2026-04-16 11:32:55,182 [INFO]   [dmi_uk] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches Extra Small 57 X 127mm  (2 1/4&#039;&#039; X 5&#039;&#039;)'
+2026-04-16 11:32:55,183 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:32:57,771 [INFO]   [dentalsky.com] Direct URL ✓ £10.62
+2026-04-16 11:32:57,775 [INFO]   [dentalsky] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches - 57 x 127mm'
+2026-04-16 11:32:57,778 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:33:03,030 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:33:03,031 [INFO] [198/200] MIS039 — Perfection Plus Sterilisation Pouches 85x165mm (PP002/5001)
+2026-04-16 11:33:10,189 [INFO]   [dmi.ie] Direct URL ✓ €8.97
+2026-04-16 11:33:10,190 [INFO]   [dmi_ie] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches Small 85 X 165mm (3 3/8&quot; X 6 1/2&quot;)'
+2026-04-16 11:33:10,191 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:33:12,718 [INFO]   [dmi.co.uk] Direct URL ✓ £7.53
+2026-04-16 11:33:12,718 [INFO]   [dmi_uk] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches Small 85 X 165mm (3 3/8&quot; X 6 1/2&quot;)'
+2026-04-16 11:33:12,718 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:33:14,736 [INFO]   [dentalsky.com] Direct URL ✓ £11.04
+2026-04-16 11:33:14,741 [INFO]   [dentalsky] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches - 85 x 165mm'
+2026-04-16 11:33:14,746 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:33:21,411 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:33:21,412 [INFO] [199/200] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-04-16 11:33:32,669 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:33:41,460 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:33:45,907 [INFO]   [dentalsky.com] Direct URL ✓ £5.94
+2026-04-16 11:33:45,907 [INFO]   [dentalsky] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches - 85 x 253mm'
+2026-04-16 11:33:45,907 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:33:54,507 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:33:54,509 [INFO] [200/200] MIS041 — Perfection Plus Sterilisation Pouches 135x278mm PP002/5003
+2026-04-16 11:34:02,321 [INFO]   [dmi.ie] Direct URL ✓ €15.96
+2026-04-16 11:34:02,321 [INFO]   [dmi_ie] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches Large 135 X 278mm (5 1/3&#039;&#039;X 11&#039;&#039;)'
+2026-04-16 11:34:02,322 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 11:34:05,625 [INFO]   [dmi.co.uk] Direct URL ✓ £13.96
+2026-04-16 11:34:05,625 [INFO]   [dmi_uk] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches Large 135 X 278mm (5 1/3&#039;&#039;X 11&#039;&#039;)'
+2026-04-16 11:34:05,626 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 11:34:08,111 [INFO]   [dentalsky.com] Direct URL ✓ £17.16
+2026-04-16 11:34:08,111 [INFO]   [dentalsky] ✗ Rejected (score=0.53) — found: 'Protect+ Self-Seal Sterilisation Pouches - 135 x 278mm'
+2026-04-16 11:34:08,111 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 11:34:15,693 [INFO]   [dontalia] ✗ Not found
+2026-04-16 11:34:15,755 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
+2026-04-16 11:34:15,756 [INFO]   [checkpoint] Saved after 200/200 products
