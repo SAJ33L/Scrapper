@@ -30010,3 +30010,936 @@ waiting for locator(".product-item-link") to be visible
 2026-04-16 11:34:15,693 [INFO]   [dontalia] ✗ Not found
 2026-04-16 11:34:15,755 [INFO] Output written to 'output_verify_200.csv' and 'output_verify_200_mappings.csv'
 2026-04-16 11:34:15,756 [INFO]   [checkpoint] Saved after 200/200 products
+2026-04-16 12:02:18,086 [INFO] Reading input: Top 300 (2).xlsx
+2026-04-16 12:02:19,061 [INFO] Limited to first 200 rows
+2026-04-16 12:02:19,062 [INFO] Registered scraper: dmi_ie
+2026-04-16 12:02:19,062 [INFO] Registered scraper: dmi_uk
+2026-04-16 12:02:19,062 [INFO] Registered scraper: dentalsky
+2026-04-16 12:02:19,062 [INFO] Registered scraper: dontalia
+2026-04-16 12:02:20,530 [INFO] [1/200] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-04-16 12:02:39,957 [INFO] Reading input: Top 300 (2).xlsx
+2026-04-16 12:02:40,873 [INFO] Registered scraper: dmi_ie
+2026-04-16 12:02:40,874 [INFO] Registered scraper: dmi_uk
+2026-04-16 12:02:40,874 [INFO] Registered scraper: dentalsky
+2026-04-16 12:02:40,874 [INFO] Registered scraper: dontalia
+2026-04-16 12:02:41,706 [INFO] [1/300] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-04-16 12:02:44,602 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:02:48,923 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:02:57,920 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Night 16% CP
+2026-04-16 12:03:18,137 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Night+16%25+CP: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Night+16%25+CP", waiting until "networkidle"
+
+2026-04-16 12:03:18,156 [INFO]   [dentalsky.com] Playwright search: UBPB162
+2026-04-16 12:03:38,257 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBPB162: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=UBPB162", waiting until "networkidle"
+
+2026-04-16 12:03:38,286 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:03:45,516 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:03:45,519 [INFO] [2/300] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-04-16 12:03:48,394 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:03:53,243 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:04:00,424 [INFO]   [dentalsky.com] Playwright search: Meditrade Nitril Sensory Blue Nitrile Glove
+2026-04-16 12:04:29,384 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Meditrade+Nitril+Sensory+Blue+Nitrile+Glove: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:04:29,411 [INFO]   [dentalsky.com] Playwright search: 2283S
+2026-04-16 12:04:49,502 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=2283S: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=2283S", waiting until "networkidle"
+
+2026-04-16 12:04:49,510 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:04:56,904 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:04:56,904 [INFO] [3/300] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-04-16 12:05:02,176 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:05:09,998 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:05:17,522 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Sterilisation Pouches 85x253mm
+2026-04-16 12:05:47,258 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Sterilisation+Pouches+85x253mm: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:05:47,270 [INFO]   [dentalsky.com] Playwright search: 002/5002
+2026-04-16 12:06:16,704 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=002%2F5002: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:06:16,714 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:06:25,357 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:06:25,357 [INFO] [4/300] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-04-16 12:06:37,877 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:06:49,051 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:06:57,734 [INFO]   [dentalsky.com] Playwright search: Eire Septodont Septanest 1:100,000
+2026-04-16 12:07:26,105 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Eire+Septodont+Septanest+1%3A100%2C000: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:07:26,118 [INFO]   [dentalsky.com] Playwright search: 11825O
+2026-04-16 12:07:53,424 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=11825O: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:07:53,458 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:08:02,493 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:08:02,493 [INFO] [5/300] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-04-16 12:08:09,421 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:08:17,307 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:08:24,467 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Night 16% CP
+2026-04-16 12:08:49,487 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Night+16%25+CP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:08:49,550 [INFO]   [dentalsky.com] Playwright search: UBPB161
+2026-04-16 12:09:18,148 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBPB161: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:09:18,160 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:09:24,316 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:09:24,387 [INFO] Output written to 'output_top__300.csv' and 'output_top__300_mappings.csv'
+2026-04-16 12:09:24,387 [INFO]   [checkpoint] Saved after 5/300 products
+2026-04-16 12:09:24,388 [INFO] [6/300] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-04-16 12:09:28,154 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:09:31,982 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:09:37,515 [INFO]   [dentalsky.com] Playwright search: Meditrade Nitril Sensory Blue Nitrile Glove
+2026-04-16 12:10:05,624 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Meditrade+Nitril+Sensory+Blue+Nitrile+Glove: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:10:05,638 [INFO]   [dentalsky.com] Playwright search: 2283M
+2026-04-16 12:10:33,079 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=2283M: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:10:33,111 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:10:39,291 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:10:39,291 [INFO] [7/300] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-04-16 12:10:43,792 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:10:48,183 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:10:56,960 [INFO]   [dentalsky.com] Playwright search: Bossklein Max V-Wipes Lemon Refill
+2026-04-16 12:11:25,485 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+Max+V-Wipes+Lemon+Refill: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:11:25,515 [INFO]   [dentalsky.com] Playwright search: BOS9784
+2026-04-16 12:11:53,761 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=BOS9784: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:11:53,769 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:12:01,510 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:12:01,510 [INFO] [8/300] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-04-16 12:12:10,464 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:12:19,311 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:12:28,177 [INFO]   [dentalsky.com] Playwright search: Eire Septodont Lignospan 2% Special
+2026-04-16 12:12:54,312 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Eire+Septodont+Lignospan+2%25+Special: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:12:54,330 [INFO]   [dentalsky.com] Playwright search: LIGNO02S
+2026-04-16 12:13:22,472 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=LIGNO02S: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:13:22,484 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:13:28,845 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:13:28,846 [INFO] [9/300] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-04-16 12:13:31,574 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:13:35,255 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:13:42,593 [INFO]   [dentalsky.com] Playwright search: Bossklein V-WIPE ZERO Refill Alcohol Free Large
+2026-04-16 12:14:10,351 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+V-WIPE+ZERO+Refill+Alcohol+Free+Large: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:14:10,366 [INFO]   [dentalsky.com] Playwright search: BOS2001
+2026-04-16 12:14:35,680 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=BOS2001: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:14:35,698 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:14:41,286 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:14:41,287 [INFO] [10/300] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-04-16 12:14:54,746 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:15:04,651 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:15:10,166 [INFO]   [dentalsky.com] Playwright search: Eire Septodont Xylonor Gel
+2026-04-16 12:15:34,672 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Eire+Septodont+Xylonor+Gel: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:15:34,696 [INFO]   [dentalsky.com] Playwright search: XYLON03S / 6
+2026-04-16 12:15:58,839 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=XYLON03S+%2F+6: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:15:58,881 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:16:05,432 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:16:05,481 [INFO] Output written to 'output_top__300.csv' and 'output_top__300_mappings.csv'
+2026-04-16 12:16:05,481 [INFO]   [checkpoint] Saved after 10/300 products
+2026-04-16 12:16:05,481 [INFO] [11/300] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-04-16 12:16:08,244 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:16:10,706 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:16:16,561 [INFO]   [dentalsky.com] Playwright search: Clinell Universal Disinfectant Wipes Refill 250mm x
+2026-04-16 12:16:44,340 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Clinell+Universal+Disinfectant+Wipes+Refill+250mm+x: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:16:44,355 [INFO]   [dentalsky.com] Playwright search: CWTUB100R
+2026-04-16 12:17:11,952 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=CWTUB100R: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:17:11,988 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:17:18,059 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:17:18,059 [INFO] [12/300] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-04-16 12:17:25,265 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:17:31,809 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:17:39,830 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Day 6% HP
+2026-04-16 12:18:05,428 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Day+6%25+HP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:18:05,446 [INFO]   [dentalsky.com] Playwright search: UBPB061
+2026-04-16 12:18:30,834 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBPB061: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:18:30,846 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:18:36,127 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:18:36,128 [INFO] [13/300] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-04-16 12:18:41,086 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:18:49,665 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:18:55,605 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Kit By Night 16% CP
+2026-04-16 12:19:21,316 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Kit+By+Night+16%25+CP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:19:21,328 [INFO]   [dentalsky.com] Playwright search: UBTK016
+2026-04-16 12:19:46,098 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBTK016: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:19:46,109 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:19:52,302 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:19:52,302 [INFO] [14/300] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-04-16 12:20:01,865 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:20:11,823 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:20:15,201 [INFO]   [dentalsky.com] Playwright search: Septodont Xylonor Gel
+2026-04-16 12:20:40,032 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Xylonor+Gel: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:20:40,044 [INFO]   [dentalsky.com] Playwright search: XYLON01
+2026-04-16 12:21:04,804 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=XYLON01: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:21:04,818 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:21:11,155 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:21:11,156 [INFO] [15/300] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-04-16 12:21:18,963 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:21:25,265 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:21:31,964 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Day 6% HP
+2026-04-16 12:21:58,034 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Day+6%25+HP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:21:58,046 [INFO]   [dentalsky.com] Playwright search: UBPB062
+2026-04-16 12:22:21,716 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBPB062: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:22:21,727 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:22:29,749 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:22:29,768 [INFO] Output written to 'output_top__300.csv' and 'output_top__300_mappings.csv'
+2026-04-16 12:22:29,769 [INFO]   [checkpoint] Saved after 15/300 products
+2026-04-16 12:22:29,769 [INFO] [16/300] PHI147 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) NEW
+2026-04-16 12:22:33,887 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:22:37,207 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:22:44,026 [INFO]   [dentalsky.com] Playwright search: Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP)
+2026-04-16 12:23:09,990 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Philips+Zoom%21+NiteWhite+ACP+Take+Home+Mini+Kit+16%25+%28CP%29: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:23:10,001 [INFO]   [dentalsky.com] Playwright search: 881058511330
+2026-04-16 12:23:36,409 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=881058511330: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:23:36,421 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:23:42,471 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:23:42,471 [INFO] [17/300] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-04-16 12:23:46,495 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:23:49,455 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:23:56,374 [INFO]   [dentalsky.com] Playwright search: Meditrade Gentle Skin Compact+ Latex Gloves P/Free
+2026-04-16 12:24:21,330 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Meditrade+Gentle+Skin+Compact%2B+Latex+Gloves+P%2FFree: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:24:21,342 [INFO]   [dentalsky.com] Playwright search: 1221MI
+2026-04-16 12:24:46,260 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1221MI: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:24:46,269 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:24:53,893 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:24:53,894 [INFO] [18/300] PHI150 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) NEW
+2026-04-16 12:24:56,641 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:25:00,944 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:25:07,034 [INFO]   [dentalsky.com] Playwright search: Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP)
+2026-04-16 12:25:31,982 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Philips+Zoom%21+NiteWhite+ACP+Take+Home+Standard+16%25+%28CP%29: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:25:31,992 [INFO]   [dentalsky.com] Playwright search: 881073935010
+2026-04-16 12:25:55,805 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=881073935010: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:25:55,816 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:26:03,767 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:26:03,768 [INFO] [19/300] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-04-16 12:26:08,222 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:26:10,569 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:26:17,058 [INFO]   [dentalsky.com] Playwright search: 4T Medical FMS 32G Fine Micro Syringe
+2026-04-16 12:26:42,325 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=4T+Medical+FMS+32G+Fine+Micro+Syringe: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:26:42,336 [INFO]   [dentalsky.com] Playwright search: 4TM001
+2026-04-16 12:27:07,110 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=4TM001: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:27:07,121 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:27:12,751 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:27:12,751 [INFO] [20/300] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-04-16 12:27:17,678 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:27:26,208 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:27:32,817 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Protect+ Blue Ear Loop Masks (002/0048)
+2026-04-16 12:27:57,196 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Protect%2B+Blue+Ear+Loop+Masks+%28002%2F0048%29: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:27:57,211 [INFO]   [dentalsky.com] Playwright search: 002/0048
+2026-04-16 12:28:21,031 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=002%2F0048: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:28:21,060 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:28:28,060 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:28:28,081 [INFO] Output written to 'output_top__300.csv' and 'output_top__300_mappings.csv'
+2026-04-16 12:28:28,082 [INFO]   [checkpoint] Saved after 20/300 products
+2026-04-16 12:28:28,082 [INFO] [21/300] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-04-16 12:28:32,429 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:28:36,474 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:28:43,890 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Night 16% CP
+2026-04-16 12:29:08,059 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Night+16%25+CP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:29:08,069 [INFO]   [dentalsky.com] Playwright search: UBPB163
+2026-04-16 12:29:31,809 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBPB163: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:29:31,895 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:29:37,512 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:29:37,513 [INFO] [22/300] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-04-16 12:29:41,550 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:29:44,319 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:29:51,518 [INFO]   [dentalsky.com] Playwright search: Meditrade Suavel Protec Type IIR Face Masks 3ply Ear
+2026-04-16 12:30:15,410 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Meditrade+Suavel+Protec+Type+IIR+Face+Masks+3ply+Ear: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:30:15,420 [INFO]   [dentalsky.com] Playwright search: 80-902
+2026-04-16 12:30:39,705 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=80-902: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:30:39,715 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:30:44,494 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:30:44,494 [INFO] [23/300] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-04-16 12:30:53,106 [INFO]   [dmi.ie] Search '1.204.018' ✓ €4.35 (score=0.72)
+2026-04-16 12:30:53,107 [INFO]   [dmi_ie] ✓ €4.35  (score=0.72, variance: N/A)
+2026-04-16 12:31:01,704 [INFO]   [dmi.co.uk] Search '1.204.018' ✓ £3.74 (score=0.72)
+2026-04-16 12:31:01,705 [INFO]   [dmi_uk] ✓ £3.74  (score=0.72, variance: N/A)
+2026-04-16 12:31:07,480 [INFO]   [dentalsky.com] Playwright search: Edenta Steel Burs Round 23/018 Size 6
+2026-04-16 12:31:31,081 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Edenta+Steel+Burs+Round+23%2F018+Size+6: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:31:31,094 [INFO]   [dentalsky.com] Playwright search: 1.204.018
+2026-04-16 12:31:55,386 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1.204.018: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:31:55,401 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:32:01,935 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:32:01,936 [INFO] [24/300] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-04-16 12:32:07,724 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:32:13,459 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:32:20,435 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Night 10% CP
+2026-04-16 12:32:44,740 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Night+10%25+CP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:32:44,750 [INFO]   [dentalsky.com] Playwright search: UBPB101
+2026-04-16 12:33:08,565 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBPB101: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:33:08,582 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:33:14,639 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:33:14,640 [INFO] [25/300] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-04-16 12:33:18,405 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:33:21,632 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:33:30,255 [INFO]   [dentalsky.com] Playwright search: Meditrade Gentle Skin Compact+ Latex Gloves P/Free
+2026-04-16 12:33:55,184 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Meditrade+Gentle+Skin+Compact%2B+Latex+Gloves+P%2FFree: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:33:55,196 [INFO]   [dentalsky.com] Playwright search: 1221SI
+2026-04-16 12:34:19,683 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1221SI: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:34:19,696 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:34:26,844 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:34:26,873 [INFO] Output written to 'output_top__300.csv' and 'output_top__300_mappings.csv'
+2026-04-16 12:34:26,874 [INFO]   [checkpoint] Saved after 25/300 products
+2026-04-16 12:34:26,874 [INFO] [26/300] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-04-16 12:34:29,460 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:34:34,198 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:34:41,686 [INFO]   [dentalsky.com] Playwright search: Meditrade Nitril Sensory Blue Nitrile Glove
+2026-04-16 12:35:06,819 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Meditrade+Nitril+Sensory+Blue+Nitrile+Glove: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:35:06,828 [INFO]   [dentalsky.com] Playwright search: 2283L
+2026-04-16 12:35:34,939 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=2283L: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:35:34,951 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:35:42,980 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:35:42,981 [INFO] [27/300] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-04-16 12:35:50,719 [INFO]   [dmi.ie] Search 'PERF-0040046' ✓ €20.42 (score=0.71)
+2026-04-16 12:35:50,719 [INFO]   [dmi_ie] ✓ €20.42  (score=0.71, variance: N/A)
+2026-04-16 12:35:57,692 [INFO]   [dmi.co.uk] Search 'PERF-0040046' ✓ £17.56 (score=0.71)
+2026-04-16 12:35:57,692 [INFO]   [dmi_uk] ✓ £17.56  (score=0.71, variance: N/A)
+2026-04-16 12:36:05,107 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6"
+2026-04-16 12:36:30,411 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Rubber+Dam+Non+Latex+Blue+Medium+6%22x6%22: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:36:30,422 [INFO]   [dentalsky.com] Playwright search: 004/0046
+2026-04-16 12:36:55,324 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=004%2F0046: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:36:55,336 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:37:02,590 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:37:02,590 [INFO] [28/300] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-04-16 12:37:07,228 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:37:10,809 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:37:29,613 [INFO]   [dentalsky.com] Playwright search: Meditrade Gentle Skin Compact+ Latex Gloves P/Free
+2026-04-16 12:37:54,787 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Meditrade+Gentle+Skin+Compact%2B+Latex+Gloves+P%2FFree: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:37:54,800 [INFO]   [dentalsky.com] Playwright search: 1221XSI
+2026-04-16 12:38:19,002 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1221XSI: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:38:19,013 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:38:25,191 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:38:25,192 [INFO] [29/300] PHI148 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) NEW
+2026-04-16 12:38:28,273 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:38:32,441 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:38:40,419 [INFO]   [dentalsky.com] Playwright search: Philips Zoom! DayWhite ACP Take Home Standard 6% (HP)
+2026-04-16 12:39:04,546 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Philips+Zoom%21+DayWhite+ACP+Take+Home+Standard+6%25+%28HP%29: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:39:04,560 [INFO]   [dentalsky.com] Playwright search: 881073035010
+2026-04-16 12:39:29,435 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=881073035010: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:39:29,453 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:39:36,386 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:39:36,387 [INFO] [30/300] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-04-16 12:39:43,422 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:39:49,040 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:39:59,487 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Sterilisation Pouches 57x127mm
+2026-04-16 12:40:33,917 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Sterilisation+Pouches+57x127mm: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:40:33,931 [INFO]   [dentalsky.com] Playwright search: 002/5000/ 10
+2026-04-16 12:41:08,859 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=002%2F5000%2F+10: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:41:08,879 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:41:17,328 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:41:17,358 [INFO] Output written to 'output_top__300.csv' and 'output_top__300_mappings.csv'
+2026-04-16 12:41:17,359 [INFO]   [checkpoint] Saved after 30/300 products
+2026-04-16 12:41:17,359 [INFO] [31/300] PHI145 — Philips Zoom! DayWhite ACP Take Home Mini Kit 6% (HP) NEW
+2026-04-16 12:41:21,140 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:41:24,420 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:41:31,086 [INFO]   [dentalsky.com] Playwright search: Philips Zoom! DayWhite ACP Take Home Mini Kit 6% (HP)
+2026-04-16 12:42:02,521 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Philips+Zoom%21+DayWhite+ACP+Take+Home+Mini+Kit+6%25+%28HP%29: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:42:02,542 [INFO]   [dentalsky.com] Playwright search: 881013011330
+2026-04-16 12:42:28,844 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=881013011330: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:42:28,861 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:42:36,071 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:42:36,071 [INFO] [32/300] MIS039 — Perfection Plus Sterilisation Pouches 85x165mm (PP002/5001)
+2026-04-16 12:42:42,381 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:42:50,265 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:42:58,272 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Sterilisation Pouches 85x165mm
+2026-04-16 12:43:26,763 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Sterilisation+Pouches+85x165mm: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:43:26,779 [INFO]   [dentalsky.com] Playwright search: 002/5001 / 10
+2026-04-16 12:43:54,046 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=002%2F5001+%2F+10: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:43:54,055 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:44:00,717 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:44:00,718 [INFO] [33/300] ABG012A — HPC Healthline Gloves Powder Free Small GN31 - Box100
+2026-04-16 12:44:03,034 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:44:07,406 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:44:13,757 [INFO]   [dentalsky.com] Playwright search: HPC Healthline Gloves Powder Free Small
+2026-04-16 12:44:39,197 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=HPC+Healthline+Gloves+Powder+Free+Small: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:44:39,206 [INFO]   [dentalsky.com] Playwright search: GN31D / 10
+2026-04-16 12:45:03,368 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=GN31D+%2F+10: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:45:03,382 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:45:10,225 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:45:10,226 [INFO] [34/300] MIS041 — Perfection Plus Sterilisation Pouches 135x278mm PP002/5003
+2026-04-16 12:45:16,008 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:45:22,138 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:45:31,351 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Sterilisation Pouches 135x278mm
+2026-04-16 12:45:59,843 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Sterilisation+Pouches+135x278mm: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:45:59,860 [INFO]   [dentalsky.com] Playwright search: 002/5003
+2026-04-16 12:46:25,381 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=002%2F5003: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:46:25,404 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:46:31,298 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:46:31,302 [INFO] [35/300] CCA200 — Cottontails Soft Cotton Buds (1115) - Pack200
+2026-04-16 12:46:36,094 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:46:41,987 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:46:52,600 [INFO]   [dentalsky.com] Playwright search: Cottontails Soft Cotton Buds
+2026-04-16 12:47:26,439 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Cottontails+Soft+Cotton+Buds: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:47:26,447 [INFO]   [dentalsky.com] Playwright search: 1115
+2026-04-16 12:48:03,585 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1115: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:48:03,604 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:48:11,037 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:48:11,072 [INFO] Output written to 'output_top__300.csv' and 'output_top__300_mappings.csv'
+2026-04-16 12:48:11,072 [INFO]   [checkpoint] Saved after 35/300 products
+2026-04-16 12:48:11,073 [INFO] [36/300] CSP244 — Zhermack Zeta 7 Trigger Spray 750ml (C810050) - Each
+2026-04-16 12:48:15,702 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:48:19,292 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:48:29,028 [INFO]   [dentalsky.com] Playwright search: Zhermack Zeta 7 Trigger Spray 750ml
+2026-04-16 12:48:54,161 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Zhermack+Zeta+7+Trigger+Spray+750ml: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:48:54,175 [INFO]   [dentalsky.com] Playwright search: C810050
+2026-04-16 12:49:23,001 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=C810050: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:49:23,017 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:49:33,264 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:49:33,264 [INFO] [37/300] BOU001 — Boutique Whitening Kit By Day 6% HP 4x3ml
+2026-04-16 12:49:41,889 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:49:48,781 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:49:57,662 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Kit By Day 6% HP
+2026-04-16 12:50:25,992 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Kit+By+Day+6%25+HP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:50:26,009 [INFO]   [dentalsky.com] Playwright search: UBTK006
+2026-04-16 12:50:54,151 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBTK006: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:50:54,175 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:51:00,717 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:51:00,717 [INFO] [38/300] PHI153 — Philips Zoom! Bulk Take Home Box NiteWhite 16%(CP)-Box25 NEW
+2026-04-16 12:51:04,319 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:51:09,154 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:51:17,330 [INFO]   [dentalsky.com] Playwright search: Philips Zoom! Bulk Take Home Box NiteWhite 16%(CP)-Box25
+2026-04-16 12:51:46,291 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Philips+Zoom%21+Bulk+Take+Home+Box+NiteWhite+16%25%28CP%29-Box25: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:51:46,308 [INFO]   [dentalsky.com] Playwright search: 881012525330
+2026-04-16 12:52:11,114 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=881012525330: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:52:11,126 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:52:17,220 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:52:17,220 [INFO] [39/300] CSP219 — Clinell Universal Sanitising Wipe (CW200) - Pack200
+2026-04-16 12:52:19,978 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:52:23,930 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:52:30,359 [INFO]   [dentalsky.com] Playwright search: Clinell Universal Sanitising Wipe
+2026-04-16 12:52:55,882 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Clinell+Universal+Sanitising+Wipe: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:52:55,910 [INFO]   [dentalsky.com] Playwright search: CW200
+2026-04-16 12:53:23,433 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=CW200: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:53:23,449 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:53:29,168 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:53:29,168 [INFO] [40/300] PHI149 — Philips Zoom! NiteWhite ACP Take Home Standard 10% (CP) NEW
+2026-04-16 12:53:34,101 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:53:38,205 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:53:47,263 [INFO]   [dentalsky.com] Playwright search: Philips Zoom! NiteWhite ACP Take Home Standard 10% (CP)
+2026-04-16 12:54:12,335 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Philips+Zoom%21+NiteWhite+ACP+Take+Home+Standard+10%25+%28CP%29: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:54:12,351 [INFO]   [dentalsky.com] Playwright search: 881073435010
+2026-04-16 12:54:39,932 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=881073435010: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:54:39,954 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:54:47,527 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:54:47,571 [INFO] Output written to 'output_top__300.csv' and 'output_top__300_mappings.csv'
+2026-04-16 12:54:47,571 [INFO]   [checkpoint] Saved after 40/300 products
+2026-04-16 12:54:47,572 [INFO] [41/300] OH294 — TePe EasyPick XS/S (242310) - Pack36
+2026-04-16 12:54:53,910 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:55:01,393 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:55:07,452 [INFO]   [dentalsky.com] Playwright search: TePe EasyPick XS/S
+2026-04-16 12:55:27,514 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=TePe+EasyPick+XS%2FS: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=TePe+EasyPick+XS%2FS", waiting until "networkidle"
+
+2026-04-16 12:55:27,531 [INFO]   [dentalsky.com] Playwright search: 242310
+2026-04-16 12:55:59,874 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=242310: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:55:59,889 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:56:05,274 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:56:05,275 [INFO] [42/300] PCO036 — Oral-B Superfloss - Each
+2026-04-16 12:56:08,715 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Oral B Satin Tape Waxed Mint Pack 12 X 25m'
+2026-04-16 12:56:13,362 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Oral-B Pro-Expert 35 12 Pack'
+2026-04-16 12:56:15,841 [INFO]   [dmi.ie] ✗ Rejected (score=0.50) — 'Oral-B Glide Floss Picks 30 Pack'
+2026-04-16 12:56:18,282 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 12:56:21,653 [INFO]   [dmi.co.uk] ✗ Rejected (score=0.50) — 'Oral B Satin Tape Waxed Mint Pack 12 X 25m'
+2026-04-16 12:56:25,114 [INFO]   [dmi.co.uk] ✗ Rejected (score=0.50) — 'Oral-B Pro-Expert 35 12 Pack'
+2026-04-16 12:56:27,066 [INFO]   [dmi.co.uk] ✗ Rejected (score=0.50) — 'Oral-B Glide Floss Picks 30 Pack'
+2026-04-16 12:56:30,913 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 12:56:32,524 [INFO]   [dentalsky.com] Playwright search: Oral-B
+2026-04-16 12:57:06,890 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Oral-B: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:57:06,910 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:57:13,629 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:57:13,629 [INFO] [43/300] OH308 — TePe Select Toothbrush Soft (322120) - Each
+2026-04-16 12:57:18,349 [INFO]   [dmi.ie] Search 'TePe Select Toothbrush Soft' ✓ €1.34 (score=1.00)
+2026-04-16 12:57:18,349 [INFO]   [dmi_ie] ✓ €1.34  (score=1.00, variance: N/A)
+2026-04-16 12:57:22,384 [INFO]   [dmi.co.uk] Search 'TePe Select Toothbrush Soft' ✓ £1.20 (score=1.00)
+2026-04-16 12:57:22,384 [INFO]   [dmi_uk] ✓ £1.20  (score=1.00, variance: N/A)
+2026-04-16 12:57:26,148 [INFO]   [dentalsky.com] Playwright search: TePe Select Toothbrush Soft
+2026-04-16 12:57:53,605 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=TePe+Select+Toothbrush+Soft: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:57:53,622 [INFO]   [dentalsky.com] Playwright search: 322120
+2026-04-16 12:58:19,814 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=322120: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:58:19,834 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:58:25,972 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:58:25,972 [INFO] [44/300] ESB022 — Edenta Steel Burs Round 23/023 Size 8 (1.204.023) - Pack 5
+2026-04-16 12:58:36,875 [INFO]   [dmi.ie] Search '1.204.023' ✓ €4.35 (score=0.72)
+2026-04-16 12:58:36,876 [INFO]   [dmi_ie] ✓ €4.35  (score=0.72, variance: N/A)
+2026-04-16 12:58:49,292 [INFO]   [dmi.co.uk] Search '1.204.023' ✓ £3.74 (score=0.72)
+2026-04-16 12:58:49,293 [INFO]   [dmi_uk] ✓ £3.74  (score=0.72, variance: N/A)
+2026-04-16 12:58:58,545 [INFO]   [dentalsky.com] Playwright search: Edenta Steel Burs Round 23/023 Size 8
+2026-04-16 12:59:25,250 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Edenta+Steel+Burs+Round+23%2F023+Size+8: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:59:25,271 [INFO]   [dentalsky.com] Playwright search: 1.204.023
+2026-04-16 12:59:50,707 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=1.204.023: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 12:59:50,729 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 12:59:57,734 [INFO]   [dontalia] ✗ Not found
+2026-04-16 12:59:57,735 [INFO] [45/300] CAW384 — Schulke Mikrozid Jumbo Wipes Refill (70002981) - Pack220
+2026-04-16 13:00:02,714 [INFO]   [dmi.ie] ✗ Rejected (score=0.47) — 'Schulke Mikrozid Alcohol Jumbo Wipes Refills x 220'
+2026-04-16 13:00:06,988 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 13:00:11,414 [INFO]   [dmi.co.uk] ✗ Rejected (score=0.47) — 'Schulke Mikrozid Alcohol Jumbo Wipes Refills x 220'
+2026-04-16 13:00:17,824 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 13:00:25,761 [INFO]   [dentalsky.com] Playwright search: Schulke Mikrozid Jumbo Wipes Refill
+2026-04-16 13:00:46,531 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Schulke+Mikrozid+Jumbo+Wipes+Refill: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=Schulke+Mikrozid+Jumbo+Wipes+Refill", waiting until "networkidle"
+
+2026-04-16 13:00:51,720 [INFO]   [dentalsky.com] Playwright search: 70002981
+2026-04-16 16:00:02,422 [INFO] Reading input: Top 300 (2).xlsx
+2026-04-16 16:00:03,079 [INFO] Registered scraper: dmi_ie
+2026-04-16 16:00:03,079 [INFO] Registered scraper: dmi_uk
+2026-04-16 16:00:03,079 [INFO] Registered scraper: dentalsky
+2026-04-16 16:00:03,079 [INFO] Registered scraper: dontalia
+2026-04-16 16:00:03,959 [INFO] [1/300] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-04-16 16:00:07,094 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:00:10,214 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:00:24,400 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Night 16% CP
+2026-04-16 16:00:44,609 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Night+16%25+CP: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Night+16%25+CP", waiting until "networkidle"
+
+2026-04-16 16:00:44,623 [INFO]   [dentalsky.com] Playwright search: UBPB162
+2026-04-16 16:01:13,969 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBPB162: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:01:13,982 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:01:20,512 [WARNING] [dontalia.com] Request error for https://www.dontalia.com/boutique-whitening-top-up-case.html (attempt 1): HTTPSConnectionPool(host='www.dontalia.com', port=443): Max retries exceeded with url: /boutique-whitening-top-up-case.html (Caused by NameResolutionError("HTTPSConnection(host='www.dontalia.com', port=443): Failed to resolve 'www.dontalia.com' ([Errno -5] No address associated with hostname)"))
+2026-04-16 16:01:34,224 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:01:34,224 [INFO] [2/300] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-04-16 16:01:37,794 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:01:41,522 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:01:52,302 [INFO]   [dentalsky.com] Playwright search: Meditrade Nitril Sensory Blue Nitrile Glove
+2026-04-16 16:02:17,695 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Meditrade+Nitril+Sensory+Blue+Nitrile+Glove: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:02:17,702 [INFO]   [dentalsky.com] Playwright search: 2283S
+2026-04-16 16:02:54,297 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=2283S: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:02:54,304 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:03:01,984 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:03:01,985 [INFO] [3/300] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-04-16 16:03:07,731 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:03:15,723 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:03:23,197 [INFO]   [dentalsky.com] Playwright search: Perfection Plus Sterilisation Pouches 85x253mm
+2026-04-16 16:03:51,292 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Perfection+Plus+Sterilisation+Pouches+85x253mm: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:03:51,298 [INFO]   [dentalsky.com] Playwright search: 002/5002
+2026-04-16 16:04:15,786 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=002%2F5002: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:04:15,791 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:04:21,010 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:04:21,010 [INFO] [4/300] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-04-16 16:04:28,404 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:04:35,394 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:04:43,402 [INFO]   [dentalsky.com] Playwright search: Eire Septodont Septanest 1:100,000
+2026-04-16 16:05:08,601 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Eire+Septodont+Septanest+1%3A100%2C000: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:05:08,605 [INFO]   [dentalsky.com] Playwright search: 11825O
+2026-04-16 16:05:32,637 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=11825O: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:05:32,643 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:05:37,575 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:05:37,575 [INFO] [5/300] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-04-16 16:05:44,951 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:05:51,026 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:05:58,255 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Night 16% CP
+2026-04-16 16:06:32,623 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Night+16%25+CP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:06:32,629 [INFO]   [dentalsky.com] Playwright search: UBPB161
+2026-04-16 16:06:58,679 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBPB161: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:06:58,684 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:07:05,940 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:07:05,958 [INFO] Output written to 'output_top_300.csv' and 'output_top_300_mappings.csv'
+2026-04-16 16:07:05,958 [INFO]   [checkpoint] Saved after 5/300 products
+2026-04-16 16:07:05,958 [INFO] [6/300] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-04-16 16:07:10,124 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:07:13,799 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:07:21,322 [INFO]   [dentalsky.com] Playwright search: Meditrade Nitril Sensory Blue Nitrile Glove
+2026-04-16 16:07:46,990 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Meditrade+Nitril+Sensory+Blue+Nitrile+Glove: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:07:46,995 [INFO]   [dentalsky.com] Playwright search: 2283M
+2026-04-16 16:08:13,111 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=2283M: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:08:13,116 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:08:20,769 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:08:20,770 [INFO] [7/300] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-04-16 16:08:23,743 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:08:27,874 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:08:36,402 [INFO]   [dentalsky.com] Playwright search: Bossklein Max V-Wipes Lemon Refill
+2026-04-16 16:09:01,461 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+Max+V-Wipes+Lemon+Refill: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:09:01,466 [INFO]   [dentalsky.com] Playwright search: BOS9784
+2026-04-16 16:09:29,146 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=BOS9784: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:09:29,153 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:09:36,145 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:09:36,145 [INFO] [8/300] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-04-16 16:09:46,492 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:09:56,838 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:10:10,492 [INFO]   [dentalsky.com] Playwright search: Eire Septodont Lignospan 2% Special
+2026-04-16 16:10:35,628 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Eire+Septodont+Lignospan+2%25+Special: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:10:35,635 [INFO]   [dentalsky.com] Playwright search: LIGNO02S
+2026-04-16 16:10:55,678 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=LIGNO02S: Page.goto: Timeout 20000ms exceeded.
+Call log:
+navigating to "https://www.dentalsky.com/catalogsearch/result/?q=LIGNO02S", waiting until "networkidle"
+
+2026-04-16 16:10:55,685 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:11:03,582 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:11:03,583 [INFO] [9/300] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-04-16 16:11:06,628 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:11:10,651 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:11:19,985 [INFO]   [dentalsky.com] Playwright search: Bossklein V-WIPE ZERO Refill Alcohol Free Large
+2026-04-16 16:11:48,128 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Bossklein+V-WIPE+ZERO+Refill+Alcohol+Free+Large: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:11:48,137 [INFO]   [dentalsky.com] Playwright search: BOS2001
+2026-04-16 16:12:14,870 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=BOS2001: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:12:14,879 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:12:21,006 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:12:21,006 [INFO] [10/300] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-04-16 16:12:30,732 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:12:39,251 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:12:45,736 [INFO]   [dentalsky.com] Playwright search: Eire Septodont Xylonor Gel
+2026-04-16 16:13:13,744 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Eire+Septodont+Xylonor+Gel: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:13:13,751 [INFO]   [dentalsky.com] Playwright search: XYLON03S / 6
+2026-04-16 16:13:40,990 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=XYLON03S+%2F+6: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:13:40,996 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:13:48,828 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:13:48,845 [INFO] Output written to 'output_top_300.csv' and 'output_top_300_mappings.csv'
+2026-04-16 16:13:48,845 [INFO]   [checkpoint] Saved after 10/300 products
+2026-04-16 16:13:48,845 [INFO] [11/300] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-04-16 16:13:56,935 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:14:00,657 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:14:08,904 [INFO]   [dentalsky.com] Playwright search: Clinell Universal Disinfectant Wipes Refill 250mm x
+2026-04-16 16:14:42,620 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Clinell+Universal+Disinfectant+Wipes+Refill+250mm+x: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:14:42,626 [INFO]   [dentalsky.com] Playwright search: CWTUB100R
+2026-04-16 16:15:10,156 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=CWTUB100R: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:15:10,162 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:15:18,934 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:15:18,934 [INFO] [12/300] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-04-16 16:15:25,930 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:15:34,959 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:15:44,728 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Day 6% HP
+2026-04-16 16:16:16,306 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Day+6%25+HP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:16:16,313 [INFO]   [dentalsky.com] Playwright search: UBPB061
+2026-04-16 16:16:41,019 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBPB061: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:16:41,025 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:16:48,368 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:16:48,368 [INFO] [13/300] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-04-16 16:16:59,024 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:17:08,451 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:17:16,070 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Kit By Night 16% CP
+2026-04-16 16:17:49,113 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Kit+By+Night+16%25+CP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:17:49,121 [INFO]   [dentalsky.com] Playwright search: UBTK016
+2026-04-16 16:18:13,972 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=UBTK016: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:18:13,979 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:18:21,619 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:18:21,619 [INFO] [14/300] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-04-16 16:18:41,519 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:19:01,536 [WARNING] [dmi.co.uk] Request error for https://www.dmi.co.uk/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.co.uk', port=443): Max retries exceeded with url: /categories.html?type=simple&name=Septodont+Xylonor+Gel (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.co.uk', port=443): Failed to resolve 'www.dmi.co.uk' ([Errno -3] Temporary failure in name resolution)"))
+2026-04-16 16:19:15,728 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:19:19,976 [INFO]   [dentalsky.com] Playwright search: Septodont Xylonor Gel
+2026-04-16 16:19:58,338 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Septodont+Xylonor+Gel: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:19:58,343 [INFO]   [dentalsky.com] Playwright search: XYLON01
+2026-04-16 16:20:23,963 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=XYLON01: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:20:23,968 [INFO]   [dentalsky] ✗ Not found
+2026-04-16 16:20:29,545 [INFO]   [dontalia] ✗ Not found
+2026-04-16 16:20:29,545 [INFO] [15/300] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-04-16 16:20:40,316 [INFO]   [dmi_ie] ✗ Not found
+2026-04-16 16:20:45,810 [INFO]   [dmi_uk] ✗ Not found
+2026-04-16 16:20:53,298 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Day 6% HP

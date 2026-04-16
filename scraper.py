@@ -498,6 +498,40 @@ class DMIUKScraper(DMIScraper):
 # ---------------------------------------------------------------------------
 # DentalSky scraper (Magento with Ajax search — search needs Playwright)
 # ---------------------------------------------------------------------------
+def _extract_dentalsky_price_from_soup(soup: BeautifulSoup) -> tuple[Optional[str], Optional[str]]:
+    """DentalSky helper to extract Ex-VAT HTML price before falling back to LD+JSON."""
+    price_val, currency, product_name = _extract_ld_json_price(soup)
+    
+    # 1. Prioritize Magento Ex-VAT selector
+    el = soup.select_one(".price-excluding-tax .price")
+    if el:
+        content = el.get("content") or el.get_text(" ", strip=True)
+        m = re.search(r"(\d[\d,]*\.\d{2})", content)
+        if m:
+            val = m.group(1).replace(",", "")
+            return f"£{float(val):.2f}", product_name
+
+    # 2. Fall back to LD+JSON (might be INC-VAT)
+    if price_val:
+        return _format_price(price_val, currency or "GBP"), product_name
+
+    # 3. Fall back to generic Magento HTML selectors
+    for sel in [
+        "[data-price-type='finalPrice'] .price",
+        ".special-price .price",
+        ".regular-price .price",
+        ".price-box .price",
+        "[itemprop='price']",
+    ]:
+        el = soup.select_one(sel)
+        if el:
+            content = el.get("content") or el.get_text(" ", strip=True)
+            m = re.search(r"(\d[\d,]*\.\d{2})", content)
+            if m:
+                val = m.group(1).replace(",", "")
+                return f"£{float(val):.2f}", product_name
+    return None, product_name
+
 class DentalSkyScraper(BaseScraper):
     SITE_NAME = "dentalsky.com"
     BASE_URL = "https://www.dentalsky.com"
@@ -507,33 +541,11 @@ class DentalSkyScraper(BaseScraper):
         return row.get("DentalSky URL", "")
 
     def scrape_price_from_url(self, url: str) -> tuple[Optional[str], Optional[str]]:
-        """DentalSky: try LD+JSON then HTML price selectors.
-        Returns (price_str, product_name)."""
+        """DentalSky: try Ex-VAT HTML then LD+JSON then HTML price selectors."""
         soup = self._soup(url)
         if not soup:
             return None, None
-        # 1. LD+JSON (most reliable)
-        price_val, currency, product_name = _extract_ld_json_price(soup)
-        if price_val:
-            return _format_price(price_val, currency or self.CURRENCY), product_name
-        # 2. Magento HTML price selectors
-        for sel in [
-            "[data-price-type='finalPrice'] .price",
-            ".special-price .price",
-            ".regular-price .price",
-            ".price-box .price",
-            "[itemprop='price']",
-        ]:
-            el = soup.select_one(sel)
-            if el:
-                # DentalSky price might be in content attr or text
-                content = el.get("content") or el.get_text(" ", strip=True)
-                # Extract numeric value (handles garbled currency symbols)
-                m = re.search(r"(\d[\d,]*\.\d{2})", content)
-                if m:
-                    val = m.group(1).replace(",", "")
-                    return f"£{float(val):.2f}", None
-        return None, None
+        return _extract_dentalsky_price_from_soup(soup)
 
     def search(self, part_number: str, product_name: str, manufacturer: str) -> ScrapedPrice:
         # DentalSky Magento search requires JavaScript — handled by PlaywrightScraper
@@ -691,13 +703,12 @@ class PlaywrightScraper:
             href = link.get("href", "")
             if not href:
                 continue
-            # Scrape the product page for LD+JSON price
+            # Scrape the product page for price
             product_html = self.get_page_html(href)
             if product_html:
                 product_soup = BeautifulSoup(product_html, "lxml")
-                price_val, currency, product_name = _extract_ld_json_price(product_soup)
-                if price_val:
-                    price = _format_price(price_val, currency or "GBP")
+                price, product_name = _extract_dentalsky_price_from_soup(product_soup)
+                if price:
                     logger.info(f"  [dentalsky.com] Playwright ✓ {price}")
                     return ScrapedPrice(price=price, url=href, found=True, product_name=product_name)
         return ScrapedPrice()
