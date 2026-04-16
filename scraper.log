@@ -30943,3 +30943,8 @@ waiting for locator(".product-item-link") to be visible
 2026-04-16 16:20:40,316 [INFO]   [dmi_ie] ✗ Not found
 2026-04-16 16:20:45,810 [INFO]   [dmi_uk] ✗ Not found
 2026-04-16 16:20:53,298 [INFO]   [dentalsky.com] Playwright search: Boutique Whitening Top Up Case By Day 6% HP
+2026-04-16 16:21:22,229 [WARNING] [Playwright] Error loading https://www.dentalsky.com/catalogsearch/result/?q=Boutique+Whitening+Top+Up+Case+By+Day+6%25+HP: Page.wait_for_selector: Timeout 20000ms exceeded.
+Call log:
+waiting for locator(".product-item-link") to be visible
+
+2026-04-16 16:21:22,236 [INFO]   [dentalsky.com] Playwright search: UBPB062
