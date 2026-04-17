@@ -1142,6 +1142,91 @@ def load_progress(output_path: str) -> dict:
     return progress
 
 
+def _apply_price_formatting(ws) -> None:
+    """
+    Apply conditional formatting to the Prices sheet.
+
+    Rules (applied to competitor price cells only):
+      - Teal  (#008080, white bold) — competitor price > reference price
+                                      (we are cheaper → good)
+      - Red   (#FF0000, white bold) — competitor price < reference price
+                                      (competitor is cheaper → bad)
+
+    Reference detection (first available column wins per currency):
+      € reference: "Sales Price (€)"  → fallback "DMI Sales Price (€)"
+      £ reference: "Sales Price (£)"  → fallback "DMI Sales Price (£)"
+
+    Competitor columns coloured:
+      € : DMI Sales Price (€), Dontalia Sales Price (€), Henry Schein Sales Price (€)
+      £ : DMI Sales Price (£), DentalSky Sales Price (£)
+    """
+    from openpyxl.styles import PatternFill, Font
+
+    teal_fill  = PatternFill(start_color="90EE90", end_color="90EE90", fill_type="solid")  # light green
+    red_fill   = PatternFill(start_color="FFB6B6", end_color="FFB6B6", fill_type="solid")  # light red
+    white_font = Font(color="000000")
+
+    # Build header → 0-based index map from the first row
+    headers = [cell.value for cell in next(ws.iter_rows(min_row=1, max_row=1))]
+    col_map = {h: i for i, h in enumerate(headers) if h}
+
+    currency_groups = [
+        {
+            "refs": ["Sales Price (€)", "DMI Sales Price (€)"],
+            "competitors": [
+                "DMI Sales Price (€)",
+                "Dontalia Sales Price (€)",
+                "Henry Schein Sales Price (€)",
+            ],
+        },
+        {
+            "refs": ["Sales Price (£)", "DMI Sales Price (£)"],
+            "competitors": [
+                "DMI Sales Price (£)",
+                "DentalSky Sales Price (£)",
+            ],
+        },
+    ]
+
+    # Resolve (ref_0based, comp_0based) pairs
+    pairs = []
+    for group in currency_groups:
+        ref_idx = next((col_map[r] for r in group["refs"] if r in col_map), None)
+        if ref_idx is None:
+            continue
+        for comp_name in group["competitors"]:
+            if comp_name not in col_map:
+                continue
+            c_idx = col_map[comp_name]
+            if c_idx != ref_idx:
+                pairs.append((ref_idx, c_idx))
+
+    def _to_float(val):
+        if not val or str(val).strip() in ("N/A", "-", "Not listed on competitor", "nan", ""):
+            return None
+        m = re.search(r"(\d[\d,]*\.?\d*)", str(val).replace(",", ""))
+        if m:
+            try:
+                return float(m.group(1))
+            except ValueError:
+                return None
+        return None
+
+    for row in ws.iter_rows(min_row=2):
+        for ref_idx, c_idx in pairs:
+            ref_val  = _to_float(row[ref_idx].value)
+            comp_val = _to_float(row[c_idx].value)
+            if ref_val is None or comp_val is None:
+                continue
+            cell = row[c_idx]
+            if comp_val > ref_val:
+                cell.fill = teal_fill
+                cell.font = white_font
+            elif comp_val < ref_val:
+                cell.fill = red_fill
+                cell.font = white_font
+
+
 def write_output(output_path: str, rows: list, output_headers: list, mappings: dict) -> None:
     """Write prices + product mappings to .xlsx (two sheets) or .csv (two files)."""
     import pandas as pd
@@ -1164,6 +1249,13 @@ def write_output(output_path: str, rows: list, output_headers: list, mappings: d
         with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
             prices_df.to_excel(writer, sheet_name="Prices", index=False)
             mappings_df.to_excel(writer, sheet_name="Product Mappings", index=False)
+
+        # Apply conditional formatting to the Prices sheet
+        from openpyxl import load_workbook
+        wb = load_workbook(output_path)
+        _apply_price_formatting(wb["Prices"])
+        wb.save(output_path)
+
         logger.info(f"Output written to '{output_path}' (sheets: Prices, Product Mappings)")
 
 
