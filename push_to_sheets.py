@@ -75,7 +75,7 @@ def _load_csv(path):
 def _load_xlsx(path):
     from openpyxl import load_workbook
     wb = load_workbook(path)
-    ws = wb.active
+    ws = wb["Prices"] if "Prices" in wb.sheetnames else wb.active
     rows = list(ws.iter_rows(values_only=True))
     headers = [str(h) if h is not None else "" for h in rows[0]]
     data = [[str(c) if c is not None else "" for c in r] for r in rows[1:]]
@@ -158,7 +158,7 @@ def build_format_requests(sheet_id, headers, data_rows, comparisons):
     return requests
 
 
-def push(input_file, spreadsheet_id):
+def push(input_file, spreadsheet_id, worksheet_name=WORKSHEET_NAME):
     print(f"Loading data from: {input_file}")
     if input_file.lower().endswith((".xlsx", ".xls")):
         headers, data_rows = _load_xlsx(input_file)
@@ -174,13 +174,13 @@ def push(input_file, spreadsheet_id):
 
     # Get or create the worksheet
     try:
-        ws = spreadsheet.worksheet(WORKSHEET_NAME)
-        print(f"Found existing worksheet: '{WORKSHEET_NAME}' — clearing it")
+        ws = spreadsheet.worksheet(worksheet_name)
+        print(f"Found existing worksheet: '{worksheet_name}' — clearing it")
         ws.clear()
     except gspread.exceptions.WorksheetNotFound:
-        print(f"Creating worksheet: '{WORKSHEET_NAME}'")
+        print(f"Creating worksheet: '{worksheet_name}'")
         ws = spreadsheet.add_worksheet(
-            title=WORKSHEET_NAME,
+            title=worksheet_name,
             rows=max(len(data_rows) + 10, 1000),
             cols=max(len(headers) + 5, 50),
         )
