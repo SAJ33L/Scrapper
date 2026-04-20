@@ -1,6 +1,6 @@
 # Dental Product Price Benchmarking Scraper
 
-A Python scraper that collects competitor prices for ~300 dental products across 5 websites and outputs a CSV ready for benchmarking/colour-coding in Google Sheets.
+A Python scraper that collects competitor prices for ~300 dental products across 5 websites, outputs a formatted Excel file, and syncs results to a live Google Sheets master sheet.
 
 ---
 
@@ -11,7 +11,8 @@ Reads your input CSV of ~300 dental products and for each product:
 2. Falls back to site search when no URL is available — using part number, product name, and competitor product codes (`DMI Code`, `Schein Code`) as search queries
 3. Calculates variance (your price vs competitor price)
 4. Detects pack size mismatches and calculates adjusted per-unit variance
-5. Outputs a new CSV with all prices, flags, and competitor product names filled in
+5. Outputs a formatted `.xlsx` with green/red pricing highlights
+6. Optionally uploads results straight to the live Google Sheets master sheet
 
 A companion **`Competitor Product Code Comparisons.xlsx`** spreadsheet is included in the repository, mapping your products to each competitor's own product codes for reference.
 
@@ -109,7 +110,7 @@ python scraper.py
 ```
 - Reads the default input CSV
 - Skips products that already have prices (faster re-runs)
-- Writes results to `output_prices.csv`
+- Writes results to `output_prices.xlsx`
 
 ---
 
@@ -156,61 +157,142 @@ Available site keys: `dmi_ie`, `dmi_uk`, `dentalsky`, `dontalia`, `henryschein`
 
 ### 7. Custom input/output files
 ```bash
-python scraper.py --input "my_products.csv" --output "results.csv"
+python scraper.py --input "my_products.csv" --output "results.xlsx"
 ```
 
 ---
 
-### 8. Combining multiple flags
+### 8. Google Sheets integration
+
+The scraper can push results directly to the live Google Sheets master sheet.
+
+**Scrape and upload in one go:**
+```bash
+python scraper.py --upload-to-sheets
+```
+
+**Upload an already-scraped file without re-scraping:**
+```bash
+python scraper.py --output output_prices.xlsx --upload-only
+```
+
+**Upload a specific file:**
+```bash
+python scraper.py --output my_results.xlsx --upload-only
+```
+
+**Upload to a different sheet or worksheet tab:**
+```bash
+python scraper.py --output output_prices.xlsx --upload-only \
+  --sheet-id YOUR_SHEET_ID --worksheet "My Tab Name"
+```
+
+> The service account credentials (`bfm-competitor-price-scraper-60bbef18550e.json`) are already configured for the master sheet. No extra auth setup needed.
+
+---
+
+### 9. Live sheet: scraping URLs entered by the team
+
+The team can paste competitor product URLs directly into the Google Sheet (in the `DMI URL (IE)`, `DentalSky URL`, etc. columns). Running the following will scrape any rows where a URL is present but the price is missing:
+
+```bash
+python scrape_from_sheet.py
+```
+
+**Force re-scrape all URLs even if a price already exists:**
+```bash
+python scrape_from_sheet.py --force
+```
+
+**Include Henry Schein (requires Playwright):**
+```bash
+python scrape_from_sheet.py --playwright
+```
+
+**Target a different sheet or worksheet:**
+```bash
+python scrape_from_sheet.py --sheet-id YOUR_SHEET_ID --worksheet "My Tab Name"
+```
+
+URL columns and the sites they feed:
+
+| URL column | Price column filled |
+|------------|-------------------|
+| `DMI URL (IE)` | `DMI Sales Price (€)` |
+| `DMI URL (UK)` | `DMI Sales Price (£)` |
+| `DentalSky URL` | `DentalSky Sales Price (£)` |
+| `Dontalia URL` | `Dontalia Sales Price (€)` |
+| `Henry Schein URL` | `Henry Schein Sales Price (€)` |
+
+Prices, variances, and green/red highlights are all updated automatically after scraping.
+
+---
+
+### 10. Combining multiple flags
 Flags can be combined freely. Examples:
 
 ```bash
 # Re-scrape first 100 rows on DMI sites only
 python scraper.py --sites dmi_ie dmi_uk --no-skip-existing --limit 100
 
-# Full re-scrape of all 5 sites including Henry Schein
-python scraper.py --playwright --no-skip-existing
+# Full re-scrape of all 5 sites including Henry Schein, then upload
+python scraper.py --playwright --no-skip-existing --upload-to-sheets
 
 # Test Henry Schein on 5 rows before committing to a full run
 python scraper.py --sites henryschein --playwright --limit 5
 
 # Save output to a separate file without overwriting main results
-python scraper.py --sites dentalsky --output dentalsky_results.csv --limit 50
+python scraper.py --sites dentalsky --output dentalsky_results.xlsx --limit 50
 ```
 
 ---
 
-### 9. Run sites in parallel (saves time)
+### 11. Run sites in parallel (saves time)
 Open 4 terminal windows and run each simultaneously:
 
 ```bash
 # Terminal 1
-python scraper.py --sites dmi_ie dmi_uk --output out_dmi.csv
+python scraper.py --sites dmi_ie dmi_uk --output out_dmi.xlsx
 
 # Terminal 2
-python scraper.py --sites dentalsky --output out_dentalsky.csv
+python scraper.py --sites dentalsky --output out_dentalsky.xlsx
 
 # Terminal 3
-python scraper.py --sites dontalia --playwright --output out_dontalia.csv
+python scraper.py --sites dontalia --playwright --output out_dontalia.xlsx
 
 # Terminal 4
-python scraper.py --sites henryschein --playwright --output out_henryschein.csv
+python scraper.py --sites henryschein --playwright --output out_henryschein.xlsx
 ```
 
-Then merge the 4 output CSVs in Excel or Google Sheets.
+Then merge the 4 output files in Excel or upload each to Google Sheets with `--upload-only`.
 
 ---
 
 ### All flags reference
 
+#### `scraper.py`
+
 | Flag | Default | Description |
 |------|---------|-------------|
-| `--input FILE` | Price Benchmarking CSV | Input CSV file to read products from |
-| `--output FILE` | `output_prices.csv` | Output CSV file to write results to |
-| `--sites SITE [...]` | all 5 sites | Which sites to scrape |
+| `--input FILE` | Price Benchmarking CSV | Input CSV or XLSX to read products from |
+| `--output FILE` | `output_prices.xlsx` | Output file to write results to |
+| `--sites SITE [...]` | all 5 sites | Which sites to scrape (`dmi_ie` `dmi_uk` `dentalsky` `dontalia` `henryschein`) |
 | `--limit N` | all rows | Only process first N rows |
 | `--playwright` | off | Enable headless browser (required for Henry Schein; improves DentalSky/Dontalia search) |
 | `--no-skip-existing` | off | Re-scrape even where prices already exist |
+| `--upload-to-sheets` | off | Upload output to Google Sheets after scraping finishes |
+| `--upload-only` | off | Skip scraping — upload `--output` file directly to Google Sheets |
+| `--sheet-id ID` | master sheet ID | Google Sheet ID to upload to |
+| `--worksheet NAME` | `Benchmarking Data` | Worksheet tab name inside the Google Sheet |
+
+#### `scrape_from_sheet.py`
+
+| Flag | Default | Description |
+|------|---------|-------------|
+| `--sheet-id ID` | master sheet ID | Google Sheet ID to read from and write to |
+| `--worksheet NAME` | `Benchmarking Data` | Worksheet tab name |
+| `--force` | off | Re-scrape all rows with a URL, even if a price already exists |
+| `--playwright` | off | Enable Playwright for Henry Schein URL scraping |
 
 ---
 

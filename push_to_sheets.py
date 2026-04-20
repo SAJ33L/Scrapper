@@ -175,8 +175,16 @@ def push(input_file, spreadsheet_id, worksheet_name=WORKSHEET_NAME):
     # Get or create the worksheet
     try:
         ws = spreadsheet.worksheet(worksheet_name)
-        print(f"Found existing worksheet: '{worksheet_name}' — clearing it")
+        print(f"Found existing worksheet: '{worksheet_name}' — clearing values and formatting")
         ws.clear()
+        # clear() only removes values — explicitly reset all cell formatting too
+        spreadsheet.batch_update({"requests": [{
+            "repeatCell": {
+                "range": {"sheetId": ws.id},
+                "cell": {"userEnteredFormat": {}},
+                "fields": "userEnteredFormat",
+            }
+        }]})
     except gspread.exceptions.WorksheetNotFound:
         print(f"Creating worksheet: '{worksheet_name}'")
         ws = spreadsheet.add_worksheet(

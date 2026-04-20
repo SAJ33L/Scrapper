@@ -1516,16 +1516,27 @@ def main():
         help="Upload the finished output to Google Sheets after scraping",
     )
     parser.add_argument(
+        "--upload-only",
+        action="store_true",
+        help="Skip scraping — upload an existing file (--output) directly to Google Sheets",
+    )
+    parser.add_argument(
         "--sheet-id",
         default="1qJCFzTea15Q9HlWqzIEFKHn47PW-Nak-CUHNulZtsjs",
-        help="Google Sheet ID to upload to (used with --upload-to-sheets)",
+        help="Google Sheet ID to upload to",
     )
     parser.add_argument(
         "--worksheet",
         default="Benchmarking Data",
-        help="Worksheet name inside the Google Sheet (used with --upload-to-sheets)",
+        help="Worksheet name inside the Google Sheet",
     )
     args = parser.parse_args()
+
+    if args.upload_only:
+        logger.info(f"--upload-only: uploading '{args.output}' to Google Sheets...")
+        from push_to_sheets import push as _push_to_sheets
+        _push_to_sheets(args.output, args.sheet_id, worksheet_name=args.worksheet)
+        return
 
     run(
         input_path=args.input,
