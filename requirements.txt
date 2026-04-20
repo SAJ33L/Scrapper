@@ -1,4 +1,6 @@
 requests==2.31.0
+gspread>=6.0.0
+google-auth>=2.0.0
 beautifulsoup4==4.12.3
 lxml==5.2.1
 brotlicffi>=1.0.0

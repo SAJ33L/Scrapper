@@ -1269,6 +1269,9 @@ def run(
     limit: Optional[int] = None,
     skip_existing: bool = True,
     use_playwright: bool = False,
+    upload_to_sheets: bool = False,
+    sheet_id: str = "1qJCFzTea15Q9HlWqzIEFKHn47PW-Nak-CUHNulZtsjs",
+    worksheet: str = "Benchmarking Data",
 ):
     logger.info(f"Reading input: {input_path}")
     rows, headers = read_input(input_path)
@@ -1454,6 +1457,14 @@ def run(
 
     write_output(output_path, rows, output_headers, mappings)
 
+    if upload_to_sheets:
+        logger.info(f"Uploading '{output_path}' to Google Sheets (sheet_id={sheet_id}, worksheet='{worksheet}')...")
+        try:
+            from push_to_sheets import push as _push_to_sheets
+            _push_to_sheets(output_path, sheet_id, worksheet_name=worksheet)
+        except Exception as e:
+            logger.error(f"Google Sheets upload failed: {e}", exc_info=True)
+
     # Print summary
     total_products = len(rows)
     for site_key in sites:
@@ -1499,6 +1510,21 @@ def main():
         action="store_true",
         help="Re-scrape even when price already exists in input CSV",
     )
+    parser.add_argument(
+        "--upload-to-sheets",
+        action="store_true",
+        help="Upload the finished output to Google Sheets after scraping",
+    )
+    parser.add_argument(
+        "--sheet-id",
+        default="1qJCFzTea15Q9HlWqzIEFKHn47PW-Nak-CUHNulZtsjs",
+        help="Google Sheet ID to upload to (used with --upload-to-sheets)",
+    )
+    parser.add_argument(
+        "--worksheet",
+        default="Benchmarking Data",
+        help="Worksheet name inside the Google Sheet (used with --upload-to-sheets)",
+    )
     args = parser.parse_args()
 
     run(
@@ -1508,6 +1534,9 @@ def main():
         limit=args.limit,
         skip_existing=not args.no_skip_existing,
         use_playwright=args.playwright,
+        upload_to_sheets=args.upload_to_sheets,
+        sheet_id=args.sheet_id,
+        worksheet=args.worksheet,
     )
 
 
