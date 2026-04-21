@@ -320,63 +320,81 @@ Only filled when a `MISMATCH` is detected. Recalculates variance on a per-unit b
 
 Railway runs this project in a containerized runtime. Treat local files as ephemeral: files created during a run (for example `output_prices.csv` and `scraper.log`) may not persist across redeploys/restarts unless you copy them to persistent storage.
 
-### 1) Add deployment files (included in this repo)
+### 1) Use Railway CLI (no GitHub integration required)
 
-- `Procfile` (worker process)
-- `railway.toml` (build + start config)
-
-These are set up for this CLI entrypoint:
+Install CLI and log in:
 
 ```bash
-python scraper.py --playwright
+npm i -g @railway/cli
+railway login
 ```
 
-### 2) Create a Railway project from GitHub
-
-1. In Railway, create a new project from `SAJ33L/Scrapper`.
-2. Open the service settings and configure it as a **Worker** service (not a web server; no HTTP port required).
-3. Confirm start command (or Procfile process) is set to `python scraper.py --playwright`.
-
-If you want explicit file arguments, set the start command to something like:
+Create an **Empty Project** in Railway dashboard, then from this local repo folder:
 
 ```bash
-python scraper.py --playwright --input "Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv" --output output_prices.csv --sites dmi_ie dmi_uk dentalsky dontalia henryschein --limit 10
+railway link
+railway up
 ```
 
-Remove `--limit` for full production runs.
+This deploys directly from your local folder, so no GitHub connection is needed.
+
+### 2) Deployment files used by Railway
+
+- `railway.toml` (Nixpacks build + default start command)
+- `Procfile` (`worker` process command)
+- `.env.example` (recommended runtime variables)
+
+Default worker/start command is env-var driven and maps to `scraper.py` flags:
+
+```bash
+python scraper.py --input "$INPUT_PATH" --output "$OUTPUT_PATH" --sites $SITES [--limit "$LIMIT"] [--playwright] [--no-skip-existing]
+```
+
+If variables are not set, sensible defaults are used.
 
 ### 3) Install Playwright browser binaries during build
 
-This project uses Playwright, so Railway must install Chromium and its Linux dependencies at build time:
+`--playwright` mode needs Chromium and system dependencies. `railway.toml` already runs:
 
 ```bash
+pip install -r requirements.txt
 python -m playwright install --with-deps chromium
 ```
 
-`railway.toml` already includes this command in the build step.
-
 ### 4) Configure environment variables and secrets
 
-Use Railway Variables/Secrets for any runtime configuration you do not want hardcoded (API keys, webhook URLs, cloud storage credentials, etc.).
+In Railway dashboard:
 
-- Project/Service → Variables
-- Add secret values there, then reference them in code (via `os.environ`) if needed.
+1. Open your service → **Variables**
+2. Copy values from `.env.example` as needed:
+   - `INPUT_PATH`
+   - `OUTPUT_PATH`
+   - `SITES` (space-separated, e.g. `dmi_ie dmi_uk`)
+   - `LIMIT` (optional)
+   - `USE_PLAYWRIGHT` (`1`/`0`)
+   - `NO_SKIP_EXISTING` (`1`/`0`)
+3. Add any secrets (APIs/storage credentials) here as well.
 
-This scraper currently works primarily from CLI args (`--input`, `--output`, `--sites`, `--limit`, `--playwright`), so most run configuration is controlled via the Railway start command.
+### 5) Schedule runs with Railway Cron Jobs
 
-### 5) Scheduling options
+Cron configuration is done in Railway dashboard (not in GitHub):
 
-For recurring scrapes, use one of these patterns:
+1. Open service → **Cron Jobs** → **New Cron Job**
+2. Set command (example):
+   ```bash
+   python scraper.py --playwright --input "Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv" --output output_prices.xlsx --sites dmi_ie dmi_uk dentalsky dontalia henryschein
+   ```
+3. Set schedule (examples):
+   - Every 6 hours: `0 */6 * * *`
+   - Daily at 2AM: `0 2 * * *`
 
-- **Railway scheduled trigger / cron-style job** (if available in your Railway plan/workspace): run the scraper command on an interval (hourly, every 6 hours, daily, etc.).
-- **Internal loop in worker process**: keep one worker alive and run `scraper.py` repeatedly with a sleep interval.
-
-For long jobs, avoid overlapping runs unless you intentionally want parallel processing.
+Cron Jobs are the recommended production scheduling method for this project.
 
 ### 6) Input/output file handling on Railway
 
-- **Input CSV**: ensure the file is available in the container at runtime (commit static input to repo, download from cloud storage at startup, or mount/pull from a persistent source).
-- **Output CSV/logs**: do not rely on container local disk for long-term storage. Upload results to a durable destination (for example Google Sheets/Drive, S3-compatible storage, database, or another external store).
+- Railway containers use ephemeral filesystem storage.
+- **Input files** should be bundled with deploy, fetched at runtime, or mounted from durable storage.
+- **Outputs/logs** should be persisted outside Railway local disk (Google Sheets/Drive, S3-compatible storage, DB, etc.) if you need long-term retention.
 
 ---
 
