@@ -1,0 +1,1673 @@
+nohup: ignoring input
+2026-04-14 23:10:54,245 [INFO] Reading input: Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv
+2026-04-14 23:10:54,249 [INFO] Limited to first 300 rows
+2026-04-14 23:10:54,548 [INFO] Registered scraper: dmi_ie
+2026-04-14 23:10:54,548 [INFO] Registered scraper: dmi_uk
+2026-04-14 23:10:54,548 [INFO] Registered scraper: dentalsky
+2026-04-14 23:10:54,548 [INFO] Registered scraper: dontalia
+2026-04-14 23:10:54,549 [INFO] [1/300] 400060 — Six Month Smiles Lucid-Lok Lo Universal 1/2 Bracket - Each
+2026-04-14 23:11:06,938 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:11:15,197 [WARNING] [dmi.co.uk] Request error for https://www.dmi.co.uk/categories.html (attempt 1): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-14 23:11:24,179 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:11:31,704 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:11:38,753 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:11:38,753 [INFO] [2/300] 400063 — Six Month Smiles Lucid-Lok Universal 4/5 Bracket w/Hook
+2026-04-14 23:11:48,507 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:11:57,059 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:12:04,414 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:12:11,585 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:12:11,585 [INFO] [3/300] 670231 — Clinisept+ Skin 490ml - Each
+2026-04-14 23:12:15,577 [INFO]   [dmi.ie] Search 'Clinisept+ Skin' ✓ €12.22 (score=1.00)
+2026-04-14 23:12:15,578 [INFO]   [dmi_ie] ✓ €12.22  (score=1.00, variance: -2.5%)
+2026-04-14 23:12:20,232 [INFO]   [dmi.co.uk] Search 'Clinisept+ Skin' ✓ £10.27 (score=1.00)
+2026-04-14 23:12:20,237 [INFO]   [dmi_uk] ✓ £10.27  (score=1.00, variance: 0.0%)
+2026-04-14 23:12:23,223 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:12:28,374 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:12:28,374 [INFO] [4/300] AA009 — Septodont Septoject XL Needles 27g Long 0.4x35mm - Box100
+2026-04-14 23:12:28,374 [INFO]   [dmi_ie] Already has price: €21.22, skipping
+2026-04-14 23:12:28,374 [INFO]   [dmi_uk] Already has price: £17.77, skipping
+2026-04-14 23:12:28,374 [INFO]   [dentalsky] Already has price: £13.80, skipping
+2026-04-14 23:12:28,374 [INFO]   [dontalia] Already has price: €17.00, skipping
+2026-04-14 23:12:28,374 [INFO] [5/300] AA011 — Septodont Septoject XL Needles 30g Short 0.3x25mm - Box100
+2026-04-14 23:12:28,375 [INFO]   [dmi_ie] Already has price: €21.22, skipping
+2026-04-14 23:12:28,375 [INFO]   [dmi_uk] Already has price: £17.77, skipping
+2026-04-14 23:12:28,375 [INFO]   [dentalsky] Already has price: £13.80, skipping
+2026-04-14 23:12:28,375 [INFO]   [dontalia] Already has price: €17.00, skipping
+2026-04-14 23:12:28,395 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:12:28,395 [INFO]   [checkpoint] Saved after 5/300 products
+2026-04-14 23:12:28,395 [INFO] [6/300] AA021 — J&S Davis Solo Dental Needle 30g Short 0.3x23mm - Box100
+2026-04-14 23:12:28,395 [INFO]   [dmi_ie] Already has price: €21.62, skipping
+2026-04-14 23:12:28,395 [INFO]   [dmi_uk] Already has price: £18.10, skipping
+2026-04-14 23:12:28,395 [INFO]   [dentalsky] Already has price: £13.80, skipping
+2026-04-14 23:12:37,545 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:12:37,545 [INFO] [7/300] AA032 — Septodont Septoject Needles 27g Long - Box100
+2026-04-14 23:12:37,545 [INFO]   [dmi_ie] Already has price: €16.24, skipping
+2026-04-14 23:12:37,545 [INFO]   [dmi_uk] Already has price: £13.60, skipping
+2026-04-14 23:12:37,545 [INFO]   [dentalsky] Already has price: £10.55, skipping
+2026-04-14 23:12:37,546 [INFO]   [dontalia] Already has price: €8.76, skipping
+2026-04-14 23:12:37,546 [INFO] [8/300] AA034 — Septodont Septoject Needles 30g Short - Box100
+2026-04-14 23:12:40,362 [INFO]   [dmi.ie] Search 'Septodont Septoject Needles 30g' ✓ €22.27 (score=0.71)
+2026-04-14 23:12:40,363 [INFO]   [dmi_ie] ✓ €22.27  (score=0.71, variance: -36.5%)
+2026-04-14 23:12:42,981 [INFO]   [dmi.co.uk] Search 'Septodont Septoject Needles 30g' ✓ £18.48 (score=0.71)
+2026-04-14 23:12:42,982 [INFO]   [dmi_uk] ✓ £18.48  (score=0.71, variance: -34.0%)
+2026-04-14 23:12:42,982 [INFO]   [dentalsky] Already has price: £10.55, skipping
+2026-04-14 23:12:42,982 [INFO]   [dontalia] Already has price: €8.76, skipping
+2026-04-14 23:12:42,982 [INFO] [9/300] AA097 — UnoDent Sterile Dental Needle 30GS 0.3 x 21mm (ANU030)
+2026-04-14 23:12:51,998 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:13:02,028 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:13:08,769 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:13:15,196 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:13:15,196 [INFO] [10/300] AA105 — BD Venflon Peripheral IV Catheter w/ Port Blue 22Gx25mm-Each
+2026-04-14 23:13:19,289 [INFO]   [dmi.ie] Direct URL ✓ €95.33
+2026-04-14 23:13:19,290 [INFO]   [dmi_ie] Pack size mismatch: ours=1 theirs=50 → adjusted variance: 22.2%
+2026-04-14 23:13:19,290 [INFO]   [dmi_ie] ✓ €95.33  (score=0.65, variance: -97.6%)
+2026-04-14 23:13:29,368 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:13:29,369 [INFO]   [dentalsky] Already has price: £1.65, skipping
+2026-04-14 23:13:34,869 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:13:34,885 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:13:34,885 [INFO]   [checkpoint] Saved after 10/300 products
+2026-04-14 23:13:34,886 [INFO] [11/300] AA120 — BD Micro-Fine + Insulin Syringe 0.3ml Needle 30Gx8mm -Box100
+2026-04-14 23:13:44,219 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:13:54,710 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:14:04,199 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:14:10,298 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:14:10,298 [INFO] [12/300] AA131 — 4T Medical FMS 32G Fine Micro Syringe 0.3ml - Box100
+2026-04-14 23:14:17,905 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:14:24,254 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:14:31,198 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:14:36,945 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:14:36,945 [INFO] [13/300] AA132 — 4T Medical FMS 32G Fine Micro Syringe 0.5ml - Box100
+2026-04-14 23:14:41,151 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:14:45,471 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:14:51,536 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:14:58,322 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:14:58,322 [INFO] [14/300] AAA345 — #Dentsply Anestadent 4% 1:100,000 Solution 2.2ml (546) -Bx50
+2026-04-14 23:14:58,322 [INFO]   [dmi_ie] Already has price: €30.46, skipping
+2026-04-14 23:14:58,322 [INFO]   [dmi_uk] Already has price: £25.50, skipping
+2026-04-14 23:14:58,323 [INFO]   [dentalsky] Already has price: £25.45, skipping
+2026-04-14 23:15:10,713 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:15:10,713 [INFO] [15/300] ABG008A — Perfection Plus Bib Roll Paper-Plastic Blue PP002/0020 - 80
+2026-04-14 23:15:10,713 [INFO]   [dmi_ie] Already has price: €14.34, skipping
+2026-04-14 23:15:10,713 [INFO]   [dmi_uk] Already has price: £12.00, skipping
+2026-04-14 23:15:17,889 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:15:23,949 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:15:23,959 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:15:23,959 [INFO]   [checkpoint] Saved after 15/300 products
+2026-04-14 23:15:23,959 [INFO] [16/300] ABG012A — HPC Healthline Gloves Powder Free Small GN31 - Box100
+2026-04-14 23:15:35,322 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:15:43,103 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:15:50,603 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:15:55,648 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:15:55,655 [INFO] [17/300] ABG013A — HPC Healthline Gloves Powder Free Medium GN31 - Box100
+2026-04-14 23:16:04,421 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:16:12,921 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:16:20,981 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:16:25,447 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:16:25,447 [INFO] [18/300] ABG014A — HPC Healthline Gloves Powder Free Large GN31 - Box100
+2026-04-14 23:16:34,609 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:16:44,133 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:16:49,424 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:16:55,772 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:16:55,772 [INFO] [19/300] ABG020 — Pegasus Velcro Dental Bib Blue - Each
+2026-04-14 23:16:55,772 [INFO]   [dmi_ie] Already has price: €3.75, skipping
+2026-04-14 23:16:55,772 [INFO]   [dmi_uk] Already has price: £3.14, skipping
+2026-04-14 23:16:55,772 [INFO]   [dentalsky] Already has price: £3.05, skipping
+2026-04-14 23:17:04,940 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:17:04,940 [INFO] [20/300] ABG031B — HPC HandSafe White Nitrile Gloves Small (GN92) - Box200
+2026-04-14 23:17:12,301 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:17:21,612 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:17:28,177 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:17:32,027 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:17:32,037 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:17:32,038 [INFO]   [checkpoint] Saved after 20/300 products
+2026-04-14 23:17:32,038 [INFO] [21/300] ABG033A — HPC HandSafe White Nitrile Gloves Medium (GN92) - Box200
+2026-04-14 23:17:39,530 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:17:48,954 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:17:56,291 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:18:03,984 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:18:03,984 [INFO] [22/300] ABG163A — HPC HandSafe Blue Nitrile Gloves P/Free Small GN90 - Box200
+2026-04-14 23:18:10,972 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:18:19,676 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:18:26,765 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:18:31,296 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:18:31,296 [INFO] [23/300] ABG164A — HPC HandSafe Blue Nitrile Gloves P/Free Medium GN90 - Box200
+2026-04-14 23:18:39,612 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:18:48,651 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:18:55,183 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:19:01,135 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:19:01,136 [INFO] [24/300] ABG165A — HPC HandSafe Blue Nitrile Gloves P/Free Large GN90 - Box200
+2026-04-14 23:19:10,176 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:19:17,633 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:19:24,752 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:19:30,834 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:19:30,835 [INFO] [25/300] ABG205 — Perfection Plus Serviette Bibs Lilac (PP002/0075) - Pack 500
+2026-04-14 23:19:30,835 [INFO]   [dmi_ie] Already has price: €26.37, skipping
+2026-04-14 23:19:30,835 [INFO]   [dmi_uk] Already has price: £22.08, skipping
+2026-04-14 23:19:38,659 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:19:46,988 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:19:46,998 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:19:46,998 [INFO]   [checkpoint] Saved after 25/300 products
+2026-04-14 23:19:46,998 [INFO] [26/300] ABG214 — Perfection Plus Serviette Bibs Dark Blue (PP002/0076) - 500
+2026-04-14 23:19:46,998 [INFO]   [dmi_ie] Already has price: €26.00, skipping
+2026-04-14 23:19:46,998 [INFO]   [dmi_uk] Already has price: £21.77, skipping
+2026-04-14 23:19:46,998 [INFO]   [dentalsky] Already has price: £23.35, skipping
+2026-04-14 23:19:55,399 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:19:55,399 [INFO] [27/300] ABG246 — UnoDent Surgical Gown Kit (COP410) - Each
+2026-04-14 23:20:03,918 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:20:11,634 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:20:16,387 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:20:22,622 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:20:22,622 [INFO] [28/300] ABG290 — Perfection Plus Serviette Bibs Blue (PP002/0060) - Pack500
+2026-04-14 23:20:22,622 [INFO]   [dmi_ie] Already has price: €26.00, skipping
+2026-04-14 23:20:22,622 [INFO]   [dmi_uk] Already has price: €26.00, skipping
+2026-04-14 23:20:22,622 [INFO]   [dentalsky] Already has price: £23.35, skipping
+2026-04-14 23:20:31,838 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:20:31,838 [INFO] [29/300] ABG313 — Cumberland Surgical Universal Sterile Drape Kit - Each
+2026-04-14 23:20:42,173 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:20:51,325 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:20:56,895 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:21:01,229 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:21:01,229 [INFO] [30/300] ABG353 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Large
+2026-04-14 23:21:08,799 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:21:18,973 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:21:24,083 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:21:29,155 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:21:29,173 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:21:29,173 [INFO]   [checkpoint] Saved after 30/300 products
+2026-04-14 23:21:29,173 [INFO] [31/300] ABG355 — Meditrade Nitril Sensory Blue Nitrile Glove X-Small - Box200
+2026-04-14 23:21:39,969 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:21:50,207 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:21:56,899 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:22:02,949 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:22:02,950 [INFO] [32/300] ABG356 — Meditrade Nitril Sensory Blue Nitrile Glove Small - Box200
+2026-04-14 23:22:11,613 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:22:20,314 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:22:28,542 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:22:32,541 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:22:32,541 [INFO] [33/300] ABG357 — Meditrade Nitril Sensory Blue Nitrile Glove Medium - Box200
+2026-04-14 23:22:43,249 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:22:51,045 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:22:58,353 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:23:06,624 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:23:06,624 [INFO] [34/300] ABG358 — Meditrade Nitril Sensory Blue Nitrile Glove Large - Box200
+2026-04-14 23:23:14,723 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:23:24,935 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:23:34,281 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:23:40,291 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:23:40,291 [INFO] [35/300] ANP030 — Perfection Plus EasiJect Sterile Needles 30Gx21mm (013/0208)
+2026-04-14 23:23:40,291 [INFO]   [dmi_ie] Already has price: €7.32, skipping
+2026-04-14 23:23:40,291 [INFO]   [dmi_uk] Already has price: £6.13, skipping
+2026-04-14 23:23:40,291 [INFO]   [dentalsky] Already has price: £6.95, skipping
+2026-04-14 23:23:46,462 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:23:46,472 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:23:46,472 [INFO]   [checkpoint] Saved after 35/300 products
+2026-04-14 23:23:46,472 [INFO] [36/300] ASD262 — Septodont Ultra Safety Plus Twist Needles 27g Long - Box100
+2026-04-14 23:23:46,472 [INFO]   [dmi_ie] Already has price: 47.75, skipping
+2026-04-14 23:23:46,472 [INFO]   [dmi_uk] Already has price: £39.98, skipping
+2026-04-14 23:23:46,472 [INFO]   [dentalsky] Already has price: £33.75, skipping
+2026-04-14 23:23:46,472 [INFO]   [dontalia] Already has price: €49.94, skipping
+2026-04-14 23:23:46,472 [INFO] [37/300] ASD264 — Septodont Ultra Safety Plus Twist Needles 30g Short - Box100
+2026-04-14 23:23:46,472 [INFO]   [dmi_ie] Already has price: 47.75, skipping
+2026-04-14 23:23:46,472 [INFO]   [dmi_uk] Already has price: £39.98, skipping
+2026-04-14 23:23:46,473 [INFO]   [dentalsky] Already has price: £33.75, skipping
+2026-04-14 23:23:46,473 [INFO]   [dontalia] Already has price: €49.94, skipping
+2026-04-14 23:23:46,473 [INFO] [38/300] BJM006 — UnoDent Gold Diamond Bur Football FG Fine 257/020 - Each
+2026-04-14 23:23:54,008 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:24:04,352 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:24:11,936 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:24:18,654 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:24:18,654 [INFO] [39/300] BJM440 — UnoDent Gold Diamond Bur Flame FG Extra Fine 249/012 - Each
+2026-04-14 23:24:29,444 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:24:38,348 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:24:44,750 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:24:49,475 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:24:49,475 [INFO] [40/300] BLRG26 — Perfection Plus Steel Bur Round RA No.6 (001/9106)-Pack25
+2026-04-14 23:24:58,223 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:25:05,282 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:25:05,282 [INFO]   [dentalsky] Already has price: £12.70, skipping
+2026-04-14 23:25:14,259 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:25:14,269 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:25:14,269 [INFO]   [checkpoint] Saved after 40/300 products
+2026-04-14 23:25:14,269 [INFO] [41/300] BOU001 — Boutique Whitening Kit By Day 6% HP 4x3ml
+2026-04-14 23:25:14,269 [INFO]   [dmi_ie] Already has price: €28.58, skipping
+2026-04-14 23:25:14,269 [INFO]   [dmi_uk] Already has price: £23.93, skipping
+2026-04-14 23:25:20,268 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:25:27,681 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:25:27,681 [INFO] [42/300] BOU002 — Boutique Whitening Kit By Night 10% CP 4x3ml
+2026-04-14 23:25:27,681 [INFO]   [dmi_ie] Already has price: €28.58, skipping
+2026-04-14 23:25:27,681 [INFO]   [dmi_uk] Already has price: £23.93, skipping
+2026-04-14 23:25:33,479 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:25:39,498 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:25:39,498 [INFO] [43/300] BOU003 — Boutique Whitening Kit By Night 16% CP 4x3ml
+2026-04-14 23:25:39,499 [INFO]   [dmi_ie] Already has price: €28.58, skipping
+2026-04-14 23:25:39,499 [INFO]   [dmi_uk] Already has price: £23.93, skipping
+2026-04-14 23:25:45,834 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:25:51,378 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:25:51,378 [INFO] [44/300] BOU007 — Boutique Whitening Top Up Case By Day 6% HP 1x3ml
+2026-04-14 23:25:51,378 [INFO]   [dmi_ie] Already has price: €6.43, skipping
+2026-04-14 23:25:51,378 [INFO]   [dmi_uk] Already has price: £5.38, skipping
+2026-04-14 23:25:57,746 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:26:04,061 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:26:04,061 [INFO] [45/300] BOU008 — Boutique Whitening Top Up Case By Night 10% CP 1x3ml
+2026-04-14 23:26:04,061 [INFO]   [dmi_ie] Already has price: €6.43, skipping
+2026-04-14 23:26:04,061 [INFO]   [dmi_uk] Already has price: £5.38, skipping
+2026-04-14 23:26:15,361 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:26:20,522 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:26:20,532 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:26:20,532 [INFO]   [checkpoint] Saved after 45/300 products
+2026-04-14 23:26:20,532 [INFO] [46/300] BOU009 — Boutique Whitening Top Up Case By Night 16% CP 1x3ml
+2026-04-14 23:26:20,532 [INFO]   [dmi_ie] Already has price: €6.43, skipping
+2026-04-14 23:26:20,532 [INFO]   [dmi_uk] Already has price: £5.38, skipping
+2026-04-14 23:26:27,842 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:26:32,861 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:26:32,867 [INFO] [47/300] BOU010 — Boutique Whitening Top Up Case By Day 6% HP 2x3ml
+2026-04-14 23:26:43,894 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:26:52,912 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:27:00,989 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:27:07,421 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:27:07,421 [INFO] [48/300] BOU011 — Boutique Whitening Top Up Case By Night 10% CP 2x3ml
+2026-04-14 23:27:16,348 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:27:26,947 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:27:34,401 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:27:41,100 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:27:41,100 [INFO] [49/300] BOU012 — Boutique Whitening Top Up Case By Night 16% CP 2x3ml
+2026-04-14 23:27:51,166 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:28:00,740 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:28:07,797 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:28:15,236 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:28:15,236 [INFO] [50/300] BOU019 — Boutique Whitening Top Up Case By Day 6% HP 3x3ml
+2026-04-14 23:28:22,136 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:28:30,997 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:28:37,502 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:28:45,036 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:28:45,046 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:28:45,046 [INFO]   [checkpoint] Saved after 50/300 products
+2026-04-14 23:28:45,046 [INFO] [51/300] BOU020 — Boutique Whitening Top Up Case By Night 10% CP 3x3ml
+2026-04-14 23:28:53,180 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:29:03,267 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:29:11,629 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:29:18,787 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:29:18,787 [INFO] [52/300] BOU021 — Boutique Whitening Top Up Case By Night 16% CP 3x3ml
+2026-04-14 23:29:25,840 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:29:35,824 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:29:44,289 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:29:49,645 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:29:49,646 [INFO] [53/300] BOU030 — Boutique By Night Gift Bag
+2026-04-14 23:29:49,646 [INFO]   [dmi_ie] Already has price: €1.31, skipping
+2026-04-14 23:29:49,646 [INFO]   [dmi_uk] Already has price: £1.10, skipping
+2026-04-14 23:29:52,795 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:29:57,219 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:29:57,219 [INFO] [54/300] BU541 — UnoDent Diamond Burs Cylinder FG No. 541 541 Medium 108-011M
+2026-04-14 23:30:07,459 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:30:17,241 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:30:26,230 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:30:33,749 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:30:33,749 [INFO] [55/300] BU541C — UnoDent Diamond Burs Cylinder FG No. 541 Coarse 541 Coarse
+2026-04-14 23:30:42,072 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:30:48,531 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:30:54,424 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:31:01,804 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:31:01,814 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:31:01,814 [INFO]   [checkpoint] Saved after 55/300 products
+2026-04-14 23:31:01,814 [INFO] [56/300] CAW384 — Schulke Mikrozid Jumbo Wipes Refill (70002981) - Pack220
+2026-04-14 23:31:01,814 [INFO]   [dmi_ie] Already has price: €15.82, skipping
+2026-04-14 23:31:01,814 [INFO]   [dmi_uk] Already has price: £13.25, skipping
+2026-04-14 23:31:01,815 [INFO]   [dentalsky] Already has price: £9.80, skipping
+2026-04-14 23:31:10,369 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:31:10,369 [INFO] [57/300] CAW596 — UnoDent Surface Disinfectant Wipes Alcohol-free Apple Tub
+2026-04-14 23:31:17,648 [INFO]   [dmi.ie] Search 'UnoDent UnoDent Surface Disinfectant Wipes' ✓ €4.99 (score=1.00)
+2026-04-14 23:31:17,649 [INFO]   [dmi_ie] ✓ €4.99  (score=1.00, variance: 55.5%)
+2026-04-14 23:31:24,166 [INFO]   [dmi.co.uk] Search 'UnoDent UnoDent Surface Disinfectant Wipes' ✓ £4.29 (score=1.00)
+2026-04-14 23:31:24,167 [INFO]   [dmi_uk] ✓ £4.29  (score=1.00, variance: 55.9%)
+2026-04-14 23:31:32,533 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:31:37,862 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:31:37,863 [INFO] [58/300] CAW597 — UnoDent Surface Disinfectant Wipes Alcohol-free Refill Pack
+2026-04-14 23:31:46,374 [INFO]   [dmi.ie] Search 'UnoDent UnoDent Surface Disinfectant Wipes' ✓ €4.99 (score=1.00)
+2026-04-14 23:31:46,374 [INFO]   [dmi_ie] ✓ €4.99  (score=1.00, variance: 4.6%)
+2026-04-14 23:31:53,038 [INFO]   [dmi.co.uk] Search 'UnoDent UnoDent Surface Disinfectant Wipes' ✓ £4.29 (score=1.00)
+2026-04-14 23:31:53,038 [INFO]   [dmi_uk] ✓ £4.29  (score=1.00, variance: 4.9%)
+2026-04-14 23:32:00,853 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:32:07,077 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:32:07,077 [INFO] [59/300] CAW708 — Medipal Disinfectant Wipes (Q7W520110MPCE) Tub 240
+2026-04-14 23:32:16,179 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:32:26,597 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:32:31,845 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:32:39,390 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:32:39,390 [INFO] [60/300] CAW751 — Kerr CaviWipes Canister (4731160) - Tub160
+2026-04-14 23:32:39,390 [INFO]   [dmi_ie] Already has price: €10.26, skipping
+2026-04-14 23:32:39,390 [INFO]   [dmi_uk] Already has price: £8.59, skipping
+2026-04-14 23:32:39,390 [INFO]   [dentalsky] Already has price: £7.95, skipping
+2026-04-14 23:32:39,390 [INFO]   [dontalia] Already has price: €5.71, skipping
+2026-04-14 23:32:39,401 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:32:39,401 [INFO]   [checkpoint] Saved after 60/300 products
+2026-04-14 23:32:39,401 [INFO] [61/300] CAW757 — Clinell Universal Disinfectant Wipes Refill 250mm x 200mm
+2026-04-14 23:32:39,401 [INFO]   [dmi_ie] Already has price: €10.69, skipping
+2026-04-14 23:32:39,401 [INFO]   [dmi_uk] Already has price: £8.95, skipping
+2026-04-14 23:32:39,401 [INFO]   [dentalsky] Already has price: £5.60, skipping
+2026-04-14 23:32:48,250 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:32:48,251 [INFO] [62/300] CAW759 — Clinell Universal Disinfectant Spray (CDS500) - 500ml
+2026-04-14 23:32:57,544 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:33:08,606 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:33:08,606 [INFO]   [dentalsky] Already has price: £4.80, skipping
+2026-04-14 23:33:14,129 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:33:14,129 [INFO] [63/300] CAW767 — Clinell Universal Wipes Heavy Duty (BCW100) - Pack100
+2026-04-14 23:33:24,180 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:33:34,932 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:33:42,346 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:33:48,825 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:33:48,825 [INFO] [64/300] CCA205 — Cottontails Round Cotton Wool Cosmetic Remover Pads -Pack200
+2026-04-14 23:34:04,518 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:34:14,344 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:34:22,073 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:34:27,842 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:34:27,842 [INFO] [65/300] CGD156 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free X-Small
+2026-04-14 23:34:42,617 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:34:51,213 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:34:59,104 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:35:05,323 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:35:05,333 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:35:05,333 [INFO]   [checkpoint] Saved after 65/300 products
+2026-04-14 23:35:05,333 [INFO] [66/300] CGD167 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Small
+2026-04-14 23:35:13,877 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:35:21,730 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:35:28,716 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:35:35,104 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:35:35,104 [INFO] [67/300] CGD178 — Meditrade Gentle Skin Compact+ Latex Gloves P/Free Medium
+2026-04-14 23:35:43,533 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:35:53,050 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:36:01,199 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:36:09,219 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:36:09,219 [INFO] [68/300] CHM076 — Meditrade Suavel Protec Plus Type IIR Surgical Mask Ear Loop
+2026-04-14 23:36:23,733 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:36:43,758 [WARNING] [dmi.co.uk] Request error for https://www.dmi.co.uk/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.co.uk', port=443): Max retries exceeded with url: /categories.html?type=simple&name=Meditrade+Suavel+Protec+Plus+Type+IIR+Surgical+Mask+Ear (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.co.uk', port=443): Failed to resolve 'www.dmi.co.uk' ([Errno -3] Temporary failure in name resolution)"))
+2026-04-14 23:36:59,213 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:37:06,419 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:37:11,024 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:37:11,024 [INFO] [69/300] CHM078 — Meditrade Suavel Protec Type IIR Face Masks 3ply Ear Loop
+2026-04-14 23:37:26,917 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:37:35,768 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:37:40,732 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:37:47,516 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:37:47,516 [INFO] [70/300] CJT062 — UnoDent Disposable Aspirator Tips - Child 16mm Yellow
+2026-04-14 23:37:56,450 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:38:05,779 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:38:13,931 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:38:18,449 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:38:18,459 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:38:18,459 [INFO]   [checkpoint] Saved after 70/300 products
+2026-04-14 23:38:18,459 [INFO] [71/300] CJU000 — UnoDent Disposable Aspirator Tube White 135x11mm - Pack100
+2026-04-14 23:38:26,792 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:38:42,230 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:38:49,817 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:38:55,716 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:38:55,716 [INFO] [72/300] CJU001 — UnoDent Disposable Aspirator Tube Blue 135x11mm - Pack100
+2026-04-14 23:39:03,525 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:39:11,109 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:39:17,801 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:39:21,734 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:39:21,734 [INFO] [73/300] CJU010 — UnoDent Disposable Aspirator Tube Vented White - Pack100
+2026-04-14 23:39:41,757 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Max retries exceeded with url: /categories.html?type=simple&name=UnoDent+Disposable+Aspirator+Tube+Vented (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.ie', port=443): Failed to resolve 'www.dmi.ie' ([Errno -3] Temporary failure in name resolution)"))
+2026-04-14 23:39:54,421 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:40:02,609 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:40:10,527 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:40:18,415 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:40:18,415 [INFO] [74/300] COP495 — Hygitech Saliva Ejectors with Removable Tips Blue (ME-3054)
+2026-04-14 23:40:28,100 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:40:35,738 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:40:43,135 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:40:50,289 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:40:50,289 [INFO] [75/300] CPP024 — Johnson & Johnson Topper 12 Swabs 5cmx5cm (M53605N) -Pack200
+2026-04-14 23:40:59,434 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:41:08,750 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:41:08,750 [INFO]   [dentalsky] Already has price: £6.75, skipping
+2026-04-14 23:41:15,281 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:41:15,292 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:41:15,292 [INFO]   [checkpoint] Saved after 75/300 products
+2026-04-14 23:41:15,292 [INFO] [76/300] CPP043 — Johnson & Johnson Topper 12 Swabs 7.5x7.5cm M50607 -Pack100
+2026-04-14 23:41:15,292 [INFO]   [dmi_ie] Already has price: €5.42, skipping
+2026-04-14 23:41:15,292 [INFO]   [dmi_uk] Already has price: £4.54, skipping
+2026-04-14 23:41:15,292 [INFO]   [dentalsky] Already has price: £8.60, skipping
+2026-04-14 23:41:24,381 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:41:24,382 [INFO] [77/300] CPP053 — Johnson & Johnson Topper 8 Swabs 10X10cm (M50410) - Pack100
+2026-04-14 23:41:24,382 [INFO]   [dmi_ie] Already has price: €10.87, skipping
+2026-04-14 23:41:24,382 [INFO]   [dmi_uk] Already has price: £9.10, skipping
+2026-04-14 23:41:33,484 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:41:41,401 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:41:41,402 [INFO] [78/300] CPP070 — Johnson & Johnson Topper 8 Swabs 5x5cm (JJM50405) - Pack100
+2026-04-14 23:41:41,402 [INFO]   [dmi_ie] Already has price: €4.85, skipping
+2026-04-14 23:41:41,402 [INFO]   [dmi_uk] Already has price: £4.06, skipping
+2026-04-14 23:41:41,402 [INFO]   [dentalsky] Already has price: £4.35, skipping
+2026-04-14 23:41:49,160 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:41:49,160 [INFO] [79/300] CPP073 — UnoDent Cotton Wool Rolls No.2 (CCA105) - Box1000
+2026-04-14 23:41:58,101 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:42:06,815 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:42:13,594 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:42:20,333 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:42:20,333 [INFO] [80/300] CPP074 — UnoDent Throat Pack Roll 10m (CCT615) - Each
+2026-04-14 23:42:29,635 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:42:39,825 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:42:48,207 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:42:54,707 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:42:54,717 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:42:54,717 [INFO]   [checkpoint] Saved after 80/300 products
+2026-04-14 23:42:54,717 [INFO] [81/300] CPP092 — Universal Alcotip Pre-injection Swabs - Box100
+2026-04-14 23:43:02,707 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:43:11,669 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:43:11,669 [INFO]   [dentalsky] Already has price: £1.25, skipping
+2026-04-14 23:43:19,501 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:43:19,502 [INFO] [82/300] CPP096 — Perfection Plus Protect+ Blue Ear Loop Masks (002/0048) - 50
+2026-04-14 23:43:19,502 [INFO]   [dmi_ie] Already has price: €7.52, skipping
+2026-04-14 23:43:19,502 [INFO]   [dmi_uk] Already has price: £6.30, skipping
+2026-04-14 23:43:27,230 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:43:36,879 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:43:36,879 [INFO] [83/300] CSP005 — Milton Sterilising Fluid 500ml - Each
+2026-04-14 23:43:36,880 [INFO]   [dmi_ie] Already has price: €5.36, skipping
+2026-04-14 23:43:36,880 [INFO]   [dmi_uk] Already has price: £4.49, skipping
+2026-04-14 23:43:40,989 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:43:47,936 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:43:47,936 [INFO] [84/300] CSP043 — Durr Orotol Plus 2.5Litre - Each (CDS110P6150)
+2026-04-14 23:43:47,936 [INFO]   [dmi_ie] Already has price: €70.72, skipping
+2026-04-14 23:43:47,936 [INFO]   [dmi_uk] Already has price: £59.21, skipping
+2026-04-14 23:43:47,936 [INFO]   [dentalsky] Already has price: £41.25, skipping
+2026-04-14 23:43:47,936 [INFO]   [dontalia] Already has price: €36.39, skipping
+2026-04-14 23:43:47,936 [INFO] [85/300] CSP129 — A-dec ICX Tablets 2Litre (90.1065.01) - Box50
+2026-04-14 23:43:55,849 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:44:07,009 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:44:07,009 [INFO]   [dentalsky] Already has price: £79.95, skipping
+2026-04-14 23:44:12,013 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:44:12,022 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:44:12,023 [INFO]   [checkpoint] Saved after 85/300 products
+2026-04-14 23:44:12,023 [INFO] [86/300] CSP149A — Schulke Mikrozid Alcohol Free Wipes Refill (70003112) -Pk200
+2026-04-14 23:44:12,023 [INFO]   [dmi_ie] Already has price: €14, skipping
+2026-04-14 23:44:12,023 [INFO]   [dmi_uk] Already has price: £11.72, skipping
+2026-04-14 23:44:12,023 [INFO]   [dentalsky] Already has price: £9.80, skipping
+2026-04-14 23:44:21,316 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:44:21,316 [INFO] [87/300] CSP161 — Bossklein Hard Surface Spray Lemon 500ml (BOS9782) - Each
+2026-04-14 23:44:33,529 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:44:42,742 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:44:51,881 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:44:56,739 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:44:56,740 [INFO] [88/300] CSP165 — Bossklein Max V-Wipes Lemon Refill (BOS9784) - Pack200
+2026-04-14 23:45:06,087 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:45:14,276 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:45:21,306 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:45:27,490 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:45:27,490 [INFO] [89/300] CSP167 — Bossklein Daily Aspirator Cleaner & Disinfectant 5L BOS2488
+2026-04-14 23:45:34,041 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:45:41,822 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:45:41,823 [INFO]   [dentalsky] Already has price: £36.95, skipping
+2026-04-14 23:45:47,955 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:45:47,955 [INFO] [90/300] CSP219 — Clinell Universal Sanitising Wipe (CW200) - Pack200
+2026-04-14 23:45:58,109 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:46:10,604 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:46:15,539 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:46:21,211 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:46:21,228 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:46:21,228 [INFO]   [checkpoint] Saved after 90/300 products
+2026-04-14 23:46:21,228 [INFO] [91/300] CSP230 — UnoDent Disinfectant Surface Wipes Refill Jumbo (CAW585)-200
+2026-04-14 23:46:21,228 [INFO]   [dmi_ie] Already has price: €10.69, skipping
+2026-04-14 23:46:21,228 [INFO]   [dmi_uk] Already has price: £8.95, skipping
+2026-04-14 23:46:28,167 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:46:34,882 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:46:34,882 [INFO] [92/300] CSP248 — UnoDent Enzymatic Ultrasonic Concentrate 5Litre (GUC005)
+2026-04-14 23:46:46,541 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:47:03,226 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:47:06,788 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:47:15,172 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:47:15,173 [INFO] [93/300] CSP272 — UnoDent UnoWipes Refill (CAW566) - Pack200
+2026-04-14 23:47:24,628 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:47:35,482 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:47:40,773 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:47:47,128 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:47:47,128 [INFO] [94/300] CSP327 — Bossklein V-WIPE ZERO Refill Alcohol Free Large (BOS2001)
+2026-04-14 23:47:47,128 [INFO]   [dmi_ie] Already has price: €7.11, skipping
+2026-04-14 23:47:47,129 [INFO]   [dmi_uk] Already has price: £6.75, skipping
+2026-04-14 23:47:47,129 [INFO]   [dentalsky] Already has price: £5.45, skipping
+2026-04-14 23:47:56,961 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:47:56,961 [INFO] [95/300] CSP340 — Bossklein IDactiv Instrument Disinfectant 2.5L (BOS9843)
+2026-04-14 23:47:56,968 [INFO]   [dmi_ie] Already has price: €33.92, skipping
+2026-04-14 23:47:56,968 [INFO]   [dmi_uk] Already has price: £28.40, skipping
+2026-04-14 23:47:56,968 [INFO]   [dentalsky] Already has price: £31.45, skipping
+2026-04-14 23:48:04,325 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:48:04,335 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:48:04,335 [INFO]   [checkpoint] Saved after 95/300 products
+2026-04-14 23:48:04,335 [INFO] [96/300] CSR008 — UnoDent Steel Bur RA Round No.8 (BLC8)  - Pack25
+2026-04-14 23:48:13,391 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:48:23,501 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:48:29,373 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:48:37,197 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:48:37,197 [INFO] [97/300] DTW312 — UnoDent Tweezers College Type Angled - Each
+2026-04-14 23:48:46,294 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:48:57,467 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:49:01,979 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:49:08,250 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:49:08,251 [INFO] [98/300] DWG005 — Dentsply WaveOne Gold Primary File 25mm (A0753225G0P03)
+2026-04-14 23:49:08,251 [INFO]   [dmi_ie] Already has price: €67.64, skipping
+2026-04-14 23:49:08,251 [INFO]   [dmi_uk] Already has price: £56.63, skipping
+2026-04-14 23:49:08,251 [INFO]   [dentalsky] Already has price: £46.35, skipping
+2026-04-14 23:49:08,251 [INFO]   [dontalia] Already has price: €78.99, skipping
+2026-04-14 23:49:08,251 [INFO] [99/300] EGU201 — UnoDent SS K File 21mm Size 10 - Pack6
+2026-04-14 23:49:17,781 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:49:26,770 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:49:34,913 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:49:42,807 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:49:42,807 [INFO] [100/300] EGU211 — UnoDent SS K File 25mm Size 8 - Pack6
+2026-04-14 23:49:50,129 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:49:59,955 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:50:06,259 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:50:13,465 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:50:13,475 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:50:13,476 [INFO]   [checkpoint] Saved after 100/300 products
+2026-04-14 23:50:13,476 [INFO] [101/300] EGU212 — UnoDent SS K File 25mm Size 10 - Pack6
+2026-04-14 23:50:33,500 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Max retries exceeded with url: /categories.html?type=simple&name=UnoDent+SS+K+File+25mm+Size (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.ie', port=443): Failed to resolve 'www.dmi.ie' ([Errno -3] Temporary failure in name resolution)"))
+2026-04-14 23:50:48,184 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:50:57,309 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:51:05,010 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:51:09,247 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:51:09,248 [INFO] [102/300] EGU213 — UnoDent SS K File 25mm Size 15 - Pack6
+2026-04-14 23:51:17,365 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:51:27,401 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:51:32,839 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:51:39,871 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:51:39,872 [INFO] [103/300] EGU214 — UnoDent SS K File 25mm Size 20 - Pack6
+2026-04-14 23:51:48,003 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:51:56,071 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:52:03,515 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:52:12,223 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:52:12,223 [INFO] [104/300] EGU215 — UnoDent SS K File 25mm Size 25 - Pack6
+2026-04-14 23:52:24,344 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:52:33,657 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:52:40,425 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:52:46,572 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:52:46,572 [INFO] [105/300] EGU216 — UnoDent SS K File 25mm Size 30 - Pack6
+2026-04-14 23:52:54,742 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:53:04,073 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:53:10,086 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:53:16,854 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:53:16,867 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:53:16,867 [INFO]   [checkpoint] Saved after 105/300 products
+2026-04-14 23:53:16,867 [INFO] [106/300] EGU217 — UnoDent SS K File 25mm Size 35 - Pack6
+2026-04-14 23:53:29,260 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:53:39,292 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:53:45,808 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:53:51,441 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:53:51,441 [INFO] [107/300] EGU218 — UnoDent SS K File 25mm Size 40 - Pack6
+2026-04-14 23:54:04,067 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:54:14,416 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:54:20,406 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:54:26,449 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:54:26,449 [INFO] [108/300] EGU359 — UnoDent SS H File (Hedstrom) 25mm Size 15 - Pack6
+2026-04-14 23:54:33,352 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:54:41,746 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:54:48,790 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:54:57,347 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:54:57,347 [INFO] [109/300] EHO018 — Bossklein Universal Handpiece Oil Spray 500ml (BOS9777) Each
+2026-04-14 23:55:08,369 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:55:18,974 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:55:26,883 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:55:33,862 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:55:33,862 [INFO] [110/300] EHO027 — UnoDent Unolube Universal Spray 500ml (GOU100) - Each
+2026-04-14 23:55:44,010 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:55:57,431 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:56:05,259 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:56:13,326 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:56:13,336 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:56:13,336 [INFO]   [checkpoint] Saved after 110/300 products
+2026-04-14 23:56:13,336 [INFO] [111/300] EIM038 — Perfection Plus Tray Lining Paper Blue (PP002/0012B)
+2026-04-14 23:56:13,336 [INFO]   [dmi_ie] Already has price: €8.32, skipping
+2026-04-14 23:56:13,336 [INFO]   [dmi_uk] Already has price: £6.97, skipping
+2026-04-14 23:56:20,213 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:56:25,658 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:56:25,658 [INFO] [112/300] EIM041 — Perfection Plus Tray Lining Paper Pink (PP002/0012P)
+2026-04-14 23:56:25,658 [INFO]   [dmi_ie] Already has price: €8.32, skipping
+2026-04-14 23:56:25,659 [INFO]   [dmi_uk] Already has price: £6.97, skipping
+2026-04-14 23:56:31,725 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:56:38,784 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:56:38,784 [INFO] [113/300] EIM043 — UnoDent Tray Lining Paper 11"x7" (CUD060) - Pack250
+2026-04-14 23:56:49,287 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:57:06,236 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:57:17,214 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:57:23,811 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:57:23,811 [INFO] [114/300] EIM054 — UnoDent Disposable Tray Liner Green (CUD002) - Pack50
+2026-04-14 23:57:32,189 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:57:43,402 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:57:50,345 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:57:57,157 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:57:57,157 [INFO] [115/300] ELU606 — UnoDent UnoOne Reciprocating File Primary 3-file 25mm 25
+2026-04-14 23:58:14,821 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Max retries exceeded with url: /categories.html?type=simple&name=UnoDent+UnoOne+Reciprocating+File+Primary+3-file+25mm (Caused by NameResolutionError("HTTPSConnection(host='www.dmi.ie', port=443): Failed to resolve 'www.dmi.ie' ([Errno -3] Temporary failure in name resolution)"))
+2026-04-14 23:58:30,100 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:58:40,025 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:58:46,667 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:58:52,854 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:58:52,864 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-14 23:58:52,864 [INFO]   [checkpoint] Saved after 115/300 products
+2026-04-14 23:58:52,864 [INFO] [116/300] ELU659 — UnoDent UnoTaper Rotary File Sterile S1 25mm - Pack6
+2026-04-14 23:59:03,173 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:59:11,671 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:59:18,671 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:59:23,567 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:59:23,567 [INFO] [117/300] ELU661 — UnoDent UnoTaper Rotary File Sterile F1 25mm - Pack6
+2026-04-14 23:59:31,289 [INFO]   [dmi_ie] ✗ Not found
+2026-04-14 23:59:42,207 [INFO]   [dmi_uk] ✗ Not found
+2026-04-14 23:59:47,786 [INFO]   [dentalsky] ✗ Not found
+2026-04-14 23:59:52,921 [INFO]   [dontalia] ✗ Not found
+2026-04-14 23:59:52,923 [INFO] [118/300] ELU666 — UnoDent UnoTaper Rotary File Sterile Assorted SX/F3 25mm
+2026-04-14 23:59:56,429 [INFO]   [dmi.ie] Search 'UnoDent UnoTaper Rotary File Sterile Assorted SX/F3' ✓ €19.75 (score=1.00)
+2026-04-14 23:59:56,429 [INFO]   [dmi_ie] ✓ €19.75  (score=1.00, variance: 28.8%)
+2026-04-15 00:00:01,049 [INFO]   [dmi.co.uk] Search 'UnoDent UnoTaper Rotary File Sterile Assorted SX/F3' ✓ £22.78 (score=1.00)
+2026-04-15 00:00:01,049 [INFO]   [dmi_uk] ✓ £22.78  (score=1.00, variance: -3.7%)
+2026-04-15 00:00:05,942 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:00:11,504 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:00:11,505 [INFO] [119/300] EMED002 — #Eire Septodont Xylonor Gel 15g - Each
+2026-04-15 00:00:22,421 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:00:28,955 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:00:34,076 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:00:41,657 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:00:41,657 [INFO] [120/300] EMED003 — #Eire Septodont Lignospan 2% Special 2.2ml - Box50
+2026-04-15 00:00:49,765 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:00:59,494 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:01:07,203 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:01:12,228 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:01:12,238 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:01:12,239 [INFO]   [checkpoint] Saved after 120/300 products
+2026-04-15 00:01:12,239 [INFO] [121/300] EMED004 — #Eire Septodont Scandonest 3% Plain 2.2ml - Box50
+2026-04-15 00:01:21,613 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:01:33,448 [WARNING] [dmi.co.uk] Request error for https://www.dmi.co.uk/categories.html (attempt 1): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-15 00:01:43,414 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:01:49,958 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:01:56,724 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:01:56,725 [INFO] [122/300] EMED018 — #Eire Septodont Septanest 1:100,000 2.2ml - Box50
+2026-04-15 00:02:06,001 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:02:14,339 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:02:21,373 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:02:26,904 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:02:26,904 [INFO] [123/300] EMV155 — VDW C-Pilot Sterile File Size 10 25mm (V040368025010)
+2026-04-15 00:02:26,904 [INFO]   [dmi_ie] Already has price: €16.85, skipping
+2026-04-15 00:02:26,904 [INFO]   [dmi_uk] Already has price: £14.11, skipping
+2026-04-15 00:02:33,998 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:02:33,998 [INFO]   [dontalia] Already has price: €11.50, skipping
+2026-04-15 00:02:33,998 [INFO] [124/300] ENG009 — UnoDent Barrier Envelopes Size 2 30x40mm (QWU002) - Pack300
+2026-04-15 00:02:44,446 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:02:52,911 [WARNING] [dmi.co.uk] Request error for https://www.dmi.co.uk/categories.html (attempt 1): ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-04-15 00:03:02,192 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:03:11,316 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:03:16,979 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:03:16,979 [INFO] [125/300] ENG025 — UnoDent Bite Covers Size 2 30x40mm (QWU012) - Pack200
+2026-04-15 00:03:26,443 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:03:35,136 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:03:42,037 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:03:47,285 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:03:47,296 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:03:47,296 [INFO]   [checkpoint] Saved after 125/300 products
+2026-04-15 00:03:47,296 [INFO] [126/300] EQS081A — UnoDent TST Indicator Strips (GAI085) - Box100
+2026-04-15 00:03:56,657 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:04:07,182 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:04:12,380 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:04:18,213 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:04:18,213 [INFO] [127/300] EQS150C — BF Mulholland Detergent - UltraClean 11/111 - 5Ltr (1080)
+2026-04-15 00:04:27,613 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:04:37,684 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:04:45,718 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:04:53,464 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:04:53,464 [INFO] [128/300] ESB016 — Edenta Steel Burs Round 23/010 Size 2 (1.204.010) - Pack 5
+2026-04-15 00:04:53,464 [INFO]   [dmi_ie] Already has price: €4.47, skipping
+2026-04-15 00:04:53,464 [INFO]   [dmi_uk] Already has price: £3.74, skipping
+2026-04-15 00:04:53,465 [INFO]   [dentalsky] Already has price: £3.55, skipping
+2026-04-15 00:05:02,873 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:05:02,874 [INFO] [129/300] ESB017 — Edenta Steel Burs Round 23/012 Size 3 (1.204.012) - Pack 5
+2026-04-15 00:05:02,874 [INFO]   [dmi_ie] Already has price: €4.47, skipping
+2026-04-15 00:05:02,874 [INFO]   [dmi_uk] Already has price: £3.74, skipping
+2026-04-15 00:05:02,874 [INFO]   [dentalsky] Already has price: £3.55, skipping
+2026-04-15 00:05:10,134 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:05:10,135 [INFO] [130/300] ESB018 — Edenta Steel Burs Round 23/014 Size 4 (1.204.014) - Pack 5
+2026-04-15 00:05:10,135 [INFO]   [dmi_ie] Already has price: €4.47, skipping
+2026-04-15 00:05:10,135 [INFO]   [dmi_uk] Already has price: £3.74, skipping
+2026-04-15 00:05:10,135 [INFO]   [dentalsky] Already has price: £3.55, skipping
+2026-04-15 00:05:18,410 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:05:18,420 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:05:18,420 [INFO]   [checkpoint] Saved after 130/300 products
+2026-04-15 00:05:18,420 [INFO] [131/300] ESB019 — Edenta Steel Burs Round 23/016 Size 5 (1.204.016) -Pack 5
+2026-04-15 00:05:18,420 [INFO]   [dmi_ie] Already has price: €4.47, skipping
+2026-04-15 00:05:18,420 [INFO]   [dmi_uk] Already has price: £3.74, skipping
+2026-04-15 00:05:18,420 [INFO]   [dentalsky] Already has price: £3.55, skipping
+2026-04-15 00:05:24,206 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:05:24,206 [INFO] [132/300] ESB020 — Edenta Steel Burs Round 23/018 Size 6 (1.204.018) - Pack 5
+2026-04-15 00:05:24,207 [INFO]   [dmi_ie] Already has price: €4.47, skipping
+2026-04-15 00:05:24,207 [INFO]   [dmi_uk] Already has price: £3.74, skipping
+2026-04-15 00:05:24,207 [INFO]   [dentalsky] Already has price: £3.55, skipping
+2026-04-15 00:05:31,445 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:05:31,446 [INFO] [133/300] ESB021 — Edenta Steel Burs Round 23/021 Size 7 (1.204.021) - Pack 5
+2026-04-15 00:05:31,446 [INFO]   [dmi_ie] Already has price: €4.47, skipping
+2026-04-15 00:05:31,446 [INFO]   [dmi_uk] Already has price: £3.74, skipping
+2026-04-15 00:05:31,446 [INFO]   [dentalsky] Already has price: £3.55, skipping
+2026-04-15 00:05:38,731 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:05:38,731 [INFO] [134/300] ESB022 — Edenta Steel Burs Round 23/023 Size 8 (1.204.023) - Pack 5
+2026-04-15 00:05:38,731 [INFO]   [dmi_ie] Already has price: €4.47, skipping
+2026-04-15 00:05:38,731 [INFO]   [dmi_uk] Already has price: £3.74, skipping
+2026-04-15 00:05:38,731 [INFO]   [dentalsky] Already has price: £3.55, skipping
+2026-04-15 00:05:50,052 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:05:50,052 [INFO] [135/300] EVS107 — Hygitech Saline Water Pouch for Irrigation 500ml - Each
+2026-04-15 00:05:50,052 [INFO]   [dmi_ie] Already has price: €4.54, skipping
+2026-04-15 00:05:50,052 [INFO]   [dmi_uk] Already has price: £3.80, skipping
+2026-04-15 00:05:51,702 [INFO]   [dentalsky.com] Direct URL gave no price, trying search
+2026-04-15 00:06:00,372 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:06:08,375 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:06:08,385 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:06:08,385 [INFO]   [checkpoint] Saved after 135/300 products
+2026-04-15 00:06:08,386 [INFO] [136/300] FA002 — IntraVita PDO Threads 1-0 USP / 19G (YRPN19-96-W) - Pack10
+2026-04-15 00:06:17,843 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:06:29,010 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:06:35,952 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:06:41,855 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:06:41,862 [INFO] [137/300] FAC008 — Perfection Plus Applicator Brush Tips (PP002/1003) - Pack100
+2026-04-15 00:06:51,740 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:07:02,693 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:07:08,835 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:07:15,152 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:07:15,152 [INFO] [138/300] FAC023 — Septodont Hemocollagene Sponges - Pack24
+2026-04-15 00:07:15,152 [INFO]   [dmi_ie] Already has price: €74.76, skipping
+2026-04-15 00:07:15,153 [INFO]   [dmi_uk] Already has price: £62.60, skipping
+2026-04-15 00:07:15,153 [INFO]   [dentalsky] Already has price: £53.45, skipping
+2026-04-15 00:07:15,153 [INFO]   [dontalia] Already has price: €57.99, skipping
+2026-04-15 00:07:15,153 [INFO] [139/300] FAC191A — Septodont Alveogyl Haemostatic Surgical Dressing Paste 10g
+2026-04-15 00:07:15,153 [INFO]   [dmi_ie] Already has price: €55.62, skipping
+2026-04-15 00:07:15,153 [INFO]   [dmi_uk] Already has price: £46.57, skipping
+2026-04-15 00:07:15,153 [INFO]   [dentalsky] Already has price: £34.65, skipping
+2026-04-15 00:07:15,153 [INFO]   [dontalia] Already has price: €34.95, skipping
+2026-04-15 00:07:15,153 [INFO] [140/300] FAC198 — Perfection Plus Needle Etch Tips (PP011/0080) - Pack25
+2026-04-15 00:07:15,153 [INFO]   [dmi_ie] Already has price: €5.39, skipping
+2026-04-15 00:07:15,153 [INFO]   [dmi_uk] Already has price: £4.51, skipping
+2026-04-15 00:07:15,154 [INFO]   [dentalsky] Already has price: £6.25, skipping
+2026-04-15 00:07:23,347 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:07:23,358 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:07:23,358 [INFO]   [checkpoint] Saved after 140/300 products
+2026-04-15 00:07:23,358 [INFO] [141/300] FAC290 — Perfection Plus Rubber Dam Non Latex Blue Medium 6"x6" - 20
+2026-04-15 00:07:23,358 [INFO]   [dmi_ie] Already has price: €19.36, skipping
+2026-04-15 00:07:23,358 [INFO]   [dmi_uk] Already has price: £16.21, skipping
+2026-04-15 00:07:29,413 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:07:37,516 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:07:37,516 [INFO] [142/300] FAC293 — UnoDent Rubber Dam Non Latex Light Blue Medium 6"x6"(EWS025)
+2026-04-15 00:07:44,780 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:07:51,944 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:07:58,231 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:08:04,016 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:08:04,016 [INFO] [143/300] FAC294 — Bossklein Etchant Gel Jumbo Etching Kit 50ml (BOS9904) -Each
+2026-04-15 00:08:12,529 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:08:22,162 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:08:28,031 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:08:33,947 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:08:33,947 [INFO] [144/300] FAC374 — UnoDent Rubber Dam Non Latex Light Blue Heavy 6"x6" (EWS045)
+2026-04-15 00:08:44,165 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:08:52,582 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:09:00,226 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:09:07,359 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:09:07,359 [INFO] [145/300] FAC375 — Perfection Plus AppliPlus Regular Microbrush PP011/1112
+2026-04-15 00:09:07,359 [INFO]   [dmi_ie] Already has price: €12.73, skipping
+2026-04-15 00:09:07,359 [INFO]   [dmi_uk] Already has price: £10.66, skipping
+2026-04-15 00:09:07,359 [INFO]   [dentalsky] Already has price: £11.55, skipping
+2026-04-15 00:09:16,543 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:09:16,553 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:09:16,553 [INFO]   [checkpoint] Saved after 145/300 products
+2026-04-15 00:09:16,553 [INFO] [146/300] FAC401 — Perfection Plus Rubber Dam Non Latex Blue Heavy 6"x6" - 20
+2026-04-15 00:09:16,553 [INFO]   [dmi_ie] Already has price: €20.97, skipping
+2026-04-15 00:09:16,553 [INFO]   [dmi_uk] Already has price: £17.56, skipping
+2026-04-15 00:09:22,484 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:09:30,134 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:09:30,134 [INFO] [147/300] FBX200 — UnoDent Micro Applicator Brush Super Fine White - Pack400
+2026-04-15 00:09:37,763 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:09:46,177 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:09:52,113 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:09:57,967 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:09:57,967 [INFO] [148/300] FBX203 — UnoDent Micro Applicator Brush Regular Blue - Pack400
+2026-04-15 00:10:06,610 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:10:14,287 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:10:19,988 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:10:26,343 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:10:26,343 [INFO] [149/300] FMA1085 — Kulzer Charisma ABC PLT A3 20x0.2g (66064792) - Pack20
+2026-04-15 00:10:26,343 [INFO]   [dmi_ie] Already has price: €24.78, skipping
+2026-04-15 00:10:26,343 [INFO]   [dmi_uk] Already has price: £20.75, skipping
+2026-04-15 00:10:26,343 [INFO]   [dentalsky] Already has price: £26.25, skipping
+2026-04-15 00:10:26,343 [INFO]   [dontalia] Already has price: €44.86, skipping
+2026-04-15 00:10:26,343 [INFO] [150/300] FMA1377 — UnoDent Luminos UN Syringe A2 4g (FLU811) - Each
+2026-04-15 00:10:33,945 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:10:44,484 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:10:53,136 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:10:59,711 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:10:59,721 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:10:59,722 [INFO]   [checkpoint] Saved after 150/300 products
+2026-04-15 00:10:59,722 [INFO] [151/300] FMA1384 — UnoDent Luminos UN Syringe BW 4g (FLU818) - Each
+2026-04-15 00:11:08,850 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:11:19,402 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:11:26,241 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:11:32,490 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:11:32,490 [INFO] [152/300] FMA1389 — UnoDent Luminos UN Capsules A2 20x0.25g (FLU831) - Pack20
+2026-04-15 00:11:42,040 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:11:53,093 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:12:00,399 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:12:08,416 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:12:08,416 [INFO] [153/300] FMA1410 — UnoDent Luminos Flowable Syringe A2 2g (FLU861) - Each
+2026-04-15 00:12:16,237 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:12:25,246 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:12:31,087 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:12:38,387 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:12:38,387 [INFO] [154/300] FMA355 — SDI Wave Flowable Composite Syringe A2 1g (7510203) - Each
+2026-04-15 00:12:48,702 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:12:58,734 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:12:58,734 [INFO]   [dentalsky] Already has price: £10.95, skipping
+2026-04-15 00:12:58,734 [INFO]   [dontalia] Already has price: €11.35, skipping
+2026-04-15 00:12:58,734 [INFO] [155/300] FMA549A — Kulzer Venus Pearl ART PLT A2 20x0.2g (66048141) - Box20
+2026-04-15 00:12:58,734 [INFO]   [dmi_ie] Already has price: €83.58, skipping
+2026-04-15 00:12:58,734 [INFO]   [dmi_uk] Already has price: £69.98, skipping
+2026-04-15 00:13:06,045 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:13:06,045 [INFO]   [dontalia] Already has price: €54.75, skipping
+2026-04-15 00:13:06,057 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:13:06,057 [INFO]   [checkpoint] Saved after 155/300 products
+2026-04-15 00:13:06,057 [INFO] [156/300] FMA954 — Kulzer Venus Pearl ART PLT A3 20x0.2g (66048143) - Box20
+2026-04-15 00:13:06,057 [INFO]   [dmi_ie] Already has price: €83.58, skipping
+2026-04-15 00:13:06,057 [INFO]   [dmi_uk] Already has price: £69.98, skipping
+2026-04-15 00:13:12,057 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:13:12,058 [INFO]   [dontalia] Already has price: €54.75, skipping
+2026-04-15 00:13:12,058 [INFO] [157/300] FMP213 — 3M Filtek One Bulk Fill Capsules A2 (4867A2) - Pack20
+2026-04-15 00:13:12,058 [INFO]   [dmi_ie] Already has price: €89.13, skipping
+2026-04-15 00:13:12,058 [INFO]   [dmi_uk] Already has price: £70.40, skipping
+2026-04-15 00:13:12,058 [INFO]   [dentalsky] Already has price: 51.95, skipping
+2026-04-15 00:13:12,058 [INFO]   [dontalia] Already has price: €49.99, skipping
+2026-04-15 00:13:12,058 [INFO] [158/300] FPM007 — 3M Sof-Lex Discs 3/8" Coarse (1981C) - Pack85
+2026-04-15 00:13:12,058 [INFO]   [dmi_ie] Already has price: €70.30, skipping
+2026-04-15 00:13:12,058 [INFO]   [dmi_uk] Already has price: £55.53, skipping
+2026-04-15 00:13:20,181 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:13:24,940 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:13:24,940 [INFO] [159/300] FPM011 — 3M Sof-Lex Discs 1/2" Coarse (1982C) - Pack85
+2026-04-15 00:13:24,940 [INFO]   [dmi_ie] Already has price: €70.30, skipping
+2026-04-15 00:13:24,940 [INFO]   [dmi_uk] Already has price: £55.53, skipping
+2026-04-15 00:13:31,254 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:13:31,254 [INFO]   [dontalia] Already has price: €37.31, skipping
+2026-04-15 00:13:31,254 [INFO] [160/300] FPM016 — 3M Sof-Lex Mandrels (1983RA) - Pack3
+2026-04-15 00:13:31,254 [INFO]   [dmi_ie] Already has price: €35.08, skipping
+2026-04-15 00:13:31,254 [INFO]   [dmi_uk] Already has price: £27.71, skipping
+2026-04-15 00:13:37,082 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:13:42,420 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:13:42,430 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:13:42,430 [INFO]   [checkpoint] Saved after 160/300 products
+2026-04-15 00:13:42,430 [INFO] [161/300] FPM085 — Perfection Plus Tofflemire Bands No.1 Thin (085/0055)
+2026-04-15 00:13:52,484 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:14:02,930 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:14:10,548 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:14:16,829 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:14:16,829 [INFO] [162/300] FPM118 — Perfection Plus Prophy Paste Mint Coarse 250g (PP010/0046)
+2026-04-15 00:14:21,738 [INFO]   [dmi.ie] Search 'Perfection Plus Prophy Paste Mint Coarse 250g' ✓ €8.19 (score=0.86)
+2026-04-15 00:14:21,738 [INFO]   [dmi_ie] ✓ €8.19  (score=0.86, variance: -6.8%)
+2026-04-15 00:14:25,988 [INFO]   [dmi.co.uk] Search 'Perfection Plus Prophy Paste Mint Coarse 250g' ✓ £7.37 (score=0.86)
+2026-04-15 00:14:25,988 [INFO]   [dmi_uk] ✓ £7.37  (score=0.86, variance: -10.7%)
+2026-04-15 00:14:25,988 [INFO]   [dentalsky] Already has price: £6.70, skipping
+2026-04-15 00:14:32,910 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:14:32,910 [INFO] [163/300] FPM326 — Astek Pro-Matrix - Wide - Blue (19005) - Pack50
+2026-04-15 00:14:42,667 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:14:51,065 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:14:58,038 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:15:04,696 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:15:04,697 [INFO] [164/300] FPM351 — UnoDent Alpha-Pro Prophy Paste Coarse Mint 300g (PPA020)
+2026-04-15 00:15:14,006 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:15:23,532 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:15:30,186 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:15:37,891 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:15:37,892 [INFO] [165/300] FPM361 — Perfection Plus Prophy Paste Mint Medium 250g (PP010/0001)
+2026-04-15 00:15:48,050 [INFO]   [dmi.ie] Search 'Perfection Plus Prophy Paste Mint Medium 250g' ✓ €8.19 (score=0.86)
+2026-04-15 00:15:48,050 [INFO]   [dmi_ie] ✓ €8.19  (score=0.86, variance: -13.3%)
+2026-04-15 00:15:52,089 [INFO]   [dmi.co.uk] Search 'Perfection Plus Prophy Paste Mint Medium 250g' ✓ £7.37 (score=0.86)
+2026-04-15 00:15:52,089 [INFO]   [dmi_uk] ✓ £7.37  (score=0.86, variance: -17.0%)
+2026-04-15 00:15:52,090 [INFO]   [dentalsky] Already has price: £6.70, skipping
+2026-04-15 00:15:59,354 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:15:59,363 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:15:59,364 [INFO]   [checkpoint] Saved after 165/300 products
+2026-04-15 00:15:59,364 [INFO] [166/300] FPM505 — Bossklein Tofflemire Matrix Bands No.1 Universal (CPM050)
+2026-04-15 00:16:07,768 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:16:15,469 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:16:23,174 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:16:29,267 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:16:29,267 [INFO] [167/300] GSC305 — UnoDent Surface Disinfectant Spray Economy Refill 5L
+2026-04-15 00:16:29,267 [INFO]   [dmi_ie] Already has price: €49.68, skipping
+2026-04-15 00:16:29,268 [INFO]   [dmi_uk] Already has price: £41.60, skipping
+2026-04-15 00:16:37,510 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:16:44,494 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:16:44,494 [INFO] [168/300] GSI032 — Swann-Morton Surgical Blades Sterile No.15 (0205) - Box100
+2026-04-15 00:17:19,642 [WARNING] [dmi.ie] Request error for https://www.dmi.ie/categories.html (attempt 1): HTTPSConnectionPool(host='www.dmi.ie', port=443): Read timed out. (read timeout=30)
+2026-04-15 00:17:28,766 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:17:38,360 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:17:38,360 [INFO]   [dentalsky] Already has price: £13.65, skipping
+2026-04-15 00:17:38,360 [INFO]   [dontalia] Already has price: €24.19, skipping
+2026-04-15 00:17:38,360 [INFO] [169/300] IAO005 — Ortho-Care Alginate Berry Flavoured 500g (9001-IE002) - Each
+2026-04-15 00:17:47,698 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:17:54,429 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:18:24,455 [WARNING] [dentalsky.com] Request error for https://www.dentalsky.com/ortho-care-alginate-berry-flavoured-500g-9001-ie002-each.html (attempt 1): HTTPSConnectionPool(host='www.dentalsky.com', port=443): Read timed out. (read timeout=30)
+2026-04-15 00:18:37,119 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:19:07,151 [WARNING] [dontalia.com] Request error for https://www.dontalia.com/ortho-care-alginate-berry-flavoured.html (attempt 1): HTTPSConnectionPool(host='www.dontalia.com', port=443): Read timed out. (read timeout=30)
+2026-04-15 00:19:17,831 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:19:17,831 [INFO] [170/300] ICU171 — UnoDent Imprep 2 AC Putty Soft Normal Set 2x300ml - Each
+2026-04-15 00:19:26,676 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:19:38,833 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:19:46,436 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:19:54,466 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:19:54,476 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:19:54,476 [INFO]   [checkpoint] Saved after 170/300 products
+2026-04-15 00:19:54,476 [INFO] [171/300] IM039 — Zhermack Hydrogum Refill 500g (C302025) - Each
+2026-04-15 00:19:54,477 [INFO]   [dmi_ie] Already has price: €13.38, skipping
+2026-04-15 00:19:54,477 [INFO]   [dmi_uk] Already has price: £11.20, skipping
+2026-04-15 00:19:54,477 [INFO]   [dentalsky] Already has price: £8.50, skipping
+2026-04-15 00:19:54,477 [INFO]   [dontalia] Already has price: €7.45, skipping
+2026-04-15 00:19:54,477 [INFO] [172/300] IM119 — Zhermack Hydrogum 5 Refill 453g Extra Fast  (C302070) - Each
+2026-04-15 00:19:54,477 [INFO]   [dmi_ie] Already has price: €15.61, skipping
+2026-04-15 00:19:54,477 [INFO]   [dmi_uk] Already has price: £13.07, skipping
+2026-04-15 00:19:54,477 [INFO]   [dentalsky] Already has price: £9.65, skipping
+2026-04-15 00:19:54,477 [INFO]   [dontalia] Already has price: €8.79, skipping
+2026-04-15 00:19:54,477 [INFO] [173/300] IM195 — UnoDent Alginate Fast Set Vanilla Refill 500g (IAA300) -Each
+2026-04-15 00:19:54,477 [INFO]   [dmi_ie] Already has price: €9.20, skipping
+2026-04-15 00:19:54,477 [INFO]   [dmi_uk] Already has price: £7.70, skipping
+2026-04-15 00:20:01,775 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:20:07,508 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:20:07,508 [INFO] [174/300] IM246 — UnoDent Alginate Fast Set Mint Refill 500g (IAA310) - Each
+2026-04-15 00:20:07,508 [INFO]   [dmi_ie] Already has price: €7.05, skipping
+2026-04-15 00:20:07,509 [INFO]   [dmi_uk] Already has price: £5.90, skipping
+2026-04-15 00:20:15,802 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:20:21,014 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:20:21,014 [INFO] [175/300] IMA030 — Covidien Monoject 3ml Endo Syringes & Needles 27Gx1.25" -100
+2026-04-15 00:20:30,740 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:20:38,405 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:20:44,818 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:20:52,140 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:20:52,150 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:20:52,150 [INFO]   [checkpoint] Saved after 175/300 products
+2026-04-15 00:20:52,150 [INFO] [176/300] IMA123 — UnoDent Mixing Pad 7.5x7.5cm Non Skid (CTP011) - Each
+2026-04-15 00:21:02,627 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:21:12,844 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:21:19,714 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:21:26,767 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:21:26,768 [INFO] [177/300] IMT009 — J&S Davis Solo Impression Trays No.13 Upper Average - Box25
+2026-04-15 00:21:26,768 [INFO]   [dmi_ie] Already has price: €29.07, skipping
+2026-04-15 00:21:26,768 [INFO]   [dmi_uk] Already has price: £24.34, skipping
+2026-04-15 00:21:33,608 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:21:39,553 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:21:39,554 [INFO] [178/300] IMT081 — Pegasus Impression Trays No.1 Large Upper - Pack25
+2026-04-15 00:21:39,554 [INFO]   [dmi_ie] Already has price: €8.80, skipping
+2026-04-15 00:21:39,554 [INFO]   [dmi_uk] Already has price: £7.37, skipping
+2026-04-15 00:21:39,554 [INFO]   [dentalsky] Already has price: £7.05, skipping
+2026-04-15 00:21:45,252 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:21:45,253 [INFO] [179/300] IMT082 — Pegasus Impression Trays No.2 Large Lower - Pack25
+2026-04-15 00:21:45,253 [INFO]   [dmi_ie] Already has price: €8.79, skipping
+2026-04-15 00:21:45,253 [INFO]   [dmi_uk] Already has price: £7.36, skipping
+2026-04-15 00:21:45,253 [INFO]   [dentalsky] Already has price: £7.05, skipping
+2026-04-15 00:21:52,144 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:21:52,144 [INFO] [180/300] IMT083 — Pegasus Impression Trays No.3 Medium Upper - Pack25
+2026-04-15 00:21:52,144 [INFO]   [dmi_ie] Already has price: €8.30, skipping
+2026-04-15 00:21:52,144 [INFO]   [dmi_uk] Already has price: £6.95, skipping
+2026-04-15 00:21:52,144 [INFO]   [dentalsky] Already has price: £7.05, skipping
+2026-04-15 00:22:02,233 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:22:02,245 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:22:02,245 [INFO]   [checkpoint] Saved after 180/300 products
+2026-04-15 00:22:02,245 [INFO] [181/300] IMT084 — Pegasus Impression Trays No.4 Medium Lower - Pack25
+2026-04-15 00:22:02,245 [INFO]   [dmi_ie] Already has price: €8.80, skipping
+2026-04-15 00:22:02,245 [INFO]   [dmi_uk] Already has price: £7.37, skipping
+2026-04-15 00:22:02,245 [INFO]   [dentalsky] Already has price: £7.05, skipping
+2026-04-15 00:22:13,020 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:22:13,020 [INFO] [182/300] IMT085 — Pegasus Impression Trays No.5 Small Upper - Pack25
+2026-04-15 00:22:13,020 [INFO]   [dmi_ie] Already has price: €8.79, skipping
+2026-04-15 00:22:13,020 [INFO]   [dmi_uk] Already has price: £7.36, skipping
+2026-04-15 00:22:13,020 [INFO]   [dentalsky] Already has price: £7.05, skipping
+2026-04-15 00:22:20,526 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:22:20,526 [INFO] [183/300] KIN005 — Kin Gingival Mouthwash 250ml (340960) - Each
+2026-04-15 00:22:28,122 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:22:35,637 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:22:40,786 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:22:45,827 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:22:45,834 [INFO] [184/300] LAB026B — Orthodontic Box 9"x3"x3" - Each
+2026-04-15 00:22:56,518 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:23:06,993 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:23:12,370 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:23:17,340 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:23:17,340 [INFO] [185/300] MEC396 — Medicept Extreme Putty (5010) 2x250ml
+2026-04-15 00:23:25,819 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:23:35,973 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:23:39,403 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:23:46,424 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:23:46,434 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:23:46,434 [INFO]   [checkpoint] Saved after 185/300 products
+2026-04-15 00:23:46,434 [INFO] [186/300] MED005 — #Septodont Lignospan 2% Special 1.8ml - Box50
+2026-04-15 00:23:54,101 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:24:02,956 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:24:02,956 [INFO]   [dentalsky] Already has price: £31.25, skipping
+2026-04-15 00:24:08,996 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:24:08,996 [INFO] [187/300] MED006 — #Septodont Xylonor Gel 15g - Each
+2026-04-15 00:24:08,996 [INFO]   [dmi_ie] Already has price: €13.85, skipping
+2026-04-15 00:24:08,996 [INFO]   [dmi_uk] Already has price: £11.60, skipping
+2026-04-15 00:24:08,996 [INFO]   [dentalsky] Already has price: £11.75, skipping
+2026-04-15 00:24:16,926 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:24:16,926 [INFO] [188/300] MED008 — #Septodont Lignospan 2% Special 2.2ml - Box50
+2026-04-15 00:24:16,926 [INFO]   [dmi_ie] Already has price: €40.96, skipping
+2026-04-15 00:24:16,926 [INFO]   [dmi_uk] Already has price: £34.29, skipping
+2026-04-15 00:24:16,926 [INFO]   [dentalsky] Already has price: £31.25, skipping
+2026-04-15 00:24:23,031 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:24:23,031 [INFO] [189/300] MED009 — #Septodont Scandonest 3% Plain 2.2ml - Box50
+2026-04-15 00:24:23,032 [INFO]   [dmi_ie] Already has price: €41.98, skipping
+2026-04-15 00:24:23,032 [INFO]   [dmi_uk] Already has price: £35.12, skipping
+2026-04-15 00:24:23,032 [INFO]   [dentalsky] Already has price: £31.75, skipping
+2026-04-15 00:24:32,391 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:24:32,392 [INFO] [190/300] MED010 — #Septodont Septanest 1:100,000 2.2ml - Box50
+2026-04-15 00:24:32,392 [INFO]   [dmi_ie] Already has price: €42.35, skipping
+2026-04-15 00:24:32,392 [INFO]   [dmi_uk] Already has price: £35.46, skipping
+2026-04-15 00:24:32,392 [INFO]   [dentalsky] Already has price: £33.95, skipping
+2026-04-15 00:24:41,361 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:24:41,372 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:24:41,372 [INFO]   [checkpoint] Saved after 190/300 products
+2026-04-15 00:24:41,372 [INFO] [191/300] MED011 — #Septodont Septanest 1:200,000 2.2ml - Box50
+2026-04-15 00:24:41,372 [INFO]   [dmi_ie] Already has price: €42.35, skipping
+2026-04-15 00:24:41,372 [INFO]   [dmi_uk] Already has price: £35.46, skipping
+2026-04-15 00:24:41,372 [INFO]   [dentalsky] Already has price: £33.95, skipping
+2026-04-15 00:24:50,412 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:24:50,412 [INFO] [192/300] MED023 — #Colgate Duraphat Varnish 10ml (FDE74600) - Each
+2026-04-15 00:24:52,621 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-04-15 00:25:02,529 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:25:12,708 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:25:12,709 [INFO]   [dentalsky] Already has price: £30.60, skipping
+2026-04-15 00:25:17,912 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:25:17,912 [INFO] [193/300] MED030 — #Colgate Duraphat 2800 ppm Fluoride Toothpaste 6x75ml -Pack6
+2026-04-15 00:25:24,376 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:25:32,689 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:25:34,434 [INFO]   [dentalsky.com] Direct URL ✓ £0.00
+2026-04-15 00:25:34,435 [INFO]   [dentalsky] ✗ Rejected (score=0.17) — found: 'Duraphat 2800 ppm Fluoride Toothpaste'
+2026-04-15 00:25:34,435 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:25:40,030 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:25:40,030 [INFO] [194/300] MED035 — #GSK Corsodyl Mouthwash Mint 6x300ml (60000000108780) - Box6
+2026-04-15 00:25:48,722 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:25:57,505 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:25:59,300 [INFO]   [dentalsky.com] Direct URL ✓ £0.00
+2026-04-15 00:25:59,300 [INFO]   [dentalsky] ✗ Rejected (score=0.35) — found: 'Corsodyl Mint Mouthwash (300ml)'
+2026-04-15 00:25:59,301 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:26:04,180 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:26:04,180 [INFO] [195/300] MED041 — #Colgate Duraphat 5000 ppm Fluoride Toothpaste - Each
+2026-04-15 00:26:04,181 [INFO]   [dmi_ie] Already has price: €12.27, skipping
+2026-04-15 00:26:04,181 [INFO]   [dmi_uk] Already has price: £10.27, skipping
+2026-04-15 00:26:04,181 [INFO]   [dentalsky] Already has price: £9.65, skipping
+2026-04-15 00:26:11,382 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:26:11,394 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:26:11,394 [INFO]   [checkpoint] Saved after 195/300 products
+2026-04-15 00:26:11,394 [INFO] [196/300] MED060 — #Dentsply Xylocaine 2% Standard 2.2ml - Box50
+2026-04-15 00:26:21,404 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:26:30,020 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:26:30,020 [INFO]   [dentalsky] Already has price: £23.45, skipping
+2026-04-15 00:26:37,335 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:26:37,335 [INFO] [197/300] MIS038 — Perfection Plus Sterilisation Pouches 57x127mm (PP002/5000)
+2026-04-15 00:26:37,335 [INFO]   [dmi_ie] Already has price: €8.30, skipping
+2026-04-15 00:26:37,335 [INFO]   [dmi_uk] Already has price: £6.95, skipping
+2026-04-15 00:26:37,335 [INFO]   [dentalsky] Already has price: £8.85, skipping
+2026-04-15 00:26:45,762 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:26:45,762 [INFO] [198/300] MIS039 — Perfection Plus Sterilisation Pouches 85x165mm (PP002/5001)
+2026-04-15 00:26:45,762 [INFO]   [dmi_ie] Already has price: €8.99, skipping
+2026-04-15 00:26:45,763 [INFO]   [dmi_uk] Already has price: £7.53, skipping
+2026-04-15 00:26:45,763 [INFO]   [dentalsky] Already has price: £9.20, skipping
+2026-04-15 00:26:53,500 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:26:53,500 [INFO] [199/300] MIS040 — Perfection Plus Sterilisation Pouches 85x253mm (PP002/5002)
+2026-04-15 00:27:02,223 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:27:10,248 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:27:10,248 [INFO]   [dentalsky] Already has price: £4.95, skipping
+2026-04-15 00:27:16,069 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:27:16,069 [INFO] [200/300] MIS041 — Perfection Plus Sterilisation Pouches 135x278mm PP002/5003
+2026-04-15 00:27:16,069 [INFO]   [dmi_ie] Already has price: €16.67, skipping
+2026-04-15 00:27:16,069 [INFO]   [dmi_uk] Already has price: £13.96, skipping
+2026-04-15 00:27:16,069 [INFO]   [dentalsky] Already has price: £14.30, skipping
+2026-04-15 00:27:25,159 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:27:25,176 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:27:25,176 [INFO]   [checkpoint] Saved after 200/300 products
+2026-04-15 00:27:25,176 [INFO] [201/300] MIS123 — Perfection Plus Junior Bristle Brushes Latch Grip (0050007)
+2026-04-15 00:27:25,176 [INFO]   [dmi_ie] Already has price: €31.20, skipping
+2026-04-15 00:27:25,176 [INFO]   [dmi_uk] Already has price: £26.12, skipping
+2026-04-15 00:27:33,471 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:27:38,116 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:27:38,116 [INFO] [202/300] MIS153 — UnoDent Junior Cup RA Bristle Brushes (PRB110) - Pack50
+2026-04-15 00:27:46,120 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:27:54,709 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:28:03,449 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:28:08,873 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:28:08,873 [INFO] [203/300] MIS154 — UnoDent Rubber Cups RA Steel Shank (PRC314) - Pack36
+2026-04-15 00:28:15,989 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:28:24,375 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:28:31,075 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:28:35,925 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:28:35,925 [INFO] [204/300] MIS157 — UnoDent Junior Cup Nylon Brushes RA (PRN010) - Pack50
+2026-04-15 00:28:44,413 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:28:55,569 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:29:04,406 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:29:11,191 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:29:11,192 [INFO] [205/300] MIS160 — UnoDent WrapAround Headrest Cover 11.25"x10" (CVH147)-Box250
+2026-04-15 00:29:21,151 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:29:30,535 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:29:37,796 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:29:45,963 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:29:45,973 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:29:45,973 [INFO]   [checkpoint] Saved after 205/300 products
+2026-04-15 00:29:45,973 [INFO] [206/300] MIS196 — Stoddard Smart Nylon Prophy Brushes RA Medium - Pack10
+2026-04-15 00:29:52,179 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:30:04,174 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:30:13,036 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:30:17,333 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:30:17,333 [INFO] [207/300] MIS205 — UnoDent Sterilisation Pouches 60x100mm (GBS505) - Box200
+2026-04-15 00:30:25,466 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:30:34,389 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:30:38,498 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:30:44,353 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:30:44,354 [INFO] [208/300] MIS206 — UnoDent Sterilisation Pouches 90x140mm (GBS510) - Box200
+2026-04-15 00:30:52,204 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:31:01,002 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:31:06,522 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:31:11,087 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:31:11,088 [INFO] [209/300] MIS208 — UnoDent Sterilisation Pouches 3.5"x9" (GBS520) - Box200
+2026-04-15 00:31:18,775 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:31:28,654 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:31:37,036 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:31:43,413 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:31:43,414 [INFO] [210/300] MIS211 — UnoDent Latex Free Rubber Cups RA Soft Pink (PRC500) -Pack36
+2026-04-15 00:31:52,016 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:32:00,969 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:32:08,264 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:32:13,677 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:32:13,694 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:32:13,694 [INFO]   [checkpoint] Saved after 210/300 products
+2026-04-15 00:32:13,695 [INFO] [211/300] MIS225 — Perfection Plus Junior Nylon Brushes RA (005/0004) - Pack100
+2026-04-15 00:32:13,695 [INFO]   [dmi_ie] Already has price: €33.98, skipping
+2026-04-15 00:32:13,695 [INFO]   [dmi_uk] Already has price: £28.45, skipping
+2026-04-15 00:32:21,565 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:32:26,308 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:32:26,308 [INFO] [212/300] MIS226 — Perfection Plus Junior Nylon Brushes RA (005/0006) - Pack144
+2026-04-15 00:32:32,268 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:32:41,768 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:32:48,044 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:32:52,961 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:32:52,962 [INFO] [213/300] MIS234 — Perfection Plus Latex Free Polishing Cups RA Pink Soft - 50
+2026-04-15 00:33:00,493 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:33:10,604 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:33:16,870 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:33:24,514 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:33:24,514 [INFO] [214/300] MIS253 — UnoDent Sterilisation Pouches 135x255mm (GBS525) - Box200
+2026-04-15 00:33:33,178 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:33:40,686 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:33:46,296 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:33:52,845 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:33:52,845 [INFO] [215/300] MIS290 — Generic Marking Up Pencil White - Each
+2026-04-15 00:33:55,282 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:33:57,809 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:34:01,500 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:34:08,613 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:34:08,622 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:34:08,623 [INFO]   [checkpoint] Saved after 215/300 products
+2026-04-15 00:34:08,623 [INFO] [216/300] MPP010 — PD Tofflemire Matrix Bands No. 1 (41521) - Pack 12
+2026-04-15 00:34:08,623 [INFO]   [dmi_ie] Already has price: €4.26, skipping
+2026-04-15 00:34:08,623 [INFO]   [dmi_uk] Already has price: £3.57, skipping
+2026-04-15 00:34:08,623 [INFO]   [dentalsky] Already has price: £2.10, skipping
+2026-04-15 00:34:08,623 [INFO]   [dontalia] Already has price: €3.57, skipping
+2026-04-15 00:34:08,623 [INFO] [217/300] OH006 — Oral-B Satin Floss Mint 25m (75040813) - Pack12
+2026-04-15 00:34:08,623 [INFO]   [dmi_ie] Already has price: €34.24, skipping
+2026-04-15 00:34:08,623 [INFO]   [dmi_uk] Already has price: £28.67, skipping
+2026-04-15 00:34:14,162 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:34:19,890 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:34:19,890 [INFO] [218/300] OH038 — TePe Interdental Brushes Pink 0.4mm 10x8pk (138210) - Box10
+2026-04-15 00:34:19,891 [INFO]   [dmi_ie] Already has price: €32.84, skipping
+2026-04-15 00:34:19,891 [INFO]   [dmi_uk] Already has price: £27.50, skipping
+2026-04-15 00:34:19,891 [INFO]   [dentalsky] Already has price: £28.65, skipping
+2026-04-15 00:34:19,891 [INFO]   [dontalia] Already has price: €34.12, skipping
+2026-04-15 00:34:19,891 [INFO] [219/300] OH039 — TePe Interdental Brushes Orange 0.45mm 10x8pk (138220)
+2026-04-15 00:34:19,891 [INFO]   [dmi_ie] Already has price: €32.84, skipping
+2026-04-15 00:34:19,891 [INFO]   [dmi_uk] Already has price: £27.50, skipping
+2026-04-15 00:34:19,891 [INFO]   [dentalsky] Already has price: £28.65, skipping
+2026-04-15 00:34:19,891 [INFO]   [dontalia] Already has price: €34.12, skipping
+2026-04-15 00:34:19,891 [INFO] [220/300] OH041 — TePe Interdental Brushes Blue 0.6mm 10x8pk (138240) - Box10
+2026-04-15 00:34:19,891 [INFO]   [dmi_ie] Already has price: €32.84, skipping
+2026-04-15 00:34:19,892 [INFO]   [dmi_uk] Already has price: £27.50, skipping
+2026-04-15 00:34:19,892 [INFO]   [dentalsky] Already has price: £28.65, skipping
+2026-04-15 00:34:19,892 [INFO]   [dontalia] Already has price: €34.12, skipping
+2026-04-15 00:34:19,901 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:34:19,902 [INFO]   [checkpoint] Saved after 220/300 products
+2026-04-15 00:34:19,902 [INFO] [221/300] OH042 — TePe Interdental Brushes Red 0.5mm 10x8pk (138230) - Box10
+2026-04-15 00:34:19,902 [INFO]   [dmi_ie] Already has price: €32.84, skipping
+2026-04-15 00:34:19,902 [INFO]   [dmi_uk] Already has price: £27.50, skipping
+2026-04-15 00:34:19,902 [INFO]   [dentalsky] Already has price: £28.65, skipping
+2026-04-15 00:34:19,902 [INFO]   [dontalia] Already has price: €34.12, skipping
+2026-04-15 00:34:19,902 [INFO] [222/300] OH043 — TePe Interdental Brushes Yellow 0.7mm 10x8pk (118250) Box10
+2026-04-15 00:34:19,902 [INFO]   [dmi_ie] Already has price: €32.84, skipping
+2026-04-15 00:34:19,902 [INFO]   [dmi_uk] Already has price: £27.50, skipping
+2026-04-15 00:34:19,902 [INFO]   [dentalsky] Already has price: £28.65, skipping
+2026-04-15 00:34:19,903 [INFO]   [dontalia] Already has price: €34.12, skipping
+2026-04-15 00:34:19,903 [INFO] [223/300] OH044 — TePe Interdental Brushes Green 0.8mm 10x8pk (112260) - Box10
+2026-04-15 00:34:19,903 [INFO]   [dmi_ie] Already has price: €32.84, skipping
+2026-04-15 00:34:19,903 [INFO]   [dmi_uk] Already has price: £27.50, skipping
+2026-04-15 00:34:19,903 [INFO]   [dentalsky] Already has price: £28.65, skipping
+2026-04-15 00:34:19,903 [INFO]   [dontalia] Already has price: €34.12, skipping
+2026-04-15 00:34:19,903 [INFO] [224/300] OH066 — GSK Sensodyne Search 3.5 Toothbrushes - Pack12
+2026-04-15 00:34:19,903 [INFO]   [dmi_ie] Already has price: €25.43, skipping
+2026-04-15 00:34:19,903 [INFO]   [dmi_uk] Already has price: £27.26, skipping
+2026-04-15 00:34:21,247 [INFO]   [dentalsky.com] Direct URL ✓ £2.04
+2026-04-15 00:34:21,247 [INFO]   [dentalsky] ✗ Rejected (score=0.35) — found: 'Sensodyne Search 3.5 Toothbrush (1)'
+2026-04-15 00:34:21,247 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:34:28,002 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:34:28,002 [INFO] [225/300] OH090A — TePe Select Compact Kid Zoo Soft Toothbrush - Each
+2026-04-15 00:34:36,086 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:34:47,714 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:34:47,715 [INFO]   [dentalsky] Already has price: £1.50, skipping
+2026-04-15 00:34:54,992 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:34:55,002 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:34:55,002 [INFO]   [checkpoint] Saved after 225/300 products
+2026-04-15 00:34:55,002 [INFO] [226/300] OH111 — TePe Interdental Brushes Pink 0.4mm (132410) - Pack25
+2026-04-15 00:34:55,002 [INFO]   [dmi_ie] Already has price: €10.98, skipping
+2026-04-15 00:34:55,002 [INFO]   [dmi_uk] Already has price: £9.19, skipping
+2026-04-15 00:34:55,002 [INFO]   [dentalsky] Already has price: £9.45, skipping
+2026-04-15 00:34:55,002 [INFO]   [dontalia] Already has price: €8.33, skipping
+2026-04-15 00:34:55,003 [INFO] [227/300] OH112 — TePe Interdental Brushes Orange 0.45mm (132420) - Pack25
+2026-04-15 00:35:05,501 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:35:13,908 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:35:13,908 [INFO]   [dentalsky] Already has price: £9.45, skipping
+2026-04-15 00:35:13,909 [INFO]   [dontalia] Already has price: €8.33, skipping
+2026-04-15 00:35:13,909 [INFO] [228/300] OH113 — TePe Interdental Brushes Red 0.5mm (132430) - Pack25
+2026-04-15 00:35:13,909 [INFO]   [dmi_ie] Already has price: €10.98, skipping
+2026-04-15 00:35:13,909 [INFO]   [dmi_uk] Already has price: £9.19, skipping
+2026-04-15 00:35:13,909 [INFO]   [dentalsky] Already has price: £9.45, skipping
+2026-04-15 00:35:13,909 [INFO]   [dontalia] Already has price: €8.33, skipping
+2026-04-15 00:35:13,909 [INFO] [229/300] OH114 — TePe Interdental Brushes Blue 0.6mm (132440) - Pack25
+2026-04-15 00:35:13,909 [INFO]   [dmi_ie] Already has price: €10.98, skipping
+2026-04-15 00:35:13,909 [INFO]   [dmi_uk] Already has price: £9.19, skipping
+2026-04-15 00:35:13,909 [INFO]   [dentalsky] Already has price: £9.45, skipping
+2026-04-15 00:35:13,909 [INFO]   [dontalia] Already has price: €8.33, skipping
+2026-04-15 00:35:13,910 [INFO] [230/300] OH115 — TePe Interdental Brushes Yellow 0.7mm (112450) - Pack25
+2026-04-15 00:35:13,910 [INFO]   [dmi_ie] Already has price: €10.98, skipping
+2026-04-15 00:35:13,910 [INFO]   [dmi_uk] Already has price: £9.19, skipping
+2026-04-15 00:35:13,910 [INFO]   [dentalsky] Already has price: £9.45, skipping
+2026-04-15 00:35:13,910 [INFO]   [dontalia] Already has price: €8.33, skipping
+2026-04-15 00:35:13,921 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:35:13,922 [INFO]   [checkpoint] Saved after 230/300 products
+2026-04-15 00:35:13,922 [INFO] [231/300] OH138 — TePe Select Compact Toothbrush Medium - Each
+2026-04-15 00:35:13,922 [INFO]   [dmi_ie] Already has price: €1.47, skipping
+2026-04-15 00:35:13,922 [INFO]   [dmi_uk] Already has price: £1.23, skipping
+2026-04-15 00:35:13,922 [INFO]   [dentalsky] Already has price: £1.45, skipping
+2026-04-15 00:35:13,922 [INFO]   [dontalia] Already has price: €17.12, skipping
+2026-04-15 00:35:13,922 [INFO] [232/300] OH155 — TePe Select Compact Toothbrush Extra Soft (332110) - Each
+2026-04-15 00:35:13,922 [INFO]   [dmi_ie] Already has price: €1.44, skipping
+2026-04-15 00:35:13,922 [INFO]   [dmi_uk] Already has price: £1.20, skipping
+2026-04-15 00:35:13,922 [INFO]   [dentalsky] Already has price: £1.45, skipping
+2026-04-15 00:35:18,470 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:35:18,470 [INFO] [233/300] OH164 — Essix Retainer Brite Cleansing Tabs - Box36 (YOM255)
+2026-04-15 00:35:24,722 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:35:33,985 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:35:41,441 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:35:41,442 [INFO]   [dontalia] Already has price: €5.68, skipping
+2026-04-15 00:35:41,442 [INFO] [234/300] OH172 — TePe Compact Tuft Brush (432100) - Each
+2026-04-15 00:35:41,442 [INFO]   [dmi_ie] Already has price: €1.94, skipping
+2026-04-15 00:35:41,442 [INFO]   [dmi_uk] Already has price: £1.63, skipping
+2026-04-15 00:35:47,043 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:35:47,044 [INFO]   [dontalia] Already has price: €20.57, skipping
+2026-04-15 00:35:47,044 [INFO] [235/300] OH271A — TePe EasyPick M/L (242350) - Pack36
+2026-04-15 00:35:48,713 [INFO]   [dmi.ie] Direct URL ✓ €43.84
+2026-04-15 00:35:48,713 [INFO]   [dmi_ie] ✗ Rejected (score=0.47) — found: 'Tepe Easypick 10 X 36 Pack Medium-Large Turquoise'
+2026-04-15 00:35:48,713 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:35:59,473 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:35:59,473 [INFO]   [dentalsky] Already has price: £2.85, skipping
+2026-04-15 00:36:07,049 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:36:07,059 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:36:07,059 [INFO]   [checkpoint] Saved after 235/300 products
+2026-04-15 00:36:07,059 [INFO] [236/300] OH294 — TePe EasyPick XS/S (242310) - Pack36
+2026-04-15 00:36:08,581 [INFO]   [dmi.ie] Direct URL ✓ €43.84
+2026-04-15 00:36:08,581 [INFO]   [dmi_ie] ✗ Rejected (score=0.47) — found: 'Tepe Easypick 10 X 36 Pack Extra Small Orange'
+2026-04-15 00:36:08,581 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:36:16,832 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:36:16,833 [INFO]   [dentalsky] Already has price: £2.85, skipping
+2026-04-15 00:36:23,031 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:36:23,031 [INFO] [237/300] OH308 — TePe Select Toothbrush Soft (322120) - Each
+2026-04-15 00:36:23,031 [INFO]   [dmi_ie] Already has price: €1.44, skipping
+2026-04-15 00:36:23,031 [INFO]   [dmi_uk] Already has price: £1.20, skipping
+2026-04-15 00:36:23,031 [INFO]   [dentalsky] Already has price: £1.45, skipping
+2026-04-15 00:36:23,031 [INFO]   [dontalia] Already has price: €17.12, skipping
+2026-04-15 00:36:23,031 [INFO] [238/300] OH318 — Stoddard OPTIM Interdental Brush Pink XXXXFine - Pack8
+2026-04-15 00:36:34,487 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:36:44,658 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:36:44,658 [INFO]   [dentalsky] Already has price: £1.95, skipping
+2026-04-15 00:36:50,462 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:36:50,462 [INFO] [239/300] OH320 — Stoddard OPTIM Interdental Brush Red XXFine - Pack8
+2026-04-15 00:36:59,238 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:37:06,949 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:37:06,949 [INFO]   [dentalsky] Already has price: £1.95, skipping
+2026-04-15 00:37:11,203 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:37:11,203 [INFO] [240/300] OH321 — Stoddard OPTIM Interdental Brush Blue XFine - Pack8
+2026-04-15 00:37:20,022 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:37:29,307 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:37:29,307 [INFO]   [dentalsky] Already has price: £1.95, skipping
+2026-04-15 00:37:35,349 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:37:35,359 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:37:35,359 [INFO]   [checkpoint] Saved after 240/300 products
+2026-04-15 00:37:35,359 [INFO] [241/300] OH322 — Stoddard OPTIM Interdental Brush Yellow Fine - Pack8
+2026-04-15 00:37:44,894 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:37:52,888 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:37:52,889 [INFO]   [dentalsky] Already has price: £1.95, skipping
+2026-04-15 00:38:00,906 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:38:00,907 [INFO] [242/300] OH323 — Stoddard OPTIM Interdental Brush Green Medium - Pack8
+2026-04-15 00:38:09,013 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:38:19,355 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:38:19,356 [INFO]   [dentalsky] Already has price: £1.95, skipping
+2026-04-15 00:38:25,799 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:38:25,800 [INFO] [243/300] OH340 — Stoddard OPTIM Interdental Brush Orange XXXFine -Pack25
+2026-04-15 00:38:36,001 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:38:46,025 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:38:46,025 [INFO]   [dentalsky] Already has price: £5.15, skipping
+2026-04-15 00:38:51,559 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:38:51,559 [INFO] [244/300] OH341 — Stoddard OPTIM Interdental Brush Red XXFine - Pack25
+2026-04-15 00:39:00,051 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:39:08,823 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:39:08,824 [INFO]   [dentalsky] Already has price: £5.15, skipping
+2026-04-15 00:39:14,070 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:39:14,070 [INFO] [245/300] OH342 — Stoddard OPTIM Interdental Brush Blue XFine - Pack25
+2026-04-15 00:39:23,160 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:39:32,883 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:39:32,883 [INFO]   [dentalsky] Already has price: £5.15, skipping
+2026-04-15 00:39:40,072 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:39:40,082 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:39:40,082 [INFO]   [checkpoint] Saved after 245/300 products
+2026-04-15 00:39:40,082 [INFO] [246/300] OH343 — Stoddard OPTIM Interdental Brush Yellow Fine - Pack25
+2026-04-15 00:39:48,183 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:39:56,939 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:39:56,939 [INFO]   [dentalsky] Already has price: £5.15, skipping
+2026-04-15 00:40:03,439 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:40:03,439 [INFO] [247/300] OH356 — UnoDent Mouthwash Tablets Pink Thymol (CMT010) - Tub1000
+2026-04-15 00:40:12,785 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:40:20,396 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:40:26,314 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:40:40,615 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:40:40,615 [INFO] [248/300] OH357 — UnoDent Mouthwash Tablets Green Mint (CMT015) - Tub1000
+2026-04-15 00:40:47,931 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:40:57,406 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:41:02,521 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:41:08,720 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:41:08,720 [INFO] [249/300] OH409 — Oral-B Satin Tape Mint 25m - Each
+2026-04-15 00:41:13,444 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:41:16,021 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:41:16,021 [INFO]   [dentalsky] Already has price: £2.10, skipping
+2026-04-15 00:41:21,921 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:41:21,921 [INFO] [250/300] PAC618 — Curaprox Ortho Retail Box - Each
+2026-04-15 00:41:31,588 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:41:41,396 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:41:45,028 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:41:51,911 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:41:51,922 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:41:51,922 [INFO]   [checkpoint] Saved after 250/300 products
+2026-04-15 00:41:51,922 [INFO] [251/300] PAD145 — Curaprox CPS Prime Chairside Handy Turquoise - Pack25
+2026-04-15 00:41:51,922 [INFO]   [dmi_ie] Already has price: €22.05, skipping
+2026-04-15 00:41:51,922 [INFO]   [dmi_uk] Already has price: £18.46, skipping
+2026-04-15 00:41:59,465 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:42:04,241 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:42:04,241 [INFO] [252/300] PAD160 — Curaprox CPS Prime Start Kit Turquoise - Each
+2026-04-15 00:42:04,241 [INFO]   [dmi_ie] Already has price: €9.66, skipping
+2026-04-15 00:42:04,241 [INFO]   [dmi_uk] Already has price: £8.09, skipping
+2026-04-15 00:42:11,843 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:42:16,603 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:42:16,603 [INFO] [253/300] PAD165 — Curaprox CPS Prime Start Kit Lime Green - Each
+2026-04-15 00:42:16,603 [INFO]   [dmi_ie] Already has price: €9.66, skipping
+2026-04-15 00:42:16,603 [INFO]   [dmi_uk] Already has price: £8.09, skipping
+2026-04-15 00:42:22,981 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:42:29,967 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:42:29,967 [INFO] [254/300] PAP014A — Plastic Cups White Polypropylene 180ml (21809) - Case2000
+2026-04-15 00:42:38,678 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:42:48,295 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:42:54,455 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:42:59,892 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:42:59,893 [INFO] [255/300] PAP089 — Whisper LUXI White Facial Tissues 2 Ply - Case36
+2026-04-15 00:43:06,250 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:43:16,327 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:43:23,303 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:43:28,715 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:43:28,725 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:43:28,725 [INFO]   [checkpoint] Saved after 255/300 products
+2026-04-15 00:43:28,725 [INFO] [256/300] PAT047 — TePe Orthodontic Kit (962686) - Each
+2026-04-15 00:43:28,725 [INFO]   [dmi_ie] Already has price: €11.32, skipping
+2026-04-15 00:43:28,725 [INFO]   [dmi_uk] Already has price: £9.48, skipping
+2026-04-15 00:43:37,265 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:43:37,265 [INFO]   [dontalia] Already has price: €6.67, skipping
+2026-04-15 00:43:37,265 [INFO] [257/300] PAT064 — TePe Select Toothbrushes Extra Soft - Each
+2026-04-15 00:43:37,265 [INFO]   [dmi_ie] Already has price: €1.44, skipping
+2026-04-15 00:43:37,265 [INFO]   [dmi_uk] Already has price: £1.20, skipping
+2026-04-15 00:43:43,175 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:43:49,625 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:43:49,625 [INFO] [258/300] PAT266 — TePe Interspace Soft Brush (1 Handle + 12 Heads) - Each
+2026-04-15 00:43:49,625 [INFO]   [dmi_ie] Already has price: €8.03, skipping
+2026-04-15 00:43:49,625 [INFO]   [dmi_uk] Already has price: £6.72, skipping
+2026-04-15 00:43:49,625 [INFO]   [dentalsky] Already has price: £3.90, skipping
+2026-04-15 00:43:56,772 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:43:56,772 [INFO] [259/300] PBC065 — Curaprox Perio Plus+ Support Toothpaste 0.09% 75ml - Each
+2026-04-15 00:43:56,772 [INFO]   [dmi_ie] Already has price: €9.03, skipping
+2026-04-15 00:43:56,772 [INFO]   [dmi_uk] Already has price: £7.56, skipping
+2026-04-15 00:44:04,929 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:44:10,872 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:44:10,872 [INFO] [260/300] PCG108 — Oral-B Glide Floss Picks - Pack30
+2026-04-15 00:44:10,872 [INFO]   [dmi_ie] Already has price: €7.14, skipping
+2026-04-15 00:44:10,873 [INFO]   [dmi_uk] Already has price: £5.98, skipping
+2026-04-15 00:44:10,873 [INFO]   [dentalsky] Already has price: £4.60, skipping
+2026-04-15 00:44:16,931 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:44:16,940 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:44:16,941 [INFO]   [checkpoint] Saved after 260/300 products
+2026-04-15 00:44:16,941 [INFO] [261/300] PCO036 — Oral-B Superfloss Strands Mint (C000523) - Each
+2026-04-15 00:44:25,866 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:44:35,979 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:44:35,979 [INFO]   [dentalsky] Already has price: £3.05, skipping
+2026-04-15 00:44:41,936 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:44:41,936 [INFO] [262/300] PCO040 — Oral-B Essential Floss 50m (4103330317131) - Each
+2026-04-15 00:44:50,122 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:44:56,336 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:44:56,336 [INFO]   [dentalsky] Already has price: £2.35, skipping
+2026-04-15 00:45:00,867 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:45:00,867 [INFO] [263/300] PDM313 — Panadent Minamint Refresh 100ml (80.PR032MR) Each
+2026-04-15 00:45:02,997 [INFO]   [dmi.ie] Direct URL gave no price, trying search
+2026-04-15 00:45:14,250 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:45:22,186 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:45:22,186 [INFO]   [dentalsky] Already has price: £17.50, skipping
+2026-04-15 00:45:35,370 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:45:35,370 [INFO] [264/300] PDP100 — Curaprox Perio Plus+ Balance Mouthwash 0.05% 200ml - Each
+2026-04-15 00:45:35,370 [INFO]   [dmi_ie] Already has price: €11.24, skipping
+2026-04-15 00:45:35,370 [INFO]   [dmi_uk] Already has price: £9.41, skipping
+2026-04-15 00:45:42,543 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:45:48,732 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:45:48,732 [INFO] [265/300] PDP101 — Curaprox Perio Plus+ Regenerate Mouthwash 0.09% 200ml - Each
+2026-04-15 00:45:48,732 [INFO]   [dmi_ie] Already has price: €9.03, skipping
+2026-04-15 00:45:48,732 [INFO]   [dmi_uk] Already has price: £7.56, skipping
+2026-04-15 00:45:54,763 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:46:01,844 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:46:01,855 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:46:01,855 [INFO]   [checkpoint] Saved after 265/300 products
+2026-04-15 00:46:01,855 [INFO] [266/300] PHI003 — Philips Zoom! Chairside Kit - DayWhite 6% HP Take-Home Gel
+2026-04-15 00:46:10,724 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:46:19,736 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:46:27,227 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:46:34,810 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:46:34,811 [INFO] [267/300] PHI005 — Philips Zoom! DayWhite ACP Take Home Mini Kit 6% (HP) - Each
+2026-04-15 00:46:45,238 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:46:52,100 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:46:58,042 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:47:06,560 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:47:06,560 [INFO] [268/300] PHI006 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 10% (CP) Each
+2026-04-15 00:47:16,433 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:47:26,611 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:47:34,277 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:47:40,068 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:47:40,069 [INFO] [269/300] PHI007 — Philips Zoom! NiteWhite ACP Take Home Mini Kit 16% (CP) Each
+2026-04-15 00:47:50,168 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:48:00,203 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:48:07,341 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:48:13,202 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:48:13,202 [INFO] [270/300] PHI008 — Philips Zoom! DayWhite ACP Take Home Standard 6% (HP) - Each
+2026-04-15 00:48:23,541 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:48:32,721 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:48:41,599 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:48:47,398 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:48:47,408 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:48:47,408 [INFO]   [checkpoint] Saved after 270/300 products
+2026-04-15 00:48:47,408 [INFO] [271/300] PHI009 — Philips Zoom! NiteWhite ACP Take Home Standard 10% (CP) Each
+2026-04-15 00:48:56,630 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:49:05,584 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:49:11,319 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:49:19,523 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:49:19,523 [INFO] [272/300] PHI010 — Philips Zoom! NiteWhite ACP Take Home Standard 16% (CP) Each
+2026-04-15 00:49:29,011 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:49:37,468 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:49:44,540 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:49:50,026 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:49:50,027 [INFO] [273/300] PHI011A — Philips Zoom! Bulk Take Home Box DayWhite 6% (HP) - Box 25
+2026-04-15 00:49:58,646 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:50:06,569 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:50:13,145 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:50:26,432 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:50:26,432 [INFO] [274/300] PHI011B — Philips Zoom! Bulk Take Home Box NiteWhite 10% (CP) - Box 25
+2026-04-15 00:50:35,087 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:50:42,803 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:50:52,135 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:50:57,457 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:50:57,458 [INFO] [275/300] PHI011C — Philips Zoom! Bulk Take Home Box NiteWhite 16% (CP) - Box 25
+2026-04-15 00:51:06,554 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:51:15,300 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:51:21,790 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:51:27,922 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:51:27,932 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:51:27,932 [INFO]   [checkpoint] Saved after 275/300 products
+2026-04-15 00:51:27,932 [INFO] [276/300] PHI019 — Philips Zoom! EVA Tray Material - Pack12
+2026-04-15 00:51:35,569 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:51:46,217 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:51:51,046 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:51:59,983 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:51:59,983 [INFO] [277/300] PP021 — Spiderman Stickers (PS375) - Roll100
+2026-04-15 00:52:08,321 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:52:18,117 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:52:18,117 [INFO]   [dentalsky] Already has price: £9.95, skipping
+2026-04-15 00:52:23,788 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:52:23,788 [INFO] [278/300] PP037 — Perfection Plus Protect+ Visor Refill (PP011/0051) - Pack12
+2026-04-15 00:52:23,789 [INFO]   [dmi_ie] Already has price: €22.70, skipping
+2026-04-15 00:52:23,789 [INFO]   [dmi_uk] Already has price: £19.00, skipping
+2026-04-15 00:52:23,789 [INFO]   [dentalsky] Already has price: £17.60, skipping
+2026-04-15 00:52:32,543 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:52:32,543 [INFO] [279/300] PP096 — MediBadge Disney Princesses Stickers - Pack90
+2026-04-15 00:52:40,752 [INFO]   [dmi.ie] ✗ Rejected (score=0.56) — 'Medibadge Disney Princesses Stickers 75 Pack'
+2026-04-15 00:52:43,385 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:52:52,995 [INFO]   [dmi.co.uk] ✗ Rejected (score=0.56) — 'Medibadge Disney Princesses Stickers 75 Pack'
+2026-04-15 00:52:56,751 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:53:01,087 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:53:05,489 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:53:05,489 [INFO] [280/300] PRC308 — UnoDent Prophy Cups Latex Free RA Steel Shank - Pack144
+2026-04-15 00:53:14,111 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:53:23,779 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:53:32,007 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:53:38,670 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:53:38,687 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:53:38,687 [INFO]   [checkpoint] Saved after 280/300 products
+2026-04-15 00:53:38,687 [INFO] [281/300] PRC315 — Perfection Plus Prophy+ Polishing Cups RA (005/0009) Pack144
+2026-04-15 00:53:47,164 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:53:56,916 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:53:56,917 [INFO]   [dentalsky] Already has price: £15.10, skipping
+2026-04-15 00:54:03,969 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:54:03,969 [INFO] [282/300] Q01537 — Kavo Aspiration Connection (0.211.1761)
+2026-04-15 00:54:10,128 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:54:21,085 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:54:25,120 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:54:30,471 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:54:30,471 [INFO] [283/300] Q02109 — Kavo Aspiration Connection (0.211.1751)
+2026-04-15 00:54:39,155 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:54:50,357 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:54:54,229 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:55:01,379 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:55:01,379 [INFO] [284/300] QLK100 — Kavo Sieve (0.763.3423) Each
+2026-04-15 00:55:10,626 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:55:19,426 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:55:23,867 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:55:38,606 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:55:38,607 [INFO] [285/300] QWP002 — Pegasus Barrier Envelope Size 2 (17302PEG) - Pack100
+2026-04-15 00:55:48,538 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:55:53,981 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:56:01,280 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:56:09,586 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:56:09,596 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:56:09,596 [INFO]   [checkpoint] Saved after 285/300 products
+2026-04-15 00:56:09,596 [INFO] [286/300] SCB014 — Koolpak Instant Ice Pack 24x12cm - Each
+2026-04-15 00:56:19,776 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:56:27,076 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:56:31,330 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:56:38,119 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:56:38,119 [INFO] [287/300] SE004 — Roeko Surgitip 2.8mm (462025) - Box20
+2026-04-15 00:56:38,119 [INFO]   [dmi_ie] Already has price: €57.04, skipping
+2026-04-15 00:56:38,119 [INFO]   [dmi_uk] Already has price: £47.76, skipping
+2026-04-15 00:56:38,119 [INFO]   [dentalsky] Already has price: £37.95, skipping
+2026-04-15 00:56:48,019 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:56:48,019 [INFO] [288/300] SE011 — Perfection Plus Saliva Ejectors Clear (PP011/4250) - Pack100
+2026-04-15 00:56:48,019 [INFO]   [dmi_ie] Already has price: €3.81, skipping
+2026-04-15 00:56:48,019 [INFO]   [dmi_uk] Already has price: £3.19, skipping
+2026-04-15 00:56:48,020 [INFO]   [dentalsky] Already has price: £3.05, skipping
+2026-04-15 00:56:56,860 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:56:56,860 [INFO] [289/300] SE015 — Orsing Hygovac Aspirator Tubes - Pack100
+2026-04-15 00:57:05,838 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:57:15,802 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:57:15,802 [INFO]   [dentalsky] Already has price: £2.70, skipping
+2026-04-15 00:57:15,802 [INFO]   [dontalia] Already has price: €3.34, skipping
+2026-04-15 00:57:15,802 [INFO] [290/300] SE016 — Orsing Hygovac Vent Aspirator Tubes - Pack100
+2026-04-15 00:57:15,803 [INFO]   [dmi_ie] Already has price: €5.28, skipping
+2026-04-15 00:57:15,803 [INFO]   [dmi_uk] Already has price: £4.42, skipping
+2026-04-15 00:57:15,803 [INFO]   [dentalsky] Already has price: £3.00, skipping
+2026-04-15 00:57:15,803 [INFO]   [dontalia] Already has price: €4.54, skipping
+2026-04-15 00:57:15,814 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:57:15,814 [INFO]   [checkpoint] Saved after 290/300 products
+2026-04-15 00:57:15,815 [INFO] [291/300] SE050 — Orsing Aspirator Tube Vented/Non-Vented - Pack100
+2026-04-15 00:57:15,815 [INFO]   [dmi_ie] Already has price: €5.28, skipping
+2026-04-15 00:57:15,815 [INFO]   [dmi_uk] Already has price: £4.42, skipping
+2026-04-15 00:57:23,270 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:57:28,063 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:57:28,063 [INFO] [292/300] SE055 — Bossklein Spectrum Tips (SPE0001) - Pack250
+2026-04-15 00:57:37,354 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:57:46,430 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:57:49,985 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:57:56,103 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:57:56,109 [INFO] [293/300] SE066 — UnoDent Multi-colour 3in1 Syringe Tips (CJT290) - Pack250
+2026-04-15 00:58:03,431 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:58:13,948 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:58:20,359 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:58:27,396 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:58:27,396 [INFO] [294/300] SE076 — Perfection Plus Protect+ Disposable 3 in 1 Tips White
+2026-04-15 00:58:35,466 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:58:44,610 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:58:50,686 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:58:54,788 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:58:54,788 [INFO] [295/300] SYC093 — TSK Steriglide Cannula 27Gx38mm (1.5") - Pack20
+2026-04-15 00:59:04,028 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:59:12,323 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:59:19,268 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:59:25,737 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:59:25,747 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 00:59:25,747 [INFO]   [checkpoint] Saved after 295/300 products
+2026-04-15 00:59:25,747 [INFO] [296/300] SYT105 — BD Insulin Syringe Microfine 0.5ml 30Gx8mm - Box200
+2026-04-15 00:59:33,991 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 00:59:41,130 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 00:59:48,928 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 00:59:53,166 [INFO]   [dontalia] ✗ Not found
+2026-04-15 00:59:53,166 [INFO] [297/300] ZKAV02006046 — Kavo O-Ring 2 x 1 (0.200.6046) - Pack5
+2026-04-15 01:00:03,824 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 01:00:12,647 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 01:00:20,999 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 01:00:35,004 [INFO]   [dontalia] ✗ Not found
+2026-04-15 01:00:35,004 [INFO] [298/300] ZKAV02006121 — Kavo O-Ring 8x1 (0.200.6121) - Pack10
+2026-04-15 01:00:45,374 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 01:00:55,225 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 01:01:03,597 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 01:01:08,212 [INFO]   [dontalia] ✗ Not found
+2026-04-15 01:01:08,212 [INFO] [299/300] ZMDT51 — Woodpecker EMS Perio Tip P1 (WOO/TIP/P1)
+2026-04-15 01:01:08,212 [INFO]   [dmi_ie] Already has price: 21.5, skipping
+2026-04-15 01:01:08,212 [INFO]   [dmi_uk] Already has price: £18.00, skipping
+2026-04-15 01:01:14,884 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 01:01:20,702 [INFO]   [dontalia] ✗ Not found
+2026-04-15 01:01:20,702 [INFO] [300/300]  — UnoDent Plastic Handled Impression Tray Medium Lower -Pack25
+2026-04-15 01:01:22,110 [INFO]   [dmi_ie] ✗ Not found
+2026-04-15 01:01:24,009 [INFO]   [dmi_uk] ✗ Not found
+2026-04-15 01:01:29,508 [INFO]   [dentalsky] ✗ Not found
+2026-04-15 01:01:37,216 [INFO]   [dontalia] ✗ Not found
+2026-04-15 01:01:37,227 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 01:01:37,227 [INFO]   [checkpoint] Saved after 300/300 products
+2026-04-15 01:01:37,240 [INFO] Output written to 'output_300_4sites.csv' and 'output_300_4sites_mappings.csv'
+2026-04-15 01:01:37,241 [INFO]   dmi_ie: 121/300 prices found
+2026-04-15 01:01:37,241 [INFO]   dmi_uk: 120/300 prices found
+2026-04-15 01:01:37,241 [INFO]   dentalsky: 106/300 prices found
+2026-04-15 01:01:37,241 [INFO]   dontalia: 40/300 prices found

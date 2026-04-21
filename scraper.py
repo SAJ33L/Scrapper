@@ -28,6 +28,7 @@ import argparse
 import csv
 import json
 import logging
+import os
 import random
 import re
 import sys
@@ -80,15 +81,17 @@ class ScrapedPrice:
     price: Optional[str] = None
     url: Optional[str] = None
     found: bool = False
+    product_name: Optional[str] = None
+    match_score: float = 0.0
 
 
 # ---------------------------------------------------------------------------
 # Shared helpers
 # ---------------------------------------------------------------------------
-def _extract_ld_json_price(soup: BeautifulSoup) -> tuple[Optional[str], Optional[str]]:
+def _extract_ld_json_price(soup: BeautifulSoup) -> tuple[Optional[str], Optional[str], Optional[str]]:
     """
-    Extract price and currency from schema.org Product LD+JSON.
-    Returns (price_str, currency_code) e.g. ("27.39", "EUR")
+    Extract price, currency, and product name from schema.org Product LD+JSON.
+    Returns (price_str, currency_code, product_name) e.g. ("27.39", "EUR", "Septoject XL Box100")
     """
     for sc in soup.find_all("script", type="application/ld+json"):
         try:
@@ -102,11 +105,12 @@ def _extract_ld_json_price(soup: BeautifulSoup) -> tuple[Optional[str], Optional
                         offers = offers[0]
                     price = str(offers.get("price", "")).strip()
                     currency = str(offers.get("priceCurrency", "")).strip()
+                    product_name = str(item.get("name", "")).strip() or None
                     if price and re.match(r"^\d+\.?\d*$", price):
-                        return price, currency
+                        return price, currency, product_name
         except Exception:
             pass
-    return None, None
+    return None, None, None
 
 
 def _format_price(price_str: str, currency_code: str) -> str:
@@ -128,22 +132,42 @@ def _clean_url(url: Optional[str]) -> Optional[str]:
     return url if url.startswith("http") else None
 
 
-def _build_queries(part_number: str, product_name: str, manufacturer: str) -> list[str]:
+def _clean_product_name(name: str) -> str:
+    """Strip internal naming conventions to get a clean product name for searching."""
+    name = (name or "").strip()
+    # Strip leading # markers used internally (e.g. '#Colgate Duraphat...')
+    name = name.lstrip("#").strip()
+    # Strip trailing unit suffixes like ' - Each', ' - Pack6', ' - Box100'
+    name = re.sub(r"\s*-\s*(Each|Pack\s*\d*|Box\s*\d*|Tube|Roll|Bag|Kit|Set|Pair)\s*$", "", name, flags=re.IGNORECASE).strip()
+    # Strip trailing bare ' -' or '- '
+    name = re.sub(r"\s*-\s*$", "", name).strip()
+    return name
+
+
+def _build_queries(part_number: str, product_name: str, manufacturer: str, competitor_code: str = "") -> list[str]:
     queries = []
     pn = (part_number or "").strip()
-    name = (product_name or "").strip()
+    name = _clean_product_name(product_name)
     mfr = (manufacturer or "").strip()
+    cc = (competitor_code or "").strip()
 
+    # Product name is tried first — most descriptive and avoids false code matches
+    if name:
+        short = name[:60].rsplit(" ", 1)[0].rstrip(" -")
+        queries.append(short)
+    if mfr and name:
+        short = name[:40].rsplit(" ", 1)[0].rstrip(" -")
+        queries.append(f"{mfr} {short}")
+    # Competitor code and part number as fallback
+    if cc:
+        queries.append(cc)
+        stripped = re.sub(r"[A-Z]$", "", cc).strip()
+        if stripped and stripped != cc:
+            queries.append(stripped)
     if pn:
         queries.append(pn)
     if mfr and pn:
         queries.append(f"{mfr} {pn}")
-    if name:
-        short = name[:60].rsplit(" ", 1)[0]
-        queries.append(short)
-    if mfr and name:
-        short = name[:40].rsplit(" ", 1)[0]
-        queries.append(f"{mfr} {short}")
 
     seen: set[str] = set()
     result = []
@@ -152,6 +176,94 @@ def _build_queries(part_number: str, product_name: str, manufacturer: str) -> li
             seen.add(q)
             result.append(q)
     return result
+
+
+# Generic words that appear in many dental product names and should NOT be used
+# as the sole discriminating keyword for relevance checks.
+_RELEVANCE_STOPWORDS = {
+    "each", "pack", "tube", "varnish", "paste", "toothpaste", "fluoride",
+    "dental", "product", "with", "from", "size", "type", "mini", "single",
+    "standard", "units", "unit", "assorted", "mixed", "prophy",
+}
+
+
+def _relevance_keywords(query: str) -> list[str]:
+    """Extract significant (non-generic, >= 4 char, non-numeric) keywords from a search query."""
+    words = re.split(r"[\s\-_/()+]+", query.lower())
+    return [
+        w for w in words
+        if len(w) >= 4
+        and w not in _RELEVANCE_STOPWORDS
+        and not re.fullmatch(r"[\d]+[a-z]*", w)   # skip numbers/quantities like '5000', '10ml', '75g'
+    ]
+
+
+def _href_matches_query(href: str, query: str) -> bool:
+    """Return True if at least one significant keyword from query appears in the href slug."""
+    keywords = _relevance_keywords(query)
+    if not keywords:
+        return True  # no filtering possible — allow it
+    href_lower = href.lower()
+    return any(kw in href_lower for kw in keywords)
+
+
+def _extract_numeric_tokens(name: str) -> set[str]:
+    """
+    Extract specific numeric identifiers from a product name using regex.
+    These are high-value discriminators: gauges, concentrations, sizes, pack counts.
+    e.g. "Needles 27g Long Box100 0.4x35mm" → {'27g', 'box100', '0.4x35mm'}
+    """
+    tokens = set()
+    n = name.lower()
+    # Percentages: 16%, 1:100,000
+    for m in re.finditer(r'\d+\.?\d*%', n):
+        tokens.add(m.group())
+    for m in re.finditer(r'1:\d[\d,]+', n):
+        tokens.add(m.group().replace(",", ""))
+    # Dimensions / measurements: 0.4x35mm, 27g, 2.2ml, 490ml, 30Gx8mm
+    for m in re.finditer(r'\d+\.?\d*\s*x\s*\d+\.?\d*\s*(?:mm|cm)?|\d+\.?\d*\s*(?:g|ml|mm|cm|mg)\b', n):
+        tokens.add(re.sub(r'\s+', '', m.group()))
+    # Pack/box size: Box100, Pack500, 200pk
+    for m in re.finditer(r'(?:box|pack|pk|bx)\s*\d+|\d+\s*(?:pack|box|pk)', n):
+        tokens.add(re.sub(r'\s+', '', m.group()))
+    return tokens
+
+
+def _name_similarity_score(our_name: str, found_name: str) -> float:
+    """
+    Return a 0.0–1.0 similarity score between our product name and a found product name.
+    Combines keyword overlap (70%) with numeric/spec token matching (30%).
+    Numeric tokens (gauges, sizes, concentrations, pack counts) are extracted by regex
+    and compared separately — a mismatch here strongly reduces the score.
+    """
+    our_tokens = set(_relevance_keywords(our_name))
+    found_tokens = set(_relevance_keywords(found_name))
+    if not our_tokens:
+        return 1.0  # can't measure — assume match
+    overlap = our_tokens & found_tokens
+    keyword_score = len(overlap) / len(our_tokens)
+
+    # Numeric token scoring (concentrations, sizes, gauges, pack counts)
+    our_numeric = _extract_numeric_tokens(our_name)
+    found_numeric = _extract_numeric_tokens(found_name)
+    if our_numeric:
+        numeric_overlap = our_numeric & found_numeric
+        numeric_score = len(numeric_overlap) / len(our_numeric)
+        score = 0.7 * keyword_score + 0.3 * numeric_score
+    else:
+        score = keyword_score
+
+    logger.debug(
+        f"  Name similarity: {score:.2f} "
+        f"(keywords={keyword_score:.2f} overlap={overlap}, "
+        f"numeric={our_numeric & found_numeric if our_numeric else 'n/a'})"
+    )
+    return score
+
+
+def _names_similar(our_name: str, found_name: str, threshold: float = 0.6) -> bool:
+    """Return True if found product name is similar enough to ours (score >= threshold)."""
+    return _name_similarity_score(our_name, found_name) >= threshold
 
 
 # ---------------------------------------------------------------------------
@@ -207,15 +319,16 @@ class BaseScraper:
             return BeautifulSoup(resp.content, "lxml")
         return None
 
-    def scrape_price_from_url(self, url: str) -> Optional[str]:
-        """Scrape price from a known product URL using LD+JSON."""
+    def scrape_price_from_url(self, url: str) -> tuple[Optional[str], Optional[str]]:
+        """Scrape price and product name from a known product URL using LD+JSON.
+        Returns (price_str, product_name)."""
         soup = self._soup(url)
         if not soup:
-            return None
-        price_val, currency = _extract_ld_json_price(soup)
+            return None, None
+        price_val, currency, product_name = _extract_ld_json_price(soup)
         if price_val:
-            return _format_price(price_val, currency or self.CURRENCY)
-        return None
+            return _format_price(price_val, currency or self.CURRENCY), product_name
+        return None, None
 
     def search(self, part_number: str, product_name: str, manufacturer: str) -> ScrapedPrice:
         raise NotImplementedError
@@ -224,10 +337,10 @@ class BaseScraper:
         """Try direct URL first, then fall back to search."""
         existing_url = _clean_url(self._get_existing_url(row))
         if existing_url:
-            price = self.scrape_price_from_url(existing_url)
+            price, product_name = self.scrape_price_from_url(existing_url)
             if price:
                 logger.info(f"  [{self.SITE_NAME}] Direct URL ✓ {price}")
-                return ScrapedPrice(price=price, url=existing_url, found=True)
+                return ScrapedPrice(price=price, url=existing_url, found=True, product_name=product_name)
             logger.info(f"  [{self.SITE_NAME}] Direct URL gave no price, trying search")
 
         result = self.search(
@@ -248,29 +361,119 @@ class DMIScraper(BaseScraper):
     """
     dmi.ie / dmi.co.uk — custom commerce platform.
     Search: /categories.html?type=simple&name=QUERY
-    Product pages: have LD+JSON with schema.org/Product
+    Product pages: price is in span[class*=price] (LD+JSON lacks price for some products).
     """
 
-    def search(self, part_number: str, product_name: str, manufacturer: str) -> ScrapedPrice:
-        for query in _build_queries(part_number, product_name, manufacturer):
-            result = self._html_search(query)
+    def scrape_price_from_url(self, url: str) -> tuple[Optional[str], Optional[str]]:
+        """DMI: extract both LD+JSON and displayed HTML price, prefer the displayed one.
+        LD+JSON sometimes contains stale catalogue prices that differ from what's shown on screen."""
+        soup = self._soup(url)
+        if not soup:
+            return None, None
+
+        product_name_el = soup.select_one("h1")
+        pname_html = product_name_el.get_text(strip=True) if product_name_el else None
+        symbol = "£" if self.CURRENCY == "GBP" else "€"
+
+        # Extract displayed HTML price from span[class*=price]
+        html_price: Optional[float] = None
+        for el in soup.select("span[class*=price]"):
+            text = el.get_text(strip=True)
+            m = re.search(r"(\d[\d,]*\.\d{2})", text)
+            if m:
+                val = float(m.group(1).replace(",", ""))
+                if val > 0:
+                    html_price = val
+                    break
+
+        # Extract LD+JSON price
+        ld_price_val, ld_currency, ld_product_name = _extract_ld_json_price(soup)
+        ld_price: Optional[float] = float(ld_price_val) if ld_price_val else None
+        product_name = ld_product_name or pname_html
+
+        # Prefer the displayed HTML price — it reflects what a customer actually sees
+        # Fall back to LD+JSON if no HTML price found
+        if html_price:
+            if ld_price and abs(html_price - ld_price) > 0.01:
+                logger.debug(f"  [{self.SITE_NAME}] Price mismatch — displayed: {symbol}{html_price:.2f}, LD+JSON: {symbol}{ld_price:.2f} — using displayed")
+            return f"{symbol}{html_price:.2f}", product_name
+        if ld_price:
+            return _format_price(ld_price_val, ld_currency or self.CURRENCY), product_name
+        return None, None
+
+    def search(self, part_number: str, product_name: str, manufacturer: str, competitor_code: str = "") -> ScrapedPrice:
+        for query in _build_queries(part_number, product_name, manufacturer, competitor_code):
+            result = self._html_search(query, our_name=product_name, competitor_code=competitor_code)
             if result.found:
                 return result
         return ScrapedPrice()
 
-    def _html_search(self, query: str) -> ScrapedPrice:
+    def scrape_product(self, row: dict) -> ScrapedPrice:
+        existing_url = _clean_url(self._get_existing_url(row))
+        if existing_url:
+            price, product_name = self.scrape_price_from_url(existing_url)
+            if price:
+                logger.info(f"  [{self.SITE_NAME}] Direct URL ✓ {price}")
+                return ScrapedPrice(price=price, url=existing_url, found=True, product_name=product_name)
+            logger.info(f"  [{self.SITE_NAME}] Direct URL gave no price, trying search")
+        return self.search(
+            part_number=row.get("Part Number", ""),
+            product_name=row.get("Name", ""),
+            manufacturer=row.get("Manufacturer", ""),
+            competitor_code=row.get("DMI Code", ""),
+        )
+
+    def _html_search(self, query: str, our_name: str = "", competitor_code: str = "") -> ScrapedPrice:
         url = urljoin(self.BASE_URL, "/categories.html")
         soup = self._soup(url, params={"type": "simple", "name": query})
         if not soup:
             return ScrapedPrice()
-        # Find product links on search results page
+
+        # Collect all candidates, scoring each by anchor text similarity
+        cc_slug = competitor_code.lower().replace("_", "-") if competitor_code else ""
+        candidates = []
         for a in soup.select("a[href*='/products/']"):
             href = a.get("href", "")
+            anchor_text = a.get_text(strip=True)
+            if not href:
+                continue
+            # Pre-filter: skip if neither href slug nor anchor text shares any keyword with query
+            if not _href_matches_query(href, query) and not _href_matches_query(anchor_text, query):
+                logger.debug(f"  [{self.SITE_NAME}] Pre-filter skipped: {href[:60]}")
+                continue
+            # Base score from name similarity on anchor text
+            score = _name_similarity_score(our_name, anchor_text) if our_name else 0.5
+            # Boost score when the competitor code appears exactly in the URL slug
+            # This prevents variant mix-ups (e.g. PERF-0040046 vs PERF-0040047)
+            if cc_slug and cc_slug in href.lower():
+                score = min(1.0, score + 0.3)
+                logger.debug(f"  [{self.SITE_NAME}] Code match boost for {href[:60]}")
+            candidates.append((score, href, anchor_text))
+
+        if not candidates:
+            return ScrapedPrice()
+
+        # Sort by relevance score, best first
+        candidates.sort(key=lambda x: x[0], reverse=True)
+        logger.debug(f"  [{self.SITE_NAME}] {len(candidates)} candidates for '{query}', best: '{candidates[0][2]}' (score={candidates[0][0]:.2f})")
+
+        # Try candidates in order until we get a price from a sufficiently similar product
+        for score, href, anchor_text in candidates:
+            if score < 0.5:
+                break  # remaining candidates are too dissimilar
             product_url = urljoin(self.BASE_URL, href.split("?")[0])
-            price = self.scrape_price_from_url(product_url)
-            if price:
-                logger.info(f"  [{self.SITE_NAME}] Search '{query}' ✓ {price}")
-                return ScrapedPrice(price=price, url=product_url, found=True)
+            price, product_name = self.scrape_price_from_url(product_url)
+            if not price:
+                continue
+            # Re-score using the actual product page name (more accurate than anchor text)
+            final_name = product_name or anchor_text
+            final_score = _name_similarity_score(our_name, final_name) if our_name else score
+            if final_score < 0.6:
+                logger.info(f"  [{self.SITE_NAME}] ✗ Rejected (score={final_score:.2f}) — '{final_name}'")
+                continue
+            logger.info(f"  [{self.SITE_NAME}] Search '{query}' ✓ {price} (score={final_score:.2f})")
+            return ScrapedPrice(price=price, url=product_url, found=True, product_name=final_name, match_score=final_score)
+
         return ScrapedPrice()
 
 
@@ -295,6 +498,40 @@ class DMIUKScraper(DMIScraper):
 # ---------------------------------------------------------------------------
 # DentalSky scraper (Magento with Ajax search — search needs Playwright)
 # ---------------------------------------------------------------------------
+def _extract_dentalsky_price_from_soup(soup: BeautifulSoup) -> tuple[Optional[str], Optional[str]]:
+    """DentalSky helper to extract Ex-VAT HTML price before falling back to LD+JSON."""
+    price_val, currency, product_name = _extract_ld_json_price(soup)
+    
+    # 1. Prioritize Magento Ex-VAT selector
+    el = soup.select_one(".price-excluding-tax .price")
+    if el:
+        content = el.get("content") or el.get_text(" ", strip=True)
+        m = re.search(r"(\d[\d,]*\.\d{2})", content)
+        if m:
+            val = m.group(1).replace(",", "")
+            return f"£{float(val):.2f}", product_name
+
+    # 2. Fall back to LD+JSON (might be INC-VAT)
+    if price_val:
+        return _format_price(price_val, currency or "GBP"), product_name
+
+    # 3. Fall back to generic Magento HTML selectors
+    for sel in [
+        "[data-price-type='finalPrice'] .price",
+        ".special-price .price",
+        ".regular-price .price",
+        ".price-box .price",
+        "[itemprop='price']",
+    ]:
+        el = soup.select_one(sel)
+        if el:
+            content = el.get("content") or el.get_text(" ", strip=True)
+            m = re.search(r"(\d[\d,]*\.\d{2})", content)
+            if m:
+                val = m.group(1).replace(",", "")
+                return f"£{float(val):.2f}", product_name
+    return None, product_name
+
 class DentalSkyScraper(BaseScraper):
     SITE_NAME = "dentalsky.com"
     BASE_URL = "https://www.dentalsky.com"
@@ -303,33 +540,12 @@ class DentalSkyScraper(BaseScraper):
     def _get_existing_url(self, row: dict) -> Optional[str]:
         return row.get("DentalSky URL", "")
 
-    def scrape_price_from_url(self, url: str) -> Optional[str]:
-        """DentalSky: try LD+JSON then HTML price selectors."""
+    def scrape_price_from_url(self, url: str) -> tuple[Optional[str], Optional[str]]:
+        """DentalSky: try Ex-VAT HTML then LD+JSON then HTML price selectors."""
         soup = self._soup(url)
         if not soup:
-            return None
-        # 1. LD+JSON (most reliable)
-        price_val, currency = _extract_ld_json_price(soup)
-        if price_val:
-            return _format_price(price_val, currency or self.CURRENCY)
-        # 2. Magento HTML price selectors
-        for sel in [
-            "[data-price-type='finalPrice'] .price",
-            ".special-price .price",
-            ".regular-price .price",
-            ".price-box .price",
-            "[itemprop='price']",
-        ]:
-            el = soup.select_one(sel)
-            if el:
-                # DentalSky price might be in content attr or text
-                content = el.get("content") or el.get_text(" ", strip=True)
-                # Extract numeric value (handles garbled currency symbols)
-                m = re.search(r"(\d[\d,]*\.\d{2})", content)
-                if m:
-                    val = m.group(1).replace(",", "")
-                    return f"£{float(val):.2f}"
-        return None
+            return None, None
+        return _extract_dentalsky_price_from_soup(soup)
 
     def search(self, part_number: str, product_name: str, manufacturer: str) -> ScrapedPrice:
         # DentalSky Magento search requires JavaScript — handled by PlaywrightScraper
@@ -347,11 +563,11 @@ class DentalSkyScraper(BaseScraper):
             if candidate_slug in tried:
                 continue
             tried.add(candidate_slug)
-            price = self.scrape_price_from_url(f"{self.BASE_URL}/{candidate_slug}.html")
+            price, comp_name = self.scrape_price_from_url(f"{self.BASE_URL}/{candidate_slug}.html")
             if price:
                 url = f"{self.BASE_URL}/{candidate_slug}.html"
                 logger.info(f"  [{self.SITE_NAME}] Slug match '{candidate_slug}' ✓ {price}")
-                return ScrapedPrice(price=price, url=url, found=True)
+                return ScrapedPrice(price=price, url=url, found=True, product_name=comp_name)
         return ScrapedPrice()
 
 
@@ -382,11 +598,11 @@ class DontaliaScraper(BaseScraper):
             resp = self._get(url)
             if resp and resp.status_code == 200:
                 soup = BeautifulSoup(resp.content, "lxml")
-                price_val, currency = _extract_ld_json_price(soup)
+                price_val, currency, product_name = _extract_ld_json_price(soup)
                 if price_val:
                     price = _format_price(price_val, currency or self.CURRENCY)
                     logger.info(f"  [{self.SITE_NAME}] Slug match '{candidate_slug}' ✓ {price}")
-                    return ScrapedPrice(price=price, url=url, found=True)
+                    return ScrapedPrice(price=price, url=url, found=True, product_name=product_name)
         return ScrapedPrice()
 
 
@@ -487,15 +703,14 @@ class PlaywrightScraper:
             href = link.get("href", "")
             if not href:
                 continue
-            # Scrape the product page for LD+JSON price
+            # Scrape the product page for price
             product_html = self.get_page_html(href)
             if product_html:
                 product_soup = BeautifulSoup(product_html, "lxml")
-                price_val, currency = _extract_ld_json_price(product_soup)
-                if price_val:
-                    price = _format_price(price_val, currency or "GBP")
+                price, product_name = _extract_dentalsky_price_from_soup(product_soup)
+                if price:
                     logger.info(f"  [dentalsky.com] Playwright ✓ {price}")
-                    return ScrapedPrice(price=price, url=href, found=True)
+                    return ScrapedPrice(price=price, url=href, found=True, product_name=product_name)
         return ScrapedPrice()
 
     def search_dontalia(self, query: str) -> ScrapedPrice:
@@ -524,10 +739,10 @@ class PlaywrightScraper:
             return ScrapedPrice()
         soup = BeautifulSoup(html, "lxml")
         # Try LD+JSON first
-        price_val, currency = _extract_ld_json_price(soup)
+        price_val, currency, product_name = _extract_ld_json_price(soup)
         if price_val:
             price = _format_price(price_val, currency or "EUR")
-            return ScrapedPrice(price=price, url=url, found=True)
+            return ScrapedPrice(price=price, url=url, found=True, product_name=product_name)
         # Try to find product link then scrape it
         for link in soup.select("[class*='product'] a[href]")[:3]:
             href = link.get("href", "")
@@ -537,11 +752,11 @@ class PlaywrightScraper:
             product_html = self.get_page_html(product_url, wait_selector="[class*='price']", timeout=20000)
             if product_html:
                 product_soup = BeautifulSoup(product_html, "lxml")
-                pv, curr = _extract_ld_json_price(product_soup)
+                pv, curr, product_name = _extract_ld_json_price(product_soup)
                 if pv:
                     price = _format_price(pv, curr or "EUR")
                     logger.info(f"  [henryschein.ie] Playwright ✓ {price}")
-                    return ScrapedPrice(price=price, url=product_url, found=True)
+                    return ScrapedPrice(price=price, url=product_url, found=True, product_name=product_name)
                 # Fallback: look for price in text
                 for sel in ["[class*='price']", "[itemprop='price']"]:
                     el = product_soup.select_one(sel)
@@ -566,7 +781,7 @@ class PlaywrightScraper:
         if not html:
             return None
         soup = BeautifulSoup(html, "lxml")
-        price_val, currency = _extract_ld_json_price(soup)
+        price_val, currency, _ = _extract_ld_json_price(soup)
         if price_val:
             return _format_price(price_val, currency or "EUR")
         return None
@@ -618,25 +833,99 @@ def read_csv(path: str) -> tuple[list[dict], list[str]]:
     return rows, headers
 
 
+def read_excel(path: str) -> tuple[list[dict], list[str]]:
+    """
+    Read an Excel (.xlsx/.xls) file as input.
+    Maps common column name variants to what the scraper expects.
+    Returns (rows_as_dicts, fieldnames).
+    """
+    import pandas as pd
+
+    df = pd.read_excel(path, dtype=str)
+    df = df.fillna("")
+
+    # Column name mapping: Excel name → scraper name
+    col_map = {
+        "Product Group Description": "Product Group",
+        "Stock Unit Name": "Stock Unit",
+    }
+    df.rename(columns=col_map, inplace=True)
+
+    headers = list(df.columns)
+    rows = df.to_dict(orient="records")
+    return rows, headers
+
+
+def read_input(path: str) -> tuple[list[dict], list[str]]:
+    """Dispatch to read_csv or read_excel based on file extension."""
+    ext = os.path.splitext(path)[1].lower()
+    if ext in (".xlsx", ".xls"):
+        return read_excel(path)
+    return read_csv(path)
+
+
 def build_output_headers(existing_headers: list[str]) -> list[str]:
-    """Add Henry Schein columns and per-site Notes columns if missing."""
-    headers = list(existing_headers)
-    new_cols = [
-        "Henry Schein Sales Price (€)",
-        "Variance (Henry Schein)",
-        "Henry Schein URL",
-        # Notes columns — one per site
-        "DMI IE Notes",
-        "DMI UK Notes",
-        "DentalSky Notes",
-        "Dontalia Notes",
-        "Henry Schein Notes",
+    """Return stable output headers: base columns first, then each site's full block."""
+    site_blocks = [
+        [
+            "DMI Sales Price (€)",
+            "Variance (DMI IE)",
+            "DMI URL (IE)",
+            "DMI IE Notes",
+            "DMI IE Product",
+            "DMI IE Pack Flag",
+            "DMI IE Adjusted Variance",
+        ],
+        [
+            "DMI Sales Price (£)",
+            "Variance (DMI UK)",
+            "DMI URL (UK)",
+            "DMI UK Notes",
+            "DMI UK Product",
+            "DMI UK Pack Flag",
+            "DMI UK Adjusted Variance",
+        ],
+        [
+            "DentalSky Sales Price (£)",
+            "Variance (DentalSky)",
+            "DentalSky URL",
+            "DentalSky Notes",
+            "DentalSky Product",
+            "DentalSky Pack Flag",
+            "DentalSky Adjusted Variance",
+        ],
+        [
+            "Dontalia Sales Price (€)",
+            "Variance (Dontalia)",
+            "Dontalia URL",
+            "Dontalia Notes",
+            "Dontalia Product",
+            "Dontalia Pack Flag",
+            "Dontalia Adjusted Variance",
+        ],
+        [
+            "Henry Schein Sales Price (€)",
+            "Variance (Henry Schein)",
+            "Henry Schein URL",
+            "Henry Schein Notes",
+            "Henry Schein Product",
+            "Henry Schein Pack Flag",
+            "Henry Schein Adjusted Variance",
+        ],
     ]
-    for col in new_cols:
-        if col not in headers:
-            headers.append(col)
-    # Remove blank spacer columns from output
-    return [h for h in headers if not h.startswith("_blank_")]
+    site_cols = [col for block in site_blocks for col in block]
+    site_cols_set = set(site_cols)
+
+    # Keep all non-site input columns first, preserving first occurrence and order.
+    base_headers = []
+    seen: set[str] = set()
+    for h in existing_headers:
+        if h.startswith("_blank_") or h in site_cols_set or h in seen:
+            continue
+        seen.add(h)
+        base_headers.append(h)
+
+    return base_headers + site_cols
 
 
 # ---------------------------------------------------------------------------
@@ -665,6 +954,66 @@ def _calc_variance(own_price_str: str, competitor_price_str: str) -> str:
     return "N/A"
 
 
+def _extract_pack_size(name: str) -> Optional[int]:
+    """
+    Extract pack/box quantity from a product name string.
+    e.g. "Needles 27g - Box100" → 100
+         "TePe Brushes - Pack36" → 36
+         "Syringe 4x3ml" → 4
+         "Each" → 1
+    Returns None if quantity cannot be determined.
+    """
+    if not name:
+        return None
+    name_lower = name.lower()
+    # "Each" or "single" = 1
+    if re.search(r'\beach\b|\bsingle\b', name_lower):
+        return 1
+    # "Box100", "Pack 500", "Pk25", "Bx50"
+    m = re.search(r'(?:box|pack|pk|bx)\s*(\d+)', name_lower)
+    if m:
+        return int(m.group(1))
+    # "100 pack", "50 box"
+    m = re.search(r'(\d+)\s*(?:pack|box|pk|bx)\b', name_lower)
+    if m:
+        return int(m.group(1))
+    # "4x3ml", "12x5ml" — multiplier pattern (e.g. Boutique kits)
+    m = re.search(r'(\d+)\s*x\s*\d', name_lower)
+    if m:
+        return int(m.group(1))
+    # Trailing "- 500" or "- 80" at end of name (some products use bare numbers)
+    m = re.search(r'-\s*(\d{2,4})\s*$', name.strip())
+    if m:
+        return int(m.group(1))
+    return None
+
+
+def _pack_size_flag(our_name: str, comp_name: str) -> tuple[str, Optional[int], Optional[int]]:
+    """
+    Compare pack sizes from our product name and competitor product name.
+    Returns (flag, our_qty, comp_qty) where flag is MATCH / MISMATCH / UNKNOWN.
+    """
+    our_qty = _extract_pack_size(our_name)
+    comp_qty = _extract_pack_size(comp_name)
+    if our_qty is None or comp_qty is None:
+        return "UNKNOWN", our_qty, comp_qty
+    if our_qty == comp_qty:
+        return "MATCH", our_qty, comp_qty
+    return f"MISMATCH (ours:{our_qty} theirs:{comp_qty})", our_qty, comp_qty
+
+
+def _calc_adjusted_variance(own_price_str: str, comp_price_str: str, own_qty: int, comp_qty: int) -> str:
+    """Per-unit variance after adjusting for pack size difference."""
+    own = _parse_price_value(own_price_str)
+    comp = _parse_price_value(comp_price_str)
+    if own and comp and comp > 0 and own_qty > 0 and comp_qty > 0:
+        own_unit = own / own_qty
+        comp_unit = comp / comp_qty
+        variance = ((own_unit - comp_unit) / comp_unit) * 100
+        return f"{variance:.1f}%"
+    return "N/A"
+
+
 # ---------------------------------------------------------------------------
 # Site configuration
 # ---------------------------------------------------------------------------
@@ -676,6 +1025,9 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "DMI URL (IE)",
         "notes_col": "DMI IE Notes",
         "own_price_col": "Sales Price (€)",
+        "product_name_col": "DMI IE Product",
+        "pack_flag_col": "DMI IE Pack Flag",
+        "adj_variance_col": "DMI IE Adjusted Variance",
     },
     "dmi_uk": {
         "scraper_class": DMIUKScraper,
@@ -684,6 +1036,9 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "DMI URL (UK)",
         "notes_col": "DMI UK Notes",
         "own_price_col": "Sales Price (£)",
+        "product_name_col": "DMI UK Product",
+        "pack_flag_col": "DMI UK Pack Flag",
+        "adj_variance_col": "DMI UK Adjusted Variance",
     },
     "dentalsky": {
         "scraper_class": DentalSkyScraper,
@@ -692,6 +1047,9 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "DentalSky URL",
         "notes_col": "DentalSky Notes",
         "own_price_col": "Sales Price (£)",
+        "product_name_col": "DentalSky Product",
+        "pack_flag_col": "DentalSky Pack Flag",
+        "adj_variance_col": "DentalSky Adjusted Variance",
     },
     "dontalia": {
         "scraper_class": DontaliaScraper,
@@ -700,6 +1058,9 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "Dontalia URL",
         "notes_col": "Dontalia Notes",
         "own_price_col": "Sales Price (€)",
+        "product_name_col": "Dontalia Product",
+        "pack_flag_col": "Dontalia Pack Flag",
+        "adj_variance_col": "Dontalia Adjusted Variance",
     },
     "henryschein": {
         "scraper_class": HenryScheinScraper,
@@ -708,8 +1069,194 @@ SITE_CONFIG: dict[str, dict] = {
         "url_col": "Henry Schein URL",
         "notes_col": "Henry Schein Notes",
         "own_price_col": "Sales Price (€)",
+        "product_name_col": "Henry Schein Product",
+        "pack_flag_col": "Henry Schein Pack Flag",
+        "adj_variance_col": "Henry Schein Adjusted Variance",
     },
 }
+
+
+# ---------------------------------------------------------------------------
+# Product code mappings — persisted between runs, manually editable
+# ---------------------------------------------------------------------------
+MAPPINGS_HEADERS = [
+    "Our Code", "Our Name", "Site",
+    "Competitor URL", "Competitor Product Name",
+    "Match Score", "Manual Override",
+]
+
+
+def load_mappings(output_path: str) -> dict:
+    """
+    Load the 'Product Mappings' sheet from a previous output .xlsx file.
+    Returns a dict keyed by (our_code, site). Returns empty dict if file doesn't exist
+    or has no mappings sheet.
+    """
+    import pandas as pd
+
+    mappings: dict[tuple, dict] = {}
+    if not os.path.exists(output_path):
+        return mappings
+    if not output_path.endswith((".xlsx", ".xls")):
+        return mappings
+    try:
+        xl = pd.ExcelFile(output_path)
+        if "Product Mappings" not in xl.sheet_names:
+            return mappings
+        df = pd.read_excel(output_path, sheet_name="Product Mappings", dtype=str).fillna("")
+        for _, row in df.iterrows():
+            key = (str(row.get("Our Code", "")).strip(), str(row.get("Site", "")).strip())
+            mappings[key] = row.to_dict()
+        logger.info(f"Loaded {len(mappings)} product mappings from '{output_path}'")
+    except Exception as e:
+        logger.warning(f"Could not load mappings from '{output_path}': {e}")
+    return mappings
+
+
+CHECKPOINT_EVERY = 5  # write output after every N products processed
+
+
+def load_progress(output_path: str) -> dict:
+    """
+    Load previously scraped prices from an existing output file.
+    Returns a dict keyed by product Code so they can be merged back into
+    the input rows — allowing the run to resume where it left off.
+    """
+    import pandas as pd
+
+    progress: dict[str, dict] = {}
+    if not os.path.exists(output_path):
+        return progress
+    try:
+        if output_path.lower().endswith(".csv"):
+            df = pd.read_csv(output_path, dtype=str, encoding="utf-8-sig").fillna("")
+        else:
+            df = pd.read_excel(output_path, sheet_name="Prices", dtype=str).fillna("")
+        for _, row in df.iterrows():
+            code = str(row.get("Code", "")).strip()
+            if code:
+                progress[code] = row.to_dict()
+        logger.info(f"Resumed: loaded progress for {len(progress)} products from '{output_path}'")
+    except Exception as e:
+        logger.warning(f"Could not load progress from '{output_path}': {e}")
+    return progress
+
+
+def _apply_price_formatting(ws) -> None:
+    """
+    Apply conditional formatting to the Prices sheet.
+
+    Rules (applied to competitor price cells only):
+      - Teal  (#008080, white bold) — competitor price > reference price
+                                      (we are cheaper → good)
+      - Red   (#FF0000, white bold) — competitor price < reference price
+                                      (competitor is cheaper → bad)
+
+    Reference detection (first available column wins per currency):
+      € reference: "Sales Price (€)"  → fallback "DMI Sales Price (€)"
+      £ reference: "Sales Price (£)"  → fallback "DMI Sales Price (£)"
+
+    Competitor columns coloured:
+      € : DMI Sales Price (€), Dontalia Sales Price (€), Henry Schein Sales Price (€)
+      £ : DMI Sales Price (£), DentalSky Sales Price (£)
+    """
+    from openpyxl.styles import PatternFill, Font
+
+    teal_fill  = PatternFill(start_color="90EE90", end_color="90EE90", fill_type="solid")  # light green
+    red_fill   = PatternFill(start_color="FFB6B6", end_color="FFB6B6", fill_type="solid")  # light red
+    white_font = Font(color="000000")
+
+    # Build header → 0-based index map from the first row
+    headers = [cell.value for cell in next(ws.iter_rows(min_row=1, max_row=1))]
+    col_map = {h: i for i, h in enumerate(headers) if h}
+
+    currency_groups = [
+        {
+            "refs": ["Sales Price (€)", "DMI Sales Price (€)"],
+            "competitors": [
+                "DMI Sales Price (€)",
+                "Dontalia Sales Price (€)",
+                "Henry Schein Sales Price (€)",
+            ],
+        },
+        {
+            "refs": ["Sales Price (£)", "DMI Sales Price (£)"],
+            "competitors": [
+                "DMI Sales Price (£)",
+                "DentalSky Sales Price (£)",
+            ],
+        },
+    ]
+
+    # Resolve (ref_0based, comp_0based) pairs
+    pairs = []
+    for group in currency_groups:
+        ref_idx = next((col_map[r] for r in group["refs"] if r in col_map), None)
+        if ref_idx is None:
+            continue
+        for comp_name in group["competitors"]:
+            if comp_name not in col_map:
+                continue
+            c_idx = col_map[comp_name]
+            if c_idx != ref_idx:
+                pairs.append((ref_idx, c_idx))
+
+    def _to_float(val):
+        if not val or str(val).strip() in ("N/A", "-", "Not listed on competitor", "nan", ""):
+            return None
+        m = re.search(r"(\d[\d,]*\.?\d*)", str(val).replace(",", ""))
+        if m:
+            try:
+                return float(m.group(1))
+            except ValueError:
+                return None
+        return None
+
+    for row in ws.iter_rows(min_row=2):
+        for ref_idx, c_idx in pairs:
+            ref_val  = _to_float(row[ref_idx].value)
+            comp_val = _to_float(row[c_idx].value)
+            if ref_val is None or comp_val is None:
+                continue
+            cell = row[c_idx]
+            if comp_val > ref_val:
+                cell.fill = teal_fill
+                cell.font = white_font
+            elif comp_val < ref_val:
+                cell.fill = red_fill
+                cell.font = white_font
+
+
+def write_output(output_path: str, rows: list, output_headers: list, mappings: dict) -> None:
+    """Write prices + product mappings to .xlsx (two sheets) or .csv (two files)."""
+    import pandas as pd
+
+    prices_df = pd.DataFrame(rows, columns=output_headers)
+    # Fill missing columns with empty string
+    for col in output_headers:
+        if col not in prices_df.columns:
+            prices_df[col] = ""
+
+    mapping_rows = sorted(mappings.values(), key=lambda r: (r.get("Our Code", ""), r.get("Site", "")))
+    mappings_df = pd.DataFrame(mapping_rows, columns=MAPPINGS_HEADERS) if mapping_rows else pd.DataFrame(columns=MAPPINGS_HEADERS)
+
+    if output_path.lower().endswith(".csv"):
+        mappings_path = output_path[:-4] + "_mappings.csv"
+        prices_df.to_csv(output_path, index=False, encoding="utf-8-sig")
+        mappings_df.to_csv(mappings_path, index=False)
+        logger.info(f"Output written to '{output_path}' and '{mappings_path}'")
+    else:
+        with pd.ExcelWriter(output_path, engine="openpyxl") as writer:
+            prices_df.to_excel(writer, sheet_name="Prices", index=False)
+            mappings_df.to_excel(writer, sheet_name="Product Mappings", index=False)
+
+        # Apply conditional formatting to the Prices sheet
+        from openpyxl import load_workbook
+        wb = load_workbook(output_path)
+        _apply_price_formatting(wb["Prices"])
+        wb.save(output_path)
+
+        logger.info(f"Output written to '{output_path}' (sheets: Prices, Product Mappings)")
 
 
 # ---------------------------------------------------------------------------
@@ -722,14 +1269,30 @@ def run(
     limit: Optional[int] = None,
     skip_existing: bool = True,
     use_playwright: bool = False,
+    upload_to_sheets: bool = False,
+    sheet_id: str = "1qJCFzTea15Q9HlWqzIEFKHn47PW-Nak-CUHNulZtsjs",
+    worksheet: str = "Benchmarking Data",
 ):
     logger.info(f"Reading input: {input_path}")
-    rows, headers = read_csv(input_path)
+    rows, headers = read_input(input_path)
     output_headers = build_output_headers(headers)
 
     if limit:
         rows = rows[:limit]
         logger.info(f"Limited to first {limit} rows")
+
+    # Merge previously scraped prices back into rows so skip_existing works correctly
+    progress = load_progress(output_path)
+    if progress:
+        for row in rows:
+            code = str(row.get("Code", "")).strip()
+            if code in progress:
+                for col, val in progress[code].items():
+                    if val and val != "nan" and not row.get(col):
+                        row[col] = val
+
+    # Load product code mappings from previous output file (if it exists)
+    mappings = load_mappings(output_path)
 
     session = requests.Session()
     session.headers.update(BROWSER_HEADERS)
@@ -762,6 +1325,9 @@ def run(
                 variance_col = cfg["variance_col"]
                 notes_col = cfg["notes_col"]
                 own_price_col = cfg["own_price_col"]
+                product_name_col = cfg["product_name_col"]
+                pack_flag_col = cfg["pack_flag_col"]
+                adj_variance_col = cfg["adj_variance_col"]
 
                 existing_price = (row.get(price_col) or "").strip()
                 if skip_existing and existing_price and existing_price.lower() not in ("n/a", ""):
@@ -769,67 +1335,135 @@ def run(
                     continue
 
                 result = ScrapedPrice()
+                mapping_key = (str(code), site_key)
+                mapping = mappings.get(mapping_key)
+
                 try:
-                    # --- Henry Schein needs Playwright ---
-                    if site_key == "henryschein" and pw_ctx:
-                        existing_url = _clean_url(row.get(url_col, ""))
-                        if existing_url:
-                            price = pw_ctx.scrape_henryschein_url(existing_url)
+                    # --- Step 1: Check product mappings first ---
+                    # Manual override (client-specified URL) takes top priority
+                    mapped_url = None
+                    if mapping:
+                        override = (mapping.get("Manual Override") or "").strip()
+                        auto_url = (mapping.get("Competitor URL") or "").strip()
+                        if override and override.startswith("http"):
+                            mapped_url = override
+                            logger.info(f"  [{site_key}] Using manual override URL from mappings")
+                        elif auto_url and auto_url.startswith("http"):
+                            mapped_url = auto_url
+                            logger.info(f"  [{site_key}] Using auto-discovered URL from mappings")
+
+                    if mapped_url:
+                        # Scrape directly from mapped URL — no search needed
+                        if site_key == "henryschein" and pw_ctx:
+                            price = pw_ctx.scrape_henryschein_url(mapped_url)
                             if price:
-                                result = ScrapedPrice(price=price, url=existing_url, found=True)
-                        if not result.found:
-                            for q in _build_queries(
-                                row.get("Part Number", ""),
-                                row.get("Name", ""),
-                                row.get("Manufacturer", ""),
-                            ):
-                                result = pw_ctx.scrape_henryschein(q, row.get("Part Number", ""))
-                                if result.found:
-                                    break
+                                result = ScrapedPrice(price=price, url=mapped_url, found=True, match_score=1.0)
+                        else:
+                            price, comp_name = scraper.scrape_price_from_url(mapped_url)
+                            if price:
+                                result = ScrapedPrice(price=price, url=mapped_url, found=True, product_name=comp_name, match_score=1.0)
 
-                    # --- DentalSky Playwright search for missing URLs ---
-                    elif site_key == "dentalsky" and pw_ctx and not _clean_url(row.get(url_col, "")):
-                        result = scraper.scrape_product(row)  # try slug first
-                        if not result.found:
-                            for q in _build_queries(
-                                row.get("Part Number", ""),
-                                row.get("Name", ""),
-                                row.get("Manufacturer", ""),
-                            ):
-                                result = pw_ctx.search_dentalsky(q)
-                                if result.found:
-                                    break
+                    # --- Step 2: Fall back to search if no mapping ---
+                    if not result.found:
+                        if site_key == "henryschein" and pw_ctx:
+                            existing_url = _clean_url(row.get(url_col, ""))
+                            if existing_url:
+                                price = pw_ctx.scrape_henryschein_url(existing_url)
+                                if price:
+                                    result = ScrapedPrice(price=price, url=existing_url, found=True, match_score=1.0)
+                            if not result.found:
+                                for q in _build_queries(
+                                    row.get("Part Number", ""),
+                                    row.get("Name", ""),
+                                    row.get("Manufacturer", ""),
+                                    row.get("Schein Code", ""),
+                                ):
+                                    result = pw_ctx.scrape_henryschein(q, row.get("Part Number", ""))
+                                    if result.found:
+                                        break
 
-                    # --- All other sites ---
-                    else:
-                        result = scraper.scrape_product(row)
+                        elif site_key == "dentalsky" and pw_ctx and not _clean_url(row.get(url_col, "")):
+                            result = scraper.scrape_product(row)
+                            if not result.found:
+                                for q in _build_queries(
+                                    row.get("Part Number", ""),
+                                    row.get("Name", ""),
+                                    row.get("Manufacturer", ""),
+                                ):
+                                    result = pw_ctx.search_dentalsky(q)
+                                    if result.found:
+                                        break
+
+                        else:
+                            result = scraper.scrape_product(row)
 
                 except Exception as e:
                     logger.error(f"  [{site_key}] Unhandled error: {e}", exc_info=True)
 
+                # --- Step 3: Similarity check (skip if came from a mapping) ---
+                if result.found and result.price and not mapped_url:
+                    if result.product_name:
+                        score = _name_similarity_score(row.get("Name", ""), result.product_name)
+                        result.match_score = score
+                        if score < 0.6:
+                            logger.info(
+                                f"  [{site_key}] ✗ Rejected (score={score:.2f}) — "
+                                f"found: '{result.product_name}'"
+                            )
+                            result = ScrapedPrice()
+
+                # --- Step 4: Accept result and update mappings ---
                 if result.found and result.price:
                     row[price_col] = result.price
                     if result.url:
                         row[url_col] = result.url
                     row[variance_col] = _calc_variance(row.get(own_price_col, ""), result.price)
                     row[notes_col] = ""
-                    logger.info(f"  [{site_key}] ✓ {result.price}  (variance: {row[variance_col]})")
+                    if result.product_name:
+                        row[product_name_col] = result.product_name
+                        flag, our_qty, comp_qty = _pack_size_flag(row.get("Name", ""), result.product_name)
+                        row[pack_flag_col] = flag
+                        if our_qty and comp_qty and our_qty != comp_qty:
+                            row[adj_variance_col] = _calc_adjusted_variance(
+                                row.get(own_price_col, ""), result.price, our_qty, comp_qty
+                            )
+                            logger.info(f"  [{site_key}] Pack size mismatch: ours={our_qty} theirs={comp_qty} → adjusted variance: {row[adj_variance_col]}")
+                    logger.info(f"  [{site_key}] ✓ {result.price}  (score={result.match_score:.2f}, variance: {row[variance_col]})")
+
+                    # Persist this mapping (don't overwrite a manual override)
+                    existing_override = (mapping.get("Manual Override") or "").strip() if mapping else ""
+                    mappings[mapping_key] = {
+                        "Our Code": str(code),
+                        "Our Name": name,
+                        "Site": site_key,
+                        "Competitor URL": result.url or "",
+                        "Competitor Product Name": result.product_name or "",
+                        "Match Score": f"{result.match_score:.2f}",
+                        "Manual Override": existing_override,
+                    }
                 else:
                     if not existing_price or existing_price.lower() == "n/a":
                         row[price_col] = "N/A"
                         row[notes_col] = "Not listed on competitor"
                     logger.info(f"  [{site_key}] ✗ Not found")
+
+            # Checkpoint: write output every N products so progress is never lost
+            if idx % CHECKPOINT_EVERY == 0:
+                write_output(output_path, rows, output_headers, mappings)
+                logger.info(f"  [checkpoint] Saved after {idx}/{total} products")
     finally:
         if pw_ctx and pw_scraper:
             pw_scraper.__exit__(None, None, None)
 
-    # Write output CSV
-    with open(output_path, "w", newline="", encoding="utf-8-sig") as f:
-        writer = csv.DictWriter(f, fieldnames=output_headers, extrasaction="ignore")
-        writer.writeheader()
-        writer.writerows(rows)
+    write_output(output_path, rows, output_headers, mappings)
 
-    logger.info(f"Output written to: {output_path}")
+    if upload_to_sheets:
+        logger.info(f"Uploading '{output_path}' to Google Sheets (sheet_id={sheet_id}, worksheet='{worksheet}')...")
+        try:
+            from push_to_sheets import push as _push_to_sheets
+            _push_to_sheets(output_path, sheet_id, worksheet_name=worksheet)
+        except Exception as e:
+            logger.error(f"Google Sheets upload failed: {e}", exc_info=True)
 
     # Print summary
     total_products = len(rows)
@@ -856,7 +1490,7 @@ def main():
         "--input",
         default="Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv",
     )
-    parser.add_argument("--output", default="output_prices.csv")
+    parser.add_argument("--output", default="output_prices.xlsx")
     parser.add_argument(
         "--sites",
         nargs="+",
@@ -876,7 +1510,33 @@ def main():
         action="store_true",
         help="Re-scrape even when price already exists in input CSV",
     )
+    parser.add_argument(
+        "--upload-to-sheets",
+        action="store_true",
+        help="Upload the finished output to Google Sheets after scraping",
+    )
+    parser.add_argument(
+        "--upload-only",
+        action="store_true",
+        help="Skip scraping — upload an existing file (--output) directly to Google Sheets",
+    )
+    parser.add_argument(
+        "--sheet-id",
+        default="1qJCFzTea15Q9HlWqzIEFKHn47PW-Nak-CUHNulZtsjs",
+        help="Google Sheet ID to upload to",
+    )
+    parser.add_argument(
+        "--worksheet",
+        default="Benchmarking Data",
+        help="Worksheet name inside the Google Sheet",
+    )
     args = parser.parse_args()
+
+    if args.upload_only:
+        logger.info(f"--upload-only: uploading '{args.output}' to Google Sheets...")
+        from push_to_sheets import push as _push_to_sheets
+        _push_to_sheets(args.output, args.sheet_id, worksheet_name=args.worksheet)
+        return
 
     run(
         input_path=args.input,
@@ -885,6 +1545,9 @@ def main():
         limit=args.limit,
         skip_existing=not args.no_skip_existing,
         use_playwright=args.playwright,
+        upload_to_sheets=args.upload_to_sheets,
+        sheet_id=args.sheet_id,
+        worksheet=args.worksheet,
     )
 
 
