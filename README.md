@@ -150,6 +150,70 @@ python scraper.py --help
 
 ---
 
+## Deploying on Railway
+
+Railway runs this project in a containerized runtime. Treat local files as ephemeral: files created during a run (for example `output_prices.csv` and `scraper.log`) may not persist across redeploys/restarts unless you copy them to persistent storage.
+
+### 1) Add deployment files (included in this repo)
+
+- `Procfile` (worker process)
+- `railway.toml` (build + start config)
+
+These are set up for this CLI entrypoint:
+
+```bash
+python scraper.py --playwright
+```
+
+### 2) Create a Railway project from GitHub
+
+1. In Railway, create a new project from `SAJ33L/Scrapper`.
+2. Open the service settings and configure it as a **Worker** service (not a web server; no HTTP port required).
+3. Confirm start command (or Procfile process) is set to `python scraper.py --playwright`.
+
+If you want explicit file arguments, set the start command to something like:
+
+```bash
+python scraper.py --playwright --input "Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv" --output output_prices.csv --sites dmi_ie dmi_uk dentalsky dontalia henryschein --limit 10
+```
+
+Remove `--limit` for full production runs.
+
+### 3) Install Playwright browser binaries during build
+
+This project uses Playwright, so Railway must install Chromium and its Linux dependencies at build time:
+
+```bash
+python -m playwright install --with-deps chromium
+```
+
+`railway.toml` already includes this command in the build step.
+
+### 4) Configure environment variables and secrets
+
+Use Railway Variables/Secrets for any runtime configuration you do not want hardcoded (API keys, webhook URLs, cloud storage credentials, etc.).
+
+- Project/Service → Variables
+- Add secret values there, then reference them in code (via `os.environ`) if needed.
+
+This scraper currently works primarily from CLI args (`--input`, `--output`, `--sites`, `--limit`, `--playwright`), so most run configuration is controlled via the Railway start command.
+
+### 5) Scheduling options
+
+For recurring scrapes, use one of these patterns:
+
+- **Railway scheduled trigger / cron-style job** (if available in your Railway plan/workspace): run the scraper command on an interval (hourly, every 6 hours, daily, etc.).
+- **Internal loop in worker process**: keep one worker alive and run `scraper.py` repeatedly with a sleep interval.
+
+For long jobs, avoid overlapping runs unless you intentionally want parallel processing.
+
+### 6) Input/output file handling on Railway
+
+- **Input CSV**: ensure the file is available in the container at runtime (commit static input to repo, download from cloud storage at startup, or mount/pull from a persistent source).
+- **Output CSV/logs**: do not rely on container local disk for long-term storage. Upload results to a durable destination (for example Google Sheets/Drive, S3-compatible storage, database, or another external store).
+
+---
+
 ## How Prices Are Extracted
 
 All five sites embed **schema.org Product structured data** (JSON-LD) in their HTML — this is the primary extraction method and is the most reliable.
