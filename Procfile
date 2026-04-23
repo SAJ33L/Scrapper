@@ -1,1 +1,1 @@
-worker: sh -c 'set -- python scraper.py --input "${INPUT_PATH:-Price Benchmarking - Top 300 April 2025 - Public Website Prices.csv}" --output "${OUTPUT_PATH:-output_prices.xlsx}" --sites ${SITES:-dmi_ie dmi_uk dentalsky dontalia henryschein}; if [ -n "${LIMIT:-}" ]; then set -- "$@" --limit "$LIMIT"; fi; if [ "${USE_PLAYWRIGHT:-1}" = "1" ]; then set -- "$@" --playwright; fi; if [ "${NO_SKIP_EXISTING:-0}" = "1" ]; then set -- "$@" --no-skip-existing; fi; exec "$@"'
+web: echo "Cron-only service — scheduled via railway.toml cronSchedule"
