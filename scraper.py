@@ -33,6 +33,9 @@ import random
 import re
 import sys
 import time
+import traceback
+import smtplib
+from email.mime.text import MIMEText
 from dataclasses import dataclass
 from typing import Optional
 from urllib.parse import quote_plus, urljoin, urlparse
@@ -71,6 +74,30 @@ BROWSER_HEADERS = {
 
 MIN_DELAY = 1.5
 MAX_DELAY = 4.0
+
+def send_email(subject: str, body: str, to_email: str) -> None:
+    smtp_host = os.environ.get("SMTP_HOST")
+    smtp_port = int(os.environ.get("SMTP_PORT", 587))
+    smtp_user = os.environ.get("SMTP_USER")
+    smtp_pass = os.environ.get("SMTP_PASS")
+    
+    if not all([smtp_host, smtp_user, smtp_pass, to_email]):
+        logger.warning(f"SMTP configuration missing (or no to_email). Skipping email to {to_email}")
+        return
+        
+    msg = MIMEText(body)
+    msg["Subject"] = subject
+    msg["From"] = smtp_user
+    msg["To"] = to_email
+    
+    try:
+        with smtplib.SMTP(smtp_host, smtp_port) as server:
+            server.starttls()
+            server.login(smtp_user, smtp_pass)
+            server.send_message(msg)
+        logger.info(f"Notification email sent to {to_email}")
+    except Exception as e:
+        logger.error(f"Failed to send email: {e}")
 
 
 # ---------------------------------------------------------------------------
@@ -651,25 +678,36 @@ class PlaywrightScraper:
 
     def __enter__(self):
         if self._available:
-            self._pw = self._sync_playwright().__enter__()
-            self._browser = self._pw.chromium.launch(headless=True)
-            self._context = self._browser.new_context(
-                user_agent=(
-                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                    "AppleWebKit/537.36 (KHTML, like Gecko) "
-                    "Chrome/124.0.0.0 Safari/537.36"
-                ),
-                locale="en-GB",
-            )
+            try:
+                self._pw = self._sync_playwright().__enter__()
+                self._browser = self._pw.chromium.launch(headless=True)
+                self._context = self._browser.new_context(
+                    user_agent=(
+                        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                        "AppleWebKit/537.36 (KHTML, like Gecko) "
+                        "Chrome/124.0.0.0 Safari/537.36"
+                    ),
+                    locale="en-GB",
+                )
+            except Exception as e:
+                logger.warning(f"[Playwright] Browser launch failed — running without JS support: {e}")
+                self._available = False
+                self._pw = self._browser = self._context = None
         return self
 
     def __exit__(self, *args):
-        if self._context:
-            self._context.close()
-        if self._browser:
-            self._browser.close()
+        for attr, method in [("_context", "close"), ("_browser", "close")]:
+            obj = getattr(self, attr, None)
+            if obj:
+                try:
+                    getattr(obj, method)()
+                except Exception as e:
+                    logger.warning(f"[Playwright] Error closing {attr}: {e}")
         if self._pw:
-            self._pw.__exit__(*args)
+            try:
+                self._pw.__exit__(*args)
+            except Exception as e:
+                logger.warning(f"[Playwright] Error stopping playwright: {e}")
 
     def get_page_html(self, url: str, wait_selector: str = None, timeout: int = 15000) -> Optional[str]:
         if not self._available:
@@ -862,6 +900,57 @@ def read_input(path: str) -> tuple[list[dict], list[str]]:
     if ext in (".xlsx", ".xls"):
         return read_excel(path)
     return read_csv(path)
+
+
+def read_from_sheet(
+    sheet_id: str,
+    worksheet_name: str = "InputSheet",
+    creds_file: str | None = None,
+) -> tuple[list[dict], list[str]]:
+    """Read product rows from a Google Sheets worksheet and return (rows, headers)."""
+    import gspread
+    from google.oauth2.service_account import Credentials
+
+    if creds_file is None:
+        creds_file = os.path.join(
+            os.path.dirname(os.path.abspath(__file__)),
+            "bfm-competitor-price-scraper-60bbef18550e.json",
+        )
+
+    scopes = [
+        "https://www.googleapis.com/auth/spreadsheets",
+        "https://www.googleapis.com/auth/drive",
+    ]
+    creds = Credentials.from_service_account_file(creds_file, scopes=scopes)
+    gc = gspread.authorize(creds)
+    ws = gc.open_by_key(sheet_id).worksheet(worksheet_name)
+
+    all_values = ws.get_all_values()
+    if not all_values:
+        raise ValueError(f"Worksheet '{worksheet_name}' is empty.")
+
+    raw_headers = all_values[0]
+    data_rows = all_values[1:]
+
+    # Normalise column names to match what the scraper expects
+    col_map = {
+        "Product Group Description": "Product Group",
+        "Stock Unit Name": "Stock Unit",
+        "Product Code": "Code",
+        "Product Name": "Name",
+    }
+    headers = [col_map.get(h.strip(), h.strip()) for h in raw_headers]
+
+    rows = [
+        {headers[i]: (cell if i < len(cell_row) else "") for i, cell in enumerate(cell_row)}
+        for cell_row in (
+            # Pad short rows so every header has a value
+            [list(r) + [""] * (len(headers) - len(r)) for r in data_rows]
+        )
+    ]
+
+    logger.info(f"Read {len(rows)} rows from Google Sheets '{worksheet_name}'")
+    return rows, headers
 
 
 def build_output_headers(existing_headers: list[str]) -> list[str]:
@@ -1272,9 +1361,15 @@ def run(
     upload_to_sheets: bool = False,
     sheet_id: str = "1qJCFzTea15Q9HlWqzIEFKHn47PW-Nak-CUHNulZtsjs",
     worksheet: str = "Benchmarking Data",
+    from_sheet: bool = False,
+    input_worksheet: str = "InputSheet",
 ):
-    logger.info(f"Reading input: {input_path}")
-    rows, headers = read_input(input_path)
+    if from_sheet:
+        logger.info(f"Reading input from Google Sheets '{input_worksheet}' (sheet_id={sheet_id})")
+        rows, headers = read_from_sheet(sheet_id, input_worksheet)
+    else:
+        logger.info(f"Reading input: {input_path}")
+        rows, headers = read_input(input_path)
     output_headers = build_output_headers(headers)
 
     if limit:
@@ -1467,6 +1562,7 @@ def run(
 
     # Print summary
     total_products = len(rows)
+    summary_lines = []
     for site_key in sites:
         cfg = SITE_CONFIG.get(site_key, {})
         price_col = cfg.get("price_col", "")
@@ -1474,7 +1570,11 @@ def run(
             1 for r in rows
             if r.get(price_col, "N/A").strip() not in ("N/A", "")
         )
-        logger.info(f"  {site_key}: {found}/{total_products} prices found")
+        msg_line = f"  {site_key}: {found}/{total_products} prices found"
+        logger.info(msg_line)
+        summary_lines.append(msg_line)
+        
+    return "\n".join(summary_lines)
 
 
 # ---------------------------------------------------------------------------
@@ -1530,6 +1630,22 @@ def main():
         default="Benchmarking Data",
         help="Worksheet name inside the Google Sheet",
     )
+    parser.add_argument(
+        "--notify-email",
+        default=os.environ.get("NOTIFY_EMAIL", ""),
+        help="Email address to send the summary to",
+    )
+    parser.add_argument(
+        "--from-sheet",
+        action="store_true",
+        default=os.environ.get("FROM_SHEET", "0") == "1",
+        help="Read product input from Google Sheets (--input-worksheet) instead of a local file",
+    )
+    parser.add_argument(
+        "--input-worksheet",
+        default=os.environ.get("INPUT_WORKSHEET", "InputSheet"),
+        help="Worksheet tab name to read product input from (used with --from-sheet)",
+    )
     args = parser.parse_args()
 
     if args.upload_only:
@@ -1538,17 +1654,36 @@ def main():
         _push_to_sheets(args.output, args.sheet_id, worksheet_name=args.worksheet)
         return
 
-    run(
-        input_path=args.input,
-        output_path=args.output,
-        sites=args.sites,
-        limit=args.limit,
-        skip_existing=not args.no_skip_existing,
-        use_playwright=args.playwright,
-        upload_to_sheets=args.upload_to_sheets,
-        sheet_id=args.sheet_id,
-        worksheet=args.worksheet,
-    )
+    try:
+        summary = run(
+            input_path=args.input,
+            output_path=args.output,
+            sites=args.sites,
+            limit=args.limit,
+            skip_existing=not args.no_skip_existing,
+            use_playwright=args.playwright,
+            upload_to_sheets=args.upload_to_sheets,
+            sheet_id=args.sheet_id,
+            worksheet=args.worksheet,
+            from_sheet=args.from_sheet,
+            input_worksheet=args.input_worksheet,
+        )
+        if args.notify_email:
+            send_email(
+                subject="Scraper Completed Successfully",
+                body=f"Scraping completed.\n\nSummary:\n{summary}",
+                to_email=args.notify_email
+            )
+    except Exception as e:
+        logger.error(f"Scraper failed: {e}", exc_info=True)
+        if args.notify_email:
+            error_trace = traceback.format_exc()
+            send_email(
+                subject="Scraper Failed",
+                body=f"Scraping failed with an error:\n\n{error_trace}",
+                to_email=args.notify_email
+            )
+        sys.exit(1)
 
 
 if __name__ == "__main__":

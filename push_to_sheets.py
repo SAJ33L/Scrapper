@@ -20,9 +20,9 @@ import gspread
 from google.oauth2.service_account import Credentials
 
 # ── defaults ─────────────────────────────────────────────────────────────────
-DEFAULT_INPUT    = "/home/saj33l/Hashed/Scrapper/output_prices.csv"
+DEFAULT_INPUT    = "output_prices.csv"
 DEFAULT_SHEET_ID = "1qJCFzTea15Q9HlWqzIEFKHn47PW-Nak-CUHNulZtsjs"
-CREDS_FILE       = "/home/saj33l/Hashed/Scrapper/bfm-competitor-price-scraper-60bbef18550e.json"
+CREDS_FILE       = os.path.join(os.path.dirname(os.path.abspath(__file__)), "bfm-competitor-price-scraper-60bbef18550e.json")
 WORKSHEET_NAME   = "Benchmarking Data"
 
 SCOPES = [
